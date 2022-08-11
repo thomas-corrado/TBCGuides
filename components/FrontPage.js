@@ -14,7 +14,7 @@ const StyledImageBox = styled(Box, {
 //   position: "absolute",
 // });
 
-const FrontPage = () => {
+const frontPage = () => {
   return (
     <div>
       <StyledImageBox>
@@ -37,4 +37,4 @@ const FrontPage = () => {
   );
 };
 
-export default FrontPage;
+export default frontPage;
