@@ -1,20 +1,22 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import FrontPage from "../components/Frontpage";
+import FrontPage from "../components/frontPage";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
+    <div>
+      <div>
+        <Head>
         <title>Hanover Guides</title>
         <meta name="description" content="Hanover Guides" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+        <main>
         <FrontPage />
       </main>
+      </div>
     </div>
   );
 }
