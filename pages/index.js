@@ -5,7 +5,7 @@ import FrontPage from '../components/Frontpage';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div >
       <Head>
         <title>Hanover Guides</title>
         <meta name="description" content="Hanover Guides" />
@@ -15,6 +15,8 @@ export default function Home() {
       <main>
         <FrontPage />
       </main>
+
+      
     </div>
   );
 }
