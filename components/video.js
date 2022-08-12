@@ -21,7 +21,7 @@ const Video = () => {
           position: absolute;
           background-color: white;
           opacity: 0.6;
-          z-index: 2
+          z-index: 2;
         }
 
         .video-container video {
@@ -37,9 +37,9 @@ const Video = () => {
       <div className="video-overlay" />
       <video
         src={require("../public/LargeBackground.mp4")}
-        autoPlay="autoplay"
-        loop="loop"
         muted
+        autoPlay={"autoplay"}
+        loop
       ></video>
     </div>
   );
