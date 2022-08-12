@@ -75,13 +75,13 @@ const FrontPage = () => {
             justify-content: center;
             position: absolute;
             top: 10.5rem;
-            z-index: 99;
+            z-index: 3;
           }
 
           .welcome {
             font-size: 4rem;
-            top: 45%;
-            transform: translateY(-50%);
+            top: 50%;
+            transform: translateY(-55%);
           }
 
           @media (max-height: 530px) {
