@@ -6,7 +6,7 @@ const isSafari = () => {
 };
 
 const mainVideo =
-  "https://res.cloudinary.com/joinshelf/video/upload/v1650876909/luciana_e1vp7u.mp4";
+  "https://res.cloudinary.com/dsc1j5xny/video/upload/v1660311360/LargeBackground_pqjd8q.mp4";
 
 export default function Video() {
   const videoParentRef = useRef();
@@ -50,21 +50,35 @@ export default function Video() {
     <img src={mainVideo} alt="Muted Video" />
   ) : (
     <div
-      ref={videoParentRef}
-      dangerouslySetInnerHTML={{
-        __html: `
+      style={{
+        width: "100vw",
+        heigth: "100vh",
+        objectFit: "cover",
+      }}
+    >
+      <style global jsx>{`
+        .video {
+          position: relative;
+          width: 100vw;
+          height: calc(70vh - 12vw);
+          overflow: hidden;
+          object-fit: cover;
+        }
+      `}</style>
+      <div>
         <video
+          ref={videoParentRef}
           loop
           muted
-          autoplay
+          autoPlay
           playsinline
           preload="metadata"
-          class='w-screen h-screen -z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover'
-          src="${mainVideo}"
+          src={mainVideo}
           type="video/mp4"
-        >
-        </video>`,
-      }}
-    />
+          className="video"
+        ></video>
+      </div>
+      <div />
+    </div>
   );
 }

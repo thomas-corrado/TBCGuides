@@ -88,7 +88,7 @@ const WelcomeText = () => {
             @media (max-width: 450px) {
             .welcome {
               margin-top: 45px; 
-               margin-right: 1.2rem
+               
             }
 
             @media (max-width: 410px) {
