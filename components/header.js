@@ -42,7 +42,7 @@ const Header = () => {
   const [state, setState] = useState({
     mobileView: false,
     drawerOpen: false,
-    buttonOpen: false
+    buttonOpen: false,
   });
 
   const { mobileView, drawerOpen, buttonOpen } = state;
@@ -133,15 +133,14 @@ const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
   const displayMobile = () => {
-      
     const handleDrawerClose = () => {
       setState((prevState) => ({
         ...prevState,
         drawerOpen: false,
         buttonOpen: false,
       }));
-    }
-      
+    };
+
     return (
       <div
         style={{
@@ -207,10 +206,10 @@ const Header = () => {
     return (
       <div
         style={{
-          float: "right", 
+          float: "right",
           marginTop: "4.4rem",
-          marginRight: "0", 
-          paddingRight: "1rem", 
+          marginRight: "0",
+          paddingRight: "1rem",
         }}
       >
         {getMenuButtons()}
