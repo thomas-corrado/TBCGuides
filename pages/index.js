@@ -13,6 +13,7 @@ export default function Home() {
         </Head>
 
         <main>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <FrontPage />
         </main>
       </div>
