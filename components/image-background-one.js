@@ -26,7 +26,24 @@ const ImageBackgroundOne = () => {
   return (
     <div>
       <StyledImageBox className="imageBox">
-        <StyledCoverBox className="coverBox" />
+        <div style={{}}>
+          <video
+            sx={{
+              objectFit: "cover",
+              layout: "fill",
+            }}
+            autoPlay
+            muted
+            playsinline
+            loop
+          >
+            <source
+              src="https://luciana-website.vercel.app/assets/luciana.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+
         <style global jsx>{`
           .imageBox {
             margin-top: -1rem;
@@ -50,14 +67,6 @@ const ImageBackgroundOne = () => {
             }
           }
         `}</style>
-        <Image
-          priority
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          src={require("../public/GPTempDownload.jpg")}
-          alt="Background Image"
-        />
       </StyledImageBox>
     </div>
   );

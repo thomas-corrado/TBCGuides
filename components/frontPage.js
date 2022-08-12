@@ -67,7 +67,7 @@ const FrontPage = () => {
         >
           <h1>Hanover Guides</h1>
         </div>
-        <WelcomeText/>
+        
         <ImageBackgroundOne />
       </StyledImageBox>
       <Header />
