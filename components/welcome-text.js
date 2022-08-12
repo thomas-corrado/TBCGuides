@@ -18,10 +18,8 @@ const StyledWelcome = styled("h1", {
   textAlign: "center",
   top: "40%",
   transform: "translateY(-50%)",
+
   position: "absolute",
-  marginRight: "1rem",
-  
-  
 });
 
 const WelcomeText = () => {
@@ -57,11 +55,19 @@ const WelcomeText = () => {
           <style global jsx>{`
             .welcome {
               font-size: 4rem;
+              margin-right: 2rem
+            }
+
+          @media (max-width: 1150px) {
+              .welcome {
+                margin-right: 1rem
+              }
             }
 
             @media (max-width: 710px) {
               .welcome {
                 font-size: 3.5rem;
+                margin-right: 2rem
               }
             }
 
@@ -74,13 +80,15 @@ const WelcomeText = () => {
               .welcome {
                 font-size: 2.5rem; 
                 width: 79vw; 
-                line-height: 3rem
+                line-height: 3rem; 
+                margin-right: 1.8rem
               }
             }
 
             @media (max-width: 450px) {
             .welcome {
               margin-top: 45px; 
+               margin-right: 1.2rem
             }
           }
           `}</style>
