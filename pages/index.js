@@ -1,6 +1,5 @@
 import Head from "next/head";
 import FrontPage from "../components/frontPage";
-import Header from "../components/header";
 
 export default function Home() {
   return (
@@ -8,7 +7,11 @@ export default function Home() {
       <div>
         <Head>
           <title>Hanover Guides</title>
-          <meta name="description" content="Hanover Guides" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
 

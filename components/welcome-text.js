@@ -55,7 +55,7 @@ const WelcomeText = () => {
           <style global jsx>{`
             .welcome {
               font-size: 4rem;
-              margin-right: 2rem
+              margin-right: 5rem
             }
 
           @media (max-width: 1150px) {
@@ -88,7 +88,12 @@ const WelcomeText = () => {
             @media (max-width: 450px) {
             .welcome {
               margin-top: 45px; 
-               margin-right: 1.2rem
+               
+            }
+
+            @media (max-width: 410px) {
+            .welcome {
+               margin-right: 5rem
             }
           }
           `}</style>
