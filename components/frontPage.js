@@ -14,12 +14,11 @@ const StyledImageBox = styled(Box, {
   marginBottom: "0"
 });
 
-const StyledWelcome = styled("h1", {
+const StyledWelcome = styled("h2", {
   color: "white",
   fontFamily: "Lobster",
   textAlign: "center",
-  top: "40%",
-  transform: "translateY(-50%)",
+  
   position: "absolute",
   zIndex: 3
 });
@@ -68,34 +67,19 @@ const FrontPage = () => {
           }
 
           .welcome-container {
-            padding-right: 5rem;
             display: flex;
             width: 100%;
             height: 30rem;
             justify-content: center;
             position: absolute;
-            top: 10.5rem;
             z-index: 3;
+            top: 10.5rem;
           }
 
           .welcome {
             font-size: 4rem;
-            top: 50%;
-            transform: translateY(-55%);
-          }
-
-          @media (max-height: 530px) {
-            .welcome {
-              font-size: 2.5rem;
-              line-height: 3rem;
-              padding-bottom: 10px;
-            }
-          }
-
-          @media (max-width: 1150px) {
-            .welcome-container {
-              padding-right: 3rem;
-            }
+            top: 40%;
+            transform: translateY(-50%);
           }
 
           @media (max-width: 700px) {
@@ -128,18 +112,13 @@ const FrontPage = () => {
               top: 8.5rem;
               margin-top: -0.3rem;
             }
+
             .welcome-container {
               top: 8.5rem;
             }
           }
 
           @media (max-width: 400px) {
-            .welcome {
-              font-size: 3rem;
-            }
-          }
-
-          @media (max-width: 375px) {
             h1 {
               font-size: 2.5rem;
               line-height: 3rem;
@@ -151,7 +130,10 @@ const FrontPage = () => {
               line-height: 3rem;
             }
             .welcome-container {
-              padding-right: 1rem;
+              margin-top: -0.3rem;
+              width: 90vw; 
+              padding-left: 11vw;
+              justify-content: center;
             }
           }
         `}</style>
@@ -166,7 +148,7 @@ const FrontPage = () => {
           <Video />
         </div>
       </StyledImageBox>
-      <div className="welcome-container">
+      <Box className="welcome-container">
         <StyledWelcome className="welcome">
           Welcome to the <br />
           Upper Valley&rsquo;s Premiere {mobileView ? undefined : <br />}
@@ -174,7 +156,7 @@ const FrontPage = () => {
           <br />
           Fishing Guide Service
         </StyledWelcome>
-      </div>
+      </Box>
 
       <Header />
     </div>
