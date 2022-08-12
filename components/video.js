@@ -63,9 +63,10 @@ export default function Video() {
           height: 30rem;
           overflow: hidden;
           object-fit: cover;
-  
         }
+
       `}</style>
+      <div className="video-cover" />
       <div
         ref={videoParentRef}
         dangerouslySetInnerHTML={{

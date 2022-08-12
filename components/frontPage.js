@@ -66,6 +66,15 @@ const FrontPage = () => {
             margin-top: -1rem;
           }
 
+          .video-cover {
+            position: absolute;
+            width: 100vw;
+            height: calc(30rem);
+            background-color: #0e5a11;
+            z-index: 3;
+            opacity: 0.5;
+          }
+
           .welcome-container {
             display: flex;
             width: 100%;
@@ -74,11 +83,12 @@ const FrontPage = () => {
             position: absolute;
             z-index: 3;
             top: 10.5rem;
+            padding-right: 1vw;
           }
 
           .welcome {
             font-size: 4rem;
-            top: 40%;
+            top: 37%;
             transform: translateY(-50%);
           }
 
@@ -115,6 +125,13 @@ const FrontPage = () => {
 
             .welcome-container {
               top: 8.5rem;
+              width: 90vw;
+              padding-left: 10vw;
+            }
+            .welcome {
+              font-size: 3rem;
+              line-height: 3.5rem;
+              top: 42%;
             }
           }
 
@@ -128,10 +145,11 @@ const FrontPage = () => {
             .welcome {
               font-size: 2.5rem;
               line-height: 3rem;
+              top: 42%;
             }
             .welcome-container {
               margin-top: -0.3rem;
-              width: 90vw; 
+              width: 90vw;
               padding-left: 11vw;
               justify-content: center;
             }
@@ -145,6 +163,7 @@ const FrontPage = () => {
           <h1>Hanover Guides</h1>
         </div>
         <div className="video-container">
+          <div className="video-cover" />
           <Video />
         </div>
       </StyledImageBox>
