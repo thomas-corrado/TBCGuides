@@ -1,7 +1,6 @@
 import Head from "next/head";
 import FrontPage from "../components/frontPage";
 import Header from "../components/header";
-import Video from "../components/video";
 
 export default function Home() {
   return (
@@ -15,8 +14,6 @@ export default function Home() {
 
         <main>
           <FrontPage />
-          <Header />
-          <Video />
         </main>
       </div>
     </div>

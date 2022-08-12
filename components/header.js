@@ -6,7 +6,6 @@ import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import Link from "next/link";
 import Hamburger from "hamburger-react";
-import { styled } from "@washingtonpost/wpds-ui-kit";
 import { Box } from "@mui/system";
 
 const headersData = [
@@ -41,11 +40,9 @@ const Header = () => {
 
   const [state, setState] = useState({
     mobileView: false,
-    drawerOpen: false,
-    buttonOpen: false,
   });
 
-  const { mobileView, drawerOpen, buttonOpen } = state;
+  const { mobileView } = state;
 
   useEffect(() => {
     const setResponsiveness = () => {
@@ -79,7 +76,7 @@ const Header = () => {
         >
           <h2
             style={{
-              color: "#9D0208",
+              color: "#023047",
               fontFamily: "Antonio",
               fontSize: "1.5rem",
             }}
@@ -106,9 +103,9 @@ const Header = () => {
               disableRipple
               sx={{
                 fontFamily: "Antonio",
-                fontSize: window.innerWidth > 360 ? "3rem" : "1.5rem",
-                lineHeight: window.innerWidth > 300 ? "6rem" : "2rem",
-                color: "#9D0208",
+                fontSize: "3rem",
+                lineHeight: "6rem",
+                color: "#023047",
                 width: "100%",
                 "&:hover": {
                   backgroundColor: "transparent",
@@ -156,7 +153,7 @@ const Header = () => {
             top: "1rem",
           }}
         >
-          <Hamburger toggled={isOpen} toggle={setOpen} color="#9D0208" />
+          <Hamburger toggled={isOpen} toggle={setOpen} color="#023047" />
         </div>
 
         <Drawer
@@ -169,7 +166,7 @@ const Header = () => {
           sx={{
             zIndex: "3",
             "& .MuiPaper-root": {
-              background: "#FAA307",
+              background: "white",
               boxShadow: "none",
               width: "100vw",
             },
@@ -204,31 +201,52 @@ const Header = () => {
 
   const displayDesktop = () => {
     return (
-      <div
-        style={{
-          float: "right",
-          marginTop: "4.4rem",
-          marginRight: "0",
-          paddingRight: "1rem",
-        }}
-      >
-        {getMenuButtons()}
-      </div>
+     
+        <div
+          style={{
+            float: "right",
+            marginTop: "4.8rem",
+            marginRight: "0",
+            paddingRight: "1rem",
+          }}
+        >
+          {getMenuButtons()}
+        </div>
+      
     );
   };
 
   return (
     <div>
-      <style jsx>{`
-        @media (max-width: 600px) {
-          h1 {
-            font-size: 4rem;
-            line-height: 4rem;
-            width: 10px;
+      <div
+        className="headerBackground"
+        style={{
+          width: "100vw",
+          backgroundColor: "#8ECAE6",
+
+          position: "absolute",
+        }}
+      >
+        <style jsx>{`
+          .headerBackground {
+            height: 10.5rem;
           }
-        }
-      `}</style>
-      {mobileView ? displayMobile() : displayDesktop()}
+          @media (max-width: 600px) {
+            h1 {
+              font-size: 4rem;
+              line-height: 4rem;
+              width: 10px;
+            }
+          }
+
+          @media (max-width: 450px) {
+            .headerBackground {
+              height: 8.5rem;
+            }
+          }
+        `}</style>
+        {mobileView ? displayMobile() : displayDesktop()}
+      </div>
     </div>
   );
 };
