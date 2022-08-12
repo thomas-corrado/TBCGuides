@@ -2,8 +2,6 @@ import * as React from "react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import Link from "next/link";
@@ -38,20 +36,13 @@ const headersData = [
   },
 ];
 
-const StyledHamburger = styled(Hamburger, {
-  color: "rgb(18, 49, 43)",
-  position: "absolute",
-  left: "calc(100vw - 4rem)",
-});
-
-
 const Header = () => {
   const router = useRouter();
 
   const [state, setState] = useState({
     mobileView: false,
     drawerOpen: false,
-    buttonOpen: false
+    buttonOpen: false,
   });
 
   const { mobileView, drawerOpen, buttonOpen } = state;
@@ -79,7 +70,7 @@ const Header = () => {
           onClick={() => router.push(`${href}`)}
           disableTouchRipple
           sx={{
-            color: "rgb(71, 45, 48)",
+            zIndex: "3",
             marginRight: "2rem",
             "&.MuiButtonBase-root:hover": {
               bgcolor: "transparent",
@@ -88,7 +79,7 @@ const Header = () => {
         >
           <h2
             style={{
-              color: "rgb(71, 45, 48)",
+              color: "#9D0208",
               fontFamily: "Antonio",
               fontSize: "1.5rem",
             }}
@@ -115,11 +106,10 @@ const Header = () => {
               disableRipple
               sx={{
                 fontFamily: "Antonio",
-                fontSize: window.innerWidth > 360 ? "1.5rem" : "1.5rem",
-                lineHeight: window.innerWidth > 300 ? "3rem" : "2rem",
-                color: "rgb(71, 45, 48)",
+                fontSize: window.innerWidth > 360 ? "3rem" : "1.5rem",
+                lineHeight: window.innerWidth > 300 ? "6rem" : "2rem",
+                color: "#9D0208",
                 width: "100%",
-
                 "&:hover": {
                   backgroundColor: "transparent",
                 },
@@ -143,21 +133,19 @@ const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
   const displayMobile = () => {
-      
     const handleDrawerClose = () => {
       setState((prevState) => ({
         ...prevState,
         drawerOpen: false,
         buttonOpen: false,
       }));
-    }
-      
+    };
+
     return (
       <div
         style={{
           top: "1.5rem",
           position: "absolute",
-          
         }}
       >
         <div
@@ -165,9 +153,10 @@ const Header = () => {
             position: "absolute",
             left: "calc(100vw - 4rem)",
             zIndex: "4",
+            top: "1rem",
           }}
         >
-          <Hamburger toggled={isOpen} toggle={setOpen} color="#472D30" />
+          <Hamburger toggled={isOpen} toggle={setOpen} color="#9D0208" />
         </div>
 
         <Drawer
@@ -179,12 +168,10 @@ const Header = () => {
           disableRipple
           sx={{
             zIndex: "3",
-            top: "10",
             "& .MuiPaper-root": {
-              background: "white",
+              background: "#FAA307",
               boxShadow: "none",
               width: "100vw",
-              
             },
             "& .MuiBackdrop-root": {
               background: "none",
@@ -194,12 +181,21 @@ const Header = () => {
         >
           <div
             style={{
-              top: "25vh",
-              position: "relative",
+              height: "100%",
+              width: "100vw",
+              position: "absolute",
               fontFamily: "Antonio",
             }}
           >
-            {getDrawerChoices()}
+            <Box
+              sx={{
+                position: "relative",
+                top: "50%",
+                transform: "translateY(-50%)",
+              }}
+            >
+              {getDrawerChoices()}
+            </Box>
           </div>
         </Drawer>
       </div>
@@ -210,10 +206,10 @@ const Header = () => {
     return (
       <div
         style={{
-          float: "right", 
+          float: "right",
           marginTop: "4.4rem",
-          marginRight: "0", 
-          paddingRight: "1rem"
+          marginRight: "0",
+          paddingRight: "1rem",
         }}
       >
         {getMenuButtons()}

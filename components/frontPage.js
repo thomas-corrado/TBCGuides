@@ -2,17 +2,14 @@ import * as React from "react";
 import Image from "next/image";
 import { Box } from "@mui/system";
 import { styled } from "@washingtonpost/wpds-ui-kit";
+import Video from "./video";
 
 const StyledImageBox = styled(Box, {
   position: "absolute",
   width: "100vw",
   height: "100vh",
   overflow: "hidden",
-});
-
-const StyledImage = styled(Image, {
-  opacity: 1,
-  position: "absolute",
+  zIndex: "3",
 });
 
 const FrontPage = () => {
@@ -21,9 +18,8 @@ const FrontPage = () => {
       <StyledImageBox>
         <style global jsx>{`
           h1 {
-            color: rgb(71, 45, 48);
+            color: #9D0208;
             font-size: 4rem;
-            z-index: 1;
             font-family: Antonio;
             line-height: 4rem;
             padding-left: 4.5rem;
