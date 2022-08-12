@@ -60,9 +60,10 @@ export default function Video() {
         .video {
           position: relative;
           width: 100vw;
-          height: calc(70vh - 12vw);
+          height: 30rem;
           overflow: hidden;
           object-fit: cover;
+  
         }
       `}</style>
       <div

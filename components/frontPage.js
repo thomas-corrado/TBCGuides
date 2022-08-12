@@ -20,7 +20,6 @@ const StyledWelcome = styled("h1", {
   textAlign: "center",
   top: "40%",
   transform: "translateY(-50%)",
-
   position: "absolute",
   zIndex: 3
 });
@@ -72,45 +71,49 @@ const FrontPage = () => {
             padding-right: 5rem;
             display: flex;
             width: 100%;
+            height: 30rem;
             justify-content: center;
+            position: absolute;
+            top: 10.5rem;
+            z-index: 99;
           }
 
           .welcome {
             font-size: 4rem;
+            top: 45%;
+            transform: translateY(-50%);
+          }
+
+          @media (max-height: 530px) {
+            .welcome {
+              font-size: 2.5rem;
+              line-height: 3rem;
+              padding-bottom: 10px;
+            }
           }
 
           @media (max-width: 1150px) {
-            h1 {
-              padding-left: 2rem;
-            }
             .welcome-container {
               padding-right: 3rem;
-            }
-            .welcome {
-              padding-top: 5rem;
-            }
-          }
-
-          @media (max-width: 790px) {
-            .welcome {
-              padding-top: 5rem;
             }
           }
 
           @media (max-width: 700px) {
-            h1 {
-              font-size: 3.5rem;
-              line-height: 4rem;
-              padding-left: 2rem;
-            }
             .welcome {
               font-size: 3.5rem;
             }
           }
 
-          @media (max-width: 544px) {
+          @media (max-width: 620px) {
             .welcome {
-              padding-top: 9rem;
+              font-size: 3rem;
+            }
+          }
+
+          @media (max-width: 519px) {
+            .welcome {
+              font-size: 2.5rem;
+              line-height: 3rem;
             }
           }
 
@@ -121,9 +124,12 @@ const FrontPage = () => {
               padding-left: 2rem;
               top: -0.2rem;
             }
-            .welcome {
-              line-height: 4rem;
-              padding-top: 5rem;
+            .video-container {
+              top: 8.5rem;
+              margin-top: -0.3rem;
+            }
+            .welcome-container {
+              top: 8.5rem;
             }
           }
 
