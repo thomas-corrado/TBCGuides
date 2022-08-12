@@ -1,46 +1,42 @@
 
-import { Translate } from "@mui/icons-material";
 import * as React from "react";
+import Image from "next/image";
+import { Box } from "@mui/system";
+import { styled } from "@washingtonpost/wpds-ui-kit";
+
+const StyledImageBox = styled(Box, {
+  position: "absolute",
+  width: "100vw",
+  height: "100vh",
+  overflow: "hidden",
+});
 
 const Video = () => {
   return (
-    <div className="video-container">
-      <style jsx>{`
-        .video-container {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-        }
+    <div>
+      {/* <StyledImageBox>
+        <style jsx>{`
 
-        .video-overlay {
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          background-color: white;
-          opacity: 0.6;
-          z-index: 2;
-        }
-
-        .video-container video {
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          object-fit: cover;
-        }
-      `}</style>
-      <div className="video-overlay" />
-      <video muted autoPlay={"autoplay"} loop>
-        <source
-          type="video/mp4"
-          src={require("../public/LargeBackground.mp4")}
-        ></source>
-      </video>
+          .video-overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: white;
+            opacity: 0.8;
+            z-index: 2;
+          }
+    
+        `}</style>
+        <div className="video-overlay" />
+        <Image
+          priority
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          src={require("../public/DJI_0596_MOV_AdobeExpress.gif")}
+          alt="Background Image"
+        />
+      </StyledImageBox> */}
     </div>
   );
 };

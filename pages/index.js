@@ -16,7 +16,7 @@ export default function Home() {
         <main>
           <FrontPage />
           <Header />
-          <Video />
+       
         </main>
       </div>
     </div>
