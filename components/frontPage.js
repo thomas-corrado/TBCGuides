@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Box } from "@mui/system";
 import { styled } from "@washingtonpost/wpds-ui-kit";
-import ImageBackgroundOne from "./image-background-one";
+import Video from "./image-background-one";
 import Header from "./header";
 import WelcomeText from "./welcome-text";
 
@@ -67,8 +67,8 @@ const FrontPage = () => {
         >
           <h1>Hanover Guides</h1>
         </div>
-        
-        <ImageBackgroundOne />
+
+        <Video />
       </StyledImageBox>
       <Header />
     </div>

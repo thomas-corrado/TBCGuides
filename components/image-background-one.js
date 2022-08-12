@@ -1,77 +1,70 @@
+import { useRef, useState, useEffect } from "react";
 
-import * as React from "react";
-import Image from "next/image";
-import { Box } from "@mui/system";
-import { styled } from "@washingtonpost/wpds-ui-kit";
-
-const StyledImageBox = styled(Box, {
-  position: "relative",
-  width: "100vw",
-  height: "calc(70vh - 12vw)",
-  overflow: "hidden",
-});
-
-const StyledCoverBox = styled(Box, {
-  position: "relative",
-  width: "100vw",
-  height: "calc(70vh - 12vw)",
-  overflow: "hidden",
-  backgroundColor: "white",
-  opacity: 0.8,
-  zIndex: 3,
-});
-
-
-const ImageBackgroundOne = () => {
-  return (
-    <div>
-      <StyledImageBox className="imageBox">
-        <div style={{}}>
-          <video
-            sx={{
-              objectFit: "cover",
-              layout: "fill",
-            }}
-            autoPlay
-            muted
-            playsinline
-            loop
-          >
-            <source
-              src="https://luciana-website.vercel.app/assets/luciana.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-
-        <style global jsx>{`
-          .imageBox {
-            margin-top: -1rem;
-          }
-
-          @media (max-width: 700px) {
-            .imageBox {
-              margin-top: -0.7rem;
-            }
-          }
-
-          @media (max-width: 450px) {
-            .imageBox {
-              margin-top: -0.3rem;
-            }
-          }
-
-          @media (max-width: 375px) {
-            .imageBox {
-              margin-top: -0.1rem;
-            }
-          }
-        `}</style>
-      </StyledImageBox>
-    </div>
-  );
+const isSafari = () => {
+  const ua = navigator.userAgent.toLowerCase();
+  return ua.indexOf("safari") > -1 && ua.indexOf("chrome") < 0;
 };
 
-export default ImageBackgroundOne;
+const mainVideo =
+  "https://res.cloudinary.com/joinshelf/video/upload/v1650876909/luciana_e1vp7u.mp4";
 
+export default function Video() {
+  const videoParentRef = useRef();
+  const [shouldUseImage, setShouldUseImage] = useState(false);
+  useEffect(() => {
+    // check if user agent is safari and we have the ref to the container <div />
+    if (isSafari() && videoParentRef.current) {
+      // obtain reference to the video element
+      const player = videoParentRef.current.children[0];
 
+      // if the reference to video player has been obtained
+      if (player) {
+        // set the video attributes using javascript as per the
+        // webkit Policy
+        player.controls = false;
+        player.playsinline = true;
+        player.muted = true;
+        player.setAttribute("muted", ""); // leave no stones unturned :)
+        player.autoplay = true;
+
+        // Let's wait for an event loop tick and be async.
+        setTimeout(() => {
+          // player.play() might return a promise but it's not guaranteed crossbrowser.
+          const promise = player.play();
+          // let's play safe to ensure that if we do have a promise
+          if (promise.then) {
+            promise
+              .then(() => {})
+              .catch(() => {
+                // if promise fails, hide the video and fallback to <img> tag
+                videoParentRef.current.style.display = "none";
+                setShouldUseImage(true);
+              });
+          }
+        }, 0);
+      }
+    }
+  }, []);
+
+  return shouldUseImage ? (
+    <img src={mainVideo} alt="Muted Video" />
+  ) : (
+    <div
+      ref={videoParentRef}
+      dangerouslySetInnerHTML={{
+        __html: `
+        <video
+          loop
+          muted
+          autoplay
+          playsinline
+          preload="metadata"
+          class='w-screen h-screen -z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover'
+          src="${mainVideo}"
+          type="video/mp4"
+        >
+        </video>`,
+      }}
+    />
+  );
+}
