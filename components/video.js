@@ -35,12 +35,12 @@ const Video = () => {
         }
       `}</style>
       <div className="video-overlay" />
-      <video
-        src={require("../public/LargeBackground.mp4")}
-        muted
-        autoPlay={"autoplay"}
-        loop
-      ></video>
+      <video muted autoPlay={"autoplay"} loop>
+        <source
+          type="video/mp4"
+          src={require("../public/LargeBackground.mp4")}
+        ></source>
+      </video>
     </div>
   );
 };
