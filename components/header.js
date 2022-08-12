@@ -103,9 +103,9 @@ const Header = () => {
               disableRipple
               sx={{
                 fontFamily: "Antonio",
-                fontSize: window.innerWidth > 360 ? "3rem" : "1.5rem",
-                lineHeight: window.innerWidth > 300 ? "6rem" : "2rem",
-                color: "#9D0208",
+                fontSize: "3rem",
+                lineHeight: "6rem",
+                color: "#023047",
                 width: "100%",
                 "&:hover": {
                   backgroundColor: "transparent",
@@ -166,7 +166,7 @@ const Header = () => {
           sx={{
             zIndex: "3",
             "& .MuiPaper-root": {
-              background: "#FAA307",
+              background: "white",
               boxShadow: "none",
               width: "100vw",
             },
@@ -223,7 +223,7 @@ const Header = () => {
         style={{
           width: "100vw",
           backgroundColor: "#8ECAE6",
-          zIndex: "2",
+
           position: "absolute",
         }}
       >
