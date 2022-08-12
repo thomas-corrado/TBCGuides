@@ -90,6 +90,11 @@ const WelcomeText = () => {
               margin-top: 45px; 
                margin-right: 1.2rem
             }
+
+            @media (max-width: 410px) {
+            .welcome {
+               margin-right: 2.1rem
+            }
           }
           `}</style>
           <StyledWelcome className="welcome">
