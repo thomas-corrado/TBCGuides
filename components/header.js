@@ -10,12 +10,8 @@ import { Box } from "@mui/system";
 
 const headersData = [
   {
-    label: "Home",
-    href: "/",
-  },
-  {
     label: "About",
-    href: "/about",
+    href: "/",
   },
   {
     label: "Reservations",
@@ -46,7 +42,7 @@ const Header = () => {
 
   useEffect(() => {
     const setResponsiveness = () => {
-      return window.innerWidth < 1150
+      return window.innerWidth < 1030
         ? setState((prevState) => ({ ...prevState, mobileView: true }))
         : setState((prevState) => ({ ...prevState, mobileView: false }));
     };
@@ -76,7 +72,7 @@ const Header = () => {
         >
           <h2
             style={{
-              color: "#023047",
+              color: "black",
               fontFamily: "Antonio",
               fontSize: "1.5rem",
             }}
@@ -103,9 +99,9 @@ const Header = () => {
               disableRipple
               sx={{
                 fontFamily: "Antonio",
-                fontSize: "3rem",
-                lineHeight: "6rem",
-                color: "#023047",
+                fontSize: "2rem",
+                lineHeight: "3rem",
+                color: "black",
                 width: "100%",
                 "&:hover": {
                   backgroundColor: "transparent",
@@ -128,6 +124,8 @@ const Header = () => {
   };
 
   const [isOpen, setOpen] = useState(false);
+
+  
 
   const displayMobile = () => {
     const handleDrawerClose = () => {
@@ -158,7 +156,7 @@ const Header = () => {
 
         <Drawer
           {...{
-            anchor: "right",
+            anchor: "top",
             open: isOpen,
             onClose: handleDrawerClose,
           }}
@@ -169,6 +167,7 @@ const Header = () => {
               background: "white",
               boxShadow: "none",
               width: "100vw",
+              height: "100%",
             },
             "& .MuiBackdrop-root": {
               background: "none",
@@ -180,15 +179,16 @@ const Header = () => {
             style={{
               height: "100%",
               width: "100vw",
-              position: "absolute",
+              position: "relative",
               fontFamily: "Antonio",
             }}
           >
             <Box
               sx={{
+                width: "auto",
                 position: "relative",
-                top: "50%",
-                transform: "translateY(-50%)",
+                top: "15%",
+               
               }}
             >
               {getDrawerChoices()}
@@ -222,7 +222,7 @@ const Header = () => {
         className="headerBackground"
         style={{
           width: "100vw",
-          backgroundColor: "#8ECAE6",
+          backgroundColor: "#F6F6F6",
 
           position: "absolute",
         }}

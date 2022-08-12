@@ -4,6 +4,7 @@ import { styled } from "@washingtonpost/wpds-ui-kit";
 import Video from "./video";
 import Header from "./header";
 import { useEffect, useState } from "react";
+import Experience from "./experience";
 
 const StyledImageBox = styled(Box, {
   position: "absolute",
@@ -15,12 +16,11 @@ const StyledImageBox = styled(Box, {
 });
 
 const StyledWelcome = styled("h2", {
-  color: "white",
-  fontFamily: "Lobster",
+  color: "black",
+  fontFamily: "Raleway",
   textAlign: "center",
-  
   position: "absolute",
-  zIndex: 3
+  zIndex: 3,
 });
 
 const FrontPage = () => {
@@ -53,8 +53,11 @@ const FrontPage = () => {
     <div>
       <StyledImageBox>
         <style global jsx>{`
+          body {
+            overflow-x: hidden;
+          }
           h1 {
-            color: #023047;
+            color: #black;
             font-size: 4rem;
             font-family: Antonio;
             line-height: 4rem;
@@ -70,7 +73,7 @@ const FrontPage = () => {
             position: absolute;
             width: 100vw;
             height: calc(30rem);
-            background-color: #0e5a11;
+            background-color: white;
             z-index: 3;
             opacity: 0.5;
           }
@@ -92,19 +95,19 @@ const FrontPage = () => {
             transform: translateY(-50%);
           }
 
-          @media (max-width: 700px) {
+          @media (max-width: 765px) {
             .welcome {
               font-size: 3.5rem;
             }
           }
 
-          @media (max-width: 620px) {
+          @media (max-width: 700px) {
             .welcome {
               font-size: 3rem;
             }
           }
 
-          @media (max-width: 519px) {
+          @media (max-width: 600px) {
             .welcome {
               font-size: 2.5rem;
               line-height: 3rem;
@@ -153,6 +156,16 @@ const FrontPage = () => {
               padding-left: 11vw;
               justify-content: center;
             }
+          }
+
+          @media (max-width: 315px) {
+          
+            .welcome {
+              font-size: 2rem;
+              line-height: 2.5rem;
+              top: 42%;
+            }
+          
           }
         `}</style>
         <div
