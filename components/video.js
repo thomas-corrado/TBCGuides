@@ -37,8 +37,8 @@ const Video = () => {
       <div className="video-overlay" />
       <video
         src={require("../public/LargeBackground.mp4")}
-        autoPlay
-        loop
+        autoPlay="autoplay"
+        loop="loop"
         muted
       ></video>
     </div>
