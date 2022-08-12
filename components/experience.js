@@ -15,6 +15,7 @@ const StyledDesktopExperienceBox = styled("div", {
    width: "100vw", 
    height: "auto", 
    position: "absolute", 
+   
 })
 
 const StyledFishingExperienceText = styled("h3", {
@@ -24,7 +25,7 @@ const StyledFishingExperienceText = styled("h3", {
   top: "41rem",
   zIndex: 3,
   left: "5.5rem",
-  fontFamily: "Raleway"
+  fontFamily: "Raleway",
 });
 
 const StyledHarpoonImageBox = styled("div", {

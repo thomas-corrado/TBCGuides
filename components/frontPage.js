@@ -9,8 +9,6 @@ import Experience from "./experience";
 const StyledImageBox = styled(Box, {
   position: "absolute",
   width: "100vw",
-  height: "100vh",
-  overflow: "hidden",
   zIndex: "3",
   marginBottom: "0"
 });
@@ -67,6 +65,7 @@ const FrontPage = () => {
 
           .video-container {
             margin-top: -1rem;
+            height: calc(50rem);
           }
 
           .video-cover {
@@ -159,13 +158,11 @@ const FrontPage = () => {
           }
 
           @media (max-width: 315px) {
-          
             .welcome {
               font-size: 2rem;
               line-height: 2.5rem;
               top: 42%;
             }
-          
           }
         `}</style>
         <div
