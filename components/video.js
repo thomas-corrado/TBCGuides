@@ -66,7 +66,6 @@ export default function Video() {
         }
       `}</style>
       <div
-      className="video"
         ref={videoParentRef}
         dangerouslySetInnerHTML={{
           __html: `
@@ -76,9 +75,9 @@ export default function Video() {
           autoplay
           playsinline
           preload="metadata"
-          class='w-screen h-screen -z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover'
           src="${mainVideo}"
           type="video/mp4"
+          class="video"
         >
         </video>`,
         }}
