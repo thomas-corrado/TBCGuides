@@ -65,7 +65,8 @@ const FrontPage = () => {
 
           .video-container {
             margin-top: -1rem;
-            height: calc(50rem);
+            height: calc(30rem);
+            overflow: hidden; 
           }
 
           .video-cover {
