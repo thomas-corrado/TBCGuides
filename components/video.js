@@ -45,18 +45,8 @@ export default function Video() {
     }
   }, []);
 
-  return shouldUseImage ? (
-    <div
-      style={{
-        width: "100vw",
-        heigth: "30rem",
-        objectFit: "cover",
-        overflow: "hidden",
-        backgroundColor: "white"
-      }}
-    />
-  ) : (
-    <div
+  return (
+<div
       style={{
         width: "100vw",
         heigth: "30rem",
@@ -93,5 +83,5 @@ export default function Video() {
       />
       <div />
     </div>
-  );
+  )
 }
