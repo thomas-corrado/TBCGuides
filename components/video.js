@@ -38,7 +38,6 @@ export default function Video() {
               .catch(() => {
                 // if promise fails, hide the video and fallback to <img> tag
                 videoParentRef.current.style.display = "none";
-                setShouldUseImage(true);
               });
           }
         }, 0);
