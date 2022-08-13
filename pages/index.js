@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Experience from "../components/experience";
 import FrontPage from "../components/frontPage";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
 
         <main>
           <FrontPage />
+          <Experience />
         </main>
       </div>
     </div>
