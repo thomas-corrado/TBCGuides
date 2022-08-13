@@ -159,6 +159,7 @@ const Header = () => {
             anchor: "top",
             open: isOpen,
             onClose: handleDrawerClose,
+            transitionDuration: 700, 
           }}
           disableRipple
           sx={{
@@ -188,7 +189,6 @@ const Header = () => {
                 width: "auto",
                 position: "relative",
                 top: "15%",
-               
               }}
             >
               {getDrawerChoices()}

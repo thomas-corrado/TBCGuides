@@ -92,6 +92,7 @@ const FrontPage = () => {
             font-size: 4rem;
             top: 37%;
             transform: translateY(-50%);
+            font-weight: 600;
           }
 
           @media (max-width: 765px) {
@@ -113,7 +114,7 @@ const FrontPage = () => {
             }
           }
 
-          @media (max-width: 450px) {
+          @media (max-width: 500px) {
             h1 {
               font-size: 3rem;
               line-height: 3rem;

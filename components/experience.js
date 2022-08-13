@@ -11,61 +11,6 @@ import Divider from "@mui/material/Divider";
   Harpoon icons created by Freepik - Flaticon
 </a>; */}
 
-const StyledDesktopExperienceBox = styled("div", {
-   width: "100vw", 
-   height: "auto", 
-   position: "absolute", 
-   
-})
-
-const StyledFishingExperienceText = styled("h3", {
-  color: "black",
-  position: "relative",
-  fontSize: "2.5rem",
-  top: "41rem",
-  zIndex: 3,
-  left: "5.5rem",
-  fontFamily: "Raleway",
-});
-
-const StyledHarpoonImageBox = styled("div", {
-  position: "absolute",
-  display: "flex",
-  top: "48rem",
-  left: "6rem",
-  zIndex: 5
-});
-
-const StyledDescriptionBox = styled("div", {
-  color: "black",
-  left: "5.5rem",
-  position: "absolute",
-  top: "48rem",
-  fontSize: "1.3rem",
-  width: "90vw",
-  height: "auto",
-  backgroundColor: "#F6F6F6",
-  display: "flex",
-  alignContent: "center",
-  paddingRight: "2rem",
-});
-
-const StyledDescriptionText = styled("p", {
-  color: "black",
-  fontSize: "1.3rem",
-  display: "flex",
-  justifyContent: "center",
-  alignContent: "center",
-  lineHeight: "calc(1rem + (4rem - 1.5vw))",
-  
-});
-
-const StyledMichaelImageBoxTwo = styled(Box, {
-  width: "80vw",
-  height: "50rem",
-  position: "absolute",
-});
-
 const Experience = () => {
 
     const [state, setState] = useState({
@@ -92,30 +37,99 @@ const Experience = () => {
       };
     }, []);
 
+    console.log(innerWidth)
+
+    const StyledDesktopExperienceBox = styled("div", {
+      width: "100vw",
+      height: "auto",
+      position: "absolute",
+    });
+
+    const StyledFishingExperienceTitle = styled("h3", {
+      color: "black",
+      position: "relative",
+      fontSize: innerWidth > 440 ? "2.5rem" : "2rem",
+      top: innerWidth > 500 ? "41rem" : "39rem",
+      zIndex: 3,
+      left: innerWidth > 722 ? "5.5rem" : innerWidth > 526 ? "4rem" : "2.5rem",
+      fontFamily: "Raleway",
+      width: innerWidth > 722 ? "80vw" : innerWidth > 351 ? "78vw" : "80vw",
+    });
+
+    const StyledDescriptionBox = styled("div", {
+      color: "black",
+      left: innerWidth > 722 ? "5.5rem" : innerWidth > 526 ? "4rem" : "2.5rem",
+      position: "absolute",
+      top:
+        innerWidth > 722
+          ? "48rem"
+          : innerWidth > 500
+          ? "51rem"
+          : innerWidth > 440
+          ? "48rem"
+          : "47rem",
+      width: innerWidth > 768 ? "85vw" : "75vw",
+      height: "auto",
+      backgroundColor: "#F6F6F6",
+      display: "flex",
+      alignContent: "center",
+    });
+
+    const StyledDescriptionText = styled("p", {
+      color: "black",
+      fontSize: innerWidth > 440 ? "1.3rem" : "1.1rem",
+      display: "flex",
+      justifyContent: "center",
+      alignContent: "center",
+      lineHeight: innerWidth > 722 ? "calc(1rem + (4rem - 1.5vw))" : "2.4rem",
+    });
+
+    const StyledDividerBoxOne = styled("div", {
+      position: "absolute",
+      display: "flex",
+      top:
+        innerWidth > 722
+          ? "48rem"
+          : innerWidth > 702
+          ? "51rem"
+          : innerWidth > 500
+          ? "51rem"
+          : innerWidth > 440
+          ? "48.5rem"
+          : "47rem",
+      left: innerWidth > 722 ? "6rem" : innerWidth > 526 ? "4rem" : "2.5rem",
+      zIndex: 5,
+    });
+
     const StyledMichaelImageBox = styled(Box, {
       display: "flex",
       justifyContent: "center",
       position: "absolute",
-      top: (innerWidth > 1268 ? "55rem" : "59.5rem"),
-
+      top: (innerWidth > 1268 ? "55rem" : innerWidth > 752 ? "59.5rem" : innerWidth > 722 ? "64rem" : innerWidth > 619 ? "62rem" : innerWidth > 500 ? "63rem" : innerWidth > 440 ? "61rem" : innerWidth > 339 ? "59rem" : "62rem"),
       width: "100vw",
       height: "40rem",
       overflow: "hidden",
     });
 
+    const StyledMichaelImageBoxTwo = styled(Box, {
+      width: "80vw",
+      height: "50rem",
+      position: "absolute",
+    });
+
     const dislayDesktop = () => {
         return (
           <StyledDesktopExperienceBox>
-            <StyledFishingExperienceText>
+            <StyledFishingExperienceTitle>
               The Finest Fishing Experience
-            </StyledFishingExperienceText>
-            <StyledHarpoonImageBox>
+            </StyledFishingExperienceTitle>
+            <StyledDividerBoxOne>
               <Divider
                 sx={{
-                  width: "25rem",
+                  width: innerWidth > 526 ? "25rem" : "15rem",
                 }}
               />
-            </StyledHarpoonImageBox>
+            </StyledDividerBoxOne>
             <StyledMichaelImageBox>
               <StyledMichaelImageBoxTwo>
                 <Image
@@ -148,7 +162,7 @@ const Experience = () => {
     };
 
 
-    return <div>{mobileView ? dislayMobile() : dislayDesktop()}</div>;
+    return <div>{dislayDesktop()}</div>;
 }
 
 export default Experience
