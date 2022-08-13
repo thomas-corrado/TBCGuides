@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 
 const isSafari = () => {
@@ -48,14 +47,22 @@ export default function Video() {
   }, []);
 
   return shouldUseImage ? (
-    <Image src={mainVideo} alt="Muted Video" />
+    <div
+      style={{
+        width: "100vw",
+        heigth: "30rem",
+        objectFit: "cover",
+        overflow: "hidden",
+        backgroundColor: "white"
+      }}
+    />
   ) : (
     <div
       style={{
         width: "100vw",
         heigth: "30rem",
         objectFit: "cover",
-        overflow: "hidden"
+        overflow: "hidden",
       }}
     >
       <style global jsx>{`
@@ -66,7 +73,6 @@ export default function Video() {
           overflow: hidden;
           object-fit: cover;
         }
-
       `}</style>
       <div className="video-cover" />
       <div
