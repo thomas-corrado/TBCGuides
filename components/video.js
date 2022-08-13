@@ -54,6 +54,7 @@ export default function Video() {
         width: "100vw",
         heigth: "30rem",
         objectFit: "cover",
+        overflow: "hidden"
       }}
     >
       <style global jsx>{`
