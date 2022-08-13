@@ -38,6 +38,7 @@ export default function Video() {
               .catch(() => {
                 // if promise fails, hide the video and fallback to <img> tag
                 videoParentRef.current.style.display = "none";
+                setShouldUseImage(true);
               });
           }
         }, 0);
@@ -45,13 +46,14 @@ export default function Video() {
     }
   }, []);
 
-  return (
-<div
+  return shouldUseImage ? (
+    <img src={mainVideo} alt="Muted Video" />
+  ) : (
+    <div
       style={{
         width: "100vw",
-        heigth: "30rem",
+        heigth: "100vh",
         objectFit: "cover",
-        overflow: "hidden",
       }}
     >
       <style global jsx>{`
@@ -62,6 +64,7 @@ export default function Video() {
           overflow: hidden;
           object-fit: cover;
         }
+
       `}</style>
       <div className="video-cover" />
       <div
@@ -83,5 +86,5 @@ export default function Video() {
       />
       <div />
     </div>
-  )
+  );
 }
