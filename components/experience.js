@@ -2,14 +2,8 @@ import * as React from "react";
 import { Box } from "@mui/system";
 import { styled } from "@washingtonpost/wpds-ui-kit";
 import { useEffect, useState } from "react";
-import PhishingIcon from "@mui/icons-material/Phishing";
 import Image from "next/image";
 import Divider from "@mui/material/Divider";
-
-// Harpoon Icon: 
-{/* <a href="https://www.flaticon.com/free-icons/harpoon" title="harpoon icons">
-  Harpoon icons created by Freepik - Flaticon
-</a>; */}
 
 const Experience = () => {
 
@@ -113,7 +107,7 @@ const Experience = () => {
 
     const StyledMichaelImageBoxTwo = styled(Box, {
       width: "80vw",
-      height: "50rem",
+      height: innerWidth > 527 ? "50rem" : "25rem",
       position: "absolute",
     });
 

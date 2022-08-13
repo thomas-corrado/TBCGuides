@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 
 const isSafari = () => {
@@ -47,7 +48,7 @@ export default function Video() {
   }, []);
 
   return shouldUseImage ? (
-    <img src={mainVideo} alt="Muted Video" />
+    <Image src={mainVideo} alt="Muted Video" />
   ) : (
     <div
       style={{
