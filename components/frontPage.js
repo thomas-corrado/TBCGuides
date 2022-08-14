@@ -54,7 +54,7 @@ const FrontPage = () => {
       <StyledImageBox>
         <style global jsx>{`
           h1 {
-            color: #023047;
+            color: black;
             font-size: 4rem;
             font-family: Antonio;
             line-height: 4rem;
