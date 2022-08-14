@@ -25,10 +25,6 @@ const headersData = [
     label: "Gallery",
     href: "/gallery",
   },
-  {
-    label: "Testimonials",
-    href: "/testimonials",
-  },
 ];
 
 const Header = () => {
@@ -42,7 +38,7 @@ const Header = () => {
 
   useEffect(() => {
     const setResponsiveness = () => {
-      return window.innerWidth < 1030
+      return window.innerWidth < 930
         ? setState((prevState) => ({ ...prevState, mobileView: true }))
         : setState((prevState) => ({ ...prevState, mobileView: false }));
     };

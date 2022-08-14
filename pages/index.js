@@ -1,6 +1,7 @@
-import Head from "next/head";
-import Experience from "../components/experience";
+import Head from "next/head"
 import FrontPage from "../components/frontPage";
+import Experience from "../components/experience";
+import Adventure from "../components/adventure";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <main>
           <FrontPage />
           <Experience />
+          <Adventure/>
         </main>
       </div>
     </div>

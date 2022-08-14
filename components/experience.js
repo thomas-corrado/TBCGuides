@@ -31,12 +31,11 @@ const Experience = () => {
       };
     }, []);
 
-    console.log(innerWidth)
-
     const StyledDesktopExperienceBox = styled("div", {
       width: "100vw",
       height: "auto",
       position: "absolute",
+      
     });
 
     const StyledFishingExperienceTitle = styled("h3", {
@@ -47,10 +46,12 @@ const Experience = () => {
       zIndex: 3,
       left: innerWidth > 722 ? "5.5rem" : innerWidth > 526 ? "4rem" : "2.5rem",
       fontFamily: "Raleway",
-      width: innerWidth > 722 ? "80vw" : innerWidth > 351 ? "78vw" : "80vw",
+      width: innerWidth > 722 ? "80vw" : innerWidth > 351 ? "78vw" : "81vw",
+      paddingTop: "3rem",
     });
 
     const StyledDescriptionBox = styled("div", {
+      paddingTop: "3rem",
       color: "black",
       left: innerWidth > 722 ? "5.5rem" : innerWidth > 526 ? "4rem" : "2.5rem",
       position: "absolute",
@@ -61,7 +62,9 @@ const Experience = () => {
           ? "51rem"
           : innerWidth > 440
           ? "48rem"
-          : "47rem",
+          : innerWidth > 339
+          ? "47rem"
+          : "49rem",
       width: innerWidth > 768 ? "85vw" : "75vw",
       height: "auto",
       backgroundColor: "#F6F6F6",
@@ -79,6 +82,7 @@ const Experience = () => {
     });
 
     const StyledDividerBoxOne = styled("div", {
+      paddingTop: "3rem",
       position: "absolute",
       display: "flex",
       top:
@@ -90,8 +94,10 @@ const Experience = () => {
           ? "51rem"
           : innerWidth > 440
           ? "48.5rem"
-          : "47rem",
-      left: innerWidth > 722 ? "6rem" : innerWidth > 526 ? "4rem" : "2.5rem",
+          : innerWidth > 337
+          ? "47rem"
+          : "49rem",
+      left: innerWidth > 722 ? "5.5rem" : innerWidth > 526 ? "4rem" : "2.5rem",
       zIndex: 5,
     });
 
@@ -99,7 +105,22 @@ const Experience = () => {
       display: "flex",
       justifyContent: "center",
       position: "absolute",
-      top: (innerWidth > 1268 ? "55rem" : innerWidth > 752 ? "59.5rem" : innerWidth > 722 ? "64rem" : innerWidth > 619 ? "62rem" : innerWidth > 500 ? "63rem" : innerWidth > 440 ? "61rem" : innerWidth > 339 ? "59rem" : "62rem"),
+      top:
+        innerWidth > 1268
+          ? "58rem"
+          : innerWidth > 752
+          ? "61.5rem"
+          : innerWidth > 722
+          ? "66rem"
+          : innerWidth > 619
+          ? "64rem"
+          : innerWidth > 500
+          ? "66rem"
+          : innerWidth > 440
+          ? "63rem"
+          : innerWidth > 339
+          ? "62rem"
+          : "66rem",
       width: "100vw",
       height: "40rem",
       overflow: "hidden",
@@ -131,9 +152,8 @@ const Experience = () => {
                   layout="fill"
                   objectFit="cover"
                   quality={100}
-                  src={require("../public/Michael.jpg")}
+                  src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450079/Michael-2_rbkph1.jpg"
                   alt="Harpoon"
-                
                 />
               </StyledMichaelImageBoxTwo>
             </StyledMichaelImageBox>
@@ -146,15 +166,6 @@ const Experience = () => {
           </StyledDesktopExperienceBox>
         );
     }
-
-    const dislayMobile = () => {
-        return (
-            <div>
-
-            </div>
-        )
-    };
-
 
     return <div>{dislayDesktop()}</div>;
 }
