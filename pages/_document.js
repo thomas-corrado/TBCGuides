@@ -12,6 +12,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <style>{loader}</style>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
@@ -40,12 +41,9 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <head>
-          <style>{loader}</style>
-        </head>
         <body>
           <div id={"globalLoader"}>
-            <CircularProgress sx={{color: "black"}}/>
+            <CircularProgress sx={{ color: "black" }} />
           </div>
           <Main />
           <NextScript />
