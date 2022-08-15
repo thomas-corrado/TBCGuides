@@ -120,7 +120,7 @@ const Contact = () => {
                 }}
               >
 
-                    <a href="tel:+8282465616">Call Now</a>
+                    <a href="tel:+18282465616">Call Now</a>
 
               </Button>
               <p
@@ -199,7 +199,7 @@ const Contact = () => {
               width: "20rem",
               display: "flex",
               justifyContent: "center",
-              paddingLeft: innerWidth > 369 ? undefined : "2rem",
+              paddingLeft: innerWidth > 688 ? undefined : "2rem",
               paddingBottom: "1rem",
             }}
           >
