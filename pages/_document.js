@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import loader from "./loader";
 import CircularProgress from "@mui/material/CircularProgress";
 
 class MyDocument extends Document {
