@@ -1,6 +1,10 @@
-import Head from "next/head";
-import Experience from "../components/experience";
+import Head from "next/head"
 import FrontPage from "../components/frontPage";
+import Experience from "../components/experience";
+import Adventure from "../components/adventure";
+import Testiomonial from "../components/testimonial";
+import About from "../components/about";
+import Contact from "../components/contact";
 
 export default function Home() {
   return (
@@ -19,6 +23,10 @@ export default function Home() {
         <main>
           <FrontPage />
           <Experience />
+          <Adventure />
+          <Testiomonial />
+          <About />
+          <Contact />
         </main>
       </div>
     </div>

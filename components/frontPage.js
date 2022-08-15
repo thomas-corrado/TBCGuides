@@ -4,11 +4,12 @@ import { styled } from "@washingtonpost/wpds-ui-kit";
 import Video from "./video";
 import Header from "./header";
 import { useEffect, useState } from "react";
-import Experience from "./experience";
 
 const StyledImageBox = styled(Box, {
   position: "absolute",
   width: "100vw",
+  height: "100vh",
+  overflow: "hidden",
   zIndex: "3",
   marginBottom: "0"
 });
@@ -17,8 +18,9 @@ const StyledWelcome = styled("h2", {
   color: "black",
   fontFamily: "Raleway",
   textAlign: "center",
+  
   position: "absolute",
-  zIndex: 3,
+  zIndex: 3
 });
 
 const FrontPage = () => {
@@ -51,11 +53,8 @@ const FrontPage = () => {
     <div>
       <StyledImageBox>
         <style global jsx>{`
-          body {
-            overflow-x: hidden;
-          }
           h1 {
-            color: #black;
+            color: black;
             font-size: 4rem;
             font-family: Antonio;
             line-height: 4rem;
@@ -66,7 +65,7 @@ const FrontPage = () => {
           .video-container {
             margin-top: -1rem;
             height: calc(30rem);
-            overflow: hidden; 
+            overflow: hidden;
           }
 
           .video-cover {
@@ -93,29 +92,28 @@ const FrontPage = () => {
             font-size: 4rem;
             top: 37%;
             transform: translateY(-50%);
-            font-weight: 600;
           }
 
-          @media (max-width: 765px) {
+          @media (max-width: 700px) {
             .welcome {
               font-size: 3.5rem;
             }
           }
 
-          @media (max-width: 700px) {
+          @media (max-width: 620px) {
             .welcome {
               font-size: 3rem;
             }
           }
 
-          @media (max-width: 600px) {
+          @media (max-width: 519px) {
             .welcome {
               font-size: 2.5rem;
               line-height: 3rem;
             }
           }
 
-          @media (max-width: 500px) {
+          @media (max-width: 450px) {
             h1 {
               font-size: 3rem;
               line-height: 3rem;
@@ -156,14 +154,6 @@ const FrontPage = () => {
               width: 90vw;
               padding-left: 11vw;
               justify-content: center;
-            }
-          }
-
-          @media (max-width: 315px) {
-            .welcome {
-              font-size: 2rem;
-              line-height: 2.5rem;
-              top: 42%;
             }
           }
         `}</style>
