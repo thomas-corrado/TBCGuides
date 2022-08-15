@@ -82,10 +82,6 @@ display: block;
             href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap"
             rel="stylesheet"
           />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-            rel="stylesheet"
-          />
 
           <link
             href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
