@@ -3,6 +3,7 @@ import FrontPage from "../components/frontPage";
 import Experience from "../components/experience";
 import Adventure from "../components/adventure";
 import Testiomonial from "../components/testimonial";
+import About from "../components/about";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
           <Experience />
           <Adventure/>
           <Testiomonial/>
+          <About/>
         </main>
       </div>
     </div>

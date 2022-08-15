@@ -166,7 +166,7 @@ const Adventure = () => {
             }
           }
 
-          @media (max-width: 290px) {
+          @media (max-width: 303px) {
             .swiper {
               top: 16rem;
             }
@@ -226,16 +226,6 @@ const Adventure = () => {
           modules={[Pagination, Navigation]}
           className="swiper"
         >
-          <SwiperSlide className="swiper-slide">
-            <Image
-              priority
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450376/fish-holding-5_ugdypn.jpg"
-              alt={"image1"}
-            />
-          </SwiperSlide>
           <SwiperSlide className="swiper-slide">
             <Image
               priority

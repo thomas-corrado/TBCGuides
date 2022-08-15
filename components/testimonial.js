@@ -17,7 +17,7 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 const steps = [
   {
     writer: "- Mitch R",
-    description: `Simply put, Mike exceeded all expectations. My girlfriend and I went for a date night and had a blast! (and obviously caught fish!) All equipment was in exceptional condition, everything was communicated effectively and in a way that makes you feel as if you'd been fishing buddies for years. Can't recommend enough and will definitely be bringing a few friend's on another trip at some point!`,
+    description: `Simply put, Mike exceeded all expectations. My girlfriend and I went for a date night and had a blast! (and obviously caught fish!) All equipment was in exceptional condition, everything was communicated effectively and in a way that makes you feel as if you'd been fishing buddies for years. Can't recommend enough and will definitely be bringing a few friends on another trip at some point!`,
   },
   {
     writer: "- Tommy C",
@@ -87,13 +87,13 @@ const Testiomonial = () => {
           : innerWidth > 528
           ? "153rem"
           : innerWidth > 500
-          ? "140rem"
+          ? "138rem"
           : innerWidth > 484
           ? "137rem"
           : innerWidth > 439
-          ? "130rem"
+          ? "139rem"
           : innerWidth > 388
-          ? "132rem"
+          ? "133rem"
           : innerWidth > 338
           ? "136rem"
           : "142rem",
@@ -112,7 +112,7 @@ const Testiomonial = () => {
       width: "100vw",
       overflow: "hidden",
       position: "absolute",
-      top: "4rem",
+      top: "3.5rem",
     });
 
     const StyledWeaveImageBoxTwo = styled(Box, {
@@ -164,12 +164,24 @@ const Testiomonial = () => {
 
           .weaveBox {
             z-index: -1;
-            height: 47rem;
+            height: 52rem;
           }
 
           @media (max-width: 425px) {
             .weaveBox {
-              height: 52rem;
+              height: 56rem;
+            }
+          }
+
+          @media (max-width: 324px) {
+            .weaveBox {
+              height: 58rem;
+            }
+          }
+
+          @media (max-width: 296px) {
+            .weaveBox {
+              height: 5rem;
             }
           }
         `}</style>
@@ -194,7 +206,7 @@ const Testiomonial = () => {
         </StyledDividerBoxTwo>
 
         <StyledPaginationBox>
-          <Box sx={{ maxWidth: innerWidth > 425 ? 500 : 350, flexGrow: 1, }}>
+          <Box sx={{ maxWidth: innerWidth > 425 ? 500 : 350, flexGrow: 1 }}>
             <Box
               sx={{
                 width: "100%",
