@@ -1,5 +1,4 @@
 import * as React from "react";
-import Divider from "@mui/material/Divider";
 import { useEffect, useState } from "react";
 import { Box } from "@mui/system";
 import { styled } from "@washingtonpost/wpds-ui-kit";
@@ -148,7 +147,7 @@ const About = () => {
         .boxTwo {
           width: 50rem;
           line-height: 2rem;
-          padding-bottom: 6rem;
+          padding-bottom: 7rem;
         }
 
         @media (max-width: 1290px) {
@@ -231,6 +230,7 @@ const About = () => {
             />
           </StyledCutOutTwoBoxTwo>
         </StyledCutOutTwoBoxOne>
+        
       </StyledMoreBox>
     </StyledDesktopAboutBox>
   );

@@ -181,7 +181,7 @@ const Testiomonial = () => {
 
           @media (max-width: 296px) {
             .weaveBox {
-              height: 5rem;
+              height: 59rem;
             }
           }
         `}</style>

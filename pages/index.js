@@ -4,6 +4,7 @@ import Experience from "../components/experience";
 import Adventure from "../components/adventure";
 import Testiomonial from "../components/testimonial";
 import About from "../components/about";
+import Contact from "../components/contact";
 
 export default function Home() {
   return (
@@ -22,9 +23,10 @@ export default function Home() {
         <main>
           <FrontPage />
           <Experience />
-          <Adventure/>
-          <Testiomonial/>
-          <About/>
+          <Adventure />
+          <Testiomonial />
+          <About />
+          <Contact />
         </main>
       </div>
     </div>
