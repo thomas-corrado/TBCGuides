@@ -2,6 +2,7 @@ import Head from "next/head"
 import FrontPage from "../components/frontPage";
 import Experience from "../components/experience";
 import Adventure from "../components/adventure";
+import Testiomonial from "../components/testimonial";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           <FrontPage />
           <Experience />
           <Adventure/>
+          <Testiomonial/>
         </main>
       </div>
     </div>

@@ -45,7 +45,7 @@ const Adventure = () => {
     top:
     innerWidth > 1269 ? "102rem" :
       innerWidth > 752
-        ? "107rem"
+        ? "106rem"
         : innerWidth > 751
         ? "110rem"
         : innerWidth > 527
@@ -105,6 +105,7 @@ const Adventure = () => {
      justifyContent: "center",
      alignContent: "center",
      lineHeight: innerWidth > 722 ? "calc(1rem + (4rem - 1.5vw))" : "2.4rem",
+     fontFamily: "Raleway",
    });
 
   const dislayDesktop = () => {
@@ -140,21 +141,34 @@ const Adventure = () => {
             top: 7rem;
           }
 
-          @media (max-width: 1300px) {
+          @media (max-width: 1305px) {
             .swiper {
               top: 11rem;
             }
           }
 
-          @media (max-width: 518px) {
+          @media (max-width: 750px) {
             .swiper {
-              top: 14rem;
+              top: 11rem;
+              height: 20rem;
             }
           }
 
-          @media (max-width: 361px) {
+          @media (max-width: 518px) {
             .swiper {
-              top: 14rem;
+              top: 13rem;
+            }
+          }
+
+          @media (max-width: 339px) {
+            .swiper {
+              top: 15rem;
+            }
+          }
+
+          @media (max-width: 290px) {
+            .swiper {
+              top: 16rem;
             }
           }
 

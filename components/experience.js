@@ -75,6 +75,7 @@ const Experience = () => {
     const StyledDescriptionText = styled("p", {
       color: "black",
       fontSize: innerWidth > 440 ? "1.3rem" : "1.1rem",
+      fontFamily: "Raleway",
       display: "flex",
       justifyContent: "center",
       alignContent: "center",
@@ -107,20 +108,19 @@ const Experience = () => {
       position: "absolute",
       top:
         innerWidth > 1268
-          ? "58rem"
-          : innerWidth > 752
-          ? "61.5rem"
+          ? "58rem" : innerWidth > 883 ? "62rem" : innerWidth > 752
+          ? "63rem"
           : innerWidth > 722
-          ? "66rem"
+          ? "67rem"
           : innerWidth > 619
-          ? "64rem"
+          ? "66rem"
           : innerWidth > 500
           ? "66rem"
           : innerWidth > 440
-          ? "63rem"
+          ? "64rem"
           : innerWidth > 339
           ? "62rem"
-          : "66rem",
+          : "67rem",
       width: "100vw",
       height: "40rem",
       overflow: "hidden",
