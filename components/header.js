@@ -18,10 +18,6 @@ const headersData = [
     href: "/reservations",
   },
   {
-    label: "Location",
-    href: "/location",
-  },
-  {
     label: "Gallery",
     href: "/gallery",
   },
@@ -38,7 +34,7 @@ const Header = () => {
 
   useEffect(() => {
     const setResponsiveness = () => {
-      return window.innerWidth < 930
+      return window.innerWidth < 830
         ? setState((prevState) => ({ ...prevState, mobileView: true }))
         : setState((prevState) => ({ ...prevState, mobileView: false }));
     };

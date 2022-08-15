@@ -1,4 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import loader from "./loader";
+import CircularProgress from "@mui/material/CircularProgress";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -20,13 +22,31 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap"
             rel="stylesheet"
           />
-          <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"/>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+            rel="stylesheet"
+          />
 
-          <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
-          <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet"/>
-          <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap" rel="stylesheet"/>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap"
+            rel="stylesheet"
+          />
         </Head>
+        <head>
+          <style>{loader}</style>
+        </head>
         <body>
+          <div id={"globalLoader"}>
+            <CircularProgress sx={{color: "black"}}/>
+          </div>
           <Main />
           <NextScript />
         </body>

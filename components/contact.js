@@ -119,9 +119,7 @@ const Contact = () => {
                   display: "flex",
                 }}
               >
-
-                    <a href="tel:+18282465616">Call Now</a>
-
+                <a href="tel:+18282465616">Call Now</a>
               </Button>
               <p
                 style={{
@@ -167,7 +165,11 @@ const Contact = () => {
 
               <Button
                 variant="contained"
-                onClick={() => router.push(`https://www.google.com/maps/dir//TBC+Guide+Services+-+Kayak+Fishing+Specialists+-Fl/@43.6910071,-72.3663049,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4cb4cbfe06977f9f:0xefb6419ffa43da64!2m2!1d-72.2962651!2d43.6910285`)}
+                onClick={() =>
+                  router.push(
+                    `https://www.google.com/maps/place/Hanover,+NH/@43.714773,-72.1908299,12z/data=!3m1!4b1!4m5!3m4!1s0x4cb4b72270accce5:0x7f1adceb13ecf04f!8m2!3d43.7022451!4d-72.2895526`
+                  )
+                }
                 sx={{
                   fontFamily: "Raleway",
                   backgroundColor: "black",
@@ -188,7 +190,6 @@ const Contact = () => {
                   lineHeight: "1.7rem",
                 }}
               >
-                4 Hunter Lane <br />
                 Hanover, NH <br />
                 03755 USA
               </p>

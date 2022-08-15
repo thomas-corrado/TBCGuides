@@ -152,7 +152,7 @@ const Experience = () => {
                   layout="fill"
                   objectFit="cover"
                   quality={100}
-                  src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450079/Michael-2_rbkph1.jpg"
+                  src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660602868/bio_xsminj.jpg"
                   alt="Harpoon"
                 />
               </StyledMichaelImageBoxTwo>
