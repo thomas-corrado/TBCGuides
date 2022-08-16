@@ -7,7 +7,8 @@ const StyledOuterBox = styled(Box, {
     height: "100vh", 
     display: "flex", 
     justifyContent: "center", 
-    overflow: "hidden"
+    overflow: "hidden", 
+    position: "absolute"
 })
 
 const StyledInnerBox = styled(Box, {

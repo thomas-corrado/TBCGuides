@@ -5,6 +5,6 @@ import AboutVideo from "../../components/aboutVideo";
 export default function AboutPage() {
   return <div>
     <NavBar/>
-    <AboutVideo/>
+    {/* <AboutVideo/> */}
   </div>;
 }
