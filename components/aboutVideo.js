@@ -10,9 +10,9 @@ const StyledOuterBox = styled(Box, {
 })
 
 const StyledInnerBox = styled(Box, {
-  position: "relative",
+  position: "absolute",
   top: "4rem",
-  height: "calc(100vh - 6.9rem)", 
+  height: "calc(100vh - 4rem)", 
   width: '95vw'
 });
 
@@ -34,7 +34,8 @@ const AboutVideo = () => {
               style={{
                 objectFit: "cover",
                 width: "100%",
-                height: "100%",
+                maxHeight: "calc(100vh - 4rem)",
+                display: "block",
               }}
               preload="metadata"
             >
