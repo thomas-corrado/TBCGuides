@@ -13,8 +13,10 @@ const StyledOuterBox = styled(Box, {
 const StyledInnerBox = styled(Box, {
   position: "absolute",
   top: "4rem",
-  height: "calc(100vh - 4rem)", 
-  width: '95vw'
+  height: "calc(100vh - 4rem)",
+  width: "95vw",
+  display: "table",
+  overflow: "hidden",
 });
 
 const AboutVideo = () => {
@@ -22,12 +24,11 @@ const AboutVideo = () => {
       <StyledOuterBox>
         <StyledInnerBox>
           <div
+            className="videoBox"
             style={{
-              width: "100%",
-              height: "auto",
-              position: "relative",
-              top: "50.3%",
-              transform: "translateY(-50%)",
+              display: "table-cell",
+              verticalAlign: "middle",
+              overflow: "hidden",
             }}
           >
             <video
@@ -37,6 +38,7 @@ const AboutVideo = () => {
                 width: "100%",
                 maxHeight: "calc(100vh - 4rem)",
                 display: "block",
+                overflow: "hidden",
               }}
               preload="metadata"
             >
