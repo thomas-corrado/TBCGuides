@@ -3,18 +3,18 @@ import { Box } from "@mui/system";
 import { styled } from "@washingtonpost/wpds-ui-kit";
 
 const StyledOuterBox = styled(Box, {
-    width: "100vw", 
-    height: "100vh", 
-    display: "flex", 
-    justifyContent: "center", 
-    overflow: "hidden", 
-    position: "absolute"
-})
-
-const StyledInnerBox = styled(Box, {
+  width: "100vw",
+  height: "calc(100vh - 4rem)",
+  display: "flex",
+  justifyContent: "center",
+  overflow: "hidden",
   position: "absolute",
   top: "4rem",
-  height: "calc(100vh - 4rem)",
+});
+
+const StyledInnerBox = styled(Box, {
+  position: "relative",
+  height: "100%",
   width: "95vw",
   display: "table",
   overflow: "hidden",
