@@ -45,7 +45,6 @@ const AboutVideo = () => {
               <div
                 style={{
                   float: "left",
-                  paddingTop: "5px",
                   height: "100%",
                   marginLeft: "1rem",
                 }}
