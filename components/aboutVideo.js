@@ -40,6 +40,8 @@ const AboutVideo = () => {
                 maxHeight: "calc(100vh - 4rem)",
                 display: "block",
                 overflow: "hidden",
+                padding: 0, 
+                margin: 0
               }}
               preload="metadata"
             >
