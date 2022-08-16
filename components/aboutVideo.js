@@ -7,6 +7,7 @@ const StyledOuterBox = styled(Box, {
     height: "100vh", 
     display: "flex", 
     justifyContent: "center", 
+    overflow: "hidden"
 })
 
 const StyledInnerBox = styled(Box, {
@@ -25,6 +26,8 @@ const AboutVideo = () => {
               width: "100%",
               height: "auto",
               position: "relative",
+              top: "50.3%",
+              transform: "translateY(-50%)",
             }}
           >
             <video
