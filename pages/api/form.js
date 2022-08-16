@@ -31,6 +31,8 @@ async function handler(req, res) {
       },
     });
 
+    console.log(process.env.GOOGLE_CLIENT_ID);
+
     res.status(201).json({ message: "It works!", response });
   }
   res.status(200).json({ message: "Hey!" });
