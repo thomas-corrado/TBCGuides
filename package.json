@@ -23,7 +23,8 @@
     "react-hook-form": "^7.34.2",
     "react-swipeable-views": "^0.14.0",
     "sass": "^1.54.4",
-    "swiper": "^8.3.2"
+    "swiper": "^8.3.2",
+    "vercel": "^28.0.1"
   },
   "devDependencies": {
     "eslint": "8.21.0",
