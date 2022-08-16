@@ -22,38 +22,66 @@ const StyledInnerBox = styled(Box, {
 
 const AboutVideo = () => {
     return (
-      <StyledOuterBox>
-        <StyledInnerBox>
-          <div
-            className="videoBox"
-            style={{
-              display: "table-cell",
-              verticalAlign: "middle",
-              overflow: "hidden",
-            }}
-          >
-            <video
-              controls
+      <div
+        style={{
+          width: "100vw",
+          overflow: "scroll",
+          height: "calc(100vh - 4rem)",
+        }}
+      >
+        <div
+          style={{
+            height: "100%",
+            overflow: "auto",
+          }}
+        >
+          <div style={{ whiteSpace: "nowrap", height: "100%" }}>
+            <div
               style={{
-                objectFit: "cover",
-                width: "100%",
-                maxHeight: "calc(100vh - 4rem)",
-                display: "block",
-                overflow: "hidden",
-                padding: 0, 
-                margin: 0
+                display: "flex",
+                height: "100%",
               }}
-              preload="metadata"
             >
-              <source
-                src="https://res.cloudinary.com/dsc1j5xny/video/upload/v1660687489/tbc_guide_services__michael_blatt__-_v3_720p_lyrudn.mp4#t=0.5"
-                type="video/mp4"
-              />
-            </video>
+              <div
+                style={{
+                  float: "left",
+                  paddingTop: "5px",
+                  height: "100%",
+                  marginLeft: "1rem",
+                }}
+              >
+                <div
+                  style={{
+                    height: "100%",
+                    position: "relative",
+                  }}
+                >
+                  <video
+                    controls
+                    style={{
+                      objectFit: "cover",
+                      width: "100%",
+                      maxHeight: "calc(100vh - 4rem)",
+                      display: "block",
+                      overflow: "hidden",
+                      padding: 0,
+                      margin: 0,
+                    }}
+                    preload="metadata"
+                  >
+                    <source
+                      src="https://res.cloudinary.com/dsc1j5xny/video/upload/v1660687489/tbc_guide_services__michael_blatt__-_v3_720p_lyrudn.mp4#t=0.5"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+            </div>
           </div>
-        </StyledInnerBox>
-      </StyledOuterBox>
+        </div>
+      </div>
     );
 }
 
 export default AboutVideo
+
