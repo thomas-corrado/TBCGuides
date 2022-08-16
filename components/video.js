@@ -5,7 +5,7 @@ const isSafari = () => {
   const ua = navigator.userAgent.toLowerCase();
   return ua.indexOf("safari") > -1 && ua.indexOf("chrome") < 0;
 };
-
+//
 const mainVideo =
   "https://res.cloudinary.com/dsc1j5xny/video/upload/v1660311360/LargeBackground_pqjd8q.mp4";
 
