@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Box } from "@mui/system";
 import { styled } from "@washingtonpost/wpds-ui-kit";
-import Video from "./video";
 import Header from "./header";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const StyledImageBox = styled(Box, {
   position: "absolute",
@@ -64,23 +64,25 @@ const FrontPage = () => {
 
           .video-container {
             margin-top: -1rem;
-            height: calc(30rem);
+            width: 100vw;
+            height: 30rem;
             overflow: hidden;
           }
 
           .video-cover {
             position: absolute;
             width: 100vw;
-            height: calc(30rem);
-            background-color: white;
+            height: 32rem;
+            background-color: rgb(247, 247, 247);
             z-index: 3;
-            opacity: 0.5;
+            opacity: 0.9;
+            overflow: hidden;
           }
 
           .welcome-container {
             display: flex;
             width: 100%;
-            height: 30rem;
+            height: 32rem;
             justify-content: center;
             position: absolute;
             z-index: 3;
@@ -88,10 +90,26 @@ const FrontPage = () => {
             padding-right: 1vw;
           }
 
+          .image-container {
+            display: flex;
+            width: 100%;
+            height: 32rem;
+            justify-content: center;
+            position: absolute;
+            z-index: 2;
+            top: 9.5rem;
+          }
+
           .welcome {
             font-size: 4rem;
             top: 37%;
             transform: translateY(-50%);
+            z-index: 4;
+          }
+
+          @media (max-width: 830px) {
+            h1 {
+              padding-left: 1.5rem;
           }
 
           @media (max-width: 700px) {
@@ -117,7 +135,6 @@ const FrontPage = () => {
             h1 {
               font-size: 3rem;
               line-height: 3rem;
-              padding-left: 2rem;
               top: -0.2rem;
             }
             .video-container {
@@ -130,6 +147,9 @@ const FrontPage = () => {
               width: 90vw;
               padding-left: 10vw;
             }
+            .image-container {
+              top: 8.5rem;
+            }
             .welcome {
               font-size: 3rem;
               line-height: 3.5rem;
@@ -141,7 +161,6 @@ const FrontPage = () => {
             h1 {
               font-size: 2.5rem;
               line-height: 3rem;
-              padding-left: 1.5rem;
               top: -0.2rem;
             }
             .welcome {
@@ -155,6 +174,9 @@ const FrontPage = () => {
               padding-left: 11vw;
               justify-content: center;
             }
+            .image-container {
+              margin-top: -0.3rem;
+            }
           }
         `}</style>
         <div
@@ -162,13 +184,10 @@ const FrontPage = () => {
             width: "1rem",
           }}
         >
-          <h1>Hanover Guides</h1>
-        </div>
-        <div className="video-container">
-          <div className="video-cover" />
-          <Video />
+          <h1>TBC Guides</h1>
         </div>
       </StyledImageBox>
+
       <Box className="welcome-container">
         <StyledWelcome className="welcome">
           Welcome to the <br />
@@ -177,6 +196,18 @@ const FrontPage = () => {
           <br />
           Fishing Guide Service
         </StyledWelcome>
+      </Box>
+
+      <Box className="image-container">
+        <div className="video-cover" />
+        <Image
+          priority
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660678839/trees-backgrond_xsnbt1.png"
+          alt="Harpoon"
+        />
       </Box>
 
       <Header />

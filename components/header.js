@@ -11,7 +11,7 @@ import { Box } from "@mui/system";
 const headersData = [
   {
     label: "About",
-    href: "/",
+    href: "/about",
   },
   {
     label: "Reservations",
@@ -104,6 +104,7 @@ const Header = () => {
                 sx={{
                   width: "100%",
                   textAlign: "center",
+                  fontFamily: "Raleway"
                 }}
               >
                 {label}
@@ -116,8 +117,6 @@ const Header = () => {
   };
 
   const [isOpen, setOpen] = useState(false);
-
-  
 
   const displayMobile = () => {
     const handleDrawerClose = () => {

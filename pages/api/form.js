@@ -31,8 +31,6 @@ async function handler(req, res) {
       },
     });
 
-    
-
     res.status(201).json({ message: "It works!", response });
   }
   res.status(200).json({ message: "Hey!" });

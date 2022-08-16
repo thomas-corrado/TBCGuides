@@ -41,32 +41,32 @@ const Contact = () => {
        paddingTop: "8rem", 
        top:
          innerWidth > 1306
-           ? "252rem"
+           ? "257rem"
            : innerWidth > 1269
-           ? "254rem"
+           ? "261rem"
            : innerWidth > 891
-           ? "258rem"
+           ? "264rem"
            : innerWidth > 751
-           ? "265rem"
+           ? "281rem"
            : innerWidth > 570
-           ? "254rem"
+           ? "270rem"
            : innerWidth > 528
-           ? "258rem"
+           ? "278rem"
            : innerWidth > 484
-           ? "242rem"
+           ? "262rem"
            : innerWidth > 439
-           ? "243rem"
+           ? "263rem"
            : innerWidth > 425
-           ? "243rem"
+           ? "272rem"
            : innerWidth > 388
-           ? "246rem"
-           : innerWidth > 350
-           ? "253rem"
+           ? "276rem"
+           : innerWidth > 379
+           ? "280rem"
            : innerWidth > 337
-           ? "258rem"
+           ? "289rem"
            : innerWidth > 296
-           ? "260rem"
-           : "261rem",
+           ? "295rem"
+           : "297rem",
      });
 
     return (
@@ -159,7 +159,7 @@ const Contact = () => {
                     display: "flex",
                   }}
                 >
-                  Address
+                  Location
                 </p>
               </div>
 
@@ -200,7 +200,7 @@ const Contact = () => {
               width: "20rem",
               display: "flex",
               justifyContent: "center",
-              paddingLeft: innerWidth > 688 ? undefined : "2rem",
+              paddingLeft: innerWidth > 500 ? undefined : "2rem",
               paddingBottom: "1rem",
             }}
           >
@@ -227,7 +227,7 @@ const Contact = () => {
                   justifyContent: "center",
                   display: "flex",
                   fontFamily: "Raleway",
-                  justifyContent: innerWidth > 688 ? "start" : "center",
+                  justifyContent: innerWidth > 720 ? "start" : "center",
                   lineHeight: "1.7rem",
                 }}
               >

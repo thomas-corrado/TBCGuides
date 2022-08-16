@@ -64,7 +64,6 @@ function MyApp({ Component, pageProps }) {
    
   return (
     <>
-      <Loading />
       <Component {...pageProps} />
     </>
   );

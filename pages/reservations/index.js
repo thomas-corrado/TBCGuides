@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useForm } from "react-hook-form";
+import NavBar from "../../components/navBar";
 
 export default function ReservationsPage() {
   const { register, handleSubmit } = useForm();
@@ -14,13 +15,13 @@ export default function ReservationsPage() {
     	})
   }
 
-  console.log(process.env.GOOGLE_SHEET_ID);
-  console.log(process.env.GOOGLE_CLIENT_EMAIL);
-  console.log(process.env.GOOGLE_PRIVATE_KEY);
-
   return (
     <div>
-      <form onSubmit={handleSubmit(submitHandler)}>
+      <NavBar />
+      <form
+        style={{ top: "10rem", position: "absolute" }}
+        onSubmit={handleSubmit(submitHandler)}
+      >
         <label htmlFor="first">First Name</label>
         <input placeholder="John" {...register("first")} />
 
