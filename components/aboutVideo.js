@@ -39,7 +39,7 @@ const AboutVideo = () => {
               preload="metadata"
             >
               <source
-                src="https://res.cloudinary.com/dsc1j5xny/video/upload/v1660687489/tbc_guide_services__michael_blatt__-_v3_720p_lyrudn.mp4"
+                src="https://res.cloudinary.com/dsc1j5xny/video/upload/v1660687489/tbc_guide_services__michael_blatt__-_v3_720p_lyrudn.mp4#t=0.5"
                 type="video/mp4"
               />
             </video>
