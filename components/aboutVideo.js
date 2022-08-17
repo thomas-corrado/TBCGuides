@@ -22,7 +22,7 @@ const StyledInnerBox = styled(Box, {
 
 const AboutVideo = () => {
     return (
-      <StyledOuterBox>
+      <StyledOuterBox className="outerbox">
         <style global jsx>{`
           html {
             min-height: 100%;
@@ -33,8 +33,42 @@ const AboutVideo = () => {
             height: 100%;
             margin: 0;
           }
+
+          .outerbox {
+            display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+            display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+            display: -ms-flexbox; /* TWEENER - IE 10 */
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-flex-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            z-index: 999;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 8px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+          }
+
+          .innerbox {
+            padding: 8px;
+            min-height: 10px;
+            min-width: 10px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 8px;
+            border: 1px solid #a5a5a5;
+            position: relative;
+          }
         `}</style>
-        <StyledInnerBox>
+        <StyledInnerBox className="innerbox">
           <div
             className="videoBox"
             style={{
