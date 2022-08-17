@@ -9,8 +9,7 @@ const StyledOuterBox = styled(Box, {
   justifyContent: "center",
   overflow: "hidden",
   position: "absolute",
-  top: "4rem", 
-  marginBottom: "-4rem"
+  backgroundColor: "red", 
 });
 
 const StyledInnerBox = styled(Box, {
