@@ -4,7 +4,7 @@ import AboutVideo from "../../components/aboutVideo";
 
 export default function AboutPage() {
   return <div>
-    {/* <NavBar/> */}
+    <NavBar/>
     <AboutVideo/>
   </div>;
 }
