@@ -36,33 +36,35 @@ const About = () => {
     position: "absolute",
     top:
       innerWidth > 1306
-        ? "208rem"
+        ? "217rem"
         : innerWidth > 1269
-        ? "212rem"
-        : innerWidth > 752
-        ? "216rem"
-        : innerWidth > 751
         ? "221rem"
-        : innerWidth > 528
-        ? "205rem"
+        : innerWidth > 768
+        ? "225rem"
+        : innerWidth > 751
+        ? "230rem"
+        : innerWidth > 558
+        ? "215rem"
+        : innerWidth >= 527
+        ? "219rem"
         : innerWidth > 500
-        ? "190rem"
+        ? "205rem"
         : innerWidth > 484
-        ? "189rem"
+        ? "202rem"
         : innerWidth > 439
-        ? "190rem"
+        ? "208rem"
         : innerWidth > 425
-        ? "185rem"
+        ? "200rem"
         : innerWidth > 388
-        ? "189rem"
+        ? "208rem"
         : innerWidth > 338
-        ? "192rem"
-        : innerWidth > 324 
-        ? "198rem" 
+        ? "216rem"
+        : innerWidth > 324
+        ? "219rem"
         : innerWidth > 296
-        ? "200rem" 
-        : "202rem", 
-    paddingBottom: "2rem"
+        ? "220rem"
+        : "227rem",
+    paddingBottom: "2rem",
   });
 
   const StyledCutOutOneBoxOne = styled(Box, {
@@ -141,7 +143,7 @@ const About = () => {
           height: 4rem;
         }
 
-        .headingBox {
+        .headingBox { 
           margin-top: 8rem;
         }
 

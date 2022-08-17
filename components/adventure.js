@@ -166,7 +166,7 @@ const Adventure = () => {
             }
           }
 
-          @media (max-width: 557px) {
+          @media (max-width: 558px) {
             .swiper {
               top: 13rem;
             }

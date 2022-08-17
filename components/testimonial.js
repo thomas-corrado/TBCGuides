@@ -16,20 +16,17 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 
 const steps = [
   {
+    writer: "- Caleb D",
+    description: `Mike is a terrific fishing guide. I have gone out on my own a bit, but without much luck. Then when Mike and I went out in the Fall, it seemed the fish were simply attracted to us we were getting so many bites. It was an extremely successful trip near the end of the season. Plus, Mike made it a fun time – he clearly knew the perfect type of lures for the area (and could explain why he was recommending that specific lure), had a deep understanding of how different river and weather conditions affect the fish, and made great non-fishing conversation. He came well supplied with all the equipment that we needed and even gave me tips on where to go in the future! Highly recommend a trip with Mike.`,
+  },
+  {
+    writer: "- Howard Z",
+    description:
+      "My wife and I had a great time fishing with Mike. He was extremely knowledgeable and helpful throughout the entire trip. We caught smallmouth bass, perch, and bluegill and had a great time fishing the entire lake. Definitely would recommend a trip with Mike.",
+  },
+  {
     writer: "- Mitch R",
     description: `Simply put, Mike exceeded all expectations. My girlfriend and I went for a date night and had a blast! (and obviously caught fish!) All equipment was in exceptional condition, everything was communicated effectively and in a way that makes you feel as if you'd been fishing buddies for years. Can't recommend enough and will definitely be bringing a few friends on another trip at some point!`,
-  },
-  {
-    writer: "- Tommy C",
-    description:
-      "An ad group contains one or more ads which target a shared set of keywords.",
-  },
-  {
-    writer: "- John D",
-    description: `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`,
   },
 ];
 
@@ -80,13 +77,13 @@ const Testiomonial = () => {
         innerWidth > 1306
           ? "158rem"
           : innerWidth > 1269
-          ? "160rem"
-          : innerWidth > 752
+          ? "168rem"
+          : innerWidth > 768
           ? "164rem"
           : innerWidth > 751
-          ? "169rem"
+          ? "168rem"
           : innerWidth > 558 
-          ? "154rem"
+          ? "153rem"
           : innerWidth > 527
           ? "157rem"
           : innerWidth > 500
@@ -167,24 +164,24 @@ const Testiomonial = () => {
 
           .weaveBox {
             z-index: -1;
-            height: 52rem;
+            height: 65rem;
           }
 
           @media (max-width: 425px) {
             .weaveBox {
-              height: 56rem;
+              height: 78rem;
             }
           }
 
           @media (max-width: 324px) {
             .weaveBox {
-              height: 58rem;
+              height: 78rem;
             }
           }
 
           @media (max-width: 296px) {
             .weaveBox {
-              height: 59rem;
+              height: 85rem;
             }
           }
         `}</style>
