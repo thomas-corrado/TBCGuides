@@ -44,7 +44,7 @@ const AboutVideo = () => {
             -ms-flex-align: center;
             -webkit-align-items: center;
             align-items: center;
-            position: fixed;
+            position: absolute;
             height: calc(100% -4rem);
             width: 100%;
             top: 0;
