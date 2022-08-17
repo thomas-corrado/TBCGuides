@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import { Box } from "@mui/system";
 import Snackbar from "@mui/material/Snackbar";
 import Slide from "@mui/material/Slide";
+import { SnackbarProvider, enqueueSnackbar } from "notistack";
 
 
 export default function ReservationsPage() {
@@ -57,6 +58,7 @@ export default function ReservationsPage() {
 
   return (
     <div>
+      <SnackbarProvider />
       <NavBar />
       <form style={{ top: "10rem", position: "absolute" }}>
         <Box
@@ -120,9 +122,9 @@ export default function ReservationsPage() {
             value={varDate}
             onChange={(e) => setDate(e.target.value)}
             sx={{
-              width: { sm: 200, md: 200 },
               "& .MuiInputBase-root": {
                 height: 100,
+                width: 200,
               },
               paddingBottom: "1rem",
             }}
@@ -130,18 +132,11 @@ export default function ReservationsPage() {
 
           <Button
             sx={{ backgroundColor: "black", color: "white" }}
-            onClick={() =>
-              consolidateData(
-                firstName,
-                lastName,
-                varEmail,
-                varPhone,
-                varGuests,
-                varDate
-              )
-            }
+            onClick={() => enqueueSnackbar("That was easy!")}
           >
-            <p style={{ padding: 0, margin: 0, fontFamily: "Raleway"}}>Submit</p>
+            <p style={{ padding: 0, margin: 0, fontFamily: "Raleway" }}>
+              Submit
+            </p>
           </Button>
         </Box>
       </form>
