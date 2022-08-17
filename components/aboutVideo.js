@@ -16,7 +16,7 @@ const StyledInnerBox = styled(Box, {
   position: "relative",
   height: "100%",
   width: "95vw",
-  display: "table",
+
 });
 
 const AboutVideo = () => {
@@ -48,18 +48,24 @@ const AboutVideo = () => {
             height: calc(100% -4rem);
             width: 100%;
             top: 0;
-            z-index: 999;
+            z-index: 2;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
           }
 
           .innerbox {
-    
             min-height: 10px;
             min-width: 10px;
             margin: auto;
             position: relative;
+            display: table;
+          }
+
+          @media (max-width: 400px) {
+            .innerbox {
+              bottom: 4rem
+            }
           }
         `}</style>
         <StyledInnerBox className="innerbox">
@@ -77,13 +83,9 @@ const AboutVideo = () => {
                 objectFit: "cover",
                 width: "100%",
                 maxHeight: "calc(100vh - 4rem)",
-                display: "block",
                 overflow: "hidden",
                 padding: 0,
                 margin: 0,
-                display: "table-cell",
-                verticalAlign: "middle",
-                overflow: "hidden",
               }}
               preload="metadata"
             >
