@@ -68,7 +68,7 @@ const ImageListWrapper = () => {
     
     return (
       <StyledBox>
-        <ImageList variant="masonry" cols={2} gap={5}>
+        <ImageList variant="masonry" cols={1} gap={5}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
               <img
