@@ -9,7 +9,6 @@ const StyledOuterBox = styled(Box, {
   justifyContent: "center",
   overflow: "hidden",
   position: "absolute",
-  backgroundColor: "red", 
   marginTop: "4rem"
 });
 
@@ -45,7 +44,7 @@ const AboutVideo = () => {
             -ms-flex-align: center;
             -webkit-align-items: center;
             align-items: center;
-            position: fixed;
+            position: absolute;
             height: 100%;
             width: 100%;
             top: 0;
