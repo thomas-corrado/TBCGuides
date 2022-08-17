@@ -278,7 +278,7 @@ const Testiomonial = () => {
               layout="fill"
               objectFit="cover"
               quality={100}
-              src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660536494/image-from-rawpixel-id-585144-jpeg_dcxlnc.jpg"
+              src="https://d14drtvwlopsgs.cloudfront.net/weave.jpeg"
               alt="Harpoon"
             />
           </StyledWeaveImageBoxTwo>

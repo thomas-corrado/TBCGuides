@@ -194,7 +194,7 @@ const About = () => {
             layout="fill"
             objectFit="cover"
             quality={100}
-            src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660581635/cut-paper-top_wy23td.png"
+            src="https://d14drtvwlopsgs.cloudfront.net/cut-paper-top.png"
             alt="Harpoon"
           />
         </StyledCutOutOneBoxTwo>
@@ -252,7 +252,7 @@ const About = () => {
               layout="fill"
               objectFit="cover"
               quality={100}
-              src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660585977/cut-paper-bottom_gaoxto.png"
+              src="https://d14drtvwlopsgs.cloudfront.net/cut-paper-bottom.png"
               alt="Harpoon"
             />
           </StyledCutOutTwoBoxTwo>
