@@ -151,6 +151,8 @@ const About = () => {
           padding-bottom: 7rem;
         }
 
+       
+
         @media (max-width: 1290px) {
           .headingBox {
             margin-top: 7rem;
@@ -239,11 +241,9 @@ const About = () => {
               shade on the opposite bank we spent the morning on . There will be
               plenty of time to take photos and video, if you wish. And we will
               keep an eye out for the bald eagle flyover that we usually get in
-              this part of the state. Other things to note: Mike is fully
-              certified in Wilderness First Response, as well as Swiftwater
-              Rescue. Most of the Waters have signs of civilization on all
-              sides, we won&#39;t be too far from the safety of home most of the
-              day.
+              this part of the state. Most of the waters have signs of
+              civilization on all sides, we won&#39;t be too far from the safety
+              of home most of the day.
             </p>
           </StyledAboutBoxTwo>
         </StyledAboutBoxOne>

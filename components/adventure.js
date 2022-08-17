@@ -44,18 +44,18 @@ const Adventure = () => {
     position: "absolute",
     top:
     innerWidth > 1269 ? "102rem" :
-      innerWidth > 752
+      innerWidth > 768
         ? "106rem"
         : innerWidth > 751
         ? "110rem"
         : innerWidth > 527
         ? "110rem"
         : innerWidth > 500
-        ? "95rem"
+        ? "95rem" : innerWidth > 493 ? "95rem" 
         : innerWidth > 440
-        ? "92rem"
+        ? "95rem"
         : innerWidth > 339
-        ? "90rem"
+        ? "93rem"
         : "95rem",
     
   });
@@ -90,7 +90,7 @@ const Adventure = () => {
      color: "black",
      left: innerWidth > 722 ? "5.5rem" : innerWidth > 526 ? "4rem" : "2.5rem",
      position: "absolute",
-     top: innerWidth > 485 ? "8rem" : innerWidth > 440 ? "11rem" : innerWidth > 388 ? "7rem" : "9rem",
+     top: innerWidth > 685 ? "8rem" : innerWidth > 440 ? "11rem" : innerWidth > 388 ? "7rem" : "9rem",
      width: innerWidth > 768 ? "85vw" : "75vw",
      height: "auto",
      backgroundColor: "#F6F6F6",
@@ -119,7 +119,7 @@ const Adventure = () => {
           />
         </StyledDividerBoxOne>
         <StyledAdventureExperienceTitle>
-          A Unique Adventure
+          An Unforgettable Adventure
         </StyledAdventureExperienceTitle>
         <StyledDividerBoxTwo>
           <Divider
@@ -130,8 +130,8 @@ const Adventure = () => {
         </StyledDividerBoxTwo>
         <StyledDescriptionBox>
           <StyledDescriptionText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Guests are given a chance to discover more about themselves and the
+            world around them. In turn, they become life-long fishers.
           </StyledDescriptionText>
         </StyledDescriptionBox>
         <style global jsx>{`
@@ -139,6 +139,12 @@ const Adventure = () => {
             width: 80vw;
             height: 35rem;
             top: 7rem;
+          }
+
+          @media (max-width: 1484px) {
+            .swiper {
+              top: 10rem;
+            }
           }
 
           @media (max-width: 1305px) {
@@ -154,9 +160,27 @@ const Adventure = () => {
             }
           }
 
-          @media (max-width: 518px) {
+          @media (max-width: 685px) {
+            .swiper {
+              top: 10rem;
+            }
+          }
+
+          @media (max-width: 557px) {
             .swiper {
               top: 13rem;
+            }
+          }
+
+          @media (max-width: 388px) {
+            .swiper {
+              top: 13rem;
+            }
+          }
+
+          @media (max-width: 375px) {
+            .swiper {
+              top: 15rem;
             }
           }
 

@@ -76,24 +76,27 @@ const Testiomonial = () => {
       height: "auto",
       position: "absolute",
       top:
+      innerWidth > 1485 ? "156rem" :
         innerWidth > 1306
-          ? "156rem"
+          ? "158rem"
           : innerWidth > 1269
           ? "160rem"
           : innerWidth > 752
           ? "164rem"
           : innerWidth > 751
           ? "169rem"
+          : innerWidth > 558 
+          ? "154rem"
           : innerWidth > 528
-          ? "153rem"
+          ? "158rem"
           : innerWidth > 500
-          ? "138rem"
+          ? "143rem"
           : innerWidth > 484
-          ? "137rem"
-          : innerWidth > 439
+          ? "139rem"
+          : innerWidth > 440
           ? "139rem"
           : innerWidth > 388
-          ? "133rem"
+          ? "135rem"
           : innerWidth > 338
           ? "136rem"
           : "142rem",
@@ -156,7 +159,7 @@ const Testiomonial = () => {
 
 
     return (
-      <StyledDesktopTestimonialBox>
+      <StyledDesktopTestimonialBox className="outer">
         <style global jsx>{`
           .headerBox {
             z-index: 2;
@@ -193,7 +196,7 @@ const Testiomonial = () => {
           />
         </StyledDividerBoxOne>
         <StyledHeaderBox className="headerBox">
-          Loved by <br /> Friends & Family
+          Loved by <br /> Every Client
         </StyledHeaderBox>
 
         <StyledDividerBoxTwo>
