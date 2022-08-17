@@ -268,7 +268,7 @@ const Adventure = () => {
               layout="fill"
               objectFit="cover"
               quality={100}
-              src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450377/fish-holding-7_zgxdch.jpg"
+              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-7.jpg"
               alt={"image1"}
             />
           </SwiperSlide>
@@ -278,7 +278,7 @@ const Adventure = () => {
               layout="fill"
               objectFit="cover"
               quality={100}
-              src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450377/fish-holding-6_rmdkrj.jpg"
+              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-6.jpg"
               alt={"image1"}
             />
           </SwiperSlide>
@@ -288,7 +288,7 @@ const Adventure = () => {
               layout="fill"
               objectFit="cover"
               quality={100}
-              src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450376/fish-holding-14_ie19jk.jpg"
+              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-14.jpg"
               alt={"image1"}
             />
           </SwiperSlide>
@@ -298,7 +298,7 @@ const Adventure = () => {
               layout="fill"
               objectFit="cover"
               quality={100}
-              src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450377/fish-holding-one_qapjpo.jpg"
+              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-1.jpg"
               alt={"image1"}
             />
           </SwiperSlide>
@@ -308,7 +308,7 @@ const Adventure = () => {
               layout="fill"
               objectFit="cover"
               quality={100}
-              src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450376/fish-holding-4_nlhi1w.jpg"
+              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-4.jpg"
               alt={"image1"}
             />
           </SwiperSlide>
@@ -318,7 +318,7 @@ const Adventure = () => {
               layout="fill"
               objectFit="cover"
               quality={100}
-              src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450376/fish-holding-2_sdrvsm.jpg"
+              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-2.jpg"
               alt={"image1"}
             />
           </SwiperSlide>
@@ -328,7 +328,7 @@ const Adventure = () => {
               layout="fill"
               objectFit="cover"
               quality={100}
-              src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450378/fish-holding-12_fcgjdd.jpg"
+              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-12.jpg"
               alt={"image1"}
             />
           </SwiperSlide>
@@ -338,7 +338,7 @@ const Adventure = () => {
               layout="fill"
               objectFit="cover"
               quality={100}
-              src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450376/fish-holding-15_qzoqbh.jpg"
+              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-15.jpg"
               alt={"image1"}
             />
           </SwiperSlide>
@@ -348,7 +348,7 @@ const Adventure = () => {
               layout="fill"
               objectFit="cover"
               quality={100}
-              src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450378/fish-holding-11_b0arj3.jpg"
+              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-11.jpg"
               alt={"image1"}
             />
           </SwiperSlide>
@@ -358,7 +358,7 @@ const Adventure = () => {
               layout="fill"
               objectFit="cover"
               quality={100}
-              src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450378/fish-holding-9_hy2btb.jpg"
+              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-9.jpg"
               alt={"image1"}
             />
           </SwiperSlide>
@@ -368,7 +368,7 @@ const Adventure = () => {
               layout="fill"
               objectFit="cover"
               quality={100}
-              src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450378/fish-holding-13_hawysi.jpg"
+              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-13.jpg"
               alt={"image1"}
             />
           </SwiperSlide>

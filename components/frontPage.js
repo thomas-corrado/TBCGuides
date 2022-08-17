@@ -205,7 +205,7 @@ const FrontPage = () => {
           layout="fill"
           objectFit="cover"
           quality={100}
-          src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660678839/trees-backgrond_xsnbt1.png"
+          src="https://d14drtvwlopsgs.cloudfront.net/trees-background.png"
           alt="Harpoon"
         />
       </Box>
