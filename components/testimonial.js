@@ -87,7 +87,7 @@ const Testiomonial = () => {
           ? "169rem"
           : innerWidth > 558 
           ? "154rem"
-          : innerWidth > 528
+          : innerWidth > 527
           ? "157rem"
           : innerWidth > 500
           ? "143rem"
@@ -150,7 +150,7 @@ const Testiomonial = () => {
       display: "flex",
       width: "100vw",
       justifyContent: "center",
-      marginTop: "5rem",
+      marginTop: innerWidth > 527 ? "5rem" : "3rem",
       fontFamily: "Raleway",
       fontSize: "1.2rem",
       lineHeight: "2rem",
