@@ -16,6 +16,7 @@
     "@washingtonpost/wpds-ui-kit": "^0.13.0",
     "googleapis": "^105.0.0",
     "hamburger-react": "^2.5.0",
+    "mui-tel-input": "^1.4.1",
     "next": "12.2.4",
     "next-videos": "^1.5.0",
     "notistack": "^2.0.5",

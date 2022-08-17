@@ -6,11 +6,47 @@ import { useState } from "react";
 import Button from "@mui/material/Button";
 import { Box } from "@mui/system";
 import Snackbar from "@mui/material/Snackbar";
-import Slide from "@mui/material/Slide";
-import { SnackbarProvider, enqueueSnackbar } from "notistack";
+import { styled } from "@washingtonpost/wpds-ui-kit";
+import AssignmentIcon from "@mui/icons-material/Assignment";
 
+const StyledOuterBox = styled(Box, {
+  width: "100vw", 
+  height: 'auto', 
+  display: "flex", 
+  justifyContent: "center"
+})
+
+const StyledHeaderBox = styled(Box, {
+  position: "absolute",
+  top: "4.5rem",
+  color: "black",
+  fontFamily: "Raleway",
+  width: "90vw",
+  display: "flex",
+  justifyContent: "center",
+  textAlign: "center"
+});
+
+const StyledFormBox = styled(Box, {
+  position: "relative",
+  backgroundColor: "white",
+  height: "auto",
+  width: "20rem",
+  display: "flex",
+  justifyContent: "center",
+  paddingBottom: "3rem",
+  paddingTop: "3rem",
+  borderRadius: "2rem"
+});
 
 export default function ReservationsPage() {
+  const [state, setState] = useState({
+    open: false,
+    vertical: "bottom",
+    horizontal: "center",
+  });
+
+  const { vertical, horizontal, open } = state;
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -27,6 +63,8 @@ export default function ReservationsPage() {
   var submitDate 
 
   function consolidateData(inFirstName, inLastName, inEmail, inPhone, inGuests, inDate) {
+
+    setState({ open: true, vertical: "bottom", horizontal: "center" });
 
     submitFirstName = inFirstName; 
     submitLastName = inLastName; 
@@ -45,6 +83,9 @@ export default function ReservationsPage() {
     });
   }
 
+  const handleClose = () => {
+    setState({ ...state, open: false });
+  };
 
   async function submitHandler(data) {
     const response = await fetch("/api/form", {
@@ -58,113 +99,176 @@ export default function ReservationsPage() {
 
   return (
     <div>
-      <SnackbarProvider />
       <NavBar />
-      <form style={{ top: "10rem", position: "absolute" }}>
-        <Box
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "100vw",
-          }}
-        >
-          <TextField
-            label="First Name"
-            variant="filled"
-            required
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-            sx={{
-              "& .MuiInputBase-root": {
-                width: 200,
-              },
-            }}
-          />
-          <TextField
-            margin="normal"
-            label="Last Name"
-            variant="filled"
-            required
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-            sx={{
-              "& .MuiInputBase-root": {
-                width: 200,
-              },
-            }}
-          />
-          <TextField
-            margin="normal"
-            label="Email"
-            variant="filled"
-            type="email"
-            required
-            value={varEmail}
-            onChange={(e) => setEmail(e.target.value)}
-            sx={{
-              "& .MuiInputBase-root": {
-                width: 200,
-              },
-            }}
-          />
-          <TextField
-            margin="normal"
-            label="Phone Number"
-            variant="filled"
-            type="phone"
-            required
-            value={varPhone}
-            onChange={(e) => setPhone(e.target.value)}
-            sx={{
-              "& .MuiInputBase-root": {
-                width: 200,
-              },
-            }}
-          />
-          <TextField
-            margin="normal"
-            label="Number of Guests"
-            variant="filled"
-            type="guests"
-            required
-            value={varGuests}
-            onChange={(e) => setGuests(e.target.value)}
-            sx={{
-              "& .MuiInputBase-root": {
-                width: 200,
-              },
-            }}
-          />
-          <TextField
-            className="dateBox"
-            margin="normal"
-            label="Date"
-            variant="filled"
-            type="date"
-            required
-            value={varDate}
-            onChange={(e) => setDate(e.target.value)}
-            sx={{
-              "& .MuiInputBase-root": {
-                height: 100,
-                width: 200,
-              },
-              paddingBottom: "1rem",
-            }}
-          />
+      <style global jsx>{`
+        .formBox {
+          top: 10rem;
+        }
 
-          <Button
-            sx={{ backgroundColor: "black", color: "white" }}
-            onClick={() => enqueueSnackbar("That was easy!")}
-          >
-            <p style={{ padding: 0, margin: 0, fontFamily: "Raleway" }}>
-              Submit
-            </p>
-          </Button>
-        </Box>
-      </form>
+        @media (max-width: 596px) {
+          .formBox {
+            top: 12rem;
+          }
+        }
+      `}</style>
+      <StyledOuterBox>
+        <StyledHeaderBox>
+          <h1 style={{}}>Ready to start your next adventure?</h1>
+        </StyledHeaderBox>
+        <StyledFormBox className="formBox">
+          <form>
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Box
+                sx={{
+                  float: "left",
+                  width: "100%",
+                  fontSize: "1.5rem",
+                  paddingBottom: ".5rem",
+                  direction: "row",
+                  display: "flex",
+                }}
+              >
+                <div style={{ paddingTop: "2px" }}>
+                  <AssignmentIcon />
+                </div>
+
+                <p style={{ padding: 0, margin: 0 }}>
+                  &nbsp;&nbsp;Make a Reservation
+                </p>
+              </Box>
+              <TextField
+                label="First Name"
+                variant="standard"
+                required
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+                sx={{
+                  "& .MuiInputBase-root": {
+                    width: 200,
+                  },
+                }}
+              />
+              <TextField
+                margin="normal"
+                label="Last Name"
+                variant="standard"
+                required
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+                sx={{
+                  "& .MuiInputBase-root": {
+                    width: 200,
+                  },
+                }}
+              />
+              <TextField
+                margin="normal"
+                label="Email"
+                variant="standard"
+                type="email"
+                required
+                value={varEmail}
+                onChange={(e) => setEmail(e.target.value)}
+                sx={{
+                  "& .MuiInputBase-root": {
+                    width: 200,
+                  },
+                }}
+              />
+              <TextField
+                margin="normal"
+                label="Phone Number"
+                variant="standard"
+                type="phone"
+                required
+                value={varPhone}
+                onChange={(e) => setPhone(e.target.value)}
+                sx={{
+                  "& .MuiInputBase-root": {
+                    width: 200,
+                  },
+                }}
+              />
+              <TextField
+                margin="normal"
+                label="Number of Guests"
+                variant="standard"
+                type="guests"
+                required
+                value={varGuests}
+                onChange={(e) => setGuests(e.target.value)}
+                sx={{
+                  "& .MuiInputBase-root": {
+                    width: 200,
+                  },
+                }}
+              />
+              <TextField
+                className="dateBox"
+                margin="normal"
+                label="Preferred Date"
+                variant="standard"
+                type="date"
+                required
+                value={varDate}
+                onChange={(e) => setDate(e.target.value)}
+                sx={{
+                  "& .MuiInputBase-root": {
+                    height: 100,
+                    width: 200,
+                  },
+                  paddingBottom: "1rem",
+                }}
+              />
+
+              <Button
+                sx={{
+                  backgroundColor: "black",
+                  color: "white",
+                  ":hover": {
+                    backgroundColor: "green",
+                    boxShadow: "none",
+                  },
+                }}
+                onClick={() =>
+                  consolidateData(
+                    firstName,
+                    lastName,
+                    varEmail,
+                    varPhone,
+                    varGuests,
+                    varDate
+                  )
+                }
+              >
+                <p style={{ padding: 0, margin: 0, fontFamily: "Raleway" }}>
+                  Submit
+                </p>
+              </Button>
+              <Snackbar
+                anchorOrigin={{ vertical, horizontal }}
+                open={open}
+                onClose={handleClose}
+                message="Your reservation has been submitted! Mike will be in touch soon!"
+                key={vertical + horizontal}
+                sx={{
+                  "& .MuiSnackbarContent-root": {
+                    backgroundColor: "green",
+                    fontFamily: "Raleway",
+                  },
+                }}
+              />
+            </Box>
+          </form>
+        </StyledFormBox>
+      </StyledOuterBox>
     </div>
   );
 }
