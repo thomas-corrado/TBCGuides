@@ -30,7 +30,7 @@ const navData = [
 ];
 
 const StyledBlackBar = styled("div", {
-  width: "100vw",
+  width: "100%",
   height: "4rem",
   backgroundColor: "black",
   position: "absolute",
