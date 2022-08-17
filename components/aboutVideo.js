@@ -9,6 +9,8 @@ const StyledOuterBox = styled(Box, {
   justifyContent: "center",
   overflow: "hidden",
   position: "absolute",
+  top: "4rem", 
+  marginBottom: "-4rem"
 });
 
 const StyledInnerBox = styled(Box, {
@@ -29,6 +31,7 @@ const AboutVideo = () => {
               display: "table-cell",
               verticalAlign: "middle",
               overflow: "hidden",
+              marginBottom: "-4rem",
             }}
           >
             <video
@@ -39,8 +42,8 @@ const AboutVideo = () => {
                 maxHeight: "calc(100vh - 4rem)",
                 display: "block",
                 overflow: "hidden",
-                padding: 0, 
-                margin: 0
+                padding: 0,
+                margin: 0,
               }}
               preload="metadata"
             >
