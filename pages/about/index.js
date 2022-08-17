@@ -4,6 +4,7 @@ import AboutVideo from "../../components/aboutVideo";
 import { Box } from "@mui/system";
 import { styled } from "@washingtonpost/wpds-ui-kit";
 import Button from "@mui/material/Button";
+import LearnMore from "../../components/learnMore";
 
 const StyledButtonBox = styled(Box, {
     width: "100vw", 
@@ -19,6 +20,7 @@ export default function AboutPage() {
     <div>
       <NavBar />
       <AboutVideo />
+      <LearnMore/>
     </div>
   );
 }

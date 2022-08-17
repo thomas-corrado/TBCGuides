@@ -76,6 +76,11 @@ export default function ReservationsPage() {
             required
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
+            sx={{
+              "& .MuiInputBase-root": {
+                width: 200,
+              },
+            }}
           />
           <TextField
             margin="normal"
@@ -84,6 +89,11 @@ export default function ReservationsPage() {
             required
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
+            sx={{
+              "& .MuiInputBase-root": {
+                width: 200,
+              },
+            }}
           />
           <TextField
             margin="normal"
@@ -93,6 +103,11 @@ export default function ReservationsPage() {
             required
             value={varEmail}
             onChange={(e) => setEmail(e.target.value)}
+            sx={{
+              "& .MuiInputBase-root": {
+                width: 200,
+              },
+            }}
           />
           <TextField
             margin="normal"
@@ -102,6 +117,11 @@ export default function ReservationsPage() {
             required
             value={varPhone}
             onChange={(e) => setPhone(e.target.value)}
+            sx={{
+              "& .MuiInputBase-root": {
+                width: 200,
+              },
+            }}
           />
           <TextField
             margin="normal"
@@ -111,6 +131,11 @@ export default function ReservationsPage() {
             required
             value={varGuests}
             onChange={(e) => setGuests(e.target.value)}
+            sx={{
+              "& .MuiInputBase-root": {
+                width: 200,
+              },
+            }}
           />
           <TextField
             className="dateBox"
