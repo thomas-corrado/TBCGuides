@@ -142,7 +142,7 @@ const Header = () => {
             top: "1rem",
           }}
         >
-          <Hamburger toggled={isOpen} toggle={setOpen} color="#023047" />
+          <Hamburger toggled={isOpen} toggle={setOpen} color="black" />
         </div>
 
         <Drawer

@@ -151,8 +151,6 @@ const About = () => {
           padding-bottom: 7rem;
         }
 
-       
-
         @media (max-width: 1290px) {
           .headingBox {
             margin-top: 7rem;

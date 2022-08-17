@@ -88,17 +88,17 @@ const Testiomonial = () => {
           : innerWidth > 558 
           ? "154rem"
           : innerWidth > 528
-          ? "158rem"
+          ? "157rem"
           : innerWidth > 500
           ? "143rem"
           : innerWidth > 484
-          ? "139rem"
+          ? "142rem"
           : innerWidth > 440
-          ? "139rem"
+          ? "142rem"
           : innerWidth > 388
-          ? "135rem"
-          : innerWidth > 338
-          ? "136rem"
+          ? "135rem" : innerWidth > 375 ? "138rem" 
+          : innerWidth > 339
+          ? "140rem"
           : "142rem",
       paddingBottom: "4rem"
     });

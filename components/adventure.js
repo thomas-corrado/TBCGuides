@@ -100,7 +100,7 @@ const Adventure = () => {
 
    const StyledDescriptionText = styled("p", {
      color: "black",
-     fontSize: innerWidth > 440 ? "1.3rem" : "1.1rem",
+     fontSize: innerWidth > 444 ? "1.3rem" : "1.1rem",
      display: "flex",
      justifyContent: "center",
      alignContent: "center",
@@ -169,6 +169,18 @@ const Adventure = () => {
           @media (max-width: 557px) {
             .swiper {
               top: 13rem;
+            }
+          }
+
+          @media (max-width: 444px) {
+            .swiper {
+              top: 12rem;
+            }
+          }
+
+          @media (max-width: 440px) {
+            .swiper {
+              top: 10rem;
             }
           }
 

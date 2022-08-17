@@ -45,25 +45,25 @@ const Contact = () => {
            : innerWidth > 1269
            ? "261rem"
            : innerWidth > 891
-           ? "264rem"
+           ? "262rem"
            : innerWidth > 751
-           ? "281rem"
+           ? "277rem"
            : innerWidth > 570
-           ? "270rem"
+           ? "266rem"
            : innerWidth > 528
            ? "278rem"
            : innerWidth > 484
-           ? "262rem"
+           ? "258rem"
            : innerWidth > 439
-           ? "263rem"
+           ? "258rem"
            : innerWidth > 425
            ? "272rem"
            : innerWidth > 388
-           ? "276rem"
+           ? "272rem"
            : innerWidth > 379
            ? "280rem"
            : innerWidth > 337
-           ? "289rem"
+           ? "284rem"
            : innerWidth > 296
            ? "295rem"
            : "297rem",
