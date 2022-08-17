@@ -7,7 +7,6 @@ import Drawer from "@mui/material/Drawer";
 import Link from "next/link";
 import Hamburger from "hamburger-react";
 import { Box } from "@mui/system";
-import zIndex from "@mui/material/styles/zIndex";
 
 const headersData = [
   {
