@@ -60,7 +60,8 @@ export default function ReservationsPage() {
   var submitEmail; 
   var submitPhone; 
   var submitGuests; 
-  var submitDate 
+  var submitDate; 
+  var submitEmoji = "❌";
 
   function consolidateData(inFirstName, inLastName, inEmail, inPhone, inGuests, inDate) {
 
@@ -80,7 +81,15 @@ export default function ReservationsPage() {
       phone: submitPhone,
       guests: submitGuests,
       last: submitLastName,
+      emoji: submitEmoji
     });
+
+    setFirstName("")
+    setLastName("");
+    setEmail("");
+    setPhone("");
+    setGuests("");
+    setDate("");
   }
 
   const handleClose = () => {
