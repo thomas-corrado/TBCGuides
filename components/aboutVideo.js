@@ -44,26 +44,21 @@ const AboutVideo = () => {
             -ms-flex-align: center;
             -webkit-align-items: center;
             align-items: center;
-            position: absolute;
-            height: 100%;
+            position: fixed;
+            height: calc(100% -4rem);
             width: 100%;
             top: 0;
             z-index: 999;
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 8px;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
           }
 
           .innerbox {
-            padding: 8px;
+    
             min-height: 10px;
             min-width: 10px;
             margin: auto;
-            background-color: #fff;
-            border-radius: 8px;
-            border: 1px solid #a5a5a5;
             position: relative;
           }
         `}</style>
