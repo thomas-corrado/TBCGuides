@@ -1,9 +1,5 @@
-const withVideos = require('next-videos')
-
-module.exports = withVideos()
-
 module.exports = {
   images: {
-    domains: ["res.cloudinary.com"],
+    domains: ["d14drtvwlopsgs.cloudfront.net"]
   },
 };

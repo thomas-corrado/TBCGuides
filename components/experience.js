@@ -108,18 +108,18 @@ const Experience = () => {
       position: "absolute",
       top:
         innerWidth > 1268
-          ? "58rem" : innerWidth > 883 ? "62rem" : innerWidth > 752
-          ? "63rem"
+          ? "58rem" : innerWidth > 883 ? "62rem" : innerWidth > 768
+          ? "63rem" 
           : innerWidth > 722
           ? "67rem"
           : innerWidth > 619
           ? "66rem"
           : innerWidth > 500
-          ? "66rem"
+          ? "67rem" : innerWidth > 492 ? "66rem" 
           : innerWidth > 440
-          ? "64rem"
+          ? "66rem"
           : innerWidth > 339
-          ? "62rem"
+          ? "65rem"
           : "67rem",
       width: "100vw",
       height: "40rem",
@@ -136,7 +136,7 @@ const Experience = () => {
         return (
           <StyledDesktopExperienceBox>
             <StyledFishingExperienceTitle>
-              The Finest Fishing Experience
+              Touring Led by Mike Blatt
             </StyledFishingExperienceTitle>
             <StyledDividerBoxOne>
               <Divider
@@ -152,15 +152,16 @@ const Experience = () => {
                   layout="fill"
                   objectFit="cover"
                   quality={100}
-                  src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660602868/bio_xsminj.jpg"
+                  src="https://d14drtvwlopsgs.cloudfront.net/bio.jpg"
                   alt="Harpoon"
                 />
               </StyledMichaelImageBoxTwo>
             </StyledMichaelImageBox>
             <StyledDescriptionBox>
               <StyledDescriptionText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Mike Blatt is an extremely experienced fisherman with fully
+                certified training in Wilderness First Response, as well as
+                Swiftwater Rescue.
               </StyledDescriptionText>
             </StyledDescriptionBox>
           </StyledDesktopExperienceBox>

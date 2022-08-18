@@ -16,20 +16,17 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 
 const steps = [
   {
+    writer: "- Caleb D",
+    description: `Mike is a terrific fishing guide. I have gone out on my own a bit, but without much luck. Then when Mike and I went out in the Fall, it seemed the fish were simply attracted to us we were getting so many bites. It was an extremely successful trip near the end of the season. Plus, Mike made it a fun time – he clearly knew the perfect type of lures for the area (and could explain why he was recommending that specific lure), had a deep understanding of how different river and weather conditions affect the fish, and made great non-fishing conversation. He came well supplied with all the equipment that we needed and even gave me tips on where to go in the future! Highly recommend a trip with Mike.`,
+  },
+  {
+    writer: "- Howard Z",
+    description:
+      "My wife and I had a great time fishing with Mike. He was extremely knowledgeable and helpful throughout the entire trip. We caught smallmouth bass, perch, and bluegill and had a great time fishing the entire lake. Definitely would recommend a trip with Mike.",
+  },
+  {
     writer: "- Mitch R",
     description: `Simply put, Mike exceeded all expectations. My girlfriend and I went for a date night and had a blast! (and obviously caught fish!) All equipment was in exceptional condition, everything was communicated effectively and in a way that makes you feel as if you'd been fishing buddies for years. Can't recommend enough and will definitely be bringing a few friends on another trip at some point!`,
-  },
-  {
-    writer: "- Tommy C",
-    description:
-      "An ad group contains one or more ads which target a shared set of keywords.",
-  },
-  {
-    writer: "- John D",
-    description: `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`,
   },
 ];
 
@@ -76,26 +73,29 @@ const Testiomonial = () => {
       height: "auto",
       position: "absolute",
       top:
+      innerWidth > 1485 ? "156rem" :
         innerWidth > 1306
-          ? "156rem"
+          ? "158rem"
           : innerWidth > 1269
-          ? "160rem"
-          : innerWidth > 752
+          ? "168rem"
+          : innerWidth > 768
           ? "164rem"
           : innerWidth > 751
-          ? "169rem"
-          : innerWidth > 528
+          ? "168rem"
+          : innerWidth > 558 
           ? "153rem"
+          : innerWidth > 527
+          ? "157rem"
           : innerWidth > 500
-          ? "138rem"
+          ? "143rem"
           : innerWidth > 484
-          ? "137rem"
-          : innerWidth > 439
-          ? "139rem"
+          ? "142rem"
+          : innerWidth > 440
+          ? "142rem"
           : innerWidth > 388
-          ? "133rem"
-          : innerWidth > 338
-          ? "136rem"
+          ? "135rem" : innerWidth > 375 ? "138rem" 
+          : innerWidth > 339
+          ? "140rem"
           : "142rem",
       paddingBottom: "4rem"
     });
@@ -147,7 +147,7 @@ const Testiomonial = () => {
       display: "flex",
       width: "100vw",
       justifyContent: "center",
-      marginTop: "5rem",
+      marginTop: innerWidth > 527 ? "5rem" : "3rem",
       fontFamily: "Raleway",
       fontSize: "1.2rem",
       lineHeight: "2rem",
@@ -156,7 +156,7 @@ const Testiomonial = () => {
 
 
     return (
-      <StyledDesktopTestimonialBox>
+      <StyledDesktopTestimonialBox className="outer">
         <style global jsx>{`
           .headerBox {
             z-index: 2;
@@ -164,24 +164,24 @@ const Testiomonial = () => {
 
           .weaveBox {
             z-index: -1;
-            height: 52rem;
+            height: 65rem;
           }
 
           @media (max-width: 425px) {
             .weaveBox {
-              height: 56rem;
+              height: 78rem;
             }
           }
 
           @media (max-width: 324px) {
             .weaveBox {
-              height: 58rem;
+              height: 78rem;
             }
           }
 
           @media (max-width: 296px) {
             .weaveBox {
-              height: 59rem;
+              height: 85rem;
             }
           }
         `}</style>
@@ -193,7 +193,7 @@ const Testiomonial = () => {
           />
         </StyledDividerBoxOne>
         <StyledHeaderBox className="headerBox">
-          Loved by <br /> Friends & Family
+          Loved by <br /> Every Client
         </StyledHeaderBox>
 
         <StyledDividerBoxTwo>
@@ -275,7 +275,7 @@ const Testiomonial = () => {
               layout="fill"
               objectFit="cover"
               quality={100}
-              src="https://res.cloudinary.com/dsc1j5xny/image/upload/v1660536494/image-from-rawpixel-id-585144-jpeg_dcxlnc.jpg"
+              src="https://d14drtvwlopsgs.cloudfront.net/weave.jpeg"
               alt="Harpoon"
             />
           </StyledWeaveImageBoxTwo>

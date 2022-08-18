@@ -104,7 +104,8 @@ const Header = () => {
                 sx={{
                   width: "100%",
                   textAlign: "center",
-                  fontFamily: "Raleway"
+                  fontFamily: "Raleway",
+                  zIndex: 5
                 }}
               >
                 {label}
@@ -142,7 +143,7 @@ const Header = () => {
             top: "1rem",
           }}
         >
-          <Hamburger toggled={isOpen} toggle={setOpen} color="#023047" />
+          <Hamburger toggled={isOpen} toggle={setOpen} color="black" />
         </div>
 
         <Drawer

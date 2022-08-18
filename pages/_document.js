@@ -84,11 +84,11 @@ display: block;
           />
 
           <link
-            href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Raleway&display=fallback"
             rel="stylesheet"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=fallback"
             rel="stylesheet"
           />
           <link

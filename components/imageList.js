@@ -7,51 +7,51 @@ import { Box } from "@mui/system";
 
 const itemData = [
   {
-    img: "https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450378/fish-holding-10_abhx6o.jpg",
+    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-10.jpg",
     title: "one",
   },
   {
-    img: "https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450378/fish-holding-11_b0arj3.jpg",
+    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-11.jpg",
     title: "two",
   },
   {
-    img: "https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450378/fish-holding-12_fcgjdd.jpg",
+    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-12.jpg",
     title: "thre",
   },
   {
-    img: "https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450378/fish-holding-8_fycc0t.jpg",
+    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-8.jpg",
     title: "four",
   },
   {
-    img: "https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450378/fish-holding-9_hy2btb.jpg",
+    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-9.jpg",
     title: "five",
   },
   {
-    img: "https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450378/fish-holding-13_hawysi.jpg",
+    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-13.jpg",
     title: "six",
   },
   {
-    img: "https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450377/fish-holding-7_zgxdch.jpg",
+    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-7.jpg",
     title: "seven",
   },
   {
-    img: "https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450377/fish-holding-6_rmdkrj.jpg",
+    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-6.jpg",
     title: "eight",
   },
   {
-    img: "https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450377/fish-holding-one_qapjpo.jpg",
+    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-1.jpg",
     title: "nine",
   },
   {
-    img: "https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450376/fish-holding-14_ie19jk.jpg",
+    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-14.jpg",
     title: "ten",
   },
   {
-    img: "https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450376/fish-holding-2_sdrvsm.jpg",
+    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-2.jpg",
     title: "eleven",
   },
   {
-    img: "https://res.cloudinary.com/dsc1j5xny/image/upload/v1660450376/fish-holding-4_nlhi1w.jpg",
+    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-4.jpg",
     title: "tweleve",
   },
 ];

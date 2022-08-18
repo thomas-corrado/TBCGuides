@@ -38,35 +38,37 @@ const Contact = () => {
        width: "100vw",
        height: "auto",
        position: "absolute",
-       paddingTop: "8rem", 
+       paddingTop: "8rem",
        top:
          innerWidth > 1306
-           ? "257rem"
+           ? "266rem"
            : innerWidth > 1269
-           ? "261rem"
-           : innerWidth > 891
-           ? "264rem"
-           : innerWidth > 751
-           ? "281rem"
-           : innerWidth > 570
            ? "270rem"
-           : innerWidth > 528
+           : innerWidth > 891
+           ? "271rem"
+           : innerWidth > 751
+           ? "292rem"
+           : innerWidth > 570
            ? "278rem"
+           : innerWidth > 558
+           ? "278rem"
+           : innerWidth >= 527
+           ? "287rem"
            : innerWidth > 484
-           ? "262rem"
+           ? "271rem"
            : innerWidth > 439
-           ? "263rem"
-           : innerWidth > 425
-           ? "272rem"
-           : innerWidth > 388
            ? "276rem"
+           : innerWidth > 425
+           ? "282rem"
+           : innerWidth > 388
+           ? "290rem"
            : innerWidth > 379
-           ? "280rem"
+           ? "297rem"
            : innerWidth > 337
-           ? "289rem"
+           ? "305rem"
            : innerWidth > 296
-           ? "295rem"
-           : "297rem",
+           ? "307rem"
+           : "317rem",
      });
 
     return (
