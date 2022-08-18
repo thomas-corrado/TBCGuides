@@ -13,6 +13,44 @@ import { Box } from "@mui/system";
 import Divider from "@mui/material/Divider";
 import Image from "next/image";
 
+const itemData = [
+  {
+    number: 7,
+  },
+  {
+    number: 6,
+  },
+  {
+    number: 14,
+  },
+  {
+    number: 1,
+  },
+  {
+    number: 4,
+  },
+  {
+    number: 2,
+  },
+  {
+    number: 12,
+  },
+  {
+    number: 15,
+  },
+  {
+    number: 11,
+  },
+  {
+    number: 9,
+  },
+  {
+    number: 13,
+  },
+ 
+];
+
+
 const Adventure = () => {
   const [state, setState] = useState({
     mobileView: false,
@@ -262,116 +300,20 @@ const Adventure = () => {
           modules={[Pagination, Navigation]}
           className="swiper"
         >
-          <SwiperSlide className="swiper-slide">
-            <Image
-              priority
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-7.jpg"
-              alt={"image1"}
-            />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <Image
-              priority
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-6.jpg"
-              alt={"image1"}
-            />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <Image
-              priority
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-14.jpg"
-              alt={"image1"}
-            />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <Image
-              priority
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-1.jpg"
-              alt={"image1"}
-            />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <Image
-              priority
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-4.jpg"
-              alt={"image1"}
-            />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <Image
-              priority
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-2.jpg"
-              alt={"image1"}
-            />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <Image
-              priority
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-12.jpg"
-              alt={"image1"}
-            />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <Image
-              priority
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-15.jpg"
-              alt={"image1"}
-            />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <Image
-              priority
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-11.jpg"
-              alt={"image1"}
-            />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <Image
-              priority
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-9.jpg"
-              alt={"image1"}
-            />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <Image
-              priority
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              src="https://d14drtvwlopsgs.cloudfront.net/fish-holding-13.jpg"
-              alt={"image1"}
-            />
-          </SwiperSlide>
+          {itemData.map((item) => {
+            return (
+              <SwiperSlide key={item.number} className="swiper-slide">
+                <Image
+                  priority
+                  layout="fill"
+                  objectFit="cover"
+                  quality={100}
+                  src={`https://d14drtvwlopsgs.cloudfront.net/fish-holding-${item.number}.jpg`}
+                  alt={`item-${item.number}`}
+                />
+              </SwiperSlide>
+            )
+          })}
         </Swiper>
       </StyledDesktopAdventureBox>
     );
