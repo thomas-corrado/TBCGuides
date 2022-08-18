@@ -19,9 +19,6 @@ const itemData = [
     number: 4,
   },
   {
-    number: 5,
-  },
-  {
     number: 6,
   },
   {
