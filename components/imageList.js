@@ -7,52 +7,133 @@ import { Box } from "@mui/system";
 
 const itemData = [
   {
-    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-10.jpg",
-    title: "one",
+    number: 1,
   },
   {
-    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-11.jpg",
-    title: "two",
+    number: 2,
   },
   {
-    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-12.jpg",
-    title: "thre",
+    number: 3,
   },
   {
-    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-8.jpg",
-    title: "four",
+    number: 4,
   },
   {
-    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-9.jpg",
-    title: "five",
+    number: 6,
   },
   {
-    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-13.jpg",
-    title: "six",
+    number: 7,
   },
   {
-    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-7.jpg",
-    title: "seven",
+    number: 8,
   },
   {
-    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-6.jpg",
-    title: "eight",
+    number: 9,
   },
   {
-    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-1.jpg",
-    title: "nine",
+    number: 10,
   },
   {
-    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-14.jpg",
-    title: "ten",
+    number: 11,
   },
   {
-    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-2.jpg",
-    title: "eleven",
+    number: 12,
   },
   {
-    img: "https://d14drtvwlopsgs.cloudfront.net/fish-holding-4.jpg",
-    title: "tweleve",
+    number: 13,
+  },
+  {
+    number: 14,
+  },
+  {
+    number: 15,
+  },
+  {
+    number: 16,
+  },
+  {
+    number: 17,
+  },
+  {
+    number: 18,
+  },
+  {
+    number: 19,
+  },
+  {
+    number: 20,
+  },
+  {
+    number: 21,
+  },
+  {
+    number: 22,
+  },
+  {
+    number: 23,
+  },
+  {
+    number: 24,
+  },
+  {
+    number: 25,
+  },
+  {
+    number: 26,
+  },
+  {
+    number: 27,
+  },
+  {
+    number: 28,
+  },
+  {
+    number: 29,
+  },
+  {
+    number: 30,
+  },
+  {
+    number: 31,
+  },
+  {
+    number: 32,
+  },
+  {
+    number: 33,
+  },
+  {
+    number: 34,
+  },
+  {
+    number: 35,
+  },
+  {
+    number: 36,
+  },
+  {
+    number: 37,
+  },
+  {
+    number: 38,
+  },
+  {
+    number: 39,
+  },
+  {
+    number: 40,
+  },
+  {
+    number: 41,
+  },
+  {
+    number: 42,
+  },
+  {
+    number: 43,
+  },
+  {
+    number: 44,
   },
 ];
 
@@ -70,11 +151,11 @@ const ImageListWrapper = () => {
       <StyledBox>
         <ImageList variant="masonry" cols={1} gap={5}>
           {itemData.map((item) => (
-            <ImageListItem key={item.img}>
+            <ImageListItem key={item.number}>
               <img
-                src={`${item.img}`}
-                srcSet={`${item.img}`}
-                alt={item.title}
+                src={`https://d14drtvwlopsgs.cloudfront.net/fish-holding-${item.number}.jpg`}
+                srcSet={`https://d14drtvwlopsgs.cloudfront.net/fish-holding-${item.number}.jpg`}
+                alt={item.number}
                 loading="lazy"
               />
             </ImageListItem>
