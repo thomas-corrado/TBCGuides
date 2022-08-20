@@ -74,7 +74,7 @@ const About = () => {
     width: "100vw",
     overflow: "hidden",
     position: "absolute",
-    marginTop: ".3rem",
+    marginTop: "1rem",
   });
 
   const StyledCutOutOneBoxTwo = styled(Box, {
