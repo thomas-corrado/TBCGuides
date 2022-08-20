@@ -74,6 +74,8 @@ const About = () => {
     width: "100vw",
     overflow: "hidden",
     position: "absolute",
+    marginTop: "-1rem",
+    
   });
 
   const StyledCutOutOneBoxTwo = styled(Box, {
@@ -129,7 +131,8 @@ const About = () => {
     width: "100vw",
     overflow: "hidden",
     position: "absolute",
-    backgroundColor: "white"
+    backgroundColor: "white",
+    marginTop: "-.3rem",
   });
 
   const StyledCutOutTwoBoxTwo = styled(Box, {
@@ -146,7 +149,7 @@ const About = () => {
           height: 4rem;
         }
 
-        .headingBox { 
+        .headingBox {
           margin-top: 8rem;
         }
 
@@ -199,7 +202,7 @@ const About = () => {
             layout="fill"
             objectFit="cover"
             quality={100}
-            src="https://d14drtvwlopsgs.cloudfront.net/cut-paper-top.png"
+            src="https://d14drtvwlopsgs.cloudfront.net/cut-paper-top-final.png"
             alt="Harpoon"
           />
         </StyledCutOutOneBoxTwo>
