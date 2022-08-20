@@ -56,11 +56,11 @@ const FrontPage = () => {
         <style global jsx>{`
 
         html {
-          background-color: blue
+          background-color: white
         }
 
         body {
-          background-color: blue
+          background-color: white
         }
           h1 {
             color: black;

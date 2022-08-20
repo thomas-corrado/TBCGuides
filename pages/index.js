@@ -16,7 +16,7 @@ export default function Home() {
             name="viewport"
             content="initial-scale=1, viewport-fit=cover"
           ></meta>
-          <meta name="theme-color" content="#800000"></meta>
+          <meta name="theme-color" content="#FFFFFF"></meta>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 

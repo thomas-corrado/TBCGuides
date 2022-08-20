@@ -22,11 +22,12 @@ export default function AboutPage() {
           name="viewport"
           content="initial-scale=1, viewport-fit=cover"
         ></meta>
+        <meta name="theme-color" content="#000000"></meta>
       </Head>
       <style global jsx>
         {`
           html {
-            background-color: red;
+            background-color: black;
           }
         `}
       </style>

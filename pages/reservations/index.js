@@ -117,20 +117,22 @@ export default function ReservationsPage() {
           name="viewport"
           content="initial-scale=1, viewport-fit=cover"
         ></meta>
-        <meta name="theme-color" content="#800000"></meta>
+        <meta name="theme-color" content="#000000"></meta>
       </Head>
       <div
         style={{
-          height: "auto",
           backgroundColor: "#f6f6f6",
           position: "relative",
           paddingBottom: "4rem",
+          height: "100vh", 
+          overflow: "auto"
         }}
+        className="cover"
       >
         <NavBar />
         <style global jsx>{`
           html {
-            background-color: green;
+            background-color: black;
           }
 
           body {
