@@ -33,9 +33,9 @@ const Experience = () => {
 
     const StyledDesktopExperienceBox = styled("div", {
       width: "100vw",
-      height: "auto",
+      height: "230vh",
       position: "absolute",
-      
+      backgroundColor: "white", 
     });
 
     const StyledFishingExperienceTitle = styled("h3", {
@@ -48,6 +48,7 @@ const Experience = () => {
       fontFamily: "Raleway",
       width: innerWidth > 722 ? "80vw" : innerWidth > 351 ? "78vw" : "81vw",
       paddingTop: "3rem",
+      
     });
 
     const StyledDescriptionBox = styled("div", {
@@ -67,7 +68,7 @@ const Experience = () => {
           : "49rem",
       width: innerWidth > 768 ? "85vw" : "75vw",
       height: "auto",
-      backgroundColor: "#F6F6F6",
+      backgroundColor: "white",
       display: "flex",
       alignContent: "center",
     });
@@ -100,6 +101,7 @@ const Experience = () => {
           : "49rem",
       left: innerWidth > 722 ? "5.5rem" : innerWidth > 526 ? "4rem" : "2.5rem",
       zIndex: 5,
+     
     });
 
     const StyledMichaelImageBox = styled(Box, {
@@ -108,14 +110,19 @@ const Experience = () => {
       position: "absolute",
       top:
         innerWidth > 1268
-          ? "58rem" : innerWidth > 883 ? "62rem" : innerWidth > 768
-          ? "63rem" 
+          ? "58rem"
+          : innerWidth > 883
+          ? "62rem"
+          : innerWidth > 768
+          ? "63rem"
           : innerWidth > 722
           ? "67rem"
           : innerWidth > 619
           ? "66rem"
           : innerWidth > 500
-          ? "67rem" : innerWidth > 492 ? "66rem" 
+          ? "67rem"
+          : innerWidth > 492
+          ? "66rem"
           : innerWidth > 440
           ? "66rem"
           : innerWidth > 339
@@ -135,6 +142,13 @@ const Experience = () => {
     const dislayDesktop = () => {
         return (
           <StyledDesktopExperienceBox>
+            <style global jsx>
+              {`
+                body {
+                  background-color: white;
+                }
+              `}
+            </style>
             <StyledFishingExperienceTitle>
               Touring Led by Mike Blatt
             </StyledFishingExperienceTitle>
@@ -156,7 +170,9 @@ const Experience = () => {
                   alt="Harpoon"
                 />
               </StyledMichaelImageBoxTwo>
+              
             </StyledMichaelImageBox>
+
             <StyledDescriptionBox>
               <StyledDescriptionText>
                 Mike Blatt is an extremely experienced fisherman with fully

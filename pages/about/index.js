@@ -11,15 +11,21 @@ const StyledButtonBox = styled(Box, {
     justifyContent: "center", 
     position: "relative", 
     fontFamily: "Raleway", 
-    
 })
 
 export default function AboutPage() {
   return (
     <div>
+      <style global jsx>
+        {`
+          html {
+            background-color: black;
+          }
+        `}
+      </style>
       <NavBar />
       <AboutVideo />
-      <LearnMore/>
+      <LearnMore />
     </div>
   );
 }

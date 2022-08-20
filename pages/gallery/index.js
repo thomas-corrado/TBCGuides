@@ -6,6 +6,15 @@ export default function GalleryPage() {
   return (
     <div>
         <NavBar/>
+        <style global jsx> 
+        {`
+
+          html {
+            background-color: black
+          }
+        `}
+
+        </style>
         <ImageListWrapper/>
     </div>
   )

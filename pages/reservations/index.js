@@ -10,11 +10,13 @@ import { styled } from "@washingtonpost/wpds-ui-kit";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 
 const StyledOuterBox = styled(Box, {
-  width: "100vw", 
-  height: 'auto', 
-  display: "flex", 
-  justifyContent: "center"
-})
+  width: "100vw",
+  height: "auto",
+  display: "flex",
+  justifyContent: "center",
+  backgroundColor: "#f6f6f6",
+  
+});
 
 const StyledHeaderBox = styled(Box, {
   position: "absolute",
@@ -25,6 +27,7 @@ const StyledHeaderBox = styled(Box, {
   display: "flex",
   justifyContent: "center",
   textAlign: "center"
+  
 });
 
 const StyledFormBox = styled(Box, {
@@ -36,7 +39,7 @@ const StyledFormBox = styled(Box, {
   justifyContent: "center",
   paddingBottom: "3rem",
   paddingTop: "3rem",
-  borderRadius: "2rem"
+  borderRadius: "2rem", 
 });
 
 export default function ReservationsPage() {
@@ -107,9 +110,25 @@ export default function ReservationsPage() {
   }
 
   return (
-    <div>
+    <div
+      style={{
+        height: "calc(100vh + 4rem)",
+        backgroundColor: "#f6f6f6",
+        position: "relative", 
+        paddingBottom: "4rem", 
+        overflow: "auto"
+      }}
+    >
       <NavBar />
       <style global jsx>{`
+        html {
+          background-color: black;
+        }
+
+        body {
+          background-color: #f6f6f6;
+        }
+
         .formBox {
           top: 10rem;
         }

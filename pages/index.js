@@ -12,18 +12,22 @@ export default function Home() {
       <div>
         <Head>
           <title>Hanover Guides</title>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-        
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no"
+          />
+
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
         <main>
-          <FrontPage />
-          <Experience />
-          <Adventure />
-          <Testiomonial />
-          <About />
-          <Contact />
+         
+            <FrontPage />
+            <Experience />
+            <Adventure />
+            <Testiomonial />
+            <About />
+            <Contact />
         </main>
       </div>
     </div>

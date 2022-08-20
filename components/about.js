@@ -65,6 +65,7 @@ const About = () => {
         ? "220rem"
         : "227rem",
     paddingBottom: "2rem",
+    zIndex: 5
   });
 
   const StyledCutOutOneBoxOne = styled(Box, {
@@ -119,6 +120,7 @@ const About = () => {
     justifyContent: "center",
     postition: "absolute",
     zIndex: 1,
+    
   });
 
   const StyledCutOutTwoBoxOne = styled(Box, {
@@ -127,6 +129,7 @@ const About = () => {
     width: "100vw",
     overflow: "hidden",
     position: "absolute",
+    backgroundColor: "white"
   });
 
   const StyledCutOutTwoBoxTwo = styled(Box, {
@@ -139,7 +142,7 @@ const About = () => {
     <StyledDesktopAboutBox>
       <style global jsx>{`
         .cutBox {
-          z-index: -1;
+          z-index: 5;
           height: 4rem;
         }
 

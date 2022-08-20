@@ -142,7 +142,10 @@ const StyledBox = styled(Box, {
     display: "flex", 
     justifyContent: "center", 
     top: "3rem", 
-    position: "relative"
+    position: "relative", 
+    height: "auto", 
+    overflow: "auto", 
+    backgroundColor: "white"
 })
 
 const ImageListWrapper = () => {

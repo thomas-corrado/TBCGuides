@@ -78,24 +78,27 @@ const Adventure = () => {
 
   const StyledDesktopAdventureBox = styled(Box, {
     width: "100vw",
-    height: "auto",
+    height: "130vh",
     position: "absolute",
     top:
-    innerWidth > 1269 ? "102rem" :
-      innerWidth > 768
+      innerWidth > 1269
+        ? "102rem"
+        : innerWidth > 768
         ? "106rem"
         : innerWidth > 751
         ? "110rem"
         : innerWidth > 527
         ? "110rem"
         : innerWidth > 500
-        ? "95rem" : innerWidth > 493 ? "95rem" 
+        ? "95rem"
+        : innerWidth > 493
+        ? "95rem"
         : innerWidth > 440
         ? "95rem"
         : innerWidth > 339
         ? "93rem"
         : "95rem",
-    
+    backgroundColor: "white",
   });
 
    const StyledAdventureExperienceTitle = styled("h3", {
@@ -114,6 +117,7 @@ const Adventure = () => {
      display: "flex",
      left: "5vw",
      zIndex: 5,
+     
    });
 
    const StyledDividerBoxTwo = styled("div", {
@@ -122,6 +126,7 @@ const Adventure = () => {
      top: "0rem",
      left: innerWidth > 722 ? "5.5rem" : innerWidth > 526 ? "4rem" : "2.5rem",
      width: innerWidth > 526 ? "25rem" : "15rem",
+     
    });
 
    const StyledDescriptionBox = styled("div", {
@@ -131,7 +136,7 @@ const Adventure = () => {
      top: innerWidth > 685 ? "8rem" : innerWidth > 440 ? "11rem" : innerWidth > 388 ? "7rem" : "9rem",
      width: innerWidth > 768 ? "85vw" : "75vw",
      height: "auto",
-     backgroundColor: "#F6F6F6",
+     backgroundColor: "white",
      display: "flex",
      alignContent: "center",
    });
@@ -144,6 +149,7 @@ const Adventure = () => {
      alignContent: "center",
      lineHeight: innerWidth > 722 ? "calc(1rem + (4rem - 1.5vw))" : "2.4rem",
      fontFamily: "Raleway",
+
    });
 
   const dislayDesktop = () => {
@@ -177,6 +183,7 @@ const Adventure = () => {
             width: 80vw;
             height: 35rem;
             top: 7rem;
+            
           }
 
           @media (max-width: 1484px) {
@@ -276,6 +283,7 @@ const Adventure = () => {
             -ms-flex-align: center;
             -webkit-align-items: center;
             align-items: center;
+            
           }
 
           .swiper-slide img {
@@ -312,7 +320,7 @@ const Adventure = () => {
                   alt={`item-${item.number}`}
                 />
               </SwiperSlide>
-            )
+            );
           })}
         </Swiper>
       </StyledDesktopAdventureBox>
