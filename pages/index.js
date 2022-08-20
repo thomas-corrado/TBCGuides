@@ -11,13 +11,13 @@ export default function Home() {
     <div>
       <div>
         <Head>
-          <title>Hanover Guides</title>
+          <title>TBC Guide Services</title>
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-          <link rel="icon" href="/favicon.ico" />
+            content="initial-scale=1, viewport-fit=cover"
+          ></meta>
+          <meta name="theme-color" content="#FFFFFF"></meta>
+          <link rel="icon" href="/phishing.ico" />
         </Head>
 
         <main>

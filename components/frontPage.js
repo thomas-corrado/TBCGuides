@@ -11,7 +11,8 @@ const StyledImageBox = styled(Box, {
   height: "100vh",
   overflow: "hidden",
   zIndex: "3",
-  marginBottom: "0"
+  marginBottom: "0", 
+  
 });
 
 const StyledWelcome = styled("h2", {
@@ -53,6 +54,14 @@ const FrontPage = () => {
     <div>
       <StyledImageBox>
         <style global jsx>{`
+
+        html {
+          background-color: white
+        }
+
+        body {
+          background-color: white
+        }
           h1 {
             color: black;
             font-size: 4rem;
@@ -77,6 +86,7 @@ const FrontPage = () => {
             z-index: 3;
             opacity: 0.9;
             overflow: hidden;
+            background-color: white; 
           }
 
           .welcome-container {
@@ -98,6 +108,7 @@ const FrontPage = () => {
             position: absolute;
             z-index: 2;
             top: 9.5rem;
+            background-color: white; 
           }
 
           .welcome {

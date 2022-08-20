@@ -73,8 +73,9 @@ const Testiomonial = () => {
       height: "auto",
       position: "absolute",
       top:
-      innerWidth > 1485 ? "156rem" :
-        innerWidth > 1306
+        innerWidth > 1485
+          ? "156rem"
+          : innerWidth > 1306
           ? "158rem"
           : innerWidth > 1269
           ? "168rem"
@@ -82,7 +83,7 @@ const Testiomonial = () => {
           ? "164rem"
           : innerWidth > 751
           ? "168rem"
-          : innerWidth > 558 
+          : innerWidth > 558
           ? "153rem"
           : innerWidth > 527
           ? "157rem"
@@ -93,17 +94,21 @@ const Testiomonial = () => {
           : innerWidth > 440
           ? "142rem"
           : innerWidth > 388
-          ? "135rem" : innerWidth > 375 ? "138rem" 
+          ? "135rem"
+          : innerWidth > 375
+          ? "138rem"
           : innerWidth > 339
           ? "140rem"
           : "142rem",
-      paddingBottom: "4rem"
+      paddingBottom: "4rem",
+      zIndex: 4,
     });
 
     const StyledDividerBoxOne = styled("div", {
       position: "absolute",
       display: "flex",
       left: "5vw",
+      
     });
 
     const StyledWeaveImageBox = styled(Box, {
@@ -113,6 +118,7 @@ const Testiomonial = () => {
       overflow: "hidden",
       position: "absolute",
       top: "3.5rem",
+     
     });
 
     const StyledWeaveImageBoxTwo = styled(Box, {
@@ -165,6 +171,7 @@ const Testiomonial = () => {
           .weaveBox {
             z-index: -1;
             height: 65rem;
+            background-color: white; 
           }
 
           @media (max-width: 425px) {

@@ -41,7 +41,7 @@ const Contact = () => {
        paddingTop: "8rem",
        top:
          innerWidth > 1306
-           ? "266rem"
+           ? "265rem"
            : innerWidth > 1269
            ? "270rem"
            : innerWidth > 891
@@ -69,6 +69,7 @@ const Contact = () => {
            : innerWidth > 296
            ? "307rem"
            : "317rem",
+      backgroundColor: "white"
      });
 
     return (
