@@ -55,6 +55,10 @@ const FrontPage = () => {
       <StyledImageBox>
         <style global jsx>{`
 
+        html {
+          background-color: blue
+        }
+
         body {
           background-color: white
         }
