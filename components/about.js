@@ -74,7 +74,8 @@ const About = () => {
     width: "100vw",
     overflow: "hidden",
     position: "absolute",
-    marginTop: "1rem",
+    marginTop: ".3rem",
+    backgroundColor: "black"
   });
 
   const StyledCutOutOneBoxTwo = styled(Box, {
@@ -201,7 +202,7 @@ const About = () => {
             layout="fill"
             objectFit="cover"
             quality={100}
-            src="https://d14drtvwlopsgs.cloudfront.net/cut-paper-top.png"
+            src="https://d14drtvwlopsgs.cloudfront.net/cut-paper-top-final.png"
             alt="Harpoon"
           />
         </StyledCutOutOneBoxTwo>
