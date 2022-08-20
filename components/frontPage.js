@@ -60,7 +60,7 @@ const FrontPage = () => {
         }
 
         body {
-          background-color: white
+          background-color: blue
         }
           h1 {
             color: black;
