@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <div>
         <Head>
-          <title>Hanover Guides</title>
+          <title>TBC Guide Services</title>
           <meta
             name="viewport"
             content="initial-scale=1, viewport-fit=cover"
