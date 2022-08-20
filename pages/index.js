@@ -12,10 +12,7 @@ export default function Home() {
       <div>
         <Head>
           <title>Hanover Guides</title>
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/> 
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
