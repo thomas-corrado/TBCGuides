@@ -74,6 +74,7 @@ const About = () => {
     width: "100vw",
     overflow: "hidden",
     position: "absolute",
+    marginTop: ".2rem",
   });
 
   const StyledCutOutOneBoxTwo = styled(Box, {
@@ -129,7 +130,8 @@ const About = () => {
     width: "100vw",
     overflow: "hidden",
     position: "absolute",
-    backgroundColor: "white"
+    backgroundColor: "white",
+    marginTop: "-.3rem",
   });
 
   const StyledCutOutTwoBoxTwo = styled(Box, {
@@ -144,9 +146,10 @@ const About = () => {
         .cutBox {
           z-index: 5;
           height: 4rem;
+          
         }
 
-        .headingBox { 
+        .headingBox {
           margin-top: 8rem;
         }
 
