@@ -113,7 +113,11 @@ export default function ReservationsPage() {
   return (
     <div>
       <Head>
-        <meta name='viewport' content='initial-scale=1, viewport-fit=cover'></meta>
+        <meta
+          name="viewport"
+          content="initial-scale=1, viewport-fit=cover"
+        ></meta>
+        <meta name="theme-color" content="#800000"></meta>
       </Head>
       <div
         style={{
