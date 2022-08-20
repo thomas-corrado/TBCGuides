@@ -17,7 +17,7 @@ export default function Home() {
             content="initial-scale=1, viewport-fit=cover"
           ></meta>
           <meta name="theme-color" content="#FFFFFF"></meta>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/phishing.ico" />
         </Head>
 
         <main>
