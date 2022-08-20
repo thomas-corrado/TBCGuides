@@ -4,6 +4,7 @@ import AboutVideo from "../../components/aboutVideo";
 import { Box } from "@mui/system";
 import { styled } from "@washingtonpost/wpds-ui-kit";
 import LearnMore from "../../components/learnMore";
+import Head from "next/head";
 
 const StyledButtonBox = styled(Box, {
     width: "100vw", 
@@ -16,10 +17,16 @@ const StyledButtonBox = styled(Box, {
 export default function AboutPage() {
   return (
     <div>
+      <Head>
+        <meta
+          name="viewport"
+          content="initial-scale=1, viewport-fit=cover"
+        ></meta>
+      </Head>
       <style global jsx>
         {`
           html {
-            background-color: black;
+            background-color: red;
           }
         `}
       </style>
