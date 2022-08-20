@@ -3,7 +3,7 @@ html {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: white;
+  background-color: red;
   z-index: 1;
   scrollbar-width: none;
   min-height: 100%;

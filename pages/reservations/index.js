@@ -112,11 +112,11 @@ export default function ReservationsPage() {
   return (
     <div
       style={{
-        height: "calc(100vh + 4rem)",
+        height: "auto",
         backgroundColor: "#f6f6f6",
-        position: "relative", 
-        paddingBottom: "4rem", 
-        overflow: "auto"
+        position: "relative",
+        paddingBottom: "4rem",
+       
       }}
     >
       <NavBar />
