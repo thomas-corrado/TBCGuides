@@ -118,14 +118,15 @@ export default function ReservationsPage() {
           content="initial-scale=1, viewport-fit=cover"
         ></meta>
         <meta name="theme-color" content="#000000"></meta>
+        <link rel="icon" href="/phishing.ico" />
       </Head>
       <div
         style={{
           backgroundColor: "#f6f6f6",
           position: "relative",
           paddingBottom: "4rem",
-          height: "100vh", 
-          overflow: "auto"
+          height: "100vh",
+          overflow: "auto",
         }}
         className="cover"
       >

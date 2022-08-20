@@ -23,6 +23,7 @@ export default function AboutPage() {
           content="initial-scale=1, viewport-fit=cover"
         ></meta>
         <meta name="theme-color" content="#000000"></meta>
+        <link rel="icon" href="/phishing.ico" />
       </Head>
       <style global jsx>
         {`
