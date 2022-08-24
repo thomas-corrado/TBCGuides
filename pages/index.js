@@ -1,10 +1,11 @@
 import Head from "next/head"
-import FrontPage from "../components/frontPage";
+import FrontPage from "../components/frontPageHeader";
 import Experience from "../components/experience";
 import Adventure from "../components/adventure";
 import Testiomonial from "../components/testimonial";
 import About from "../components/about";
 import Contact from "../components/contact";
+import HomePage from "../components/homepage";
 
 export default function Home() {
   return (
@@ -21,12 +22,7 @@ export default function Home() {
         </Head>
 
         <main>
-          <FrontPage />
-          <Experience />
-          <Adventure />
-          <Testiomonial />
-          <About />
-          <Contact />
+          <HomePage></HomePage>
         </main>
       </div>
     </div>

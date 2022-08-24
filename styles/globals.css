@@ -33,6 +33,32 @@ a {
   box-sizing: border-box;
 }
 
+.homepage-outer-box {
+
+}
+
+.tbc-guides {
+  color: black; 
+  font-size: 4rem;
+
+  line-height: 4rem;
+  margin-top: 0;
+  padding-left: 4.5rem;
+}
+
+.styled-welcome {
+  font-size: calc(2rem + 3vw); 
+   position: absolute;
+  top: calc(30% + (10vh - 3vw));
+  transform: translateY(-50%);
+}
+
+@media (max-width: 830px) {
+  .tbc-guides {
+    padding-left: 1.5rem;
+  }
+}
+
 @font-face {
   font-family: "Raleway";
   src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");

@@ -214,7 +214,6 @@ const Header = () => {
         className="headerBackground"
         style={{
           width: "100vw",
-          backgroundColor: "#F6F6F6",
 
           position: "absolute",
         }}
