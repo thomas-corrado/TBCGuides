@@ -47,10 +47,43 @@ a {
 }
 
 .styled-welcome {
-  font-size: calc(2rem + 3vw); 
+  font-size: calc(2rem + 2.5vw); 
    position: absolute;
-  top: calc(30% + (10vh - 3vw));
+  top: calc(2rem + 40% + (-3vw));
   transform: translateY(-50%);
+}
+
+.swiper {
+  width: 80vw;
+  height: 35rem;
+  
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 830px) {
