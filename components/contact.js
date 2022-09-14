@@ -135,7 +135,7 @@ const Contact = () => {
                 (828)-246-5616
                 <br></br>
                 <br></br>
-                blattmike@gmail.com
+                tbcservicesuv@gmail.com
               </p>
             </div>
           </Grid>
