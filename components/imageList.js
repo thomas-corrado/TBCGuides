@@ -4,6 +4,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 import Image from "next/image";
 import { styled } from "@washingtonpost/wpds-ui-kit";
 import { Box } from "@mui/system";
+import { useEffect, useState } from "react";
 
 const itemData = [
   {
@@ -149,17 +150,39 @@ const StyledBox = styled(Box, {
 })
 
 const ImageListWrapper = () => {
+
+  const [state, setState] = useState({
+    mobileView: false,
+  });
+
+  const [isOpen, setOpen] = useState(false);
+
+  const { mobileView } = state;
+
+  useEffect(() => {
+    const setResponsiveness = () => {
+      return window.innerWidth < 515
+        ? setState((prevState) => ({ ...prevState, mobileView: true }))
+        : setState((prevState) => ({ ...prevState, mobileView: false }));
+    };
+
+    setResponsiveness();
+    window.addEventListener("resize", () => setResponsiveness());
+
+    return () => {
+      window.removeEventListener("resize", () => setResponsiveness());
+    };
+  }, []);
     
     return (
       <StyledBox>
-        <ImageList variant="masonry" cols={1} gap={5}>
+        <ImageList variant="masonry" cols={mobileView ? 1 : 2} gap={5}>
           {itemData.map((item) => (
             <ImageListItem key={item.number}>
               <img
                 src={`https://d14drtvwlopsgs.cloudfront.net/fish-holding-${item.number}.jpg`}
                 srcSet={`https://d14drtvwlopsgs.cloudfront.net/fish-holding-${item.number}.jpg`}
                 alt={item.number}
-                loading="lazy"
               />
             </ImageListItem>
           ))}
