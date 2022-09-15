@@ -142,7 +142,7 @@ const Contact = () => {
                 (828)-246-5616
                 <br></br>
                 <br></br>
-                tbcguidesuv@gmail.com
+                tbcguides@gmail.com
               </p>
             </div>
           </Grid>
