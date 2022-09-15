@@ -230,7 +230,7 @@ const About = () => {
               targeting local River and Lake fish species, different fish bite
               at different times of the day, as well as during different weather
               and light conditions. Target fish include: Largemouth Bass,
-              Smallmouth Bass, Rock Bass, Bluegill, Yellow Perch, and Walleye.
+              Smallmouth Bass, Bluegill, Yellow Perch, and Walleye.
               For more details on fish species, click{" "}
               <a
                 style={{
