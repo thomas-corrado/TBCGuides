@@ -86,13 +86,13 @@ const Contact = () => {
               width: "15rem",
               display: "flex",
               justifyContent: "center",
-              paddingLeft: innerWidth > 367 ? undefined : "1rem",
+              paddingLeft: innerWidth > 367 ? "1rem" : "1rem",
               paddingRight:
                 innerWidth > 688 || innerWidth < 500 ? undefined : "2rem",
               paddingBottom: "1rem",
             }}
           >
-            <div>
+            <div style={{ justifyContent: "center" }}>
               <div>
                 <p
                   style={{
@@ -110,29 +110,39 @@ const Contact = () => {
                   Contact
                 </p>
               </div>
+              <Box sx={{
+                width: "100%", 
+                justifyContent: "center", 
+                display: "flex"
+              }}>
+                <Button
+                  variant="contained"
+                  sx={{
+                    fontFamily: "Raleway",
+                    backgroundColor: "black",
+                    color: "white",
+                    justifyContent: "center",
 
-              <Button
-                variant="contained"
-                sx={{
-                  fontFamily: "Raleway",
-                  backgroundColor: "black",
-                  color: "white",
-                  justifyContent: "center",
-                  width: "100%",
-                  display: "flex",
-                }}
-              >
-                <a href="tel:+18282465616">Call Now</a>
-              </Button>
+                    display: "flex",
+                  }}
+                >
+                  <a href="tel:+18282465616">Call Now</a>
+                </Button>
+              </Box>
+
               <p
                 style={{
                   width: "100%",
                   justifyContent: "center",
                   display: "flex",
                   fontFamily: "Raleway",
+                  textAlign: "center",
                 }}
               >
                 (828)-246-5616
+                <br></br>
+                <br></br>
+                tbcguides@gmail.com
               </p>
             </div>
           </Grid>
