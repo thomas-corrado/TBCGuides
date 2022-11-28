@@ -9,13 +9,11 @@ const StyledMichaelImageBox = styled(Box, {
   width: "100vw",
   height: "calc(50rem - (30rem - 20vw))",
   overflow: "hidden",
-  top: "3rem",
-  paddingLeft: "calc(1rem - 1vw)",
 });
 
 const StyledMichaelImageBoxTwo = styled(Box, {
   width: "80vw",
-  height:  "calc(50rem - (30rem - 20vw))",
+  height: "calc(50rem - (30rem - 20vw))",
   position: "relative",
 });
 

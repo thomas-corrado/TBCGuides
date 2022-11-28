@@ -8,12 +8,14 @@ const StyledHeaderTitle = styled("h3", {
   zIndex: 3,
   fontFamily: "Raleway",
   margin: 0,
+  paddingTop: 0, 
+  lineHeight: "2.5rem"
 });
 
 const HeaderTitle = ({ title="" }) => {
 
     return (
-      <Box sx={{ width: "80vw", float: "left", }}>
+      <Box sx={{ width: "80vw", float: "left" }}>
         <StyledHeaderTitle>{title}</StyledHeaderTitle>
       </Box>
     );

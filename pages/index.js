@@ -5,7 +5,7 @@ import Adventure from "../components/adventure";
 import Testiomonial from "../components/testimonial";
 import About from "../components/about";
 import Contact from "../components/contact";
-import HomePage from "../components/homepage";
+import HomePage from "../components/Homepage/Main/Homepage";
 
 export default function Home() {
   return (

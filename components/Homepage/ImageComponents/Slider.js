@@ -50,7 +50,7 @@ const SliderWrapper = () => {
         <style global jsx>{`
           .swiper {
             width: 80vw;
-            height: calc((50rem - (30rem - 20vw)) - 2rem);
+            height: calc((50rem - (30rem - 20vw)));
           }
 
           .swiper-button-next {
