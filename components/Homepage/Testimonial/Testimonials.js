@@ -31,6 +31,7 @@ const Testimonials = () => {
         </Box>
         <Stack
         mt={10}
+        mb={10}
           sx={{
             width: "100vw",
             fontFamily: "Raleway",

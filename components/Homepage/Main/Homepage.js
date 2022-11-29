@@ -18,6 +18,7 @@ import WelcomeHeader from "../Introduction/TextComponents/WelcomeHeader";
 // import TextBoxHomePage from "../Introduction/TextComponents/TextboxHomepage";
 // import ImageAndDividerAndText from "../ImageComponents/ImageAndDividerAndText";
 import Introduction from "../Introduction/Introduction";
+import Activity from "../Activity/Activity";
 
 const HomePage = () => {
 
@@ -49,6 +50,7 @@ const HomePage = () => {
 
           <Testimonials />
         </Stack>
+        <Activity />
 
         {/* <Experience />
         <Adventure />
