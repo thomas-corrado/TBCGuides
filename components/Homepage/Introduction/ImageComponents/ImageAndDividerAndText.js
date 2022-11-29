@@ -8,7 +8,7 @@ import DescriptionText from "../TextComponents/DescriptionText"
 
 const ImageAndDividerAndText = ({ headerTitle, descriptionText, children }) => {
     return (
-      <Stack>
+      <Stack mb={1}>
         <Box
           style={{
             display: "flex",

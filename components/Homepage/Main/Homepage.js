@@ -1,21 +1,23 @@
 import FrontPageHeader from "../../frontPageHeader";
-import Experience from "../../experience";
-import Adventure from "../../adventure";
-import Testiomonial from "../../testimonial";
-import About from "../../about";
-import Contact from "../../contact";
+import Testimonials from "../Testimonial/Testimonials";
+// import Experience from "../../experience";
+// import Adventure from "../../adventure";
+// import Testiomonial from "../../testimonial";
+// import About from "../../about";
+// import Contact from "../../contact";
 import { Stack, Box } from "@mui/material";
 import Divider from "@mui/material/Divider";
-import BackgroundImage from "../ImageComponents/BackgroundImage"
-import WelcomeHeader from "../TextComponents/WelcomeHeader";
-import HeaderTitle from "../TextComponents/HeaderTitle";
-import DividerWrapper from "../DividerComponents/DividerWrapper";
-import DescriptionText from "../TextComponents/DescriptionText";
-import ImageWrapper from "../ImageComponents/ImageWrapper";
-import Image from "next/image";
-import SliderWrapper from "../ImageComponents/Slider";
-import TextBoxHomePage from "../TextComponents/TextboxHomepage";
-import ImageAndDividerAndText from "../ImageComponents/ImageAndDividerAndText";
+import BackgroundImage from "../Introduction/ImageComponents/BackgroundImage";
+import WelcomeHeader from "../Introduction/TextComponents/WelcomeHeader";
+// import HeaderTitle from "../Introduction/TextComponents/HeaderTitle";
+// import DividerWrapper from "../Introduction/DividerComponents/DividerWrapper";
+// import DescriptionText from "../Introduction/TextComponents/DescriptionText";
+// import ImageWrapper from "../Introduction/ImageComponents/ImageWrapper";
+// import Image from "next/image";
+// import SliderWrapper from "../ImageComponents/Slider";
+// import TextBoxHomePage from "../Introduction/TextComponents/TextboxHomepage";
+// import ImageAndDividerAndText from "../ImageComponents/ImageAndDividerAndText";
+import Introduction from "../Introduction/Introduction";
 
 const HomePage = () => {
 
@@ -37,81 +39,15 @@ const HomePage = () => {
 
         <Stack
           direction="column"
-          spacing={8}
+          spacing={6}
           mt={6}
           sx={{ alignItems: "center" }}
         >
-          <div>
-            <ImageAndDividerAndText
-              headerTitle="Touring Led by Mike Blatt"
-              descriptionText="Mike Blatt is an extremely experienced fisherman with fully certified
-        training in Wilderness First Response, as well as Swiftwater Rescue."
-            >
-              <ImageWrapper>
-                <Image
-                  priority
-                  layout="fill"
-                  objectFit="cover"
-                  quality={100}
-                  src="https://d14drtvwlopsgs.cloudfront.net/bio.jpg"
-                  alt="Harpoon"
-                />
-              </ImageWrapper>
-            </ImageAndDividerAndText>
-          </div>
+          <Introduction />
 
-          <Divider
-            sx={{
-              position: "relative",
-              display: "flex",
-              alignItems: "center",
-              width: "90vw",
-            }}
-          />
+          <Divider sx={{ width: "90vw" }} />
 
-          <div>
-            <ImageAndDividerAndText
-              headerTitle="An Unforgettable Adventure"
-              descriptionText="Guests are given a chance to discover more about themselves and the
-          world around them. In turn, they become life-long fishers."
-            >
-              <ImageWrapper>
-                <SliderWrapper />
-              </ImageWrapper>
-            </ImageAndDividerAndText>
-          </div>
-
-          <Divider
-            sx={{
-              position: "relative",
-              display: "flex",
-              alignItems: "center",
-              width: "90vw",
-            }}
-          />
-
-          
-
-          {/* <Box
-            sx={{
-              left: "10vw",
-              position: "relative",
-              top: "1rem",
-              position: "relative",
-            }}
-          >
-            <DividerWrapper widthVar="calc(10rem + 15vw)" />
-            <DescriptionText
-              text="Guests are given a chance to discover more about themselves and the
-            world around them. In turn, they become life-long fishers."
-            />
-          </Box> */}
-
-          {/* <Box sx={{ position: "relative" }}>
-            <ImageWrapper>
-              <SliderWrapper />
-            </ImageWrapper>
-          </Box> */}
+          <Testimonials />
         </Stack>
 
         {/* <Experience />
