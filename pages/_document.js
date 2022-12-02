@@ -97,6 +97,7 @@ display: block;
           />
           <link rel="stylesheet" href="https://use.typekit.net/nff0pei.css"></link>
           <link rel="stylesheet" href="https://use.typekit.net/nff0pei.css"></link>
+          
         </Head>
         <body>
           <div id={"globalLoader"}>
