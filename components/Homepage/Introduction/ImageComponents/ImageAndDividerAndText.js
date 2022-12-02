@@ -1,8 +1,5 @@
 import { Box, Stack } from "@mui/system"
 import HeaderTitle from "../TextComponents/HeaderTitle"
-import TextBoxHomePage from "../TextComponents/TextboxHomepage"
-import ImageWrapper from "./ImageWrapper"
-import Image from "next/image"
 import DividerWrapper from "../DividerComponents/DividerWrapper"
 import DescriptionText from "../TextComponents/DescriptionText"
 

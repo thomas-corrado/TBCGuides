@@ -35,23 +35,35 @@ a {
   box-sizing: border-box;
 }
 
-.homepage-outer-box {
+.header {
+  font-family: "belda-normal";
+  color: white
 }
 
-.tbc-guides {
-  color: black;
-  font-size: 4rem;
-
-  line-height: 4rem;
-  margin-top: 0;
-  padding-left: 4.5rem;
+.contact-item {
+  font-family: "belda-normal";
+  color: white; 
 }
 
-.styled-welcome {
-  font-size: calc(2rem + 2.5vw);
-  position: absolute;
-  top: calc(2rem + 40% + (-3vw));
-  transform: translateY(-50%);
+.contact-item-underlined {
+  font-family: "belda-normal";
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-icon-button {
+  color: white; 
+  padding: 0px; 
+  margin: 0px
+}
+
+.contact-button {
+  font-family: "belda-normal";
+  background-color: black;
+}
+
+.contact-button:hover {
+  background-color: black;
 }
 
 .swiper {
@@ -83,12 +95,6 @@ a {
   display: block;
   width: 100%;
   object-fit: cover;
-}
-
-@media (max-width: 830px) {
-  .tbc-guides {
-    padding-left: 1.5rem;
-  }
 }
 
 /* @font-face {

@@ -1,4 +1,4 @@
-import { Box } from "@mui/system";
+import { Box, Typography } from "@mui/material";
 import { styled } from "@washingtonpost/wpds-ui-kit";
 
 const StyledHeaderTitle = styled("h3", {
@@ -15,7 +15,7 @@ const StyledHeaderTitle = styled("h3", {
 const HeaderTitle = ({ title = "" }) => {
   return (
     <Box sx={{ width: "80vw", float: "left" }}>
-      <StyledHeaderTitle>{title}</StyledHeaderTitle>
+      <Typography variant="h3" className="header">{title}</Typography>
     </Box>
   );
 };

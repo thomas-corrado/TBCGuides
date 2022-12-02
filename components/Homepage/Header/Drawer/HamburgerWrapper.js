@@ -11,7 +11,7 @@ const HamburgerWrapper = ({ isOpen, setOpen }) => {
      disableTouchRipple
      sx={{
        zIndex: "4",
-       color: isOpen === true ? "black" : "white",
+       color: isOpen === true ? "#596d90" : "white",
        "&:hover": { backgroundColor: "transparent" },
      }}
    >

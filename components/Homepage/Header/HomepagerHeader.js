@@ -1,18 +1,10 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import BackgroundImage from "./Background/BackgroundImage";
 import AppBarWrapper from "./HeaderBar/AppBarWrapper";
 
-const drawerWidth = 240;
-const navItems = ["Home", "About", "Contact"];
-
-const pages = ["Products", "Pricing", "Blog"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
-
 const HomepageHeader = () => {
   return (
-    <>
       <Box
         sx={{
           width: "100vw", 
@@ -40,6 +32,7 @@ const HomepageHeader = () => {
               justifyContent: "center",
               alignItems: "center",
             }}
+            mt={-4}
           >
             <Typography
               sx={{
@@ -57,8 +50,7 @@ const HomepageHeader = () => {
             </Typography>
           </Box>
         </Stack>
-      </Box>
-    </>)
+      </Box>)
 };
 
 export default HomepageHeader;

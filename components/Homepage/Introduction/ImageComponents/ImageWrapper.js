@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Box } from "@mui/system";
 import { styled } from "@washingtonpost/wpds-ui-kit";
 
