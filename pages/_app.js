@@ -14,7 +14,7 @@ import {
 
 const theme = createTheme({
   typography: {
-    fontFamily: ["belda-normal"].join(","),
+    fontFamily: ["belda-normal", "Antonio"].join(","),
   },
   palette: {
     primary: {
