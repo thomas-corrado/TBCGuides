@@ -14,7 +14,7 @@ const DrawerWrapper = ({ isOpen, pages }) => {
           transitionDuration: 700,
         }}
         sx={{
-            zIndex: 1
+            zIndex: 3
         }}
       >
         <Box
