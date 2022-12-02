@@ -3,4 +3,7 @@ module.exports = {
     domains: ["d14drtvwlopsgs.cloudfront.net"],
   },
   reactStrictMode: true,
+  compiler: {
+    styledComponents: true,
+  },
 };
