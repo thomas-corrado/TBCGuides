@@ -6,14 +6,11 @@ import { useState, useEffect } from "react";
 import { styled } from "@washingtonpost/wpds-ui-kit";
 import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
-import { createMuiTheme } from "@material-ui/core/styles";
-import { ThemeProvider } from "@material-ui/styles";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-const theme = createMuiTheme({
+const theme = createTheme({
   typography: {
-    fontFamily: [
-      "belda-normal",
-    ].join(","),
+    fontFamily: ["belda-normal"].join(","),
   },
 });
 
