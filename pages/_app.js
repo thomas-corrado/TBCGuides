@@ -14,7 +14,7 @@ import {
 
 const theme = createTheme({
   typography: {
-    fontFamily: ["belda-normal", "Antonio"].join(","),
+    fontFamily: ["belda-normal", "Antonio, sans-serif"].join(","),
   },
   palette: {
     primary: {
@@ -43,7 +43,8 @@ const theme = createTheme({
           background: "white", 
           width: "100vw", 
           height: "100%"
-        }
+        }, 
+        zIndex: "3"
       }
     },
     MuiBackdrop: {

@@ -23,7 +23,7 @@ const DrawerWrapper = ({ isOpen, pages }) => {
                 <Typography
                   textTransform="uppercase"
                   textAlign="center"
-                  variant="h2"
+                  variant="h4"
                   className="drawer-wrapper-buttons"
                 >
                   {page}
