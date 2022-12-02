@@ -35,37 +35,6 @@ a {
   box-sizing: border-box;
 }
 
-.header {
-  font-family: "belda-normal";
-  color: white
-}
-
-.contact-item {
-  font-family: "belda-normal";
-  color: white; 
-}
-
-.contact-item-underlined {
-  font-family: "belda-normal";
-  color: white;
-  text-decoration: underline;
-}
-
-.contact-icon-button {
-  color: white; 
-  padding: 0px; 
-  margin: 0px
-}
-
-.contact-button {
-  font-family: "belda-normal";
-  background-color: black;
-}
-
-.contact-button:hover {
-  background-color: black;
-}
-
 .swiper {
   width: 80vw;
   height: 35rem;

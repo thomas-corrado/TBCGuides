@@ -1,6 +1,6 @@
-import { Stack, Box, Divider } from "@mui/material";
+import { Stack, Typography, Divider } from "@mui/material";
 
-const TestimonialHeader = () => {
+const TestimonialTitleText = () => {
     return (
       <Stack
         sx={{
@@ -10,17 +10,12 @@ const TestimonialHeader = () => {
         direction="column"
         spacing={3}
       >
-        <Box
-          sx={{
-            width: "100vw",
-            textAlign: "center",
-            fontSize: "2rem",
-            fontFamily: "belda-normal",
-            
-          }}
+        <Typography
+        variant="h4"
+        className="testimonial-title-text"
         >
           Loved by <br /> Every Client
-        </Box>
+        </Typography>
 
         <Divider
           sx={{
@@ -33,4 +28,4 @@ const TestimonialHeader = () => {
     );
 }
 
-export default TestimonialHeader
+export default TestimonialTitleText;

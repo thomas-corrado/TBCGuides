@@ -1,0 +1,62 @@
+.introduction-header {
+  font-family: belda-normal, sans-serif;
+  color: white
+}
+
+.introduction-description-text {
+    font-family: belda-normal, sans-serif;
+  color: white; 
+  font-style: italic;
+}
+
+.testimonial-title-text {
+    width: 100vw; 
+    text-align: center;
+    font-family: belda-normal, sans-serif;
+}
+
+.testimonial-description-text {
+    display:flex; 
+    align-items: center;
+    font-family: belda-normal, sans-serif;
+    text-align: center;
+}
+
+.activity-title-text {
+    font-family: belda-normal, sans-serif;
+  color: black; 
+}
+
+.activity-description-text {
+    font-family: belda-normal, sans-serif;
+    color: black;
+    display: inline;
+    flex-wrap: wrap;
+    width: calc(60vw + 4rem);
+}
+
+.contact-item {
+  font-family: belda-normal, sans-serif;
+  color: white; 
+}
+
+.contact-item-underlined {
+  font-family: belda-normal, sans-serif;
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-icon-button {
+  color: white; 
+  padding: 0px; 
+  margin: 0px
+}
+
+.contact-button {
+  font-family: belda-normal, sans-serif;
+  background-color: black;
+}
+
+.contact-button:hover {
+  background-color: black;
+}

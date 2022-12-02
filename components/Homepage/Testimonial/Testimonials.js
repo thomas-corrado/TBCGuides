@@ -1,6 +1,6 @@
 import { Box, Stack } from "@mui/material";
 import Image from "next/image";
-import TestimonialHeader from "./Header/TestimonialHeader";
+import TestimonialTitleText from "./HeaderText/TestimonialTitleText";
 import DescriptionsAndStepper from "./Stepper/DescriptionsAndStepper";
 
 const Testimonials = () => {
@@ -12,7 +12,6 @@ const Testimonials = () => {
           position: "relative",
           backgroundColor: "white",
         }}
-       
       >
         <Box
           sx={{
@@ -42,7 +41,7 @@ const Testimonials = () => {
           direction="column"
           spacing={2}
         >
-          <TestimonialHeader />
+          <TestimonialTitleText />
           <DescriptionsAndStepper />
         </Stack>
       </Box>

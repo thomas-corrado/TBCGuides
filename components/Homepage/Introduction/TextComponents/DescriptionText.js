@@ -9,13 +9,9 @@ const DescriptionText = ({ text = "" }) => {
       }}
     >
       <Typography
-        sx={{
-          color: "white",
-          fontSize: "1.3rem",
-          fontFamily: "belda-normal",
-          lineHeight: "3rem",
-          fontStyle: "italic",
-        }}
+      variant="h6"
+      className="introduction-description-text"
+      lineHeight={3}
       >
         {text}
       </Typography>

@@ -38,14 +38,9 @@ const DescriptionsAndStepper = () => {
               }}
             >
               <Typography
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  fontSize: "1.2rem",
-                  lineHeight: "2rem",
-                  fontFamily: "belda-normal",
-                  textAlign: "center",
-                }}
+                variant="h6"
+                lineHeight={2}
+                className="testimonial-description-text"
               >
                 {steps[activeStep].description}
                 <br />

@@ -2,22 +2,27 @@ import { Box, Stack, Typography, Link } from "@mui/material";
 
 const ActivityText = () => {
   return (
-    <Box sx={{ backgroundColor: "#d8d8d8", width: "100vw", display: "flex", justifyContent: "center"}}>
+    <Box
+      sx={{
+        backgroundColor: "#d8d8d8",
+        width: "100vw",
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
       <Stack
         direction="column"
         spacing={3}
         sx={{
           width: "100vw",
-          alignItems: "center"
+          alignItems: "center",
         }}
         mt={4}
         mb={7}
       >
         <Typography
-          style={{
-            fontFamily: "livory",
-            fontSize: "2rem",
-          }}
+          className="activity-title-text"
+          variant="h4"
         >
           What We&#39;ll Do
         </Typography>
@@ -27,18 +32,13 @@ const ActivityText = () => {
             display: "flex",
             justifyContent: "center",
             width: "100vw",
-            paddingLeft: "1.5vw"
+            paddingLeft: "1.5vw",
           }}
         >
           <Typography
-            style={{
-              display: "inline",
-              fontFamily: "livory",
-              fontSize: "1.2rem",
-              lineHeight: "2rem",
-              width: "calc(60vw + 4rem)",
-              flexWrap: "wrap",
-            }}
+            variant="h6"
+            lineHeight={2}
+            className="activity-description-text"
           >
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We will be meeting at a
             boat launch on a local River, Pond, or Lake in or near Norwich, VT.
