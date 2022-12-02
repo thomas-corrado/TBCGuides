@@ -9,8 +9,8 @@ const HamburgerWrapper = ({ isOpen, setOpen }) => {
      aria-controls="menu-appbar"
      aria-haspopup="true"
      disableTouchRipple
+     className="hamburger-icon"
      sx={{
-       zIndex: "4",
        color: isOpen === true ? "#596d90" : "white",
        "&:hover": { backgroundColor: "transparent" },
      }}
