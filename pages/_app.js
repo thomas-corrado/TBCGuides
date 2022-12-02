@@ -8,7 +8,6 @@ import CircularProgress from "@mui/material/CircularProgress";
 import {
   ThemeProvider,
   createTheme,
-  experimental_sx as sx,
 } from "@mui/material/styles";
 
 const theme = createTheme({
