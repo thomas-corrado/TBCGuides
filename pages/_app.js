@@ -1,4 +1,3 @@
-
 import "../styles/globals.css";
 import "../styles/homepage.css";
 import { useRouter } from "next/router";
@@ -14,12 +13,7 @@ import {
 
 const theme = createTheme({
   typography: {
-    a: {
-      fontFamily: "belda-normal",
-    },
-    b: {
-      fontFamily: "Antonio",
-    },
+    fontFamily: ["belda-normal"].join(","),
   },
   palette: {
     primary: {
