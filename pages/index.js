@@ -1,10 +1,4 @@
 import Head from "next/head"
-import FrontPage from "../components/frontPageHeader";
-import Experience from "../components/experience";
-import Adventure from "../components/adventure";
-import Testiomonial from "../components/testimonial";
-import About from "../components/about";
-import Contact from "../components/contact";
 import HomePage from "../components/Homepage/Main/Homepage";
 
 export default function Home() {
@@ -19,8 +13,7 @@ export default function Home() {
           ></meta>
           <meta name="theme-color" content="#FFFFFF"></meta>
           <link rel="icon" href="/phishing.ico" />
-          <link rel="stylesheet" href="https://use.typekit.net/nff0pei.css"></link>
-          <link rel="stylesheet" href="https://use.typekit.net/nff0pei.css"></link>
+          
         </Head>
 
         <main>

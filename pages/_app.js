@@ -1,4 +1,4 @@
-import "./styles.css";
+import "../styles.css"
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { styled } from "@washingtonpost/wpds-ui-kit";
