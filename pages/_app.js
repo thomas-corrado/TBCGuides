@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "./styles.css";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { styled } from "@washingtonpost/wpds-ui-kit";
@@ -20,9 +20,7 @@ function Loading() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    
-
-    const handleStart = (url) => (url !== router.asPath ) && setLoading(true);
+    const handleStart = (url) => url !== router.asPath && setLoading(true);
     const handleComplete = (url) =>
       (url === router.asPath || router.asPath === "/") &&
       setTimeout(() => {
@@ -53,15 +51,13 @@ function Loading() {
 }
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const loader = document.getElementById("globalLoader");
+      if (loader) loader.style.display = "none";
+    }
+  }, []);
 
-   useEffect(() => {
-     if (typeof window !== "undefined") {
-      
-       const loader = document.getElementById("globalLoader");
-       if (loader) loader.style.display = "none";
-     }
-   }, []);
-   
   return (
     <>
       <Component {...pageProps} />
@@ -69,4 +65,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp
+export default MyApp;
