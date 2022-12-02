@@ -2,7 +2,7 @@ import { Box, Stack, Typography, Link } from "@mui/material";
 
 const ActivityText = () => {
   return (
-    <Box sx={{ backgroundColor: "#d8d8d8" }}>
+    <Box sx={{ backgroundColor: "#d8d8d8", width: "100vw", display: "flex", justifyContent: "center"}}>
       <Stack
         direction="column"
         spacing={3}
@@ -27,7 +27,7 @@ const ActivityText = () => {
             display: "flex",
             justifyContent: "center",
             width: "100vw",
-            paddingLeft: "2vw",
+            paddingLeft: "1.5vw"
           }}
         >
           <Typography

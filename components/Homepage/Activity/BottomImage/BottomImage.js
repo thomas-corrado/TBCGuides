@@ -9,7 +9,7 @@ const BottomImage = () => {
         position: "relative",
         height: "4rem",
       }}
-      
+      mt={-1}
     >
       <Image
         priority

@@ -7,8 +7,7 @@ import Testimonials from "../Testimonial/Testimonials";
 // import Contact from "../../contact";
 import { Stack, Box } from "@mui/material";
 import Divider from "@mui/material/Divider";
-import BackgroundImage from "../Header/BackgroundImage";
-import WelcomeHeader from "../Header/WelcomeHeader";
+import BackgroundImage from "../Header/Background/BackgroundImage";
 // import HeaderTitle from "../Introduction/TextComponents/HeaderTitle";
 // import DividerWrapper from "../Introduction/DividerComponents/DividerWrapper";
 // import DescriptionText from "../Introduction/TextComponents/DescriptionText";
@@ -24,7 +23,7 @@ import HomepageHeader from "../Header/HomepagerHeader";
 const HomePage = () => {
 
     return (
-      <Box className="homepage-outer-box" sx={{ backgroundColor: "#596d90" }}>
+      <Box className="homepage-outer-box" sx={{ backgroundColor: "#596d90" }} >
         <HomepageHeader />
         {/* <FrontPageHeader /> */}
         {/* <Box
