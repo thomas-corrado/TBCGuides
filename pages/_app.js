@@ -35,23 +35,6 @@ const theme = createTheme({
         color: "secondary",
       },
     },
-    MuiDrawer: {
-      styleOverrides: {
-        paper: {
-          background: "white",
-          width: "100vw",
-          height: "100%",
-        },
-      },
-    },
-    MuiBackdrop: {
-      styleOverrides: {
-        root: {
-          background: "none",
-          backgroundColor: "transparent",
-        },
-      },
-    },
   },
 });
 
