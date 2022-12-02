@@ -84,20 +84,21 @@ display: block;
           />
 
           <link
-            href="https://fonts.googleapis.com/css2?family=livory&display=fallback"
+            href="https://fonts.googleapis.com/css2?family=livory&display=optional"
             rel="stylesheet"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=livory:wght@600&display=fallback"
+            href="https://fonts.googleapis.com/css2?family=livory:wght@600&display=optional"
             rel="stylesheet"
           />
           <link
             href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap"
             rel="stylesheet"
           />
-          <link rel="stylesheet" href="https://use.typekit.net/nff0pei.css"></link>
-          <link rel="stylesheet" href="https://use.typekit.net/nff0pei.css"></link>
-          
+          <link
+            rel="stylesheet"
+            href="https://use.typekit.net/nff0pei.css"
+          ></link>
         </Head>
         <body>
           <div id={"globalLoader"}>

@@ -75,3 +75,11 @@
 .contact-button:hover {
   background-color: black;
 }
+
+@font-face {
+  font-family: belda-normal, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-style: normal;
+  src: url("https://use.typekit.net/nff0pei.css");
+}
