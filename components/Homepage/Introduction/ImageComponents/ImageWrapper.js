@@ -1,28 +1,10 @@
-import { Box } from "@mui/system";
-import { styled } from "@washingtonpost/wpds-ui-kit";
-
-const StyledMichaelImageBox = styled(Box, {
-  display: "flex",
-  justifyContent: "center",
-  position: "relative",
-  width: "100vw",
-  height: "calc(50rem - (30rem - 20vw))",
-  overflow: "hidden",
-});
-
-const StyledMichaelImageBoxTwo = styled(Box, {
-  width: "80vw",
-  height: "calc(50rem - (30rem - 20vw))",
-  position: "relative",
-});
+import { Box } from "@mui/material";
 
 const ImageWrapper = ({ children }) => {
   return (
-    <StyledMichaelImageBox>
-      <StyledMichaelImageBoxTwo>
-        {children}
-      </StyledMichaelImageBoxTwo>
-    </StyledMichaelImageBox>
+    <Box className="michael-image-box-one">
+      <Box className="michael-image-box-two">{children}</Box>
+    </Box>
   );
 };
 

@@ -9,6 +9,21 @@
   font-style: italic;
 }
 
+.michael-image-box-one {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: calc(50rem - (30rem - 20vw));
+    overflow: hidden;
+}
+
+.michael-image-box-two {
+    width: 80vw; 
+  height: calc(50rem - (30rem - 20vw)); 
+  position: relative; 
+}
+
 .testimonial-title-text {
     width: 100vw; 
     text-align: center;
