@@ -13,6 +13,9 @@ const DrawerWrapper = ({ isOpen, pages }) => {
           open: isOpen,
           transitionDuration: 700,
         }}
+        sx={{
+            zIndex: 1
+        }}
       >
         <Box
         className="drawer-wrapper-box"
@@ -25,6 +28,7 @@ const DrawerWrapper = ({ isOpen, pages }) => {
                   textAlign="center"
                   variant="h4"
                   className="drawer-wrapper-buttons"
+
                 >
                   {page}
                 </Typography>

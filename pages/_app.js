@@ -14,7 +14,12 @@ import {
 
 const theme = createTheme({
   typography: {
-    fontFamily: ["belda-normal", "Antonio, sans-serif"].join(","),
+    a: {
+      fontFamily: "belda-normal",
+    },
+    b: {
+      fontFamily: "Antonio",
+    },
   },
   palette: {
     primary: {
@@ -40,12 +45,11 @@ const theme = createTheme({
     MuiDrawer: {
       styleOverrides: {
         paper: {
-          background: "white", 
-          width: "100vw", 
-          height: "100%"
-        }, 
-        zIndex: "3"
-      }
+          background: "white",
+          width: "100vw",
+          height: "100%",
+        },
+      },
     },
     MuiBackdrop: {
       styleOverrides: {
