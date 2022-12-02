@@ -204,6 +204,11 @@
 }
 
 @font-face {
+  font-family: "Antonio";
+  src: url("https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap");
+}
+
+@font-face {
   font-family: belda-normal, sans-serif;
   font-weight: 300;
   font-style: italic;

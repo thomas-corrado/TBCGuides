@@ -15,7 +15,7 @@ const HomepageHeader = () => {
       <Stack className="homepage-header-stack" direction="column" >
         <AppBarWrapper />
         <Box className="homepage-header-box" mt={-4}>
-          <Typography className="homepage-header-text">
+          <Typography className="homepage-header-text" sx={{ fontSize: "calc(4vmin + 3.5vmax)"}}>
             Welcome to the Upper Valley&rsquo;s Premiere Kayak, Ice, and Fly
             Fishing Guide Service
           </Typography>
