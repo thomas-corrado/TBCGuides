@@ -22,22 +22,13 @@ const HeaderBarPageButtons = ({ pages }) => {
           <Button
             key={page}
             onClick={() => router.push(`/${page}`)}
-            sx={{
-              my: 2,
-              color: "white",
-              display: "block",
-              fontFamily: "Antonio",
-            }}
-            disableRipple
           >
             <Typography
               variant="h4"
+              className="tbc-logo"
               sx={{
                 mr: 2,
                 display: { xs: "none", md: "flex" },
-                fontFamily: "Antonio",
-                fontWeight: 700,
-                textDecoration: "none",
               }}
             >
               {page}

@@ -6,24 +6,12 @@ import DescriptionText from "../TextComponents/DescriptionText"
 const ImageAndDividerAndText = ({ headerTitle, descriptionText, children }) => {
     return (
       <Stack mb={1}>
-        <Box
-          style={{
-            display: "flex",
-            width: "100vw",
-            height: "auto",
-            position: "relative",
-            justifyContent: "center",
-          }}
-        >
+        <Box className="image-and-divider-outer-box">
           <HeaderTitle title={headerTitle} />
         </Box>
 
         <Stack
-          sx={{
-            position: "relative",
-            left: "10vw",
-            width: "90vw",
-          }}
+          className="image-and-divider-stack"
           mb={2}
         >
           <Stack direction="column" mb={-1}>

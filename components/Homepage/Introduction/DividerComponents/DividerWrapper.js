@@ -5,14 +5,7 @@ const DividerWrapper = ({ widthVar="" }) => {
 
     return (
       <Box
-        sx={{
-          height: "2.5rem",
-          position: "relative",
-          display: "flex",
-          alignItems: "center",
-          padding: 0,
-          margin: 0,
-        }}
+className="divider-wrapper-box"
       >
         <Divider
           sx={{

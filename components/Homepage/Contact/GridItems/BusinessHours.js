@@ -28,14 +28,12 @@ const BusinessHours = () => {
 
         <Stack direction="row" spacing={2} mb={8}>
           <IconButton
-            disableRipple
             onClick={() => router.push(`https://www.instagram.com/tbcguides/`)}
             className="contact-icon-button"
           >
             <InstagramIcon />
           </IconButton>
           <IconButton
-            disableRipple
             onClick={() =>
               router.push(`https://www.facebook.com/TheBlattCave/`)
             }

@@ -4,10 +4,45 @@
 }
 
 .introduction-description-text {
-    font-family: belda-normal, sans-serif;
+  font-family: belda-normal, sans-serif;
   color: white; 
   font-style: italic;
 }
+
+.homepage-header-stack {
+  width: 100vw;
+  height: 50rem;
+  position: relative; 
+  overflow: hidden;
+}
+
+.homepage-header-box {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-header-text {
+  color: white; 
+  font-family: belda-normal, sans-serif;
+  text-align: center;
+  z-index: 3;
+  font-style: italic;
+  font-size: calc(4vmin + 3.5vmax);
+  width: 90vw
+}
+
+.homepage-text-box {
+  position: relative;
+  left: 10vw;
+  width: 90vw;
+  padding: 0; 
+  margin: 0;  
+}
+
 
 .michael-image-box-one {
     display: flex;
@@ -22,6 +57,22 @@
     width: 80vw; 
   height: calc(50rem - (30rem - 20vw)); 
   position: relative; 
+}
+
+.testimonial-outer-box {
+  display: flex; 
+  position: relative; 
+  background-color: white; 
+}
+
+.testimonial-inner-box {
+  opacity: .2;
+}
+
+.testimonial-stack {
+  width: 100vw; 
+  font-family: belda-normal, sans-serif; 
+  z-index: 1;
 }
 
 .testimonial-title-text {
@@ -50,6 +101,21 @@
     width: calc(60vw + 4rem);
 }
 
+.activity-description-box {
+    background-color: #d8d8d8; 
+            display: flex; 
+            justify-content: center; 
+            width: 100vw; 
+            padding-left: 1.5vw; 
+}
+
+.activity-box {
+   background-color: #d8d8d8; 
+        width: 100vw; 
+        display: flex; 
+        justify-content: center
+}
+
 .contact-item {
   font-family: belda-normal, sans-serif;
   color: white; 
@@ -62,7 +128,6 @@
 }
 
 .contact-icon-button {
-  color: white; 
   padding: 0px; 
   margin: 0px
 }
@@ -74,6 +139,68 @@
 
 .contact-button:hover {
   background-color: black;
+}
+
+.drawer-wrapper-buttons {
+  font-family: "Antonio"; 
+  font-weight: 700; 
+  color: #596d90;
+  text-decoration: none; 
+}
+
+.drawer-wrapper-box {
+  height: 100%; 
+  justify-content: center; 
+  align-items: center; 
+  display: flex; 
+}
+
+.menu-drawer {
+  z-index: 3;
+}
+
+.compressed-tbc-logo {
+  flex-grow: 1;
+  font-family: "Antonio";
+  font-weight: 700;
+  text-decoration: none;
+  color: white; 
+  left: 2rem; 
+}
+
+.tbc-logo {
+  font-family: "Antonio";
+  font-weight: 700;
+  text-decoration: none;
+  color: white; 
+}
+
+.stepper-button{
+  font-family: belda-normal, sans-serif;
+  color: black
+}
+
+.image-and-divider-stack {
+  position: relative; 
+            left: 10vw; 
+            width: 90vw; 
+}
+
+.image-and-divider-outer-box {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  justify-content: center;
+}
+
+.divider-wrapper-box {
+  height: 2.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0; 
 }
 
 @font-face {

@@ -17,6 +17,7 @@ const MobileStepperWrapper = ({
         sx={{
           backgroundColor: "transparent",
         }}
+        className="stepper-button"
         variant="text"
         steps={maxSteps}
         position="static"
@@ -26,10 +27,6 @@ const MobileStepperWrapper = ({
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
-            sx={{
-              fontFamily: "livory",
-              color: "black",
-            }}
           >
             Next
             {theme.direction === "rtl" ? (
@@ -41,13 +38,10 @@ const MobileStepperWrapper = ({
         }
         backButton={
           <Button
+            className="stepper-button"
             size="small"
             onClick={handleBack}
             disabled={activeStep === 0}
-            sx={{
-              fontFamily: "livory",
-              color: "black",
-            }}
           >
             {theme.direction === "rtl" ? (
               <KeyboardArrowRight />

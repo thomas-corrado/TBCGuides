@@ -5,13 +5,10 @@ const TBCLogo = () => {
       <Box sx={{ width: "1rem" }} ml={3}>
         <Typography
           variant="h2"
+          className="tbc-logo"
           sx={{
             mr: 2,
             display: { xs: "none", md: "flex" },
-            fontFamily: "Antonio",
-            fontWeight: 700,
-            color: "inherit",
-            textDecoration: "none",
           }}
         >
           TBC Guides

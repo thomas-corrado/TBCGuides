@@ -6,11 +6,54 @@ import { useState, useEffect } from "react";
 import { styled } from "@washingtonpost/wpds-ui-kit";
 import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import {
+  ThemeProvider,
+  createTheme,
+  experimental_sx as sx,
+} from "@mui/material/styles";
 
 const theme = createTheme({
   typography: {
     fontFamily: ["belda-normal"].join(","),
+  },
+  palette: {
+    primary: {
+      main: "#596d90",
+    },
+    secondary: {
+      main: "#FFFFFF",
+    },
+  },
+  components: {
+    // Name of the component
+    MuiButtonBase: {
+      defaultProps: {
+        // The props to change the default for.
+        disableRipple: true, // No more ripple, on the whole application 💣!
+      },
+    },
+    MuiIconButton: {
+      defaultProps: {
+        color: "secondary",
+      },
+    },
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          background: "white", 
+          width: "100vw", 
+          height: "100%"
+        }
+      }
+    },
+    MuiBackdrop: {
+      styleOverrides: {
+        root: {
+          background: "none",
+          backgroundColor: "transparent",
+        },
+      },
+    },
   },
 });
 

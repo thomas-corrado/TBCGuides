@@ -6,18 +6,8 @@ import DescriptionsAndStepper from "./Stepper/DescriptionsAndStepper";
 const Testimonials = () => {
   return (
     <>
-      <Box
-        sx={{
-          display: "flex",
-          position: "relative",
-          backgroundColor: "white",
-        }}
-      >
-        <Box
-          sx={{
-            opacity: 0.2,
-          }}
-        >
+      <Box className="testimonial-outer-box">
+        <Box className="testimonial-inner-box">
           <Image
             priority
             layout="fill"
@@ -33,11 +23,7 @@ const Testimonials = () => {
         <Stack
           mt={10}
           mb={10}
-          sx={{
-            width: "100vw",
-            fontFamily: "livory",
-            zIndex: 1,
-          }}
+          className="testimonial-stack"
           direction="column"
           spacing={2}
         >

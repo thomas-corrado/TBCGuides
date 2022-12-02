@@ -28,14 +28,12 @@ const MadeBy = ({
         <Stack direction="row" spacing={2}>
           <IconButton
             className="contact-icon-button"
-            disableRipple
             onClick={() => router.push(`https://github.com/thomas-corrado`)}
           >
             <GitHubIcon />
           </IconButton>
           <IconButton
             className="contact-icon-button"
-            disableRipple
             onClick={() =>
               router.push(`https://www.linkedin.com/in/thomas-corrado/`)
             }

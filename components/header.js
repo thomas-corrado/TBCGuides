@@ -88,7 +88,6 @@ const Header = () => {
             href={href}
           >
             <MenuItem
-              disableRipple
               sx={{
                 fontFamily: "Antonio",
                 fontSize: "2rem",
