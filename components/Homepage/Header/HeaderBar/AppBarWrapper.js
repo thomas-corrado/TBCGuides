@@ -10,12 +10,9 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const menuFont = createTheme({
   typography: {
-    fontFamily: ["belda-normal"].join(","),
+    fontFamily: ["Antonio"].join(","),
   },
 });
-
-
-
 
 const pages = ["about", "reservations", "gallery"];
 
