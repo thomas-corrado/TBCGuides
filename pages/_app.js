@@ -6,6 +6,16 @@ import { useState, useEffect } from "react";
 import { styled } from "@washingtonpost/wpds-ui-kit";
 import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
+import { createMuiTheme } from "@material-ui/core/styles";
+import { ThemeProvider } from "@material-ui/styles";
+
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: [
+      "belda-normal",
+    ].join(","),
+  },
+});
 
 const StyledLoadingScreen = styled("div", {
   width: "100vw",
@@ -62,7 +72,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }
