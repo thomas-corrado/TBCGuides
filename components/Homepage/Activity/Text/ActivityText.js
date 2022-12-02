@@ -8,15 +8,14 @@ const ActivityText = () => {
         spacing={3}
         sx={{
           width: "100vw",
-          alignItems: "center",
-          backgroundColor: "#d8d8d8",
+          alignItems: "center"
         }}
         mt={4}
         mb={7}
       >
         <Typography
           style={{
-            fontFamily: "Raleway",
+            fontFamily: "livory",
             fontSize: "2rem",
           }}
         >
@@ -34,7 +33,7 @@ const ActivityText = () => {
           <Typography
             style={{
               display: "inline",
-              fontFamily: "Raleway",
+              fontFamily: "livory",
               fontSize: "1.2rem",
               lineHeight: "2rem",
               width: "calc(60vw + 4rem)",

@@ -19,6 +19,8 @@ export default function Home() {
           ></meta>
           <meta name="theme-color" content="#FFFFFF"></meta>
           <link rel="icon" href="/phishing.ico" />
+          <link rel="stylesheet" href="https://use.typekit.net/nff0pei.css"></link>
+          <link rel="stylesheet" href="https://use.typekit.net/nff0pei.css"></link>
         </Head>
 
         <main>

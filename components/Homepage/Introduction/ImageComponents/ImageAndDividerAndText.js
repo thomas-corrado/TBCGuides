@@ -16,7 +16,6 @@ const ImageAndDividerAndText = ({ headerTitle, descriptionText, children }) => {
             height: "auto",
             position: "relative",
             justifyContent: "center",
-            backgroundColor: "white",
           }}
         >
           <HeaderTitle title={headerTitle} />

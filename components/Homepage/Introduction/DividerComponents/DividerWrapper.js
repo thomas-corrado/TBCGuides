@@ -10,13 +10,14 @@ const DividerWrapper = ({ widthVar="" }) => {
           position: "relative",
           display: "flex",
           alignItems: "center",
-          padding: 0, 
+          padding: 0,
           margin: 0,
         }}
       >
         <Divider
           sx={{
             width: widthVar,
+            backgroundColor: "white",
           }}
         />
       </Box>

@@ -47,9 +47,7 @@ const itemData = [
   {
     number: 13,
   },
- 
 ];
-
 
 const Adventure = () => {
   const [state, setState] = useState({
@@ -101,56 +99,60 @@ const Adventure = () => {
     backgroundColor: "white",
   });
 
-   const StyledAdventureExperienceTitle = styled("h3", {
-     color: "black",
-     position: "relative",
-     fontSize: innerWidth > 440 ? "2.5rem" : "2rem",
-     top: ".5rem",
-     zIndex: 3,
-     left: innerWidth > 722 ? "5.5rem" : innerWidth > 526 ? "4rem" : "2.5rem",
-     fontFamily: "Raleway",
-     width: innerWidth > 722 ? "80vw" : innerWidth > 351 ? "78vw" : "80vw",
-   });
+  const StyledAdventureExperienceTitle = styled("h3", {
+    color: "black",
+    position: "relative",
+    fontSize: innerWidth > 440 ? "2.5rem" : "2rem",
+    top: ".5rem",
+    zIndex: 3,
+    left: innerWidth > 722 ? "5.5rem" : innerWidth > 526 ? "4rem" : "2.5rem",
+    fontFamily: "livory",
+    width: innerWidth > 722 ? "80vw" : innerWidth > 351 ? "78vw" : "80vw",
+  });
 
-   const StyledDividerBoxOne = styled("div", {
-     position: "absolute",
-     display: "flex",
-     left: "5vw",
-     zIndex: 5,
-     
-   });
+  const StyledDividerBoxOne = styled("div", {
+    position: "absolute",
+    display: "flex",
+    left: "5vw",
+    zIndex: 5,
+  });
 
-   const StyledDividerBoxTwo = styled("div", {
-     position: "relative",
-     display: "flex",
-     top: "0rem",
-     left: innerWidth > 722 ? "5.5rem" : innerWidth > 526 ? "4rem" : "2.5rem",
-     width: innerWidth > 526 ? "25rem" : "15rem",
-     
-   });
+  const StyledDividerBoxTwo = styled("div", {
+    position: "relative",
+    display: "flex",
+    top: "0rem",
+    left: innerWidth > 722 ? "5.5rem" : innerWidth > 526 ? "4rem" : "2.5rem",
+    width: innerWidth > 526 ? "25rem" : "15rem",
+  });
 
-   const StyledDescriptionBox = styled("div", {
-     color: "black",
-     left: innerWidth > 722 ? "5.5rem" : innerWidth > 526 ? "4rem" : "2.5rem",
-     position: "absolute",
-     top: innerWidth > 685 ? "8rem" : innerWidth > 440 ? "11rem" : innerWidth > 388 ? "7rem" : "9rem",
-     width: innerWidth > 768 ? "85vw" : "75vw",
-     height: "auto",
-     backgroundColor: "white",
-     display: "flex",
-     alignContent: "center",
-   });
+  const StyledDescriptionBox = styled("div", {
+    color: "black",
+    left: innerWidth > 722 ? "5.5rem" : innerWidth > 526 ? "4rem" : "2.5rem",
+    position: "absolute",
+    top:
+      innerWidth > 685
+        ? "8rem"
+        : innerWidth > 440
+        ? "11rem"
+        : innerWidth > 388
+        ? "7rem"
+        : "9rem",
+    width: innerWidth > 768 ? "85vw" : "75vw",
+    height: "auto",
+    backgroundColor: "white",
+    display: "flex",
+    alignContent: "center",
+  });
 
-   const StyledDescriptionText = styled("p", {
-     color: "black",
-     fontSize: innerWidth > 444 ? "1.3rem" : "1.1rem",
-     display: "flex",
-     justifyContent: "center",
-     alignContent: "center",
-     lineHeight: innerWidth > 722 ? "calc(1rem + (4rem - 1.5vw))" : "2.4rem",
-     fontFamily: "Raleway",
-
-   });
+  const StyledDescriptionText = styled("p", {
+    color: "black",
+    fontSize: innerWidth > 444 ? "1.3rem" : "1.1rem",
+    display: "flex",
+    justifyContent: "center",
+    alignContent: "center",
+    lineHeight: innerWidth > 722 ? "calc(1rem + (4rem - 1.5vw))" : "2.4rem",
+    fontFamily: "livory",
+  });
 
   const dislayDesktop = () => {
     return (
@@ -183,7 +185,6 @@ const Adventure = () => {
             width: 80vw;
             height: 35rem;
             top: 7rem;
-            
           }
 
           @media (max-width: 1484px) {
@@ -283,7 +284,6 @@ const Adventure = () => {
             -ms-flex-align: center;
             -webkit-align-items: center;
             align-items: center;
-            
           }
 
           .swiper-slide img {

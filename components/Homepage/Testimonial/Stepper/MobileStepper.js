@@ -9,7 +9,6 @@ const MobileStepperWrapper = ({
   handleNext,
   handleBack,
 }) => {
-
   const theme = useTheme();
 
   return (
@@ -28,7 +27,7 @@ const MobileStepperWrapper = ({
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
             sx={{
-              fontFamily: "Raleway",
+              fontFamily: "livory",
               color: "black",
             }}
           >
@@ -46,7 +45,7 @@ const MobileStepperWrapper = ({
             onClick={handleBack}
             disabled={activeStep === 0}
             sx={{
-              fontFamily: "Raleway",
+              fontFamily: "livory",
               color: "black",
             }}
           >

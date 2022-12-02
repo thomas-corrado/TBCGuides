@@ -43,7 +43,7 @@ const DescriptionsAndStepper = () => {
                   alignItems: "center",
                   fontSize: "1.2rem",
                   lineHeight: "2rem",
-                  fontFamily: "Raleway",
+                  fontFamily: "belda-normal",
                   textAlign: "center",
                 }}
               >

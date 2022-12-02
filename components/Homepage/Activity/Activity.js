@@ -6,10 +6,9 @@ import BottomImage from "./BottomImage/BottomImage";
 const Activity = () => {
     return (
       <Stack sx={{ width: "100vw" }}>
-        <TopImage/>
-        <ActivityText/>
-        <BottomImage/>
-        
+        <TopImage />
+        <ActivityText />
+        <BottomImage />
       </Stack>
     );
 }

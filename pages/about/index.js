@@ -7,12 +7,12 @@ import LearnMore from "../../components/learnMore";
 import Head from "next/head";
 
 const StyledButtonBox = styled(Box, {
-    width: "100vw", 
-    display: "flex", 
-    justifyContent: "center", 
-    position: "relative", 
-    fontFamily: "Raleway", 
-})
+  width: "100vw",
+  display: "flex",
+  justifyContent: "center",
+  position: "relative",
+  fontFamily: "livory",
+});
 
 export default function AboutPage() {
   return (

@@ -12,7 +12,7 @@ const StyledOuterBox = styled(Box, {
   display: "flex",
   justifyContent: "center",
   position: "absolute",
-  marginTop: "4rem"
+  marginTop: "4rem",
 });
 
 const StyledInnerBox = styled(Box, {
@@ -22,106 +22,106 @@ const StyledInnerBox = styled(Box, {
 });
 
 const AboutVideo = () => {
-    const router = useRouter(); 
+  const router = useRouter();
 
-    return (
-      <div>
-        <StyledOuterBox className="outerbox">
-          <style global jsx>{`
-            html {
-              min-height: 100%;
-              height: 100%;
-            }
+  return (
+    <div>
+      <StyledOuterBox className="outerbox">
+        <style global jsx>{`
+          html {
+            min-height: 100%;
+            height: 100%;
+          }
 
-            body {
-              height: 100%;
-              margin: 0;
-            }
+          body {
+            height: 100%;
+            margin: 0;
+          }
 
-            .outerbox {
-              display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-              display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-              display: -ms-flexbox; /* TWEENER - IE 10 */
-              display: -webkit-flex;
-              display: flex;
-              -webkit-box-align: center;
-              -webkit-flex-align: center;
-              -ms-flex-align: center;
-              -webkit-align-items: center;
-              align-items: center;
-              position: absolute;
-              height: calc(100vh - 4rem);
-              width: 100%;
-              top: 0;
-              z-index: 2;
-              -webkit-box-sizing: border-box;
-              -moz-box-sizing: border-box;
-              box-sizing: border-box;
-            }
+          .outerbox {
+            display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+            display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+            display: -ms-flexbox; /* TWEENER - IE 10 */
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-flex-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            position: absolute;
+            height: calc(100vh - 4rem);
+            width: 100%;
+            top: 0;
+            z-index: 2;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+          }
 
+          .innerbox {
+            min-height: 10px;
+            min-width: 10px;
+            margin: auto;
+            position: relative;
+            display: table;
+          }
+
+          @media (max-width: 400px) {
             .innerbox {
-              min-height: 10px;
-              min-width: 10px;
-              margin: auto;
-              position: relative;
-              display: table;
+              bottom: 2rem;
             }
-
-            @media (max-width: 400px) {
-              .innerbox {
-                bottom: 2rem;
-              }
-            }
-          `}</style>
-          <StyledInnerBox className="innerbox">
-            <div
-              className="videoBox"
+          }
+        `}</style>
+        <StyledInnerBox className="innerbox">
+          <div
+            className="videoBox"
+            style={{
+              display: "table-cell",
+              verticalAlign: "middle",
+              overflow: "hidden",
+            }}
+          >
+            <video
+              controls
               style={{
-                display: "table-cell",
-                verticalAlign: "middle",
-                overflow: "hidden",
+                objectFit: "cover",
+                width: "100%",
+                maxHeight: "calc(100vh - 12rem)",
+                padding: 0,
+                margin: 0,
+              }}
+              preload="metadata"
+            >
+              <source
+                src="https://d14drtvwlopsgs.cloudfront.net/about-video.mp4#t=0.5"
+                type="video/mp4"
+              />
+            </video>
+            <div
+              style={{
+                zIndex: 3,
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                position: "relative",
+                paddingBottom: "3rem",
+                top: "2rem",
               }}
             >
-              <video
-                controls
-                style={{
-                  objectFit: "cover",
-                  width: "100%",
-                  maxHeight: "calc(100vh - 12rem)",
-                  padding: 0,
-                  margin: 0,
-                }}
-                preload="metadata"
+              <Button
+                onClick={() => router.push(`/reservations`)}
+                variant="contained"
+                sx={{ fontFamily: "livory", backgroundColor: "black" }}
               >
-                <source
-                  src="https://d14drtvwlopsgs.cloudfront.net/about-video.mp4#t=0.5"
-                  type="video/mp4"
-                />
-              </video>
-              <div
-                style={{
-                  zIndex: 3,
-                  width: "100%",
-                  display: "flex",
-                  justifyContent: "center",
-                  position: "relative",
-                  paddingBottom: "3rem",
-                  top: "2rem",
-                }}
-              >
-                <Button
-                  onClick={() => router.push(`/reservations`)}
-                  variant="contained"
-                  sx={{ fontFamily: "Raleway", backgroundColor: "black" }}
-                >
-                  Make a Reservation
-                </Button>
-              </div>
+                Make a Reservation
+              </Button>
             </div>
-          </StyledInnerBox>
-        </StyledOuterBox>
-      </div>
-    );
-}
+          </div>
+        </StyledInnerBox>
+      </StyledOuterBox>
+    </div>
+  );
+};
 
-export default AboutVideo
+export default AboutVideo;

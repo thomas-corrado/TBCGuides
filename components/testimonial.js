@@ -1,5 +1,5 @@
 // Image by rawpixel.com
-  
+
 import * as React from "react";
 import Image from "next/image";
 import { Box } from "@mui/system";
@@ -31,264 +31,260 @@ const steps = [
 ];
 
 const Testiomonial = () => {
+  const [state, setState] = useState({
+    mobileView: false,
+  });
 
-    const [state, setState] = useState({
-      mobileView: false,
-    });
+  const { mobileView } = state;
 
-    const { mobileView } = state;
+  const [innerWidth, setInnerWidth] = React.useState(0);
 
-    const [innerWidth, setInnerWidth] = React.useState(0);
-
-    useEffect(() => {
-      const setResponsiveness = () => {
-        setInnerWidth(window.innerWidth);
-        return window.innerWidth < 423
-          ? setState((prevState) => ({ ...prevState, mobileView: true }))
-          : setState((prevState) => ({ ...prevState, mobileView: false }));
-      };
-
-      setResponsiveness();
-      window.addEventListener("resize", () => setResponsiveness());
-
-      return () => {
-        window.removeEventListener("resize", () => setResponsiveness());
-      };
-    }, []);
-
-    const theme = useTheme();
-    const [activeStep, setActiveStep] = React.useState(0);
-    const maxSteps = steps.length;
-
-    const handleNext = () => {
-      setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  useEffect(() => {
+    const setResponsiveness = () => {
+      setInnerWidth(window.innerWidth);
+      return window.innerWidth < 423
+        ? setState((prevState) => ({ ...prevState, mobileView: true }))
+        : setState((prevState) => ({ ...prevState, mobileView: false }));
     };
 
-    const handleBack = () => {
-      setActiveStep((prevActiveStep) => prevActiveStep - 1);
+    setResponsiveness();
+    window.addEventListener("resize", () => setResponsiveness());
+
+    return () => {
+      window.removeEventListener("resize", () => setResponsiveness());
     };
+  }, []);
 
-    const StyledDesktopTestimonialBox = styled(Box, {
-      width: "100vw",
-      height: "auto",
-      position: "absolute",
-      top:
-        innerWidth > 1485
-          ? "156rem"
-          : innerWidth > 1306
-          ? "158rem"
-          : innerWidth > 1269
-          ? "168rem"
-          : innerWidth > 768
-          ? "164rem"
-          : innerWidth > 751
-          ? "168rem"
-          : innerWidth > 558
-          ? "153rem"
-          : innerWidth > 527
-          ? "157rem"
-          : innerWidth > 500
-          ? "143rem"
-          : innerWidth > 484
-          ? "142rem"
-          : innerWidth > 440
-          ? "142rem"
-          : innerWidth > 388
-          ? "135rem"
-          : innerWidth > 375
-          ? "138rem"
-          : innerWidth > 339
-          ? "140rem"
-          : "142rem",
-      paddingBottom: "4rem",
-      zIndex: 4,
-    });
+  const theme = useTheme();
+  const [activeStep, setActiveStep] = React.useState(0);
+  const maxSteps = steps.length;
 
-    const StyledDividerBoxOne = styled("div", {
-      position: "absolute",
-      display: "flex",
-      left: "5vw",
-      
-    });
+  const handleNext = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  };
 
-    const StyledWeaveImageBox = styled(Box, {
-      display: "flex",
-      justifyContent: "center",
-      width: "100vw",
-      overflow: "hidden",
-      position: "absolute",
-      top: "3.5rem",
-     
-    });
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
 
-    const StyledWeaveImageBoxTwo = styled(Box, {
-      width: "100vw",
-      height: "100%",
-      position: "absolute",
-      opacity: .2,
-    });
+  const StyledDesktopTestimonialBox = styled(Box, {
+    width: "100vw",
+    height: "auto",
+    position: "absolute",
+    top:
+      innerWidth > 1485
+        ? "156rem"
+        : innerWidth > 1306
+        ? "158rem"
+        : innerWidth > 1269
+        ? "168rem"
+        : innerWidth > 768
+        ? "164rem"
+        : innerWidth > 751
+        ? "168rem"
+        : innerWidth > 558
+        ? "153rem"
+        : innerWidth > 527
+        ? "157rem"
+        : innerWidth > 500
+        ? "143rem"
+        : innerWidth > 484
+        ? "142rem"
+        : innerWidth > 440
+        ? "142rem"
+        : innerWidth > 388
+        ? "135rem"
+        : innerWidth > 375
+        ? "138rem"
+        : innerWidth > 339
+        ? "140rem"
+        : "142rem",
+    paddingBottom: "4rem",
+    zIndex: 4,
+  });
 
-    const StyledHeaderBox = styled(Box, {
-      display: "flex",
-      width: "100vw",
-      justifyContent: "center",
-      textAlign: "center", 
-      postition: "absolute",
-      fontSize: innerWidth > 440 ? "2.5rem" : "2rem",
-      fontFamily: "Raleway", 
-      opacity: 1, 
-      marginTop: "9rem"
-    });
+  const StyledDividerBoxOne = styled("div", {
+    position: "absolute",
+    display: "flex",
+    left: "5vw",
+  });
 
-    const StyledDividerBoxTwo = styled(Box, {
-      position: "absolute",
-      display: "flex",
-      width: "100vw", 
-      justifyContent: "center", 
-      marginTop: "2rem"
-    });
+  const StyledWeaveImageBox = styled(Box, {
+    display: "flex",
+    justifyContent: "center",
+    width: "100vw",
+    overflow: "hidden",
+    position: "absolute",
+    top: "3.5rem",
+  });
 
-    const StyledPaginationBox = styled(Box, {
-      position: "absolute",
-      display: "flex",
-      width: "100vw",
-      justifyContent: "center",
-      marginTop: innerWidth > 527 ? "5rem" : "3rem",
-      fontFamily: "Raleway",
-      fontSize: "1.2rem",
-      lineHeight: "2rem",
-      textAlign: "center",
-    });
+  const StyledWeaveImageBoxTwo = styled(Box, {
+    width: "100vw",
+    height: "100%",
+    position: "absolute",
+    opacity: 0.2,
+  });
 
+  const StyledHeaderBox = styled(Box, {
+    display: "flex",
+    width: "100vw",
+    justifyContent: "center",
+    textAlign: "center",
+    postition: "absolute",
+    fontSize: innerWidth > 440 ? "2.5rem" : "2rem",
+    fontFamily: "livory",
+    opacity: 1,
+    marginTop: "9rem",
+  });
 
-    return (
-      <StyledDesktopTestimonialBox className="outer">
-        <style global jsx>{`
-          .headerBox {
-            z-index: 2;
-          }
+  const StyledDividerBoxTwo = styled(Box, {
+    position: "absolute",
+    display: "flex",
+    width: "100vw",
+    justifyContent: "center",
+    marginTop: "2rem",
+  });
 
+  const StyledPaginationBox = styled(Box, {
+    position: "absolute",
+    display: "flex",
+    width: "100vw",
+    justifyContent: "center",
+    marginTop: innerWidth > 527 ? "5rem" : "3rem",
+    fontFamily: "livory",
+    fontSize: "1.2rem",
+    lineHeight: "2rem",
+    textAlign: "center",
+  });
+
+  return (
+    <StyledDesktopTestimonialBox className="outer">
+      <style global jsx>{`
+        .headerBox {
+          z-index: 2;
+        }
+
+        .weaveBox {
+          z-index: -1;
+          height: 65rem;
+          background-color: white;
+        }
+
+        @media (max-width: 425px) {
           .weaveBox {
-            z-index: -1;
-            height: 65rem;
-            background-color: white; 
+            height: 78rem;
           }
+        }
 
-          @media (max-width: 425px) {
-            .weaveBox {
-              height: 78rem;
-            }
+        @media (max-width: 324px) {
+          .weaveBox {
+            height: 78rem;
           }
+        }
 
-          @media (max-width: 324px) {
-            .weaveBox {
-              height: 78rem;
-            }
+        @media (max-width: 296px) {
+          .weaveBox {
+            height: 85rem;
           }
+        }
+      `}</style>
+      <StyledDividerBoxOne>
+        <Divider
+          sx={{
+            width: "90vw",
+          }}
+        />
+      </StyledDividerBoxOne>
+      <StyledHeaderBox className="headerBox">
+        Loved by <br /> Every Client
+      </StyledHeaderBox>
 
-          @media (max-width: 296px) {
-            .weaveBox {
-              height: 85rem;
-            }
-          }
-        `}</style>
-        <StyledDividerBoxOne>
-          <Divider
+      <StyledDividerBoxTwo>
+        <Divider
+          sx={{
+            width: "15vw",
+            backgroundColor: "black",
+          }}
+        />
+      </StyledDividerBoxTwo>
+
+      <StyledPaginationBox>
+        <Box sx={{ maxWidth: innerWidth > 425 ? 500 : 350, flexGrow: 1 }}>
+          <Box
             sx={{
-              width: "90vw",
+              width: "100%",
+              p: 2,
+              display: "flex",
+              justifyContent: "center",
             }}
-          />
-        </StyledDividerBoxOne>
-        <StyledHeaderBox className="headerBox">
-          Loved by <br /> Every Client
-        </StyledHeaderBox>
-
-        <StyledDividerBoxTwo>
-          <Divider
-            sx={{
-              width: "15vw",
-              backgroundColor: "black",
-            }}
-          />
-        </StyledDividerBoxTwo>
-
-        <StyledPaginationBox>
-          <Box sx={{ maxWidth: innerWidth > 425 ? 500 : 350, flexGrow: 1 }}>
-            <Box
-              sx={{
-                width: "100%",
-                p: 2,
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              {steps[activeStep].description}
-              <br />
-              <br />
-              {steps[activeStep].writer}
-            </Box>
-            <MobileStepper
-              sx={{
-                backgroundColor: "transparent",
-              }}
-              variant="text"
-              steps={maxSteps}
-              position="static"
-              activeStep={activeStep}
-              nextButton={
-                <Button
-                  size="small"
-                  onClick={handleNext}
-                  disabled={activeStep === maxSteps - 1}
-                  sx={{
-                    fontFamily: "Raleway",
-                    color: "black",
-                  }}
-                >
-                  Next
-                  {theme.direction === "rtl" ? (
-                    <KeyboardArrowLeft />
-                  ) : (
-                    <KeyboardArrowRight />
-                  )}
-                </Button>
-              }
-              backButton={
-                <Button
-                  size="small"
-                  onClick={handleBack}
-                  disabled={activeStep === 0}
-                  sx={{
-                    fontFamily: "Raleway",
-                    color: "black",
-                  }}
-                >
-                  {theme.direction === "rtl" ? (
-                    <KeyboardArrowRight />
-                  ) : (
-                    <KeyboardArrowLeft />
-                  )}
-                  Back
-                </Button>
-              }
-            />
+          >
+            {steps[activeStep].description}
+            <br />
+            <br />
+            {steps[activeStep].writer}
           </Box>
-        </StyledPaginationBox>
+          <MobileStepper
+            sx={{
+              backgroundColor: "transparent",
+            }}
+            variant="text"
+            steps={maxSteps}
+            position="static"
+            activeStep={activeStep}
+            nextButton={
+              <Button
+                size="small"
+                onClick={handleNext}
+                disabled={activeStep === maxSteps - 1}
+                sx={{
+                  fontFamily: "livory",
+                  color: "black",
+                }}
+              >
+                Next
+                {theme.direction === "rtl" ? (
+                  <KeyboardArrowLeft />
+                ) : (
+                  <KeyboardArrowRight />
+                )}
+              </Button>
+            }
+            backButton={
+              <Button
+                size="small"
+                onClick={handleBack}
+                disabled={activeStep === 0}
+                sx={{
+                  fontFamily: "livory",
+                  color: "black",
+                }}
+              >
+                {theme.direction === "rtl" ? (
+                  <KeyboardArrowRight />
+                ) : (
+                  <KeyboardArrowLeft />
+                )}
+                Back
+              </Button>
+            }
+          />
+        </Box>
+      </StyledPaginationBox>
 
-        <StyledWeaveImageBox className="weaveBox">
-          <StyledWeaveImageBoxTwo className="weaveBox">
-            <Image
-              priority
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              src="https://d14drtvwlopsgs.cloudfront.net/weave.jpeg"
-              alt="Harpoon"
-            />
-          </StyledWeaveImageBoxTwo>
-        </StyledWeaveImageBox>
-      </StyledDesktopTestimonialBox>
-    );
-}
+      <StyledWeaveImageBox className="weaveBox">
+        <StyledWeaveImageBoxTwo className="weaveBox">
+          <Image
+            priority
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+            src="https://d14drtvwlopsgs.cloudfront.net/weave.jpeg"
+            alt="Harpoon"
+          />
+        </StyledWeaveImageBoxTwo>
+      </StyledWeaveImageBox>
+    </StyledDesktopTestimonialBox>
+  );
+};
 
-export default Testiomonial
+export default Testiomonial;

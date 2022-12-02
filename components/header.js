@@ -104,8 +104,8 @@ const Header = () => {
                 sx={{
                   width: "100%",
                   textAlign: "center",
-                  fontFamily: "Raleway",
-                  zIndex: 5
+                  fontFamily: "livory",
+                  zIndex: 5,
                 }}
               >
                 {label}
@@ -151,7 +151,7 @@ const Header = () => {
             anchor: "top",
             open: isOpen,
             onClose: handleDrawerClose,
-            transitionDuration: 700, 
+            transitionDuration: 700,
           }}
           disableRipple
           sx={{
@@ -193,18 +193,16 @@ const Header = () => {
 
   const displayDesktop = () => {
     return (
-     
-        <div
-          style={{
-            float: "right",
-            marginTop: "4.8rem",
-            marginRight: "0",
-            paddingRight: "1rem",
-          }}
-        >
-          {getMenuButtons()}
-        </div>
-      
+      <div
+        style={{
+          float: "right",
+          marginTop: "4.8rem",
+          marginRight: "0",
+          paddingRight: "1rem",
+        }}
+      >
+        {getMenuButtons()}
+      </div>
     );
   };
 

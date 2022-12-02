@@ -2,32 +2,34 @@ import { Stack, Box, Divider } from "@mui/material";
 
 const TestimonialHeader = () => {
     return (
-    <Stack
+      <Stack
         sx={{
-        width: "100vw",
-        alignItems: "center",
+          width: "100vw",
+          alignItems: "center",
         }}
         direction="column"
         spacing={3}
-    >
+      >
         <Box
-        sx={{
+          sx={{
             width: "100vw",
             textAlign: "center",
             fontSize: "2rem",
-        }}
+            fontFamily: "belda-normal",
+            
+          }}
         >
-        Loved by <br /> Every Client
+          Loved by <br /> Every Client
         </Box>
 
         <Divider
-        sx={{
+          sx={{
             width: "15vw",
             backgroundColor: "black",
             alignItems: "center",
-        }}
+          }}
         />
-    </Stack>
+      </Stack>
     );
 }
 

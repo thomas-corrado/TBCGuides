@@ -7,8 +7,8 @@ import Testimonials from "../Testimonial/Testimonials";
 // import Contact from "../../contact";
 import { Stack, Box } from "@mui/material";
 import Divider from "@mui/material/Divider";
-import BackgroundImage from "../Introduction/ImageComponents/BackgroundImage";
-import WelcomeHeader from "../Introduction/TextComponents/WelcomeHeader";
+import BackgroundImage from "../Header/BackgroundImage";
+import WelcomeHeader from "../Header/WelcomeHeader";
 // import HeaderTitle from "../Introduction/TextComponents/HeaderTitle";
 // import DividerWrapper from "../Introduction/DividerComponents/DividerWrapper";
 // import DescriptionText from "../Introduction/TextComponents/DescriptionText";
@@ -19,13 +19,15 @@ import WelcomeHeader from "../Introduction/TextComponents/WelcomeHeader";
 // import ImageAndDividerAndText from "../ImageComponents/ImageAndDividerAndText";
 import Introduction from "../Introduction/Introduction";
 import Activity from "../Activity/Activity";
+import HomepageHeader from "../Header/HomepagerHeader";
 
 const HomePage = () => {
 
     return (
-      <Box className="homepage-outer-box">
-        <FrontPageHeader />
-        <Box
+      <Box className="homepage-outer-box" sx={{ backgroundColor: "#596d90" }}>
+        <HomepageHeader />
+        {/* <FrontPageHeader /> */}
+        {/* <Box
           style={{
             display: "flex",
             width: "100vw",
@@ -33,10 +35,10 @@ const HomePage = () => {
             position: "relative",
             justifyContent: "center",
           }}
-        >
-          <BackgroundImage />
-          <WelcomeHeader />
-        </Box>
+        > */}
+        {/* <BackgroundImage />
+          <WelcomeHeader /> */}
+        {/* </Box> */}
 
         <Stack
           direction="column"
@@ -46,7 +48,7 @@ const HomePage = () => {
         >
           <Introduction />
 
-          <Divider sx={{ width: "90vw" }} />
+          
 
           <Testimonials />
         </Stack>

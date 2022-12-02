@@ -10,11 +10,13 @@ const Testimonials = () => {
         sx={{
           display: "flex",
           position: "relative",
+          backgroundColor: "white",
         }}
+       
       >
         <Box
           sx={{
-            opacity: .2
+            opacity: 0.2,
           }}
         >
           <Image
@@ -30,11 +32,11 @@ const Testimonials = () => {
           />
         </Box>
         <Stack
-        mt={10}
-        mb={10}
+          mt={10}
+          mb={10}
           sx={{
             width: "100vw",
-            fontFamily: "Raleway",
+            fontFamily: "livory",
             zIndex: 1,
           }}
           direction="column"
