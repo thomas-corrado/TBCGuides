@@ -13,6 +13,9 @@ const NavigationBarNonHome = ({ pages }) => {
 export default NavigationBarNonHome;
 
 const navigationBarNonHomeTheme = createTheme({
+  typography: {
+    fontFamily: ["Antonio"].join(","),
+  },
   palette: {
     primary: {
       main: "#000000",
