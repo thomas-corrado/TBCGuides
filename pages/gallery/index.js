@@ -2,6 +2,7 @@ import * as React from "react";
 import NavBar from "../../components/navBar";
 import ImageListWrapper from "../../components/imageList";
 import Head from "next/head";
+import GalleryPageComponent from "../../components/GalleryPage/GalleryPageComponent";
 
 export default function GalleryPage() {
   return (
@@ -14,15 +15,7 @@ export default function GalleryPage() {
         <meta name="theme-color" content="#000000"></meta>
         <link rel="icon" href="/phishing.ico" />
       </Head>
-      <NavBar />
-      <style global jsx>
-        {`
-          html {
-            background-color: black;
-          }
-        `}
-      </style>
-      <ImageListWrapper />
+      <GalleryPageComponent/>
     </div>
   );
 }

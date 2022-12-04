@@ -15,6 +15,7 @@ const BackgroundImage = () => {
         quality={100}
         src="https://d14drtvwlopsgs.cloudfront.net/Homepage.jpeg"
         alt="frozen-over-lake"
+        loading="eager"
       />
     </Box>
   );

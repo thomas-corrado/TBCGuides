@@ -1,0 +1,12 @@
+.compliacted-image-container {
+    width: 90vw;
+    display: flex; 
+}
+
+
+  .complicated-image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }

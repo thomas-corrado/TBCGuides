@@ -1,15 +1,14 @@
-import {
-  Box,
-  Stack,
-} from "@mui/material";
+import { Stack } from "@mui/material";
 import NavigationBarNonHome from "../General/NavigationBarNonHome";
 import ContactInfo from "../Homepage/Contact/ContactInfo"
+import ImageListGallery from "./ImageListGallery";
 
 const GalleryPageComponent = () => {
     return (
       <>
-        <Stack className="about-stack" direction="column" >
+        <Stack className="about-stack" direction="column">
           <NavigationBarNonHome pages={pages} />
+          <ImageListGallery />
         </Stack>
         <ContactInfo />
       </>
