@@ -4,35 +4,6 @@ import MadeBy from "./GridItems/MadeBy";
 import BusinessHours from "./GridItems/BusinessHours";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-const iconTheme = createTheme({
-  typography: {
-    fontFamily: ["belda-normal"].join(","),
-  },
-  palette: {
-    primary: {
-      main: "#FFFFFF",
-    },
-  },
-  components: {
-    MuiIconButton: {
-      defaultProps: {
-        // The props to change the default for.
-        disableRipple: true, // No more ripple, on the whole application 💣!
-        disableFocusRipple: true,
-      },
-      styleOverrides: {
-        root: {
-          "&:hover": {
-            backgroundColor: "transparent",
-          },
-          padding: "0px",
-        },
-      },
-    },
-  },
-});
-
-
 const ContactInfo = () => {
     return (
       <ThemeProvider theme={iconTheme}>
@@ -80,3 +51,31 @@ const generics = [
     "tbcguides@gmail.com"
   ],
 ];
+
+const iconTheme = createTheme({
+  typography: {
+    fontFamily: ["belda-normal"].join(","),
+  },
+  palette: {
+    primary: {
+      main: "#FFFFFF",
+    },
+  },
+  components: {
+    MuiIconButton: {
+      defaultProps: {
+        // The props to change the default for.
+        disableRipple: true, // No more ripple, on the whole application 💣!
+        disableFocusRipple: true,
+      },
+      styleOverrides: {
+        root: {
+          "&:hover": {
+            backgroundColor: "transparent",
+          },
+          padding: "0px",
+        },
+      },
+    },
+  },
+});
