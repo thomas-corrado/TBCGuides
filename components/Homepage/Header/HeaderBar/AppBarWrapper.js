@@ -8,6 +8,38 @@ import HamburgerWrapper from "../Drawer/HamburgerWrapper";
 import HeaderBarPageButtons from "./HeaderBarPageButtons";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
+const menuAndDrawer = createTheme({
+  typography: {
+    fontFamily: ["Antonio"].join(","),
+  },
+  palette: {
+    primary: {
+      main: "#FFFFFF",
+    },
+    secondary: {
+      main: "#596d90",
+    },
+  },
+  components: {
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          background: "white",
+          width: "100vw",
+          height: "100%",
+        },
+      },
+    },
+    MuiBackdrop: {
+      styleOverrides: {
+        root: {
+          background: "none",
+          backgroundColor: "transparent",
+        },
+      },
+    },
+  },
+});
 
 
 
@@ -16,7 +48,7 @@ const AppBarWrapper = ( {pages, colorOne, colorTwo}) => {
   const [isOpen, setOpen] = useState(false);
   
   return (
-    
+    <ThemeProvider theme={menuAndDrawer}>
       <Box mt={3}>
         <AppBar
           position="static"
@@ -49,7 +81,7 @@ const AppBarWrapper = ( {pages, colorOne, colorTwo}) => {
           </Container>
         </AppBar>
       </Box>
-
+    </ThemeProvider>
   );
 };
 

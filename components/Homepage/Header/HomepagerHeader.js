@@ -13,25 +13,6 @@ const menuAndDrawer = createTheme({
       main: "#596d90",
     },
   },
-  components: {
-    MuiDrawer: {
-      styleOverrides: {
-        paper: {
-          background: "white",
-          width: "100vw",
-          height: "100%",
-        },
-      },
-    },
-    MuiBackdrop: {
-      styleOverrides: {
-        root: {
-          background: "none",
-          backgroundColor: "transparent",
-        },
-      },
-    },
-  },
 });
 
 const HomepageHeader = () => {

@@ -8,26 +8,11 @@ import { useRouter } from "next/router";
 import routerPushFunc from "../../../General/routerPushFunction";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-const menuAndDrawer = createTheme({
-  typography: {
-    fontFamily: ["Antonio"].join(","),
-  },
-  palette: {
-    primary: {
-      main: "#FFFFFF",
-    },
-    secondary: {
-      main: "#596d90",
-    },
-  },
-
-});
-
 const HeaderBarPageButtons = ({ pages, position }) => {
     const router = useRouter();
 
     return (
-      <ThemeProvider theme={menuAndDrawer}>
+
         <Box
           sx={{
             flexGrow: 1,
@@ -54,7 +39,7 @@ const HeaderBarPageButtons = ({ pages, position }) => {
             ))}
           </Stack>
         </Box>
-      </ThemeProvider>
+ 
     );
 };
 

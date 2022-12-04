@@ -40,9 +40,8 @@ const theme = createTheme({
         margin: "0px",
         padding: "0px",
       },
-      styleOverrides: {
-        margin: "0px",
-        padding: "0px",
+      root: {
+        padding: 0,
       },
     },
   },
