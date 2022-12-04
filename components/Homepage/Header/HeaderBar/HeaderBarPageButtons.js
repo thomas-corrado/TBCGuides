@@ -47,7 +47,7 @@ const HeaderBarPageButtons = ({ pages, position }) => {
             ))}
           </Stack>
         </Box>
-    </ThemeProvider>
+    // </ThemeProvider>
     );
 };
 
