@@ -6,14 +6,6 @@ import {
 } from "@mui/material";
 import { useRouter } from "next/router";
 import routerPushFunc from "../../../General/routerPushFunction";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-
-const menuAndDrawer = createTheme({
-  typography: {
-    fontFamily: ["Antonio"].join(","),
-  },
-
-});
 
 const HeaderBarPageButtons = ({ pages, position }) => {
     const router = useRouter();
