@@ -13,7 +13,7 @@ const ComeJoinUs = () => {
             className="come-join-us-outer-stack"
             spacing={4}
           >
-            <Typography  variant="h2">
+            <Typography className="ready-typography" variant="h2">
               Ready to start your fishing journey?
             </Typography>
             <Button
@@ -49,7 +49,7 @@ const joinTheme = createTheme({
         // The props to change the default for.
         disableRipple: true, // No more ripple, on the whole application 💣!
         disableFocusRipple: true,
-        variant: "outlined",
+        variant: "outlined"
       },
       styleOverrides: {
         root: {

@@ -20,7 +20,7 @@ const Introduction = () => {
                 layout="fill"
                 objectFit="cover"
                 quality={100}
-                src="https://d14drtvwlopsgs.cloudfront.net/michael-blatt-ice.jpg"
+                src="https://d14drtvwlopsgs.cloudfront.net/michael-blatt-ice_2.jpg"
                 alt="Harpoon"
               />
             </ImageWrapper>
