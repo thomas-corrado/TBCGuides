@@ -26,26 +26,7 @@ const theme = createTheme({
       main: "#FFFFFF",
     },
   },
-  components: {
-    // Name of the component
-    MuiButton: {
-      defaultProps: {
-        // The props to change the default for.
-        disableRipple: true, // No more ripple, on the whole application 💣!
-      },
-      
-    },
-    MuiIconButton: {
-      defaultProps: {
-        color: "secondary",
-        margin: "0px",
-        padding: "0px",
-      },
-      root: {
-        padding: 0,
-      },
-    },
-  },
+
 });
 
 const StyledLoadingScreen = styled("div", {

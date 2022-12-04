@@ -31,19 +31,3 @@
     align-items: center; 
 }
 
-.ready-typography {
-    color: black;
-    text-align: center;
-}
-
-.book-button {
-    background-color: white;
-    color: grey; 
-    max-width: 60ch;
-}
-
-.book-button:hover {
-    background-color: grey;
-    color: white
-}
-

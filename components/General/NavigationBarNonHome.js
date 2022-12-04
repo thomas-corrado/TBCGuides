@@ -1,11 +1,18 @@
-import { useState } from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import AppBarWrapper from "../Homepage/Header/HeaderBar/AppBarWrapper";
 
+const NavigationBarNonHome = ({ pages }) => {
+
+  return (
+    <ThemeProvider theme={navigationBarNonHomeTheme}>
+      <AppBarWrapper colorOne="black" colorTwo="black" pages={pages} />
+    </ThemeProvider>
+  );
+};
+
+export default NavigationBarNonHome;
+
 const navigationBarNonHomeTheme = createTheme({
-  typography: {
-    fontFamily: ["Antonio"].join(","),
-  },
   palette: {
     primary: {
       main: "#000000",
@@ -33,61 +40,19 @@ const navigationBarNonHomeTheme = createTheme({
       },
     },
     MuiButton: {
+      defaultProps: {
+        // The props to change the default for.
+        disableRipple: true, // No more ripple, on the whole application 💣!
+        disableFocusRipple: true,
+      },
       styleOverrides: {
         root: {
-          color: "#000000",
+          "&:hover": {
+            backgroundColor: "transparent",
+          },
         },
       },
     },
   },
 });
-
-const NavigationBarNonHome = ({ pages }) => {
-    const [isOpen, setOpen] = useState(false);
-
-  return (
-    <ThemeProvider theme={navigationBarNonHomeTheme}>
-      <AppBarWrapper colorOne="black" colorTwo="black" pages={pages} />
-    </ThemeProvider>
-  );
-};
-
-export default NavigationBarNonHome;
-
-{/* <Box>
-  <AppBar
-    position="static"
-    sx={{ backgroundColor: "white", boxShadow: "none" }}
-  >
-    <Container maxWidth="xl">
-      <Toolbar disableGutters>
-        <Box
-          sx={{
-            display: { xs: "flex", md: "none" },
-          }}
-          className="navigation-bar-non-home-box"
-        >
-         
-          <HamburgerWrapper
-            isOpen={isOpen}
-            setOpen={setOpen}
-            colorOne="black"
-            colorTwo="black"
-          />
-
-        
-          <DrawerWrapper
-            className="general-drawer-wrapper"
-            isOpen={isOpen}
-            pages={pages}
-          />
-        </Box>
-
-        
-        <HeaderBarPageButtons pages={pages} position="center" />
-      </Toolbar>
-    </Container>
-  </AppBar>
-</Box>; */}
-
 

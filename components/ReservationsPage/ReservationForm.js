@@ -6,6 +6,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import PersonIcon from "@mui/icons-material/Person";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 
 const ReservationForm = () => {
@@ -116,70 +117,112 @@ const ReservationForm = () => {
     }
     
   return (
-    <Box className="reservation-outside-box" mt={6} mb={6}>
-      <Stack direction="column" className="reservation-stack" mt={5}>
-        <Typography variant="h3" className="reservation-title" mt={5} mb={1}>
-          Make a Reservation
-        </Typography>
-        <form>
-          <Grid container columnSpacing={3} mb={3}>
-            {fields.map((item) => {
-              return (
-                <Grid
-                  key={item.label}
-                  container
-                  item
-                  lg={6}
-                  md={12}
-                  mt={2}
-                  sx={{
-                    justifyContent: {
-                      lg: item.position,
-                      md: "center",
-                      sm: "center",
-                      xs: "center",
-                    },
-                  }}
-                >
-                  <Box
+    <ThemeProvider theme={submitTheme}>
+      <Box className="reservation-outside-box" mt={6} mb={6}>
+        <Stack direction="column" className="reservation-stack" mt={5}>
+          <Typography variant="h3" className="reservation-title" mt={5} mb={1}>
+            Make a Reservation
+          </Typography>
+          <form>
+            <Grid container columnSpacing={3} mb={3}>
+              {fields.map((item) => {
+                return (
+                  <Grid
+                    key={item.label}
+                    container
+                    item
+                    lg={6}
+                    md={12}
+                    mt={2}
                     sx={{
-                      paddingLeft: "8px",
-                      paddingRight: "8px",
-                      paddingBottom: "12px",
-                      backgroundColor: "white",
+                      justifyContent: {
+                        lg: item.position,
+                        md: "center",
+                        sm: "center",
+                        xs: "center",
+                      },
                     }}
                   >
-                    <TextField
-                      label={item.label}
-                      variant="standard"
-                      InputLabelProps={{ shrink: item.shrink }}
-                      type={item.type}
-                      required={item.required}
-                      value={item.value}
-                      onChange={(e) => item.functionName(e.target.value)}
-                      className="reservation-text-field"
-                      margin="dense"
-                    />
-                  </Box>
-                </Grid>
-              );
-            })}
-          </Grid>
-          <Box mb={3}>
-            <Button
-              className="reservation-form-button"
-              onClick={() =>
-                consolidateData(varName, varEmail, varPhone, varGuests, varDate)
-              }
-            >
-              <Typography variant="h6">Submit</Typography>
-            </Button>
-          </Box>
-        </form>
-      </Stack>
-    </Box>
+                    <Box
+                      sx={{
+                        paddingLeft: "8px",
+                        paddingRight: "8px",
+                        paddingBottom: "12px",
+                        backgroundColor: "white",
+                      }}
+                    >
+                      <TextField
+                        label={item.label}
+                        variant="standard"
+                        InputLabelProps={{ shrink: item.shrink }}
+                        type={item.type}
+                        required={item.required}
+                        value={item.value}
+                        onChange={(e) => item.functionName(e.target.value)}
+                        className="reservation-text-field"
+                        margin="dense"
+                      />
+                    </Box>
+                  </Grid>
+                );
+              })}
+            </Grid>
+            <Box mb={3}>
+              <Button
+                
+                onClick={() =>
+                  consolidateData(
+                    varName,
+                    varEmail,
+                    varPhone,
+                    varGuests,
+                    varDate
+                  )
+                }
+              >
+                <Typography variant="h6">Submit</Typography>
+              </Button>
+            </Box>
+          </form>
+        </Stack>
+      </Box>
+    </ThemeProvider>
   );
 };
 
 export default ReservationForm;
+
+const submitTheme = createTheme({
+  typography: {
+    fontFamily: ["belda-normal"].join(","),
+  },
+  palette: {
+    primary: {
+      main: "#000000",
+    },
+    secondary: {
+      main: "#808080",
+    },
+  },
+  components: {
+    MuiButton: {
+      defaultProps: {
+        // The props to change the default for.
+        disableRipple: true, // No more ripple, on the whole application 💣!
+        disableFocusRipple: true,
+        variant: "filled",
+      },
+      styleOverrides: {
+        root: {
+          color: "#FFFFFF",
+          backgroundColor: "#000000",
+          "&:hover": {
+            backgroundColor: "#596d90",
+            color: "#FFFFFF",
+          },
+        },
+      },
+    },
+  },
+});
 

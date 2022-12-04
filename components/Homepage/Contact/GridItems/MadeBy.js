@@ -29,10 +29,12 @@ const MadeBy = ({
           <IconButton
             className="contact-icon-button"
             onClick={() => router.push(`https://github.com/thomas-corrado`)}
+            color="primary"
           >
             <GitHubIcon />
           </IconButton>
           <IconButton
+            color="primary"
             className="contact-icon-button"
             onClick={() =>
               router.push(`https://www.linkedin.com/in/thomas-corrado/`)
