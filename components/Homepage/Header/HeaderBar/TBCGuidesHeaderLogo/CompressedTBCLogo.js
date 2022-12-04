@@ -10,6 +10,7 @@ const CompressedTBCLogo = () => {
           display: { xs: "flex", md: "none" },
         }}
         ml={-3}
+        color="primary"
       >
         TBC Guides
       </Typography>

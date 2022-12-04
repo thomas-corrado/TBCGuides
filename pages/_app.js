@@ -1,5 +1,8 @@
 import "../styles/globals.css";
 import "../styles/homepage.css";
+import "../styles/general.css"; 
+import "../styles/aboutpage.css"; 
+import "../styles/reservationpage.css"; 
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { styled } from "@washingtonpost/wpds-ui-kit";
@@ -33,6 +36,8 @@ const theme = createTheme({
     MuiIconButton: {
       defaultProps: {
         color: "secondary",
+        margin: 0, 
+        padding: 0
       },
     },
   },

@@ -1,6 +1,6 @@
 .introduction-header {
   font-family: belda-normal, sans-serif;
-  color: white
+  color: white; 
 }
 
 .introduction-description-text {
@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .homepage-header-text {
@@ -42,7 +43,6 @@
   padding: 0; 
   margin: 0;  
 }
-
 
 .michael-image-box-one {
     display: flex;
@@ -138,13 +138,12 @@
 }
 
 .contact-button:hover {
-  background-color: black;
+  background-color: transparent;
 }
 
 .drawer-wrapper-buttons {
   font-family: 'Antonio', sans-serif;
   font-weight: 700; 
-  color: #596d90;
   text-decoration: none; 
 }
 
@@ -168,7 +167,7 @@
   font-family: 'Antonio', sans-serif;
   font-weight: 700;
   text-decoration: none;
-  color: white; 
+
   left: 2rem; 
 }
 
@@ -176,7 +175,6 @@
   font-family: 'Antonio', sans-serif;
   font-weight: 700;
   text-decoration: none;
-  color: white; 
 }
 
 .stepper-button{

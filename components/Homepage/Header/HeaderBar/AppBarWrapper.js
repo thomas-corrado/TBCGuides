@@ -6,41 +6,16 @@ import CompressedTBCLogo from "./TBCGuidesHeaderLogo/CompressedTBCLogo";
 import DrawerWrapper from "../Drawer/DrawerWrapper";
 import HamburgerWrapper from "../Drawer/HamburgerWrapper";
 import HeaderBarPageButtons from "./HeaderBarPageButtons";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-const menuAndDrawer = createTheme({
-  typography: {
-    fontFamily: ["Antonio"].join(","),
-  },
-  components: {
-    MuiDrawer: {
-      styleOverrides: {
-        paper: {
-          background: "white",
-          width: "100vw",
-          height: "100%",
-        },
-      },
-    },
-    MuiBackdrop: {
-      styleOverrides: {
-        root: {
-          background: "none",
-          backgroundColor: "transparent",
-        },
-      },
-    },
-  },
-});
 
-const pages = ["about", "reservations", "gallery"];
 
-const AppBarWrapper = () => {
+
+const AppBarWrapper = ( {pages, colorOne, colorTwo}) => {
 
   const [isOpen, setOpen] = useState(false);
   
   return (
-    <ThemeProvider theme={menuAndDrawer}>
+    
       <Box mt={3}>
         <AppBar
           position="static"
@@ -56,20 +31,27 @@ const AppBarWrapper = () => {
 
               <Box sx={{ display: { xs: "flex", md: "none" } }}>
                 {/* Drawer View Hamburger Icon */}
-                <HamburgerWrapper isOpen={isOpen} setOpen={setOpen} />
+                <HamburgerWrapper
+                  isOpen={isOpen}
+                  setOpen={setOpen}
+                  colorOne={colorOne}
+                  colorTwo={colorTwo}
+                />
 
                 {/* Drawer View Buttons */}
                 <DrawerWrapper isOpen={isOpen} pages={pages} />
               </Box>
 
               {/* Desktop View Buttons */}
-              <HeaderBarPageButtons pages={pages} />
+              <HeaderBarPageButtons pages={pages} position="flex-end" />
             </Toolbar>
           </Container>
         </AppBar>
       </Box>
-    </ThemeProvider>
+
   );
 };
 
 export default AppBarWrapper;
+
+

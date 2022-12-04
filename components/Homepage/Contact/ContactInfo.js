@@ -6,11 +6,11 @@ import BusinessHours from "./GridItems/BusinessHours";
 const ContactInfo = () => {
     return (
       <Box
-        mt={8}
         sx={{
           width: "100vw",
           display: "flex",
           justifyContent: "center",
+          backgroundColor: "#596d90"
         }}
       >
         <Grid
@@ -20,14 +20,12 @@ const ContactInfo = () => {
           sx={{
             width: "90vw",
           }}
+          mt={4}
         >
           <MadeBy descriptionOne="Made by Tommy Corrado" />
 
           {generics.map((item) => (
-            <GenericGridItemWrapper
-              key={item}
-              items={item}
-            />
+            <GenericGridItemWrapper key={item} items={item} />
           ))}
 
           <BusinessHours />

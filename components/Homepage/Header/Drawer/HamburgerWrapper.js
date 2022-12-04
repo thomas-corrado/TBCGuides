@@ -1,7 +1,7 @@
 import { IconButton } from "@mui/material";
 import Hamburger from "hamburger-react";
 
-const HamburgerWrapper = ({ isOpen, setOpen }) => {
+const HamburgerWrapper = ({ isOpen, setOpen, colorOne, colorTwo }) => {
  return (
    <IconButton
      size="large"
@@ -11,8 +11,8 @@ const HamburgerWrapper = ({ isOpen, setOpen }) => {
      disableTouchRipple
      className="hamburger-icon"
      sx={{
-        zIndex: 4, 
-       color: isOpen === true ? "#596d90" : "white",
+       zIndex: 4,
+       color: isOpen === true ? colorTwo : colorOne,
        "&:hover": { backgroundColor: "transparent" },
      }}
    >

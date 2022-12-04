@@ -1,0 +1,49 @@
+.about-stack{
+    width: 100vw;
+}
+
+.nav-and-video-box {
+    width: 100vw;
+    display: flex;
+}
+
+.video-outside-box {
+     width: 100vw;
+    display: flex;
+    align-items: center;
+   
+}
+
+.video-inside-box {
+     width: 90vw;
+}
+
+.come-join-us-outer-box {
+    width: 100vw; 
+    justify-content: center;
+    display: flex;
+    align-content: center;
+}
+
+.come-join-us-outer-stack {
+    width: 90vw;
+    display: flex; 
+    align-items: center; 
+}
+
+.ready-typography {
+    color: black;
+    text-align: center;
+}
+
+.book-button {
+    background-color: white;
+    color: grey; 
+    max-width: 60ch;
+}
+
+.book-button:hover {
+    background-color: grey;
+    color: white
+}
+

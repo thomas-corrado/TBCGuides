@@ -2,11 +2,12 @@ import {
   Box,
   Button,
   Typography,
+  Stack
 } from "@mui/material";
 import { useRouter } from "next/router";
+import routerPushFunc from "../../../General/routerPushFunction";
 
-
-const HeaderBarPageButtons = ({ pages }) => {
+const HeaderBarPageButtons = ({ pages, position }) => {
     const router = useRouter();
 
     return (
@@ -14,27 +15,27 @@ const HeaderBarPageButtons = ({ pages }) => {
         sx={{
           flexGrow: 1,
           display: { xs: "none", md: "flex" },
-          justifyContent: "flex-end",
-          fontFamily: "Antonio",
+          justifyContent: position,
         }}
       >
-        {pages.map((page) => (
-          <Button
-            key={page}
-            onClick={() => router.push(`/${page}`)}
-          >
-            <Typography
-              variant="h4"
-              className="tbc-logo"
-              sx={{
-                mr: 2,
-                display: { xs: "none", md: "flex" },
-              }}
+        <Stack direction="row" spacing={2}>
+          {pages.map((page) => (
+            <Button
+              key={page}
+              onClick={() => router.push(routerPushFunc(page))}
             >
-              {page}
-            </Typography>
-          </Button>
-        ))}
+              <Typography
+                variant="h4"
+                className="tbc-logo"
+                sx={{
+                  display: { xs: "none", md: "flex" },
+                }}
+              >
+                {page}
+              </Typography>
+            </Button>
+          ))}
+        </Stack>
       </Box>
     );
 };

@@ -9,6 +9,7 @@ import Snackbar from "@mui/material/Snackbar";
 import { styled } from "@washingtonpost/wpds-ui-kit";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import Head from "next/head";
+import ReservationsPageComponent from "../../components/ReservationsPage/ReservationsPageComponent";
 
 const StyledOuterBox = styled(Box, {
   width: "100vw",
@@ -124,7 +125,9 @@ export default function ReservationsPage() {
         <meta name="theme-color" content="#000000"></meta>
         <link rel="icon" href="/phishing.ico" />
       </Head>
-      <div
+      <ReservationsPageComponent/>
+      
+      {/* <div
         style={{
           backgroundColor: "#f6f6f6",
           position: "relative",
@@ -318,7 +321,7 @@ export default function ReservationsPage() {
             </form>
           </StyledFormBox>
         </StyledOuterBox>
-      </div>
+      </div> */}
     </div>
   );
 }
