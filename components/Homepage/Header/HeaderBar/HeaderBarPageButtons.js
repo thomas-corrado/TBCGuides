@@ -12,16 +12,14 @@ const menuAndDrawer = createTheme({
   typography: {
     fontFamily: ["Antonio"].join(","),
   },
-  components: {
-    
-  },
+
 });
 
 const HeaderBarPageButtons = ({ pages, position }) => {
     const router = useRouter();
 
     return (
-    //   <ThemeProvider theme={menuAndDrawer}>
+        
         <Box
           sx={{
             flexGrow: 1,
@@ -49,7 +47,7 @@ const HeaderBarPageButtons = ({ pages, position }) => {
             ))}
           </Stack>
         </Box>
-    //   </ThemeProvider>
+    </ThemeProvider>
     );
 };
 

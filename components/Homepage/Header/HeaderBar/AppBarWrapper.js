@@ -6,12 +6,20 @@ import CompressedTBCLogo from "./TBCGuidesHeaderLogo/CompressedTBCLogo";
 import DrawerWrapper from "../Drawer/DrawerWrapper";
 import HamburgerWrapper from "../Drawer/HamburgerWrapper";
 import HeaderBarPageButtons from "./HeaderBarPageButtons";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+
+const menuAndDrawer = createTheme({
+  typography: {
+    fontFamily: ["Antonio"].join(","),
+  },
+});
 
 const AppBarWrapper = ( {pages, colorOne, colorTwo}) => {
 
   const [isOpen, setOpen] = useState(false);
   
   return (
+    <ThemeProvider theme={menuAndDrawer}>
       <Box mt={3}>
         <AppBar
           position="static"
@@ -44,7 +52,9 @@ const AppBarWrapper = ( {pages, colorOne, colorTwo}) => {
           </Container>
         </AppBar>
       </Box>
+    </ThemeProvider>
   );
+
 };
 
 export default AppBarWrapper;
