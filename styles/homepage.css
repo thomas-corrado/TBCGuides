@@ -119,6 +119,7 @@
 .contact-item {
   font-family: belda-normal, sans-serif;
   color: white; 
+  width: 15rem
 }
 
 .contact-item-underlined {
@@ -129,7 +130,7 @@
 
 .contact-icon-button {
   padding: 0px; 
-  margin: 0px
+  margin: 0px;
 }
 
 .contact-button {

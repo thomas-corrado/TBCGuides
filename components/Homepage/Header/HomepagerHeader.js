@@ -5,9 +5,6 @@ import AppBarWrapper from "./HeaderBar/AppBarWrapper";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const menuAndDrawer = createTheme({
-  typography: {
-    fontFamily: ["Antonio"].join(","),
-  },
   palette: {
     primary: {
       main: "#FFFFFF",
