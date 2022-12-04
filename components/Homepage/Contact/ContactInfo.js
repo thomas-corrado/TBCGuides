@@ -5,13 +5,16 @@ import BusinessHours from "./GridItems/BusinessHours";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const iconTheme = createTheme({
+  typography: {
+    fontFamily: ["belda-normal"].join(","),
+  },
   palette: {
     primary: {
       main: "#FFFFFF",
     },
   },
   components: {
-    MuiButton: {
+    MuiIconButton: {
       defaultProps: {
         // The props to change the default for.
         disableRipple: true, // No more ripple, on the whole application 💣!
@@ -22,7 +25,7 @@ const iconTheme = createTheme({
           "&:hover": {
             backgroundColor: "transparent",
           },
-          padding: 0,
+          padding: "0px",
         },
       },
     },
