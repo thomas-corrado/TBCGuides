@@ -1,9 +1,33 @@
 import "../styles/globals.css";
+import "../styles/homepage.css";
+import "../styles/general.css"; 
+import "../styles/aboutpage.css"; 
+import "../styles/reservationpage.css"; 
+import "../styles/GalleryPage.css"
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { styled } from "@washingtonpost/wpds-ui-kit";
 import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
+import {
+  ThemeProvider,
+  createTheme,
+} from "@mui/material/styles";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: ["belda-normal"].join(","),
+  },
+  palette: {
+    primary: {
+      main: "#596d90",
+    },
+    secondary: {
+      main: "#FFFFFF",
+    },
+  },
+
+});
 
 const StyledLoadingScreen = styled("div", {
   width: "100vw",
@@ -20,9 +44,7 @@ function Loading() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    
-
-    const handleStart = (url) => (url !== router.asPath ) && setLoading(true);
+    const handleStart = (url) => url !== router.asPath && setLoading(true);
     const handleComplete = (url) =>
       (url === router.asPath || router.asPath === "/") &&
       setTimeout(() => {
@@ -53,20 +75,20 @@ function Loading() {
 }
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const loader = document.getElementById("globalLoader");
+      if (loader) loader.style.display = "none";
+    }
+  }, []);
 
-   useEffect(() => {
-     if (typeof window !== "undefined") {
-      
-       const loader = document.getElementById("globalLoader");
-       if (loader) loader.style.display = "none";
-     }
-   }, []);
-   
   return (
     <>
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }
 
-export default MyApp
+export default MyApp;

@@ -1,3 +1,5 @@
+/* @import 'homepage.css';  */
+
 html {
   padding: 0;
   margin: 0;
@@ -7,8 +9,9 @@ html {
   z-index: 1;
   scrollbar-width: none;
   min-height: 100%;
-height: 100%;
-padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  height: 100%;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 body {
@@ -20,8 +23,9 @@ body {
   z-index: 2;
   scrollbar-width: none;
   min-height: 100%;
-height: 100%;
-padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  height: 100%;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 a {
@@ -33,19 +37,71 @@ a {
   box-sizing: border-box;
 }
 
+.swiper {
+  width: 80vw;
+  height: 35rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* @font-face {
+  font-family: "belda-normal";
+  src: url("https://fonts.googleapis.com/css2?family=belda-normal:wght@600&display=swap");
+} */
+
 @font-face {
-  font-family: "Raleway";
-  src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+  font-family: belda-normal, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-style: normal;
+  src: url("https://use.typekit.net/nff0pei.css");
 }
 
 @font-face {
-  font-family: "Antonio";
-  src: url("https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap");
+  font-family: livory,serif;
+font-weight: 400;
+font-style: italic;
+  src: url(https://use.typekit.net/nff0pei.css);
 }
 
-@supports(padding:max(0px)) {
-    body, header, footer {
-        padding-left: min(0vmin, env(safe-area-inset-left));
-        padding-right: min(0vmin, env(safe-area-inset-right));
-    }
+@font-face {
+  font-family: 'Antonio';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/antonio/v11/gNMbW3NwSYq_9WD34ngK5F8vR8T0PVyW9itPaWHSTGlNwd8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@supports (padding: max(0px)) {
+  body,
+  header,
+  footer {
+    padding-left: min(0vmin, env(safe-area-inset-left));
+    padding-right: min(0vmin, env(safe-area-inset-right));
+  }
 }

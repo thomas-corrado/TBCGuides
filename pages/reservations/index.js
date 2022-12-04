@@ -9,6 +9,7 @@ import Snackbar from "@mui/material/Snackbar";
 import { styled } from "@washingtonpost/wpds-ui-kit";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import Head from "next/head";
+import ReservationsPageComponent from "../../components/ReservationsPage/ReservationsPageComponent";
 
 const StyledOuterBox = styled(Box, {
   width: "100vw",
@@ -16,19 +17,17 @@ const StyledOuterBox = styled(Box, {
   display: "flex",
   justifyContent: "center",
   backgroundColor: "#f6f6f6",
-  
 });
 
 const StyledHeaderBox = styled(Box, {
   position: "absolute",
   top: "4.5rem",
   color: "black",
-  fontFamily: "Raleway",
+  fontFamily: "livory",
   width: "90vw",
   display: "flex",
   justifyContent: "center",
-  textAlign: "center"
-  
+  textAlign: "center",
 });
 
 const StyledFormBox = styled(Box, {
@@ -40,7 +39,7 @@ const StyledFormBox = styled(Box, {
   justifyContent: "center",
   paddingBottom: "3rem",
   paddingTop: "3rem",
-  borderRadius: "2rem", 
+  borderRadius: "2rem",
 });
 
 export default function ReservationsPage() {
@@ -59,24 +58,30 @@ export default function ReservationsPage() {
   const [varGuests, setGuests] = useState("");
   const [varDate, setDate] = useState("");
 
-  var submitFirstName; 
-  var submitLastName; 
-  var submitEmail; 
-  var submitPhone; 
-  var submitGuests; 
-  var submitDate; 
+  var submitFirstName;
+  var submitLastName;
+  var submitEmail;
+  var submitPhone;
+  var submitGuests;
+  var submitDate;
   var submitEmoji = "❌";
 
-  function consolidateData(inFirstName, inLastName, inEmail, inPhone, inGuests, inDate) {
-
+  function consolidateData(
+    inFirstName,
+    inLastName,
+    inEmail,
+    inPhone,
+    inGuests,
+    inDate
+  ) {
     setState({ open: true, vertical: "bottom", horizontal: "center" });
 
-    submitFirstName = inFirstName; 
-    submitLastName = inLastName; 
-    submitEmail = inEmail; 
-    submitPhone = inPhone; 
-    submitGuests = inGuests; 
-    submitDate = inDate; 
+    submitFirstName = inFirstName;
+    submitLastName = inLastName;
+    submitEmail = inEmail;
+    submitPhone = inPhone;
+    submitGuests = inGuests;
+    submitDate = inDate;
 
     submitHandler({
       date: submitDate,
@@ -85,10 +90,10 @@ export default function ReservationsPage() {
       phone: submitPhone,
       guests: submitGuests,
       last: submitLastName,
-      emoji: submitEmoji
+      emoji: submitEmoji,
     });
 
-    setFirstName("")
+    setFirstName("");
     setLastName("");
     setEmail("");
     setPhone("");
@@ -102,12 +107,12 @@ export default function ReservationsPage() {
 
   async function submitHandler(data) {
     const response = await fetch("/api/form", {
-    		method: "POST",
-        	body: JSON.stringify(data),
-        	headers: {
-        		'Content-Type': 'application/json',
-      		},
-    	})
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
   }
 
   return (
@@ -120,7 +125,9 @@ export default function ReservationsPage() {
         <meta name="theme-color" content="#000000"></meta>
         <link rel="icon" href="/phishing.ico" />
       </Head>
-      <div
+      <ReservationsPageComponent/>
+      
+      {/* <div
         style={{
           backgroundColor: "#f6f6f6",
           position: "relative",
@@ -287,7 +294,13 @@ export default function ReservationsPage() {
                     )
                   }
                 >
-                  <p style={{ padding: 0, margin: 0, fontFamily: "Raleway" }}>
+                  <p
+                    style={{
+                      padding: 0,
+                      margin: 0,
+                      fontFamily: "livory",
+                    }}
+                  >
                     Submit
                   </p>
                 </Button>
@@ -300,7 +313,7 @@ export default function ReservationsPage() {
                   sx={{
                     "& .MuiSnackbarContent-root": {
                       backgroundColor: "green",
-                      fontFamily: "Raleway",
+                      fontFamily: "livory",
                     },
                   }}
                 />
@@ -308,7 +321,7 @@ export default function ReservationsPage() {
             </form>
           </StyledFormBox>
         </StyledOuterBox>
-      </div>
+      </div> */}
     </div>
   );
 }

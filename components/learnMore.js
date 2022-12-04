@@ -1,4 +1,3 @@
-
 import * as React from "react";
 import { useState, useEffect } from "react";
 import { Box } from "@mui/system";
@@ -11,47 +10,44 @@ function TransitionRight(props) {
 }
 
 const LearnMore = () => {
-    const [open, setOpen] = React.useState(false);
-    const [transition, setTransition] = useState(undefined);
+  const [open, setOpen] = React.useState(false);
+  const [transition, setTransition] = useState(undefined);
 
-     useEffect(() => {
-       if (typeof window !== "undefined") {
-         
-            handleOpen();
-            setTimeout(function () {
-                handleClose();
-          }, 5000);
-       }
-     }, []);
-
-    function handleOpen() {
-        setTransition(() => TransitionRight);
-        setOpen(true)
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      handleOpen();
+      setTimeout(function () {
+        handleClose();
+      }, 5000);
     }
+  }, []);
 
-    const handleClose = () => {
-      setOpen(false);
-    };
+  function handleOpen() {
+    setTransition(() => TransitionRight);
+    setOpen(true);
+  }
 
-    return (
-      <div style={{ top: "5rem", position: "absolute" }}>
-        
-        <Snackbar
-          open={open}
-          onClose={handleClose}
-          TransitionComponent={transition}
-          message="Watch the Video to Learn More About Mike!"
-          key={transition ? transition.name : ""}
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  return (
+    <div style={{ top: "5rem", position: "absolute" }}>
+      <Snackbar
+        open={open}
+        onClose={handleClose}
+        TransitionComponent={transition}
+        message="Watch the Video to Learn More About Mike!"
+        key={transition ? transition.name : ""}
         sx={{
-            "& .MuiSnackbarContent-root": {
-                backgroundColor: "blue", 
-                fontFamily: "Raleway"
-            }
+          "& .MuiSnackbarContent-root": {
+            backgroundColor: "blue",
+            fontFamily: "livory",
+          },
         }}
-        />
-      </div>
-    );
+      />
+    </div>
+  );
+};
 
-}
-
-export default LearnMore
+export default LearnMore;

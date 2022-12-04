@@ -1,10 +1,5 @@
 import Head from "next/head"
-import FrontPage from "../components/frontPage";
-import Experience from "../components/experience";
-import Adventure from "../components/adventure";
-import Testiomonial from "../components/testimonial";
-import About from "../components/about";
-import Contact from "../components/contact";
+import HomePage from "../components/Homepage/Main/Homepage";
 
 export default function Home() {
   return (
@@ -18,15 +13,11 @@ export default function Home() {
           ></meta>
           <meta name="theme-color" content="#FFFFFF"></meta>
           <link rel="icon" href="/phishing.ico" />
+          
         </Head>
 
         <main>
-          <FrontPage />
-          <Experience />
-          <Adventure />
-          <Testiomonial />
-          <About />
-          <Contact />
+          <HomePage></HomePage>
         </main>
       </div>
     </div>

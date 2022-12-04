@@ -65,7 +65,7 @@ const About = () => {
         ? "220rem"
         : "227rem",
     paddingBottom: "2rem",
-    zIndex: 5
+    zIndex: 5,
   });
 
   const StyledCutOutOneBoxOne = styled(Box, {
@@ -75,7 +75,6 @@ const About = () => {
     overflow: "hidden",
     position: "absolute",
     marginTop: "-1rem",
-    
   });
 
   const StyledCutOutOneBoxTwo = styled(Box, {
@@ -89,8 +88,8 @@ const About = () => {
     position: "absolute",
     height: "auto",
     backgroundColor: "#d8d8d8",
-    top: "3rem", 
-    zIndex: -1
+    top: "3rem",
+    zIndex: -1,
   });
 
   const StyledHeadingBox = styled(Box, {
@@ -100,10 +99,10 @@ const About = () => {
     textAlign: "center",
     postition: "absolute",
     fontSize: innerWidth > 440 ? "2.5rem" : "2rem",
-    fontFamily: "Raleway",
+    fontFamily: "livory",
     opacity: 1,
-    
-    zIndex: 1
+
+    zIndex: 1,
   });
 
   const StyledAboutBoxOne = styled(Box, {
@@ -113,7 +112,7 @@ const About = () => {
     postition: "absolute",
     zIndex: 1,
     marginTop: "2rem",
-    fontFamily: "Raleway",
+    fontFamily: "livory",
   });
 
   const StyledAboutBoxTwo = styled(Box, {
@@ -122,7 +121,6 @@ const About = () => {
     justifyContent: "center",
     postition: "absolute",
     zIndex: 1,
-    
   });
 
   const StyledCutOutTwoBoxOne = styled(Box, {
@@ -230,8 +228,8 @@ const About = () => {
               targeting local River and Lake fish species, different fish bite
               at different times of the day, as well as during different weather
               and light conditions. Target fish include: Largemouth Bass,
-              Smallmouth Bass, Bluegill, Yellow Perch, and Walleye.
-              For more details on fish species, click{" "}
+              Smallmouth Bass, Bluegill, Yellow Perch, and Walleye. For more
+              details on fish species, click{" "}
               <a
                 style={{
                   color: "#0000EE",

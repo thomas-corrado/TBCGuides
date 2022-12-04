@@ -1,0 +1,224 @@
+.introduction-header {
+  font-family: belda-normal, sans-serif;
+  color: white; 
+}
+
+.introduction-description-text {
+  font-family: belda-normal, sans-serif;
+  color: white; 
+  font-style: italic;
+}
+
+.homepage-header-stack {
+  width: 100vw;
+  height: 50rem;
+  position: relative; 
+  overflow: hidden;
+}
+
+.homepage-header-box {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.homepage-header-text {
+  color: white; 
+  font-family: belda-normal, sans-serif;
+  text-align: center;
+  z-index: 3;
+  font-style: italic;
+  font-size: calc(4vmin + 3.5vmax);
+  width: 90vw
+}
+
+.homepage-text-box {
+  position: relative;
+  left: 10vw;
+  width: 90vw;
+  padding: 0; 
+  margin: 0;  
+}
+
+.michael-image-box-one {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: calc(50rem - (30rem - 20vw));
+    overflow: hidden;
+}
+
+.michael-image-box-two {
+    width: 80vw; 
+  height: calc(50rem - (30rem - 20vw)); 
+  position: relative; 
+}
+
+.testimonial-outer-box {
+  display: flex; 
+  position: relative; 
+  background-color: white; 
+}
+
+.testimonial-inner-box {
+  opacity: .2;
+}
+
+.testimonial-stack {
+  width: 100vw; 
+  font-family: belda-normal, sans-serif; 
+  z-index: 1;
+}
+
+.testimonial-title-text {
+    width: 100vw; 
+    text-align: center;
+    font-family: belda-normal, sans-serif;
+}
+
+.testimonial-description-text {
+    display:flex; 
+    align-items: center;
+    font-family: belda-normal, sans-serif;
+    text-align: center;
+}
+
+.activity-title-text {
+    font-family: belda-normal, sans-serif;
+  color: black; 
+}
+
+.activity-description-text {
+    font-family: belda-normal, sans-serif;
+    color: black;
+    display: inline;
+    flex-wrap: wrap;
+    width: calc(60vw + 4rem);
+}
+
+.activity-description-box {
+    background-color: #d8d8d8; 
+            display: flex; 
+            justify-content: center; 
+            width: 100vw; 
+            padding-left: 1.5vw; 
+}
+
+.activity-box {
+   background-color: #d8d8d8; 
+        width: 100vw; 
+        display: flex; 
+        justify-content: center
+}
+
+.contact-item {
+  font-family: belda-normal, sans-serif;
+  color: white; 
+  width: 15rem
+}
+
+.contact-item-underlined {
+  font-family: belda-normal, sans-serif;
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-icon-button {
+  padding: 0px; 
+  margin: 0px;
+}
+
+.contact-button {
+  font-family: belda-normal, sans-serif;
+  background-color: black;
+}
+
+.contact-button:hover {
+  background-color: transparent;
+}
+
+.drawer-wrapper-buttons {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 700; 
+  text-decoration: none; 
+}
+
+.drawer-wrapper-box {
+  height: 100%; 
+  justify-content: center; 
+  align-items: center; 
+  display: flex; 
+}
+
+.menu-drawer {
+  z-index: 3;
+}
+
+.hamburger-icon {
+  z-index: 4;
+}
+
+.compressed-tbc-logo {
+  flex-grow: 1;
+  font-family: 'Antonio', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+
+  left: 2rem; 
+}
+
+.tbc-logo {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.stepper-button{
+  font-family: belda-normal, sans-serif;
+  color: black
+}
+
+.image-and-divider-stack {
+  position: relative; 
+            left: 10vw; 
+            width: 90vw; 
+}
+
+.image-and-divider-outer-box {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  justify-content: center;
+}
+
+.divider-wrapper-box {
+  height: 2.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0; 
+}
+
+@font-face {
+  font-family: 'Antonio';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/antonio/v11/gNMbW3NwSYq_9WD34ngK5F8vR8T0PVyW9itPaWHSTGlNwd8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: belda-normal, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-style: normal;
+  src: url("https://use.typekit.net/nff0pei.css");
+}

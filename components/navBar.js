@@ -35,127 +35,124 @@ const StyledBlackBar = styled("div", {
   backgroundColor: "black",
   position: "fixed",
   justifyContent: "center",
-  zIndex: 5
+  zIndex: 5,
 });
 
 const NavBar = () => {
-     const router = useRouter();
+  const router = useRouter();
 
-     const [state, setState] = useState({
-       mobileView: false,
-     });
+  const [state, setState] = useState({
+    mobileView: false,
+  });
 
-     const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
-     const { mobileView } = state;
+  const { mobileView } = state;
 
-     useEffect(() => {
-       const setResponsiveness = () => {
-         return window.innerWidth < 585
-           ? setState((prevState) => ({ ...prevState, mobileView: true }))
-           : setState((prevState) => ({ ...prevState, mobileView: false }));
-       };
+  useEffect(() => {
+    const setResponsiveness = () => {
+      return window.innerWidth < 585
+        ? setState((prevState) => ({ ...prevState, mobileView: true }))
+        : setState((prevState) => ({ ...prevState, mobileView: false }));
+    };
 
-       setResponsiveness();
-       window.addEventListener("resize", () => setResponsiveness());
+    setResponsiveness();
+    window.addEventListener("resize", () => setResponsiveness());
 
-       return () => {
-         window.removeEventListener("resize", () => setResponsiveness());
-       };
-     }, []);
+    return () => {
+      window.removeEventListener("resize", () => setResponsiveness());
+    };
+  }, []);
 
-      const getDrawerChoices = () => {
-        return navData.map(({ label, href, index }) => {
-          return (
-            <div key={index}>
-              <Link
-                {...{
-                  color: "inherit",
-                  style: { textDecoration: "none" },
-                }}
-                href={href}
-              >
-                <MenuItem
-                  disableRipple
-                  sx={{
-                    fontFamily: "Antonio",
-                    fontSize: "2rem",
-                    lineHeight: "3rem",
-                    color: "white",
-                    width: "100%",
-                    "&:hover": {
-                      backgroundColor: "transparent",
-                    },
-                  }}
-                >
-                  <Box
-                    sx={{
-                      width: "100%",
-                      textAlign: "center",
-                      fontFamily: "Raleway",
-                    }}
-                  >
-                    {label}
-                  </Box>
-                </MenuItem>
-              </Link>
-            </div>
-          );
-        });
-      };
-
-
-     const displayDesktop = () => {
-        return (
-            <Grid
-            container
-            spacing={4}
-            sx={{
-                justifyContent: "center",
+  const getDrawerChoices = () => {
+    return navData.map(({ label, href, index }) => {
+      return (
+        <div key={index}>
+          <Link
+            {...{
+              color: "inherit",
+              style: { textDecoration: "none" },
             }}
+            href={href}
+          >
+            <MenuItem
+              disableRipple
+              sx={{
+                fontFamily: "Antonio",
+                fontSize: "2rem",
+                lineHeight: "3rem",
+                color: "white",
+                width: "100%",
+                "&:hover": {
+                  backgroundColor: "transparent",
+                },
+              }}
             >
-            {navData.map((title, index) => {
-                return (
-                <Grid item key={index}>
-                    <Button
-                    onClick={() => router.push(`${title.href}`)}
-                    sx={{
-                        color: "white",
-                        fontFamily: "Raleway",
-                    }}
-                    >
-                    <p>{title.label}</p>
-                    </Button>
-                </Grid>
-                );
-            })}
+              <Box
+                sx={{
+                  width: "100%",
+                  textAlign: "center",
+                  fontFamily: "livory",
+                }}
+              >
+                {label}
+              </Box>
+            </MenuItem>
+          </Link>
+        </div>
+      );
+    });
+  };
+
+  const displayDesktop = () => {
+    return (
+      <Grid
+        container
+        spacing={4}
+        sx={{
+          justifyContent: "center",
+        }}
+      >
+        {navData.map((title, index) => {
+          return (
+            <Grid item key={index}>
+              <Button
+                onClick={() => router.push(`${title.href}`)}
+                sx={{
+                  color: "white",
+                  fontFamily: "livory",
+                }}
+              >
+                <p>{title.label}</p>
+              </Button>
             </Grid>
-        )
-     }
-     
-     const displayMobile = () => {
+          );
+        })}
+      </Grid>
+    );
+  };
 
-        const handleDrawerClose = () => {
-          setState((prevState) => ({
-            ...prevState,
-            drawerOpen: false,
-            buttonOpen: false,
-          }));
-        };
+  const displayMobile = () => {
+    const handleDrawerClose = () => {
+      setState((prevState) => ({
+        ...prevState,
+        drawerOpen: false,
+        buttonOpen: false,
+      }));
+    };
 
-        return (
-            <div
+    return (
+      <div
         style={{
           top: ".5rem",
           position: "absolute",
-          
         }}
       >
         <div
           style={{
             position: "absolute",
             left: "calc(100vw - 4rem)",
-            zIndex: 99
+            zIndex: 99,
           }}
         >
           <Hamburger toggled={isOpen} toggle={setOpen} color="white" />
@@ -166,7 +163,7 @@ const NavBar = () => {
             anchor: "top",
             open: isOpen,
             onClose: handleDrawerClose,
-            transitionDuration: 700, 
+            transitionDuration: 700,
           }}
           disableRipple
           sx={{
@@ -203,17 +200,16 @@ const NavBar = () => {
           </div>
         </Drawer>
       </div>
-        )
-     }
+    );
+  };
 
-     return (
-       <div>
-         <StyledBlackBar>
-           {mobileView ? displayMobile() : displayDesktop()}
-         </StyledBlackBar>
-       </div>
-     );
+  return (
+    <div>
+      <StyledBlackBar>
+        {mobileView ? displayMobile() : displayDesktop()}
+      </StyledBlackBar>
+    </div>
+  );
+};
 
-}
-
-export default NavBar
+export default NavBar;

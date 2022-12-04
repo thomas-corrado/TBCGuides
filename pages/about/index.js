@@ -1,18 +1,13 @@
 import * as React from "react";
 import NavBar from "../../components/navBar";
+import NavigationBarNonHome from "../../components/General/NavigationBarNonHome";
+import VideoAboutPage from "../../components/AboutPage/VideoAboutPage";
 import AboutVideo from "../../components/aboutVideo";
-import { Box } from "@mui/system";
-import { styled } from "@washingtonpost/wpds-ui-kit";
+import { Box, Stack } from "@mui/material";
 import LearnMore from "../../components/learnMore";
 import Head from "next/head";
-
-const StyledButtonBox = styled(Box, {
-    width: "100vw", 
-    display: "flex", 
-    justifyContent: "center", 
-    position: "relative", 
-    fontFamily: "Raleway", 
-})
+import AboutPageComponent from "../../components/AboutPage/AboutPageComponent";
+import ContactInfo from "../../components/Homepage/Contact/ContactInfo";
 
 export default function AboutPage() {
   return (
@@ -25,16 +20,9 @@ export default function AboutPage() {
         <meta name="theme-color" content="#000000"></meta>
         <link rel="icon" href="/phishing.ico" />
       </Head>
-      <style global jsx>
-        {`
-          html {
-            background-color: black;
-          }
-        `}
-      </style>
-      <NavBar />
-      <AboutVideo />
-      <LearnMore />
+      <AboutPageComponent />
     </div>
   );
 }
+
+

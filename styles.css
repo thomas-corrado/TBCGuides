@@ -1,0 +1,132 @@
+html {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: white;
+  z-index: 1;
+  scrollbar-width: none;
+  min-height: 100%;
+  height: 100%;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: white;
+  z-index: 2;
+  scrollbar-width: none;
+  min-height: 100%;
+  height: 100%;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  font-family: "belda-normal";
+  color: white
+}
+
+.contact-item {
+  font-family: "belda-normal";
+  color: white; 
+}
+
+.contact-item-underlined {
+  font-family: "belda-normal";
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-icon-button {
+  color: white; 
+  padding: 0px; 
+  margin: 0px
+}
+
+.contact-button {
+  font-family: "belda-normal";
+  background-color: black;
+}
+
+.contact-button:hover {
+  background-color: black;
+}
+
+.swiper {
+  width: 80vw;
+  height: 35rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* @font-face {
+  font-family: "belda-normal";
+  src: url("https://fonts.googleapis.com/css2?family=belda-normal:wght@600&display=swap");
+} */
+
+@font-face {
+  font-family: belda-normal, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-style: normal;
+  src: url("https://use.typekit.net/nff0pei.css");
+}
+
+@font-face {
+  font-family: livory,serif;
+font-weight: 400;
+font-style: italic;
+  src: url(https://use.typekit.net/nff0pei.css);
+}
+
+@font-face {
+  font-family: "Antonio";
+  src: url("https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap");
+}
+
+@supports (padding: max(0px)) {
+  body,
+  header,
+  footer {
+    padding-left: min(0vmin, env(safe-area-inset-left));
+    padding-right: min(0vmin, env(safe-area-inset-right));
+  }
+}
