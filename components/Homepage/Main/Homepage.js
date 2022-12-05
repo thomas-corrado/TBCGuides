@@ -12,7 +12,7 @@ const HomePage = () => {
         <HomepageHeader />
         <Stack
           direction="column"
-          spacing={6}
+          spacing={5}
           mt={6}
           sx={{ alignItems: "center" }}
         >
