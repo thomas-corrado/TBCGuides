@@ -12,38 +12,39 @@ const AppBarWrapper = ( {pages, colorOne, colorTwo}) => {
   const [isOpen, setOpen] = useState(false);
   
   return (
-      <Box mt={3}>
-        <AppBar
-          position="static"
-          sx={{ backgroundColor: "transparent", boxShadow: "none" }}
-        >
-          <Container maxWidth="xl">
-            <Toolbar disableGutters>
-              {/* Desktop View Logo */}
-              <TBCLogo />
+    <Box mt={3} ml={{ xs: 2, md: 6 }}>
+      <AppBar
+        position="static"
+        sx={{
+          backgroundColor: "transparent",
+          boxShadow: "none",
+        }}
+      >
+        <Toolbar disableGutters>
+          {/* Desktop View Logo */}
+          <TBCLogo />
 
-              {/* Drawer View Logo */}
-              <CompressedTBCLogo />
+          {/* Drawer View Logo */}
+          <CompressedTBCLogo />
 
-              <Box sx={{ display: { xs: "flex", md: "none" } }}>
-                {/* Drawer View Hamburger Icon */}
-                <HamburgerWrapper
-                  isOpen={isOpen}
-                  setOpen={setOpen}
-                  colorOne={colorOne}
-                  colorTwo={colorTwo}
-                />
+          <Box sx={{ display: { xs: "flex", md: "none" } }} mr={2}>
+            {/* Drawer View Hamburger Icon */}
+            <HamburgerWrapper
+              isOpen={isOpen}
+              setOpen={setOpen}
+              colorOne={colorOne}
+              colorTwo={colorTwo}
+            />
 
-                {/* Drawer View Buttons */}
-                <DrawerWrapper isOpen={isOpen} pages={pages} />
-              </Box>
+            {/* Drawer View Buttons */}
+            <DrawerWrapper isOpen={isOpen} pages={pages} />
+          </Box>
 
-              {/* Desktop View Buttons */}
-              <HeaderBarPageButtons pages={pages} position="flex-end" />
-            </Toolbar>
-          </Container>
-        </AppBar>
-      </Box>
+          {/* Desktop View Buttons */}
+          <HeaderBarPageButtons pages={pages} position="flex-end" />
+        </Toolbar>
+      </AppBar>
+    </Box>
   );
 };
 
