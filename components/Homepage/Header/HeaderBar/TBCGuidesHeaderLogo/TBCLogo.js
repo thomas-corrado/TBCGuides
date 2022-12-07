@@ -7,7 +7,7 @@ const TBCLogo = () => {
           variant="h1"
           className="tbc-logo"
           sx={{
-            
+            fontSize: '5rem', 
             display: { xs: "none", md: "flex" },
           }}
           color="primary"

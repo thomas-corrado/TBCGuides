@@ -29,6 +29,7 @@ const HeaderBarPageButtons = ({ pages, position }) => {
                 variant="h3"
                 sx={{
                   display: { xs: "none", md: "flex" },
+                  fontSize: '4rem'
                 }}
               >
                 {page}

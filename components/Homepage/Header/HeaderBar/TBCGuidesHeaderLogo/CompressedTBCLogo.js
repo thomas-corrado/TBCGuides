@@ -8,8 +8,8 @@ const CompressedTBCLogo = () => {
         className="compressed-tbc-logo"
         sx={{
           display: { xs: "flex", md: "none" },
+          fontSize: "4.5rem",
         }}
-
         color="primary"
       >
         TBC Guides
