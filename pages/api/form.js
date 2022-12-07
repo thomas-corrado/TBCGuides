@@ -37,5 +37,4 @@ async function handler(req, res) {
   res.status(200).json({ message: "Hey!" });
 }
 
-
-export default handler;
+export default handler
