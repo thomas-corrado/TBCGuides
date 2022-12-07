@@ -3,13 +3,13 @@ import { Typography } from "@mui/material";
 const CompressedTBCLogo = () => {
     return (
       <Typography
-        variant="h2"
+        variant="h1"
         component="a"
         className="compressed-tbc-logo"
         sx={{
           display: { xs: "flex", md: "none" },
         }}
-        ml={-3}
+
         color="primary"
       >
         TBC Guides

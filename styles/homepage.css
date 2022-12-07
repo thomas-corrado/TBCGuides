@@ -14,6 +14,7 @@
   height: 50rem;
   position: relative; 
   overflow: hidden;
+  justify-content: space-between;
 }
 
 .homepage-header-box {
@@ -29,11 +30,22 @@
 .homepage-header-text {
   color: white; 
   font-family: belda-normal, sans-serif;
-  text-align: center;
+  text-align: left;
   z-index: 3;
-  font-style: italic;
-  font-size: calc(4vmin + 3.5vmax);
-  width: 90vw
+  font-size: calc(2vmin + 3.5vmax);
+  width: 100vw; 
+  line-height: calc(2vmin + 3.5vmax + .5rem);
+}
+
+.homepage-reservation-text {
+  color: white; 
+  font-family: belda-normal, sans-serif;
+  text-align: left;
+  z-index: 3;
+  font-size: calc(1.5vmin + 2vmax);
+  width: 100vw; 
+  line-height: calc(1vmin + 2.5vmax + .5rem);
+  text-decoration: underline;
 }
 
 .homepage-text-box {
@@ -42,6 +54,29 @@
   width: 90vw;
   padding: 0; 
   margin: 0;  
+}
+
+.compressed-tbc-logo {
+  flex-grow: 1;
+  font-family: 'Antonio', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+   font-size: 4.5rem;
+}
+
+.tbc-logo {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 5rem;
+ 
+}
+
+.page-links {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 4rem;
 }
 
 .michael-image-box-one {
@@ -161,21 +196,6 @@
 
 .hamburger-icon {
   z-index: 4;
-}
-
-.compressed-tbc-logo {
-  flex-grow: 1;
-  font-family: 'Antonio', sans-serif;
-  font-weight: 700;
-  text-decoration: none;
-
-  left: 2rem; 
-}
-
-.tbc-logo {
-  font-family: 'Antonio', sans-serif;
-  font-weight: 700;
-  text-decoration: none;
 }
 
 .stepper-button{

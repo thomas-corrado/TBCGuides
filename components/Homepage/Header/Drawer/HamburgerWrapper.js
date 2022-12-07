@@ -10,6 +10,7 @@ const HamburgerWrapper = ({ isOpen, setOpen, colorOne, colorTwo }) => {
      aria-haspopup="true"
      disableTouchRipple
      className="hamburger-icon"
+    
      sx={{
        zIndex: 4,
        color: isOpen === true ? colorTwo : colorOne,

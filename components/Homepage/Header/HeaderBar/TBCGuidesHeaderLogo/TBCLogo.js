@@ -2,12 +2,12 @@ import { Box, Typography } from "@mui/material";
 
 const TBCLogo = () => {
     return (
-      <Box sx={{ width: "1rem" }} ml={3}>
+      <Box sx={{ width: "1rem" }} >
         <Typography
-          variant="h2"
+          variant="h1"
           className="tbc-logo"
           sx={{
-            mr: 2,
+            
             display: { xs: "none", md: "flex" },
           }}
           color="primary"

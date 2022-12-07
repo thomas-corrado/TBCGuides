@@ -15,11 +15,11 @@ const HomepageHeader = () => {
         }}
       >
         <BackgroundImage />
+
         <Stack className="homepage-header-stack" direction="column">
           <AppBarWrapper colorOne="white" colorTwo="#596d90" pages={pages} />
-          <Box className="homepage-header-box" mt={-4}>
-            <WelcomeTextHeader/>
-          </Box>
+          <Box sx={{ bottom: 0, position: "absolute" }}></Box>
+          <WelcomeTextHeader />
         </Stack>
       </Box>
     </ThemeProvider>
