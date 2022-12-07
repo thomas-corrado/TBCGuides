@@ -8,7 +8,7 @@ const WelcomeTextHeader = () => {
         <Stack direction="column" spacing={2} ml={{ xs: 4, md: 6 }} mb={4}>
           <Box
             sx={{
-              width: "70vw",
+              width: "60vw",
               display: "flex",
               justifyContent: "left",
             }}
@@ -50,12 +50,12 @@ const welcomeTextTheme = createTheme({
   typography: {
     fontFamily: ["belda-normal"].join(","),
     h2: {
-      fontSize: "calc(2vmin + 3.5vmax)",
-      lineHeight: "calc(2vmin + 3.5vmax + .5rem)",
+      fontSize: "calc(1.5vmin + 3vmax)",
+      lineHeight: "calc(1.5vmin + 3vmax + .5rem)",
     },
     h4: {
-      fontSize: "(calc(1.5vmin + 2vmax)",
-      lineHeight: "calc(1vmin + 2.5vmax + .5rem)",
+      fontSize: "calc(1vmin + 1.5vmax)",
+      lineHeight: "calc(1vmin + 1.5vmax + .5rem)",
     },
   },
   palette: {

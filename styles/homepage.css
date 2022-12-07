@@ -32,9 +32,9 @@
   font-family: belda-normal, sans-serif;
   text-align: left;
   z-index: 3;
-  font-size: calc(2vmin + 3.5vmax);
+  font-size: calc(1.5vmin + 3vmax);
   width: 100vw; 
-  line-height: calc(2vmin + 3.5vmax + .5rem);
+  line-height: calc(1.5vmin + 3vmax + .5rem);
 }
 
 .homepage-reservation-text {
@@ -42,9 +42,9 @@
   font-family: belda-normal, sans-serif;
   text-align: left;
   z-index: 3;
-  font-size: calc(1.5vmin + 2vmax);
+  font-size: calc(1vmin + 1.5vmax);
   width: 100vw; 
-  line-height: calc(1vmin + 2.5vmax + .5rem);
+  line-height: calc(1vmin + 1.5vmax + .5rem);
   text-decoration: underline;
 }
 
