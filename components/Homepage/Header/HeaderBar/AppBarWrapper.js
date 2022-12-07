@@ -7,8 +7,6 @@ import DrawerWrapper from "../Drawer/DrawerWrapper";
 import HamburgerWrapper from "../Drawer/HamburgerWrapper";
 import HeaderBarPageButtons from "./HeaderBarPageButtons";
 
-import WelcomeTextHeader from "../Background/WelcomeTextHeader";
-
 const AppBarWrapper = ( {pages, colorOne, colorTwo}) => {
 
   const [isOpen, setOpen] = useState(false);

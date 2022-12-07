@@ -33,6 +33,13 @@ const pages = ["about", "reservations", "gallery"];
 const menuAndDrawer = createTheme({
   typography: {
     fontFamily: ["Antonio"].join(","),
+    h1: {
+      fontSize: "4.5rem",
+    },
+    h3: {
+      fontSize: "4rem",
+     
+    },
   },
   palette: {
     primary: {
