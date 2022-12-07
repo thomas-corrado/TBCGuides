@@ -28,7 +28,7 @@ const HeaderBarPageButtons = ({ pages, position }) => {
               <Typography
                 sx={{
                   display: { xs: "none", md: "flex" },
-                  fontSize: '4rem'
+                  fontSize: '3rem'
                 }}
               >
                 {page}
