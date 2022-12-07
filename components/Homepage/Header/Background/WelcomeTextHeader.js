@@ -5,7 +5,7 @@ import Link from "next/link";
 const WelcomeTextHeader = () => {
     return (
       <ThemeProvider theme={welcomeTextTheme}>
-        <Stack direction="column" spacing={2} ml={{ xs: 4, md: 6 }} mb={4}>
+        <Stack direction="column" spacing={2} ml={{ xs: 4, md: 6 }} mb={6}>
           <Box
             sx={{
               width: { xs: '80vw', sm: '70vw', md: '50vw'},

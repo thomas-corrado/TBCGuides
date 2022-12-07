@@ -20,31 +20,29 @@ const AppBarWrapper = ( {pages, colorOne, colorTwo}) => {
           boxShadow: "none",
         }}
       >
-       
-          <Toolbar disableGutters >
-            {/* Desktop View Logo */}
-            <TBCLogo />
+        <Toolbar disableGutters>
+          {/* Desktop View Logo */}
+          <TBCLogo />
 
-            {/* Drawer View Logo */}
-            <CompressedTBCLogo />
+          {/* Drawer View Logo */}
+          <CompressedTBCLogo />
 
-            <Box sx={{ display: { xs: "flex", md: "none" } }}>
-              {/* Drawer View Hamburger Icon */}
-              <HamburgerWrapper
-                isOpen={isOpen}
-                setOpen={setOpen}
-                colorOne={colorOne}
-                colorTwo={colorTwo}
-              />
+          <Box sx={{ display: { xs: "flex", md: "none" } }} mr={2}>
+            {/* Drawer View Hamburger Icon */}
+            <HamburgerWrapper
+              isOpen={isOpen}
+              setOpen={setOpen}
+              colorOne={colorOne}
+              colorTwo={colorTwo}
+            />
 
-              {/* Drawer View Buttons */}
-              <DrawerWrapper isOpen={isOpen} pages={pages} />
-            </Box>
+            {/* Drawer View Buttons */}
+            <DrawerWrapper isOpen={isOpen} pages={pages} />
+          </Box>
 
-            {/* Desktop View Buttons */}
-            <HeaderBarPageButtons pages={pages} position="flex-end" />
-          </Toolbar>
-        
+          {/* Desktop View Buttons */}
+          <HeaderBarPageButtons pages={pages} position="flex-end" />
+        </Toolbar>
       </AppBar>
     </Box>
   );
