@@ -15,7 +15,7 @@ const WelcomeTextHeader = () => {
           >
             <Typography
               className="homepage-header-text"
-              sx={{ zIndex: 2 }}
+              variant="h2"
               color="primary"
             >
               Welcome to the Upper Valley&rsquo;s Premiere Kayak, Ice, and Fly
@@ -29,10 +29,10 @@ const WelcomeTextHeader = () => {
               justifyContent: "left",
             }}
           >
-            <Link href='/reservations'>
+            <Link href="/reservations">
               <Typography
+                variant="h4"
                 className="homepage-reservation-text"
-                sx={{ zIndex: 2 }}
                 color="primary"
               >
                 Make a Reservation
@@ -49,6 +49,14 @@ export default WelcomeTextHeader
 const welcomeTextTheme = createTheme({
   typography: {
     fontFamily: ["belda-normal"].join(","),
+    h2: {
+      fontSize: "calc(2vmin + 3.5vmax)",
+      lineHeight: "calc(2vmin + 3.5vmax + .5rem)",
+    },
+    h4: {
+      fontSize: "(calc(1.5vmin + 2vmax)",
+      lineHeight: "calc(1vmin + 2.5vmax + .5rem)",
+    },
   },
   palette: {
     primary: {
