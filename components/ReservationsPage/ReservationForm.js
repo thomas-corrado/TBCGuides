@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import { Box, Stack, TextField, Button, Typography, Grid, Paper } from "@mui/material";
+import { Box, Stack, TextField, Button, Typography, Grid } from "@mui/material";
 import CreateIcon from "@mui/icons-material/Create";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -8,8 +8,8 @@ import PersonIcon from "@mui/icons-material/Person";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-
 const ReservationForm = () => {
+
     const [varName, setName] = useState("");
     const [varEmail, setEmail] = useState("");
     const [varPhone, setPhone] = useState("");
@@ -115,7 +115,8 @@ const ReservationForm = () => {
         },
       });
     }
-    
+
+   
   return (
     <ThemeProvider theme={submitTheme}>
       <Box className="reservation-outside-box" mt={6} mb={6}>

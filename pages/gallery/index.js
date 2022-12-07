@@ -1,6 +1,4 @@
 import * as React from "react";
-import NavBar from "../../components/navBar";
-import ImageListWrapper from "../../components/imageList";
 import Head from "next/head";
 import GalleryPageComponent from "../../components/GalleryPage/GalleryPageComponent";
 

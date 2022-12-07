@@ -27,7 +27,7 @@ const Introduction = () => {
           </ImageAndDividerAndText>
         </div>
 
-        <Divider
+        {/* <Divider
           sx={{
             width: "90vw",
             backgroundColor: "white",
@@ -44,7 +44,7 @@ const Introduction = () => {
               <SliderWrapper />
             </ImageWrapper>
           </ImageAndDividerAndText>
-        </div>
+        </div> */}
       </>
     );
 
