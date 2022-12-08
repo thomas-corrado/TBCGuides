@@ -4,6 +4,7 @@ import "../styles/general.css";
 import "../styles/aboutpage.css"; 
 import "../styles/reservationpage.css"; 
 import "../styles/GalleryPage.css"
+import "../styles/MikeInfo.css";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { styled } from "@washingtonpost/wpds-ui-kit";

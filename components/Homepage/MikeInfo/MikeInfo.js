@@ -14,12 +14,11 @@ const MikeInfo = () => {
           sx={{ width: "100vw", backgroundColor: "#808184" }}
         >
           <Typography
-            variant="h2"
             color="primary"
+            className="mike-info-header-text"
             mt={7}
             mb={{ xs: 4, sm: 4, lg: 6 }}
             ml={{ xs: 4, md: 8 }}
-            
           >
             Touring Led by Mike Blatt
           </Typography>
@@ -61,8 +60,7 @@ const MikeInfo = () => {
             <Typography
               mb={4}
               color="primary"
-              variant="h3"
-             
+              className="mike-info-description-text"
             >
               Mike is an extremely experienced fisherman and proud member of the{" "}
               <Link
