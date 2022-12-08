@@ -5,21 +5,20 @@ import LifelongSection from "../Lifelong/LifelongSection";
 import Testimonials from "../Testimonial/Testimonials";
 import Activity from "../Activity/Activity";
 import ContactInfo from "../Contact/ContactInfo";
+import MikeInfo from "../MikeInfo/MikeInfo";
 
 const HomePage = () => {
 
     return (
       <Box className="homepage-outer-box" sx={{ backgroundColor: "#596d90" }}>
         <HomepageHeader />
+        <MikeInfo />
         <Stack
           direction="column"
           spacing={5}
-          mt={6}
+          
           sx={{ alignItems: "center" }}
         >
-          <Introduction />
-          <LifelongSection/>
-
           <Testimonials />
         </Stack>
         <Activity />
@@ -30,33 +29,4 @@ const HomePage = () => {
 
 export default HomePage
 
-// Whole Page
-    // Stack
-        // Box
-            // Image
-                // Text
-        // LargeDivider
-        // Stack
-            // Title
-            // SmallDivider
-            // Description
-            // Image
-        // Large Divider
-        // Stack
-            // Title
-            // SmallDivider
-            // Description
-            // Image
-        // Stack
-            // Image
-            // Slider
-        // Stack
-            // Image
-            // Title
-            // Divider
-            // Text
-        // Grid
-            // Three Things
-    // Stack
-// Whole Page
         

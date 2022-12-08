@@ -1,0 +1,9 @@
+.mike-info-header-text {
+    font-size: calc(3vmin + 5vmax - 3vw);
+              line-height: calc(3vmin + 5vmax - 3vw + .5rem)
+}
+
+.mike-info-description-text {
+    font-size: calc(2vmin + 3.5vmax - 2vw);
+                line-height: calc(2vmin + 3.5vmax - 2vw + 1rem)
+}
