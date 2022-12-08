@@ -16,7 +16,7 @@ const MikeInfo = () => {
           <Typography
           variant="h2"
             color="primary"
-            className="mike-info-header-text"
+            
             mt={7}
             mb={{ xs: 4, sm: 4, lg: 6 }}
             ml={{ xs: 4, md: 8 }}
