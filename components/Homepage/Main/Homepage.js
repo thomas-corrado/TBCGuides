@@ -6,19 +6,22 @@ import Testimonials from "../Testimonial/Testimonials";
 import Activity from "../Activity/Activity";
 import ContactInfo from "../Contact/ContactInfo";
 import MikeInfo from "../MikeInfo/MikeInfo";
+import Philosophy from "../Philosophy/Philosophy";
+
 
 const HomePage = () => {
+  
+    
 
     return (
       <Box className="homepage-outer-box" sx={{ backgroundColor: "#596d90" }}>
         <HomepageHeader />
-        <MikeInfo />
-        <Stack
-          direction="column"
-          spacing={5}
-          
-          sx={{ alignItems: "center" }}
-        >
+        
+          <MikeInfo />
+       
+
+        <Philosophy />
+        <Stack direction="column" spacing={5} sx={{ alignItems: "center" }}>
           <Testimonials />
         </Stack>
         <Activity />

@@ -3,9 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { useRouter } from "next/router";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+import { useEffect } from "react";
+// ..
 
 const MikeInfo = () => {
     const router = useRouter()
+
+    useEffect(() => {
+      AOS.init();
+    }, []);
 
     return (
       <ThemeProvider theme={MikeTheme}>
@@ -13,43 +21,50 @@ const MikeInfo = () => {
           direction="column"
           sx={{ width: "100vw", backgroundColor: "#808184" }}
         >
-          <Typography
-            variant="h2"
-            color="primary"
-            mt={{ xs: 4, sm: 4, lg: 6 }}
-            mb={{ xs: 4, sm: 4, lg: 6 }}
-            ml={{ xs: 4, md: 8 }}
-          >
-            Touring Led by Mike Blatt
-          </Typography>
+          
+            <Typography
+              data-aos="fade-right"
+              variant="h2"
+              color="primary"
+              mt={{ xs: 4, sm: 4, lg: 6 }}
+              mb={{ xs: 4, sm: 4, lg: 6 }}
+              ml={{ xs: 4, md: 8 }}
+            >
+              Touring Led by Mike Blatt
+            </Typography>
+     
+
           <Box
             sx={{ width: "100vw", display: "flex", justifyContent: "center" }}
           >
-            <Grid
-              container
-              direction="row"
-              spacing={4}
-              sx={{ width: "87.5vw" }}
-            >
-              <Grid item container lg={6} sm={12} xs={12}>
-                <Image
-                  src="https://d14drtvwlopsgs.cloudfront.net/michael-blatt-ice_2.jpg"
-                  srcSet="https://d14drtvwlopsgs.cloudfront.net/michael-blatt-ice_2.jpg"
-                  alt="mike"
-                  className="complicated-image"
-                  layout="fill"
-                />
+            
+              <Grid
+              data-aos="fade-up"
+                container
+                direction="row"
+                spacing={4}
+                sx={{ width: "87.5vw" }}
+              >
+                <Grid item container lg={6} sm={12} xs={12}>
+                  <Image
+                    src="https://d14drtvwlopsgs.cloudfront.net/michael-blatt-ice_2.jpg"
+                    srcSet="https://d14drtvwlopsgs.cloudfront.net/michael-blatt-ice_2.jpg"
+                    alt="mike"
+                    className="complicated-image"
+                    layout="fill"
+                  />
+                </Grid>
+                <Grid item container lg={6} sm={12} xs={12}>
+                  <Image
+                    src="https://d14drtvwlopsgs.cloudfront.net/bio-cropped.jpg"
+                    srcSet="https://d14drtvwlopsgs.cloudfront.net/bio-cropped.jpg"
+                    alt="mike"
+                    className="complicated-image"
+                    layout="fill"
+                  />
+                </Grid>
               </Grid>
-              <Grid item container lg={6} sm={12} xs={12}>
-                <Image
-                  src="https://d14drtvwlopsgs.cloudfront.net/bio-cropped.jpg"
-                  srcSet="https://d14drtvwlopsgs.cloudfront.net/bio-cropped.jpg"
-                  alt="mike"
-                  className="complicated-image"
-                  layout="fill"
-                />
-              </Grid>
-            </Grid>
+            
           </Box>
           <Box
             ml={{ xs: 4, md: 8 }}
