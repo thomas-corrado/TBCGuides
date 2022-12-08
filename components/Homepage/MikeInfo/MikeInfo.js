@@ -92,7 +92,7 @@ const MikeInfo = () => {
                 )
               }
             >
-              <Typography variant="h6" color="primary">
+              <Typography variant="h6" color="primary" >
                 Mike&#39;s Blog
               </Typography>
             </Button>
@@ -117,11 +117,7 @@ const MikeTheme = createTheme({
       lineHeight: "calc(2vmin + 3.5vmax - 2vw + 1rem)",
     },
     h6: {
-      fontSize: "calc((2vmin + 3.5vmax - 2vw)/2)",
-      paddingTop: ".5rem",
-      paddingBottom: ".5rem",
-      paddingLeft: "1.5rem",
-      paddingRight: "1.5rem",
+      fontSize: "calc((2vmin + 3.5vmax - 2vw)/1.5)",
     },
   },
   palette: {
