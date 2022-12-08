@@ -42,8 +42,8 @@ const MikeInfo = () => {
               </Grid>
               <Grid item container lg={6} sm={12} xs={12}>
                 <Image
-                  src="https://d14drtvwlopsgs.cloudfront.net/bio.jpg"
-                  srcSet="https://d14drtvwlopsgs.cloudfront.net/bio.jpg"
+                  src="https://d14drtvwlopsgs.cloudfront.net/bio-cropped.jpg"
+                  srcSet="https://d14drtvwlopsgs.cloudfront.net/bio-cropped.jpg"
                   alt="mike"
                   className="complicated-image"
                   layout="fill"
