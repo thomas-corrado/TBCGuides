@@ -17,11 +17,7 @@ const Philosophy = () => {
     return (
       <ThemeProvider theme={PhilosophyTheme}>
         <Box
-          sx={{
-            width: "100vw",
-            backgroundColor: "#5D6D86",
-            alignItems: "center",
-          }}
+          
         >
           <Grid
             data-aos="fade-right"
@@ -77,11 +73,7 @@ const Philosophy = () => {
                     borderRadius: "0",
                     padding: "1rem",
                   }}
-                  onClick={() =>
-                    router.push(
-                      "/about"
-                    )
-                  }
+                  onClick={() => router.push("/about")}
                 >
                   <Typography variant="h6" color="secondary">
                     Learn More
