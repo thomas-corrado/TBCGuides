@@ -14,6 +14,7 @@ const MikeInfo = () => {
           sx={{ width: "100vw", backgroundColor: "#808184" }}
         >
           <Typography
+          variant="h2"
             color="primary"
             className="mike-info-header-text"
             mt={7}
