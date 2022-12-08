@@ -27,7 +27,18 @@ const theme = createTheme({
       main: "#FFFFFF",
     },
   },
-
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        boxShadow: "none",
+        root: {
+          "&:hover": {
+            backgroundColor: "#FFFFFF"
+          },
+        },
+      },
+    },
+  },
 });
 
 const StyledLoadingScreen = styled("div", {

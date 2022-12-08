@@ -7,6 +7,7 @@ import Activity from "../Activity/Activity";
 import ContactInfo from "../Contact/ContactInfo";
 import MikeInfo from "../MikeInfo/MikeInfo";
 import Philosophy from "../Philosophy/Philosophy";
+import Suggestion from "../Suggestion/Suggestion";
 
 
 const HomePage = () => {
@@ -21,6 +22,7 @@ const HomePage = () => {
        
 
         <Philosophy />
+        <Suggestion/>
         <Stack direction="column" spacing={5} sx={{ alignItems: "center" }}>
           <Testimonials />
         </Stack>
