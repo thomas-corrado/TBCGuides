@@ -16,7 +16,6 @@ const MikeInfo = () => {
           <Typography
           variant="h2"
             color="primary"
-            
             mt={7}
             mb={{ xs: 4, sm: 4, lg: 6 }}
             ml={{ xs: 4, md: 8 }}
@@ -60,8 +59,8 @@ const MikeInfo = () => {
           >
             <Typography
               mb={4}
+              variant="h3"
               color="primary"
-              className="mike-info-description-text"
             >
               Mike is an extremely experienced fisherman and proud member of the{" "}
               <Link
@@ -89,12 +88,6 @@ const MikeInfo = () => {
               <Typography
                 variant="h6"
                 color="primary"
-                sx={{
-                  paddingTop: "1rem",
-                  paddingBottom: "1rem",
-                  paddingLeft: "1.5rem",
-                  paddingRight: "1.5rem",
-                }}
               >
                 Learn More
               </Typography>
@@ -110,14 +103,20 @@ export default MikeInfo
 const MikeTheme = createTheme({
   typography: {
     fontFamily: ["belda-normal"].join(","),
-  },
-  h2: {
-    fontSize: "calc(3vmin + 5vmax - 3vw)",
-    lineHeight: "calc(3vmin + 5vmax - 3vw + .5rem)",
-  },
-  h3: {
-    fontSize: "calc(2vmin + 3.5vmax - 2vw)",
-    lineHeight: "calc(2vmin + 3.5vmax - 2vw + 1rem)",
+    h2: {
+      fontSize: "calc(3vmin + 5vmax - 3vw)",
+      lineHeight: "calc(3vmin + 5vmax - 3vw + .5rem)",
+    },
+    h3: {
+      fontSize: "calc(2vmin + 3.5vmax - 2vw)",
+      lineHeight: "calc(2vmin + 3.5vmax - 2vw + 1rem)",
+    },
+    h6: {
+      paddingTop: "1rem",
+      paddingBottom: "1rem",
+      paddingLeft: "1.5rem",
+      paddingRight: "1.5rem",
+    },
   },
   palette: {
     primary: {
