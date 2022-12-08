@@ -14,9 +14,9 @@ const MikeInfo = () => {
           sx={{ width: "100vw", backgroundColor: "#808184" }}
         >
           <Typography
-          variant="h2"
+            variant="h2"
             color="primary"
-            mt={7}
+            mt={{ xs: 4, sm: 4, lg: 6 }}
             mb={{ xs: 4, sm: 4, lg: 6 }}
             ml={{ xs: 4, md: 8 }}
           >
@@ -54,14 +54,10 @@ const MikeInfo = () => {
           <Box
             ml={{ xs: 4, md: 8 }}
             mt={{ xs: 4, sm: 4, lg: 6 }}
-            mb={10}
+            mb={8}
             sx={{ width: { xs: "80vw", sm: "90vw", md: "55vw" } }}
           >
-            <Typography
-              mb={4}
-              variant="h3"
-              color="primary"
-            >
+            <Typography mb={4} variant="h3" color="primary">
               Mike is an extremely experienced fisherman and proud member of the{" "}
               <Link
                 color="jackson"
@@ -85,10 +81,7 @@ const MikeInfo = () => {
                 )
               }
             >
-              <Typography
-                variant="h6"
-                color="primary"
-              >
+              <Typography variant="h6" color="primary">
                 Learn More
               </Typography>
             </Button>
@@ -106,14 +99,16 @@ const MikeTheme = createTheme({
     h2: {
       fontSize: "calc(3vmin + 5vmax - 3vw)",
       lineHeight: "calc(3vmin + 5vmax - 3vw + .5rem)",
+      width: "80vw"
     },
     h3: {
       fontSize: "calc(2vmin + 3.5vmax - 2vw)",
       lineHeight: "calc(2vmin + 3.5vmax - 2vw + 1rem)",
     },
     h6: {
-      paddingTop: "1rem",
-      paddingBottom: "1rem",
+      fontSize: "calc((2vmin + 3.5vmax - 2vw)/2)",
+      paddingTop: ".5rem",
+      paddingBottom: ".5rem",
       paddingLeft: "1.5rem",
       paddingRight: "1.5rem",
     },
@@ -135,4 +130,13 @@ const MikeTheme = createTheme({
       main: "#f4bc41",
     },
   },
+  components: {
+    MuiButton: {
+        styleOverrides: {
+            root: {
+                boxShadow: "none"
+            }
+        }
+    }
+  }
 });
