@@ -19,10 +19,7 @@ const MikeInfo = () => {
             mt={7}
             mb={{ xs: 4, sm: 4, lg: 6 }}
             ml={{ xs: 4, md: 8 }}
-            sx={{
-              fontSize: "calc(3vmin + 5vmax - 3vw)",
-              lineHeight: "calc(3vmin + 5vmax - 3vw + .5rem)",
-            }}
+            
           >
             Touring Led by Mike Blatt
           </Typography>
@@ -65,10 +62,7 @@ const MikeInfo = () => {
               mb={4}
               color="primary"
               variant="h3"
-              sx={{
-                fontSize: "calc(2vmin + 3.5vmax - 2vw)",
-                lineHeight: "calc(2vmin + 3.5vmax - 2vw + 1rem)",
-              }}
+             
             >
               Mike is an extremely experienced fisherman and proud member of the{" "}
               <Link
@@ -83,11 +77,9 @@ const MikeInfo = () => {
             <Button
               disableRipple
               variant="contained"
-              color="offwhite"
+              color="offgrey"
               sx={{
                 borderRadius: "0",
-                height: "5rem",
-                width: "18rem",
               }}
               onClick={() =>
                 router.push(
@@ -95,7 +87,16 @@ const MikeInfo = () => {
                 )
               }
             >
-              <Typography variant="h5" color="secondary">
+              <Typography
+                variant="h6"
+                color="primary"
+                sx={{
+                  paddingTop: "1rem",
+                  paddingBottom: "1rem",
+                  paddingLeft: "1.5rem",
+                  paddingRight: "1.5rem",
+                }}
+              >
                 Learn More
               </Typography>
             </Button>
@@ -128,6 +129,12 @@ const MikeTheme = createTheme({
     },
     offwhite: {
       main: "#D9D9D9",
+    },
+    offgrey: {
+      main: "#a8a6a1",
+    },
+    jackson: {
+      main: "#f4bc41",
     },
   },
 });
