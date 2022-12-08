@@ -10,3 +10,10 @@
     position: relative !important;
     height: unset !important;
   }
+
+  .complicated-ready-image {
+    object-fit: cover;
+    width: 100% !important;
+    position: relative !important;
+    
+  }

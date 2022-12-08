@@ -21,50 +21,46 @@ const MikeInfo = () => {
           direction="column"
           sx={{ width: "100vw", backgroundColor: "#808184" }}
         >
-          
-            <Typography
-              data-aos="fade-right"
-              variant="h2"
-              color="primary"
-              mt={{ xs: 4, sm: 4, lg: 6 }}
-              mb={{ xs: 4, sm: 4, lg: 6 }}
-              ml={{ xs: 4, md: 8 }}
-            >
-              Touring Led by Mike Blatt
-            </Typography>
-     
+          <Typography
+            data-aos="fade-right"
+            variant="h2"
+            color="primary"
+            mt={{ xs: 4, sm: 4, lg: 6 }}
+            mb={{ xs: 4, sm: 4, lg: 6 }}
+            ml={{ xs: 4, md: 8 }}
+          >
+            Touring Led by Mike Blatt
+          </Typography>
 
           <Box
             sx={{ width: "100vw", display: "flex", justifyContent: "center" }}
           >
-            
-              <Grid
+            <Grid
               data-aos="fade-up"
-                container
-                direction="row"
-                spacing={4}
-                sx={{ width: "87.5vw" }}
-              >
-                <Grid item container lg={6} sm={12} xs={12}>
-                  <Image
-                    src="https://d14drtvwlopsgs.cloudfront.net/michael-blatt-ice_2.jpg"
-                    srcSet="https://d14drtvwlopsgs.cloudfront.net/michael-blatt-ice_2.jpg"
-                    alt="mike"
-                    className="complicated-image"
-                    layout="fill"
-                  />
-                </Grid>
-                <Grid item container lg={6} sm={12} xs={12}>
-                  <Image
-                    src="https://d14drtvwlopsgs.cloudfront.net/bio-cropped.jpg"
-                    srcSet="https://d14drtvwlopsgs.cloudfront.net/bio-cropped.jpg"
-                    alt="mike"
-                    className="complicated-image"
-                    layout="fill"
-                  />
-                </Grid>
+              container
+              direction="row"
+              spacing={4}
+              sx={{ width: "87.5vw" }}
+            >
+              <Grid item container lg={6} sm={12} xs={12}>
+                <Image
+                  src="https://d14drtvwlopsgs.cloudfront.net/michael-blatt-ice_2.jpg"
+                  srcSet="https://d14drtvwlopsgs.cloudfront.net/michael-blatt-ice_2.jpg"
+                  alt="mike"
+                  className="complicated-image"
+                  layout="fill"
+                />
               </Grid>
-            
+              <Grid item container lg={6} sm={12} xs={12}>
+                <Image
+                  src="https://d14drtvwlopsgs.cloudfront.net/bio-cropped.jpg"
+                  srcSet="https://d14drtvwlopsgs.cloudfront.net/bio-cropped.jpg"
+                  alt="mike"
+                  className="complicated-image"
+                  layout="fill"
+                />
+              </Grid>
+            </Grid>
           </Box>
           <Box
             ml={{ xs: 4, md: 8 }}
@@ -96,8 +92,8 @@ const MikeInfo = () => {
                 )
               }
             >
-              <Typography variant="h6" color="primary">
-                Learn More
+              <Typography variant="h6" color="primary" >
+                Mike&#39;s Blog
               </Typography>
             </Button>
           </Box>
@@ -121,11 +117,7 @@ const MikeTheme = createTheme({
       lineHeight: "calc(2vmin + 3.5vmax - 2vw + 1rem)",
     },
     h6: {
-      fontSize: "calc((2vmin + 3.5vmax - 2vw)/2)",
-      paddingTop: ".5rem",
-      paddingBottom: ".5rem",
-      paddingLeft: "1.5rem",
-      paddingRight: "1.5rem",
+      fontSize: "calc((2vmin + 3.5vmax - 2vw)/1.5)",
     },
   },
   palette: {

@@ -1,12 +1,9 @@
 import { Stack, Grid, Typography, Button, Box } from "@mui/material";
-import Image from "next/image";
-import Link from "next/link";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { useRouter } from "next/router";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+import "aos/dist/aos.css"; 
 import { useEffect } from "react";
-// ..
 
 const Philosophy = () => {
     const router = useRouter(); 
@@ -35,7 +32,7 @@ const Philosophy = () => {
                 sx={{ width: { xs: "80%", sm: "80%", md: "80%", lg: "100%" } }}
               >
                 By providing instruction on each trip, TBC fishing experiences
-                gives guests the chance to become lifelong fishers.
+                give guests the chance to become lifelong fishers.
               </Typography>
             </Grid>
 
