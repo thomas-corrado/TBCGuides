@@ -23,10 +23,10 @@ const HomePage = () => {
 
         <Philosophy />
         <Suggestion/>
-        <Stack direction="column" spacing={5} sx={{ alignItems: "center" }}>
+        {/* <Stack direction="column" spacing={5} sx={{ alignItems: "center" }}>
           <Testimonials />
         </Stack>
-        <Activity />
+        <Activity /> */}
         <ContactInfo />
       </Box>
     );

@@ -32,7 +32,7 @@ const Philosophy = () => {
                 sx={{ width: { xs: "80%", sm: "80%", md: "80%", lg: "100%" } }}
               >
                 By providing instruction on each trip, TBC fishing experiences
-                gives guests the chance to become lifelong fishers.
+                give guests the chance to become lifelong fishers.
               </Typography>
             </Grid>
 

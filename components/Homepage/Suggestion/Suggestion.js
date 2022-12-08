@@ -7,6 +7,12 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const Suggestion = () => {
+    const router = useRouter(); 
+
+ useEffect(() => {
+   AOS.init();
+ }, []);
+
     return (
       <>
         <Box
@@ -40,20 +46,25 @@ const Suggestion = () => {
             }}
           >
             <Stack
+              data-aos="fade-up"
               direction="column"
               spacing={6}
               sx={{
                 alignItems: "center",
               }}
             >
-              <Typography variant="h2" color="secondary" sx={{ textAlign: 'center'}}>
+              <Typography
+                variant="h2"
+                color="secondary"
+                sx={{ textAlign: "center" }}
+              >
                 Ready to get started?
               </Typography>
               <Button
-              disableTouchRipple
+                disableTouchRipple
                 variant="contained"
                 color="secondary"
-                sx={{ borderRadius: 0, maxWidth: '90vw' }}
+                sx={{ borderRadius: 0, maxWidth: "90vw" }}
                 onClick={() => router.push("reservations")}
               >
                 <Typography

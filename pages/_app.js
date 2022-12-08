@@ -26,6 +26,9 @@ const theme = createTheme({
     secondary: {
       main: "#FFFFFF",
     },
+    offgrey: {
+      main: "#808184",
+    },
   },
   components: {
     MuiButton: {
@@ -33,7 +36,7 @@ const theme = createTheme({
         boxShadow: "none",
         root: {
           "&:hover": {
-            backgroundColor: "#FFFFFF"
+            backgroundColor: "#FFFFFF",
           },
         },
       },
