@@ -12,7 +12,7 @@ const AppBarWrapper = ( {pages, colorOne, colorTwo}) => {
   const [isOpen, setOpen] = useState(false);
   
   return (
-    <Box mt={3} ml={{ xs: 2, md: 6 }}>
+    <Box mt={3} ml={{ xs: 2, md: 8 }}>
       <AppBar
         position="static"
         sx={{
