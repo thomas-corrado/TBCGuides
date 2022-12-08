@@ -79,7 +79,7 @@ const Philosophy = () => {
                   }}
                   onClick={() =>
                     router.push(
-                      "https://hub.jacksonkayak.com/team-jk/kayak-fishing-regional-team/michael-blatt/"
+                      "/about"
                     )
                   }
                 >
