@@ -14,11 +14,15 @@ const MikeInfo = () => {
           sx={{ width: "100vw", backgroundColor: "#808184" }}
         >
           <Typography
-            variant="h3"
+            variant="h2"
             color="primary"
             mt={7}
-            mb={6}
+            mb={{ xs: 4, sm: 4, lg: 6 }}
             ml={{ xs: 4, md: 8 }}
+            sx={{
+              fontSize: "calc(3vmin + 5vmax - 3vw)",
+              lineHeight: "calc(3vmin + 5vmax - 3vw + .5rem)",
+            }}
           >
             Touring Led by Mike Blatt
           </Typography>
@@ -28,7 +32,7 @@ const MikeInfo = () => {
             <Grid
               container
               direction="row"
-              spacing={2}
+              spacing={4}
               sx={{ width: "87.5vw" }}
             >
               <Grid item container lg={6} sm={12} xs={12}>
@@ -53,11 +57,19 @@ const MikeInfo = () => {
           </Box>
           <Box
             ml={{ xs: 4, md: 8 }}
-            mt={6}
+            mt={{ xs: 4, sm: 4, lg: 6 }}
             mb={10}
-            sx={{ width: { sm: "90vw", md: "50vw" } }}
+            sx={{ width: { xs: "80vw", sm: "90vw", md: "55vw" } }}
           >
-            <Typography mb={4} color="primary" sx={{ fontSize: "2.5rem" }}>
+            <Typography
+              mb={4}
+              color="primary"
+              variant="h3"
+              sx={{
+                fontSize: "calc(2vmin + 3.5vmax - 2vw)",
+                lineHeight: "calc(2vmin + 3.5vmax - 2vw + 1rem)",
+              }}
+            >
               Mike is an extremely experienced fisherman and proud member of the{" "}
               <Link
                 color="jackson"
@@ -99,6 +111,14 @@ const MikeTheme = createTheme({
   typography: {
     fontFamily: ["belda-normal"].join(","),
   },
+  h2: {
+    fontSize: "calc(3vmin + 5vmax - 3vw)",
+    lineHeight: "calc(3vmin + 5vmax - 3vw + .5rem)",
+  },
+  h3: {
+    fontSize: "calc(2vmin + 3.5vmax - 2vw)",
+    lineHeight: "calc(2vmin + 3.5vmax - 2vw + 1rem)",
+  },
   palette: {
     primary: {
       main: "#FFFFFF",
@@ -107,9 +127,7 @@ const MikeTheme = createTheme({
       main: "#000000",
     },
     offwhite: {
-        main: "#D9D9D9"
-    }, 
-    
+      main: "#D9D9D9",
+    },
   },
-  
 });
