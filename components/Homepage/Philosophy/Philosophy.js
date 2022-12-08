@@ -27,8 +27,8 @@ const Philosophy = () => {
             data-aos="fade-right"
             container
             direction="row"
-            rowSpacing={2}
-            mt={{ xs: 6, sm: 6, lg: 18 }}
+            rowSpacing={4}
+            mt={{ xs: 4, sm: 4, lg: 16 }}
             mb={{ xs: 8, sm: 8, lg: 20 }}
           >
             <Grid item container lg={7} md={12} sm={12} xs={12}>
@@ -105,7 +105,7 @@ const PhilosophyTheme = createTheme({
       lineHeight: "calc(2vmin + 3.5vmax - 1vw + 1.5rem)",
     },
     h6: {
-      fontSize: "calc((2vmin + 3.5vmax - 1vw)/2)",
+      fontSize: "calc((3vmin + 4.5vmax - 1.75vw)/2)",
     },
   },
   palette: {
