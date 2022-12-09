@@ -217,6 +217,15 @@ const submitTheme = createTheme({
         },
       },
     },
+    MuiTextField: {
+      defaultProps: {
+      },
+      styleOverrides: {
+        root: {
+          padding: '1rem'
+        },
+      },
+    },
   },
 });
 
