@@ -144,24 +144,17 @@ const ReservationForm = () => {
                       },
                     }}
                   >
-                    <Box
-                      sx={{
-                        paddingLeft: "8px",
-                        paddingRight: "8px",
-                        paddingBottom: "12px",
-                        backgroundColor: "white",
-                      }}
-                    >
+                    <Box>
                       <TextField
-                        label={item.label}
+                        placeholder={item.label}
                         variant="standard"
-                        InputLabelProps={{ shrink: item.shrink }}
+                        hiddenLabel
                         type={item.type}
                         required={item.required}
                         value={item.value}
                         onChange={(e) => item.functionName(e.target.value)}
                         className="reservation-text-field"
-                        margin="dense"
+        
                       />
                     </Box>
                   </Grid>
@@ -221,6 +214,15 @@ const submitTheme = createTheme({
             backgroundColor: "#596d90",
             color: "#FFFFFF",
           },
+        },
+      },
+    },
+    MuiTextField: {
+      defaultProps: {
+      },
+      styleOverrides: {
+        root: {
+          padding: '1rem'
         },
       },
     },
