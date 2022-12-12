@@ -6,6 +6,9 @@ import NavigationBarNonHome from "../General/NavigationBarNonHome";
 import VideoAboutPage from "./VideoAboutPage";
 import ContactInfo from "../Homepage/Contact/ContactInfo"
 import ComeJoinUs from "./ComeJoinUs";
+import RatingWrapper from "./Rating/RatingWrapper";
+import RatingMain from "./Rating/RatingMain";
+import Gear from "./Gear/Gear";
 
 const AboutPageComponent = () => {
   
@@ -17,7 +20,9 @@ const AboutPageComponent = () => {
           <VideoAboutPage />
         </Box>
       </Stack>
-      <ComeJoinUs />
+      <RatingMain />
+      <Gear/>
+      {/* <ComeJoinUs /> */}
       <ContactInfo />
     </>
   );
