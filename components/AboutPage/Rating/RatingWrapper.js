@@ -6,7 +6,7 @@ const RatingWrapper = () => {
   return (
     <ThemeProvider theme={RatingTheme}>
       <Box sx={{ width: "100vw", display: "flex", justifyContent: "left" }}>
-        <Box >
+        <Box>
           <Stack direction="column">
             <Stack
               direction="row"
@@ -37,7 +37,8 @@ const RatingWrapper = () => {
             <Typography
               variant="h2"
               ml={{ xs: 1, sm: 2, md: 2, lg: 4 }}
-              mt={{ xs: 2, sm: 2, md: 4 }}
+              mt={4}
+              mb={{ xs: 5, sm: 5, md: 0 }}
             >
               Loved by <br></br> every client.
             </Typography>

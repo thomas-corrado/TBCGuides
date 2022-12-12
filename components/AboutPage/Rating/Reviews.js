@@ -7,7 +7,6 @@ const Reviews = ({ name, date, description}) => {
       <ThemeProvider theme={ReviewTheme}>
         <Stack
           direction="row"
-          mt={{ xs: 10, sm: 10, md: 0 }}
           ml={{ xs: 1, sm: 1, md: 0 }}
         >
           <Grid container direction="row">
@@ -33,7 +32,6 @@ const Reviews = ({ name, date, description}) => {
                   }
                 />
               </Box>
-
               <Box
                 sx={{
                   width: "100%",

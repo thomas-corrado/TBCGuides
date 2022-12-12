@@ -29,6 +29,9 @@ const theme = createTheme({
     offgrey: {
       main: "#808184",
     },
+    warning: {
+      main: "#FF0000",
+    },
   },
   components: {
     MuiButton: {
