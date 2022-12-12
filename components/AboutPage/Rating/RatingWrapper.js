@@ -36,11 +36,11 @@ const RatingWrapper = () => {
 
             <Typography
               variant="h2"
-              ml={{ xs: 1, sm: 2, md: 2, lg: 4 }}
+              ml={{ xs: 1, sm: 1, md: 2, lg: 4 }}
               mt={4}
               mb={{ xs: 5, sm: 5, md: 0 }}
             >
-              Loved by <br></br> every client.
+              Loved by <br></br> every guest.
             </Typography>
           </Stack>
         </Box>

@@ -8,6 +8,7 @@ import ContactInfo from "../Homepage/Contact/ContactInfo"
 import ComeJoinUs from "./ComeJoinUs";
 import RatingWrapper from "./Rating/RatingWrapper";
 import RatingMain from "./Rating/RatingMain";
+import Gear from "./Gear/Gear";
 
 const AboutPageComponent = () => {
   
@@ -20,6 +21,7 @@ const AboutPageComponent = () => {
         </Box>
       </Stack>
       <RatingMain />
+      <Gear/>
       {/* <ComeJoinUs /> */}
       <ContactInfo />
     </>

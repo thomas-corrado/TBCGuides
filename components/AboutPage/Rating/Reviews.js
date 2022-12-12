@@ -61,8 +61,8 @@ const ReviewTheme = createTheme({
   typography: {
     h3: {
       fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(2.5vmin + 3.5vmax - 1.5vw)",
-      lineHeight: "calc(2.5vmin + 3.5vmax - 1.5vw)",
+      fontSize: "calc(2.5vmin + 3vmax - 1.5vw)",
+      lineHeight: "calc(2.5vmin + 3vmax - 1.5vw)",
     },
     h5: {
       fontFamily: ["belda-normal"].join(","),
