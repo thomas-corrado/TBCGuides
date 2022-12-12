@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useState } from "react";
-import { Box, Stack, TextField, Button, Typography, Grid } from "@mui/material";
+import { Box, Stack, TextField, Button, Typography, Grid, } from "@mui/material";
+
 import CreateIcon from "@mui/icons-material/Create";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -15,6 +16,7 @@ const ReservationForm = () => {
     const [varPhone, setPhone] = useState("");
     const [varGuests, setGuests] = useState("");
     const [varDate, setDate] = useState("");
+    const [calendarType, setCalendarType] = useState('text')
 
     var submitName;
     var submitEmail;
@@ -22,6 +24,7 @@ const ReservationForm = () => {
     var submitGuests;
     var submitDate;
     var submitEmoji = "❌";
+
 
     function consolidateData(
       inName,
@@ -96,7 +99,7 @@ const ReservationForm = () => {
       },
       {
         label: "Preferred Date",
-        type: "date",
+        type: calendarType,
         value: varDate,
         required: false,
         shrink: true,
@@ -154,7 +157,6 @@ const ReservationForm = () => {
                         value={item.value}
                         onChange={(e) => item.functionName(e.target.value)}
                         className="reservation-text-field"
-        
                       />
                     </Box>
                   </Grid>
