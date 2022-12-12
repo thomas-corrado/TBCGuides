@@ -71,8 +71,8 @@ const ReviewTheme = createTheme({
     },
     h6: {
       fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(1.5vmin + 1.2vmax - .5vw)",
-      lineHeight: "calc(1.5vmin + 1.6vmax)",
+      fontSize: "calc(1.5vmin + 1.5vmax - .5vw)",
+      lineHeight: "calc(1.5vmin + 1.9vmax)",
     },
   },
 });
