@@ -39,7 +39,7 @@ const RatingMain = () => {
                       date={person.date}
                       description={person.description}
                     />
-                    <GreyDivider />
+                    {person.grey && <GreyDivider />}
                   </>
                 ))}
                 <LoadCollapse title="Collapse" show={show} setShow={setShow} />
@@ -59,23 +59,27 @@ const reviewData = [
     date: "November 2021",
     description:
       "Simply put, Mike exceeded all expectations. My girlfriend and I went for a date night and had a blast! (and obviously caught fish!) All equipment was in exceptional condition, everything was communicated effectively and in a way that makes you feel as if you'd been fishing buddies for years. Can't recommend enough and will definitely be bringing a few friend's on another trip at some point!",
+    grey: true,
   },
   {
     name: "Kelley D.",
     date: "October 2022",
     description:
       "Mike worked really hard to find the best fishing spots for us. The equipment was awesome, kayaks were very nice and he’s great. Definitely recommend and look forward to going out again.",
+    grey: true,
   },
   {
     name: "Howard Z.",
     date: "July 2021",
     description:
       "My wife and I had a great time fishing with Mike. He was extremely knowledgeable and helpful throughout the entire trip. We caught smallmouth bass, perch, and bluegill and had a great time fishing the entire lake. Definitely would recommend a trip with Mike.",
+    grey: true,
   },
   {
     name: "Caleb D.",
     date: "March 2021",
     description:
       "Mike is a terrific fishing guide. I have gone out on my own a bit, but without much luck. Then when Mike and I went out in the Fall, it seemed the fish were simply attracted to us we were getting so many bites. It was an extremely successful trip near the end of the season. Plus, Mike made it a fun time – he clearly knew the perfect type of lures for the area (and could explain why he was recommending that specific lure), had a deep understanding of how different river and weather conditions affect the fish, and made great non-fishing conversation. He came well supplied with all the equipment that we needed and even gave me tips on where to go in the future! Highly recommend a trip with Mike.",
+    grey: false,
   },
 ];
