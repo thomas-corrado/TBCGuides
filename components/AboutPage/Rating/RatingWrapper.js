@@ -1,12 +1,12 @@
-import { Box, Stack, Rating, Typography, Container} from "@mui/material";
+import { Box, Stack, Rating, Typography } from "@mui/material";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const RatingWrapper = () => {
   return (
     <ThemeProvider theme={RatingTheme}>
-      <Box sx={{ width: "100vw", display: "flex", justifyContent: "center" }}>
-        <Box sx={{ width: "90vw", display: "flex" }}>
+      <Box sx={{ width: "100vw", display: "flex", justifyContent: "left" }}>
+        <Box >
           <Stack direction="column">
             <Stack
               direction="row"
@@ -50,9 +50,7 @@ const RatingWrapper = () => {
 
 export default RatingWrapper;
 
-let RatingTheme = createTheme();
-
-RatingTheme = createTheme(RatingTheme, {
+const RatingTheme = createTheme({
   typography: {
     h1: {
       fontFamily: ["belda-normal"].join(","),
