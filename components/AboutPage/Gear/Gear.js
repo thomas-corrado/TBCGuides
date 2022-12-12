@@ -38,13 +38,12 @@ const GearTheme = createTheme({
   typography: {
     h3: {
       fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(1.5vmin + 3.5vmax)",
-   
+      fontSize: "calc(2.5vmin + 4 vmax - 1vw)",
     },
     h5: {
       fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(1vmin + 1.5vmax)",
-      lineHeight: "calc(1.5vmin + 3vmax)",
+      fontSize: "calc((3vmin + 4.5vmax - 2vw)/2)",
+      lineHeight: "calc((3vmin + 4.5vmax - 1.75vw))",
     },
   },
 });
