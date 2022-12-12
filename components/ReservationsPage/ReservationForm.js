@@ -157,10 +157,12 @@ const ReservationForm = () => {
                         value={item.value}
                         onChange={(e) => item.functionName(e.target.value)}
                         className="reservation-text-field"
+                        defaultValue="2017-05-24"
                         inputProps={{
                           onFocus: () => {
-
-                            item.label === "Preferred Date" ? setCalendarType("date") : null;
+                            item.label === "Preferred Date"
+                              ? setCalendarType("date")
+                              : null;
                           },
                           onBlur: () => {
                             item.label === "Preferred Date"
