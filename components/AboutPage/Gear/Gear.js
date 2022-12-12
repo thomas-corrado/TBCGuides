@@ -38,7 +38,7 @@ const GearTheme = createTheme({
   typography: {
     h3: {
       fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(2.5vmin + 4 vmax - 1vw)",
+      fontSize: "calc(2.5vmin + 4vmax - 1vw)",
     },
     h5: {
       fontFamily: ["belda-normal"].join(","),
