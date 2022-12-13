@@ -1,7 +1,9 @@
 import * as React from "react";
 import { useState } from "react";
 import { Box, Stack, TextField, Button, Typography, Grid, } from "@mui/material";
-
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import { AdapterMoment } from "@mui/x-date-pickers/AdapterMoment";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import CreateIcon from "@mui/icons-material/Create";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -58,6 +60,7 @@ const ReservationForm = () => {
 
     const fields = [
       {
+        header: TextField,
         label: "Name",
         type: "text",
         value: varName,
@@ -68,6 +71,7 @@ const ReservationForm = () => {
         position: "right",
       },
       {
+        header: TextField,
         label: "Email",
         type: "email",
         value: varEmail,
@@ -78,6 +82,7 @@ const ReservationForm = () => {
         position: "left",
       },
       {
+        header: TextField,
         label: "Phone Number",
         type: "phone",
         value: varPhone,
@@ -88,6 +93,7 @@ const ReservationForm = () => {
         position: "right",
       },
       {
+        header: TextField,
         label: "Number of Guests",
         type: "guests",
         value: varGuests,
@@ -98,6 +104,7 @@ const ReservationForm = () => {
         position: "left",
       },
       {
+        header: DatePicker,
         label: "Preferred Date",
         type: calendarType,
         value: varDate,
@@ -119,7 +126,6 @@ const ReservationForm = () => {
       });
     }
 
-   
   return (
     <ThemeProvider theme={submitTheme}>
       <Box className="reservation-outside-box" mt={6} mb={6}>
@@ -148,16 +154,32 @@ const ReservationForm = () => {
                     }}
                   >
                     <Box>
-                      <TextField
-                        placeholder={item.label}
-                        variant="standard"
-                        hiddenLabel
-                        type={item.type}
-                        required={item.required}
-                        value={item.value}
-                        onChange={(e) => item.functionName(e.target.value)}
-                        className="reservation-text-field"
-                      />
+                      <LocalizationProvider dateAdapter={AdapterMoment}>
+                        <item.header
+                          placeholder={item.label}
+                          variant="standard"
+                          hiddenLabel
+                          type={item.type}
+                          required={item.required}
+                          value={item.value}
+                          onChange={(e) =>
+                            item.functionName(
+                              item.label !== "Preferred Date"
+                                ? e.target.value
+                                : e !== null ? e._d : ''
+                            )
+                          }
+                          className="reservation-text-field"
+                          renderInput={(params) => (
+                            <TextField
+                              {...params}
+                              helperText={item.label}
+                              variant="standard"
+                              error={false}
+                            />
+                          )}
+                        />
+                      </LocalizationProvider>
                     </Box>
                   </Grid>
                 );
@@ -222,9 +244,10 @@ const submitTheme = createTheme({
     MuiTextField: {
       styleOverrides: {
         root: {
-          padding: '1rem'
+          padding: "1rem",
         },
       },
+     
     },
   },
 });
