@@ -13,11 +13,9 @@ const Philosophy = () => {
 
     return (
       <ThemeProvider theme={PhilosophyTheme}>
-        <Box
-          
-        >
+        <Box>
           <Grid
-            data-aos="fade-right"
+            data-aos="fade-up"
             container
             direction="row"
             rowSpacing={4}
@@ -90,11 +88,11 @@ const PhilosophyTheme = createTheme({
   typography: {
     fontFamily: ["belda-normal"].join(","),
     h3: {
-      fontSize: "calc(2vmin + 3.5vmax - 1vw)",
-      lineHeight: "calc(2vmin + 3.5vmax - 1vw + 1.5rem)",
+      fontSize: "calc(1.8rem + 1.5vw)",
+      lineHeight: "calc(3.2rem + 1.3vw)",
     },
     h6: {
-      fontSize: "calc((3vmin + 4.5vmax - 1.75vw)/2)",
+      fontSize: "calc((2.2rem + 1.5vw)/2)",
     },
   },
   palette: {

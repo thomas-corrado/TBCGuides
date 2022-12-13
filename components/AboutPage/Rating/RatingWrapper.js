@@ -2,10 +2,16 @@ import { Box, Stack, Rating, Typography } from "@mui/material";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
+
 const RatingWrapper = () => {
+
+
   return (
     <ThemeProvider theme={RatingTheme}>
-      <Box sx={{ width: "100vw", display: "flex", justifyContent: "left" }}>
+      <Box
+        sx={{ width: "100vw", display: "flex", justifyContent: "left" }}
+        
+      >
         <Box>
           <Stack direction="column">
             <Stack
@@ -55,13 +61,13 @@ const RatingTheme = createTheme({
   typography: {
     h1: {
       fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(3.5vmin + 8.5vmax)",
+      fontSize: "calc(3.5rem + 5vw)",
       lineHeight: "3rem",
     },
     h2: {
       fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(1.5vmin + 3.5vmax)",
-      lineHeight: "calc(1.5vmin + 3.5vmax)",
+      fontSize: "calc(1.5rem + 2.5vw)",
+      lineHeight: "calc(1.5rem + 2.5vw)",
     },
   },
   palette: {

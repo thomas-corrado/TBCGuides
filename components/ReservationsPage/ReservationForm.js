@@ -10,8 +10,16 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import PersonIcon from "@mui/icons-material/Person";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const ReservationForm = () => {
+
+    useEffect(() => {
+      AOS.init();
+    }, []);
+
 
     const [varName, setName] = useState("");
     const [varEmail, setEmail] = useState("");
@@ -129,7 +137,12 @@ const ReservationForm = () => {
   return (
     <ThemeProvider theme={submitTheme}>
       <Box className="reservation-outside-box" mt={6} mb={6}>
-        <Stack direction="column" className="reservation-stack" mt={5}>
+        <Stack
+          direction="column"
+          className="reservation-stack"
+          mt={5}
+          data-aos="fade-up"
+        >
           <Typography variant="h3" className="reservation-title" mt={5} mb={1}>
             Make a Reservation
           </Typography>
@@ -166,7 +179,9 @@ const ReservationForm = () => {
                             item.functionName(
                               item.label !== "Preferred Date"
                                 ? e.target.value
-                                : e !== null ? e._d : ''
+                                : e !== null
+                                ? e._d
+                                : ""
                             )
                           }
                           className="reservation-text-field"
@@ -187,7 +202,6 @@ const ReservationForm = () => {
             </Grid>
             <Box mb={3}>
               <Button
-                
                 onClick={() =>
                   consolidateData(
                     varName,
