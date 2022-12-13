@@ -22,7 +22,7 @@ const MikeInfo = () => {
           sx={{ width: "100vw", backgroundColor: "#808184" }}
         >
           <Typography
-            data-aos="fade-right"
+            data-aos="fade-up"
             variant="h2"
             color="primary"
             mt={{ xs: 4, sm: 4, lg: 6 }}
@@ -68,7 +68,7 @@ const MikeInfo = () => {
             mb={8}
             sx={{ width: { xs: "80vw", sm: "90vw", md: "55vw" } }}
           >
-            <Typography mb={4} variant="h3" color="primary">
+            <Typography mb={4} variant="h3" color="primary" data-aos="fade-up">
               Mike is an extremely experienced fisherman and proud member of the{" "}
               <Link
                 color="jackson"
@@ -80,6 +80,7 @@ const MikeInfo = () => {
             </Typography>
 
             <Button
+              data-aos="fade-up"
               disableRipple
               variant="contained"
               color="offgrey"
@@ -92,7 +93,7 @@ const MikeInfo = () => {
                 )
               }
             >
-              <Typography variant="h6" color="primary" >
+              <Typography variant="h6" color="primary">
                 Mike&#39;s Blog
               </Typography>
             </Button>
@@ -108,16 +109,16 @@ const MikeTheme = createTheme({
   typography: {
     fontFamily: ["belda-normal"].join(","),
     h2: {
-      fontSize: "calc(3vmin + 5vmax - 3vw)",
-      lineHeight: "calc(3vmin + 5vmax - 3vw + .5rem)",
-      width: "80vw"
+      fontSize: "calc(2.2rem + 1.3vw)",
+      lineHeight: "calc(2.5rem + 1.3vw)",
+      width: "80vw",
     },
     h3: {
-      fontSize: "calc(2vmin + 3.5vmax - 2vw)",
-      lineHeight: "calc(2vmin + 3.5vmax - 2vw + 1rem)",
+      fontSize: "calc(1.4rem + 1vw)",
+      lineHeight: "calc(1.4rem + 1vw + 1rem)",
     },
     h6: {
-      fontSize: "calc((2vmin + 3.5vmax - 2vw)/1.5)",
+      fontSize: "calc((1.4rem + 1vw)/1.7)",
     },
   },
   palette: {
@@ -139,11 +140,11 @@ const MikeTheme = createTheme({
   },
   components: {
     MuiButton: {
-        styleOverrides: {
-            root: {
-                boxShadow: "none"
-            }
-        }
-    }
-  }
+      styleOverrides: {
+        root: {
+          boxShadow: "none",
+        },
+      },
+    },
+  },
 });

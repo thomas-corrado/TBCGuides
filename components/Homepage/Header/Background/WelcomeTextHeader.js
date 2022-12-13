@@ -7,69 +7,66 @@ import { useEffect } from "react";
 // ..
 
 const WelcomeTextHeader = () => {
-    useEffect(() => {
-      AOS.init();
-    }, []);
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
-    return (
-      <ThemeProvider theme={welcomeTextTheme}>
-        <Stack
-          direction="column"
-          spacing={2}
-          ml={{ xs: 4, md: 8 }}
-          mb={6}
-          data-aos="fade-up"
+  return (
+    <ThemeProvider theme={welcomeTextTheme}>
+      <Stack
+        direction="column"
+        spacing={2}
+        ml={{ xs: 4, md: 8 }}
+        mb={6}
+        data-aos="fade-up"
+      >
+        <Box
+          sx={{
+            width: { xs: "80vw", sm: "70vw", md: "50vw" },
+            display: "flex",
+            justifyContent: "left",
+          }}
         >
-          <Box
-            sx={{
-              width: { xs: "80vw", sm: "70vw", md: "50vw" },
-              display: "flex",
-              justifyContent: "left",
-            }}
-          >
+          <Typography variant="h2" color="primary">
+            Welcome to the Upper Valley&rsquo;s Premiere Kayak, Ice, and Fly
+            Fishing Guide Service
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            width: "70vw",
+            display: "flex",
+            justifyContent: "left",
+          }}
+        >
+          <Link href="/reservations">
             <Typography
-              className="homepage-header-text"
-              variant="h2"
+              variant="h4"
+            
               color="primary"
             >
-              Welcome to the Upper Valley&rsquo;s Premiere Kayak, Ice, and Fly
-              Fishing Guide Service
+              Make a Reservation
             </Typography>
-          </Box>
-          <Box
-            sx={{
-              width: "70vw",
-              display: "flex",
-              justifyContent: "left",
-            }}
-          >
-            <Link href="/reservations">
-              <Typography
-                variant="h4"
-                className="homepage-reservation-text"
-                color="primary"
-              >
-                Make a Reservation
-              </Typography>
-            </Link>
-          </Box>
-        </Stack>
-      </ThemeProvider>
-    );
-}
+          </Link>
+        </Box>
+      </Stack>
+    </ThemeProvider>
+  );
+};
 
-export default WelcomeTextHeader
+export default WelcomeTextHeader;
 
 const welcomeTextTheme = createTheme({
   typography: {
     fontFamily: ["belda-normal"].join(","),
     h2: {
-      fontSize: "calc(3vmin + 5vmax - 3vw)",
-      lineHeight: "calc(3vmin + 5vmax - 3vw + .5rem)",
+      fontSize: "calc(2.2rem + 1.3vw)",
+      lineHeight: "calc(2.5rem + 1.3vw)",
     },
     h4: {
-      fontSize: "calc(1.5vmin + 3.5vmax - 2vw)",
-      lineHeight: "calc(1.5vmin + 3.5vmax - 2vw + .5rem)",
+      fontSize: "calc(1.4rem + .7vw)",
+      lineHeight: "calc(1.55rem + .7vw)",
+      textDecoration: 'underline'
     },
   },
   palette: {

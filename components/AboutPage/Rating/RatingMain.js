@@ -5,15 +5,23 @@ import Reviews from "./Reviews";
 import LoadCollapse from "./LoadCollapse";
 import GreyDivider from "./GreyDivider";
 import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const RatingMain = () => {
     const [show, setShow]=useState(false); 
+
+        useEffect(() => {
+          AOS.init();
+        }, []);
 
 
     return (
       <Box
         sx={{ width: "100vw", display: "flex", justifyContent: "center" }}
         mt={{ xs: 0, sm: 2, md: 6, lg: 8 }}
+        data-aos="fade-up"
       >
         <Grid container sx={{ width: "90vw" }}>
           <Grid item container xs={12} sm={12} md={6} lg={6}>

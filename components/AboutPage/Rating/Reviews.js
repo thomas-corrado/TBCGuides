@@ -61,18 +61,18 @@ const ReviewTheme = createTheme({
   typography: {
     h3: {
       fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(2.5vmin + 3vmax - 1.5vw)",
-      lineHeight: "calc(2.5vmin + 3vmax - 1.5vw)",
+      fontSize: "calc(1.5rem + 1.2vw)",
+      lineHeight: "calc(2rem + 1.2vw)",
     },
     h5: {
       fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(1vmin + 1.5vmax - .3vw)",
-      lineHeight: "calc(1vmin + 1.5vmax- .3vw)",
+      fontSize: "calc(.7rem + 1vw)",
+      lineHeight: "calc(.7rem + 1vw)",
     },
     h6: {
       fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(1.5vmin + 1.5vmax - .5vw)",
-      lineHeight: "calc(1.5vmin + 1.9vmax)",
+      fontSize: "calc(.75rem + 1vw)",
+      lineHeight: "calc(1.1rem + 1.4vw)",
     },
   },
 });

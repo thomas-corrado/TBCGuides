@@ -1,8 +1,14 @@
 import { Box, Stack } from "@mui/material";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const VideoAboutPage = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <Stack className="video-outside-box" mt={6} mb={8}>
+    <Stack className="video-outside-box" mt={6} mb={8} data-aos="fade-up">
       <Box className="video-inside-box">
         <video
           controls
