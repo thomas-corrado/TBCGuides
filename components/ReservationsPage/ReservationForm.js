@@ -163,10 +163,21 @@ const ReservationForm = () => {
                           type={item.type}
                           required={item.required}
                           value={item.value}
-                          onChange={(e) => item.functionName(e.target.value)}
+                          onChange={(e) =>
+                            item.functionName(
+                              item.label !== "Preferred Date"
+                                ? e.target.value
+                                : e !== null ? e._d : ''
+                            )
+                          }
                           className="reservation-text-field"
                           renderInput={(params) => (
-                            <TextField {...params} helperText={item.label} />
+                            <TextField
+                              {...params}
+                              helperText={item.label}
+                              variant="standard"
+                              error={false}
+                            />
                           )}
                         />
                       </LocalizationProvider>
@@ -234,9 +245,10 @@ const submitTheme = createTheme({
     MuiTextField: {
       styleOverrides: {
         root: {
-          padding: '1rem'
+          padding: "1rem",
         },
       },
+     
     },
   },
 });
