@@ -9,10 +9,12 @@ import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import PersonIcon from "@mui/icons-material/Person";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
+
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+
 
 const ReservationForm = () => {
   useEffect(() => {
@@ -74,19 +76,24 @@ const ReservationForm = () => {
     });
   }
 
-  async function sendMail(data) {
+  const sendMail = async (data) => {
     try {
-      await fetch("/api/contact", {
+      const response = await fetch("/api/aws-ses", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
           "Content-Type": "application/json",
         },
       });
-    } catch (err) {
-      console.log(err);
+
+      const body = await response.json();
+      if (body.ok) {
+        setMessage("Successfully send test mail");
+      }
+    } catch (error) {
+      console.log(error);
     }
-  }
+  };
 
   const fields = [
     {
