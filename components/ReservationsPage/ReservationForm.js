@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import { Box, Stack, TextField, Button, Typography, Grid, } from "@mui/material";
+import { Box, Stack, TextField, Button, Typography, Grid } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { AdapterMoment } from "@mui/x-date-pickers/AdapterMoment";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
@@ -15,124 +15,136 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const ReservationForm = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
-    useEffect(() => {
-      AOS.init();
-    }, []);
+  const [varName, setName] = useState("");
+  const [varEmail, setEmail] = useState("");
+  const [varPhone, setPhone] = useState("");
+  const [varGuests, setGuests] = useState("");
+  const [varDate, setDate] = useState("");
+  const [calendarType, setCalendarType] = useState("text");
 
+  var submitName;
+  var submitEmail;
+  var submitPhone;
+  var submitGuests;
+  var submitDate;
+  var submitEmoji = "❌";
 
-    const [varName, setName] = useState("");
-    const [varEmail, setEmail] = useState("");
-    const [varPhone, setPhone] = useState("");
-    const [varGuests, setGuests] = useState("");
-    const [varDate, setDate] = useState("");
-    const [calendarType, setCalendarType] = useState('text')
+  function consolidateData(inName, inEmail, inPhone, inGuests, inDate) {
+    submitName = inName;
+    submitEmail = inEmail;
+    submitPhone = inPhone;
+    submitGuests = inGuests;
+    submitDate = inDate;
 
-    var submitName;
-    var submitEmail;
-    var submitPhone;
-    var submitGuests;
-    var submitDate;
-    var submitEmoji = "❌";
+    submitHandler({
+      date: submitDate,
+      email: submitEmail,
+      name: submitName,
+      phone: submitPhone,
+      guests: submitGuests,
+      emoji: submitEmoji,
+    });
 
+    sendMail({
+      date: submitDate,
+      email: submitEmail,
+      name: submitName,
+      phone: submitPhone,
+      guests: submitGuests,
+    });
 
-    function consolidateData(
-      inName,
-      inEmail,
-      inPhone,
-      inGuests,
-      inDate
-    ) {
+    setName("");
+    setEmail("");
+    setPhone("");
+    setGuests("");
+    setDate("");
+  }
 
-      submitName = inName;
-      submitEmail = inEmail;
-      submitPhone = inPhone;
-      submitGuests = inGuests;
-      submitDate = inDate;
-
-      submitHandler({
-        date: submitDate,
-        email: submitEmail,
-        name: submitName,
-        phone: submitPhone,
-        guests: submitGuests,
-        emoji: submitEmoji,
-      });
-
-      setName("");
-      setEmail("");
-      setPhone("");
-      setGuests("");
-      setDate("");
-    }
-
-    const fields = [
-      {
-        header: TextField,
-        label: "Name",
-        type: "text",
-        value: varName,
-        required: true,
-        shrink: false,
-        functionName: setName,
-        icon: <CreateIcon />,
-        position: "right",
+  async function submitHandler(data) {
+    const response = await fetch("/api/form", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
       },
-      {
-        header: TextField,
-        label: "Email",
-        type: "email",
-        value: varEmail,
-        required: true,
-        shrink: false,
-        functionName: setEmail,
-        icon: <EmailIcon />,
-        position: "left",
-      },
-      {
-        header: TextField,
-        label: "Phone Number",
-        type: "phone",
-        value: varPhone,
-        required: false,
-        shrink: false,
-        functionName: setPhone,
-        icon: <PhoneIcon />,
-        position: "right",
-      },
-      {
-        header: TextField,
-        label: "Number of Guests",
-        type: "guests",
-        value: varGuests,
-        required: false,
-        shrink: false,
-        functionName: setGuests,
-        icon: <PersonIcon />,
-        position: "left",
-      },
-      {
-        header: DatePicker,
-        label: "Preferred Date",
-        type: calendarType,
-        value: varDate,
-        required: false,
-        shrink: true,
-        functionName: setDate,
-        icon: <CalendarTodayIcon />,
-        position: "right",
-      },
-    ];
+    });
+  }
 
-    async function submitHandler(data) {
-      const response = await fetch("/api/form", {
+  async function sendMail(data) {
+    try {
+      await fetch("/api/contact", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
           "Content-Type": "application/json",
         },
       });
+    } catch (err) {
+      console.log(err);
     }
+  }
+
+  const fields = [
+    {
+      header: TextField,
+      label: "Name",
+      type: "text",
+      value: varName,
+      required: true,
+      shrink: false,
+      functionName: setName,
+      icon: <CreateIcon />,
+      position: "right",
+    },
+    {
+      header: TextField,
+      label: "Email",
+      type: "email",
+      value: varEmail,
+      required: true,
+      shrink: false,
+      functionName: setEmail,
+      icon: <EmailIcon />,
+      position: "left",
+    },
+    {
+      header: TextField,
+      label: "Phone Number",
+      type: "phone",
+      value: varPhone,
+      required: false,
+      shrink: false,
+      functionName: setPhone,
+      icon: <PhoneIcon />,
+      position: "right",
+    },
+    {
+      header: TextField,
+      label: "Number of Guests",
+      type: "guests",
+      value: varGuests,
+      required: false,
+      shrink: false,
+      functionName: setGuests,
+      icon: <PersonIcon />,
+      position: "left",
+    },
+    {
+      header: DatePicker,
+      label: "Preferred Date",
+      type: calendarType,
+      value: varDate,
+      required: false,
+      shrink: true,
+      functionName: setDate,
+      icon: <CalendarTodayIcon />,
+      position: "right",
+    },
+  ];
 
   return (
     <ThemeProvider theme={submitTheme}>
@@ -261,8 +273,6 @@ const submitTheme = createTheme({
           padding: "1rem",
         },
       },
-     
     },
   },
 });
-
