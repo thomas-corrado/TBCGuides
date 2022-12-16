@@ -14,6 +14,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SuccessDialog from "./SuccessDialog";
 
 
 const ReservationForm = () => {
@@ -27,6 +28,7 @@ const ReservationForm = () => {
   const [varGuests, setGuests] = useState("");
   const [varDate, setDate] = useState("");
   const [calendarType, setCalendarType] = useState("text");
+  const [show, setShow] = useState(false)
 
   var submitName;
   var submitEmail;
@@ -64,6 +66,7 @@ const ReservationForm = () => {
     setPhone("");
     setGuests("");
     setDate("");
+    setShow(true)
   }
 
   async function submitHandler(data) {
@@ -165,6 +168,7 @@ const ReservationForm = () => {
           <Typography variant="h3" className="reservation-title" mt={5} mb={1}>
             Make a Reservation
           </Typography>
+          <SuccessDialog show={show} setShow={setShow} />
           <form>
             <Grid container columnSpacing={3} mb={3}>
               {fields.map((item) => {
@@ -198,9 +202,7 @@ const ReservationForm = () => {
                             item.functionName(
                               item.label !== "Preferred Date"
                                 ? e.target.value
-                                : e !== null
-                                ? e._d
-                                : ""
+                                : e._d
                             )
                           }
                           className="reservation-text-field"

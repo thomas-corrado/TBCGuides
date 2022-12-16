@@ -5,6 +5,13 @@ async function handler(req, res) {
   if (req.method === "POST") {
     const { name, phone, email, guests, date, emoji } = req.body;
 
+     var parsedDate =
+       date.substring(0, 10).split("-")[1] +
+       "/" +
+       date.substring(0, 10).split("-")[2] +
+       "/" +
+       date.substring(0, 10).split("-")[0];
+
     const auth = new google.auth.GoogleAuth({
       credentials: {
         client_email: process.env.GOOGLE_CLIENT_EMAIL,
@@ -28,7 +35,7 @@ async function handler(req, res) {
       range: "A1:G1",
       valueInputOption: "USER_ENTERED",
       requestBody: {
-        values: [[name, phone, email, guests, date, emoji]],
+        values: [[name, phone, email, guests, parsedDate, emoji]],
       },
     });
 
