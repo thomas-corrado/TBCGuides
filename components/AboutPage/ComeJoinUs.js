@@ -72,9 +72,8 @@ const joinTheme = createTheme({
           color: "#FFFFFF",
           "&:hover": {
             backgroundColor: "#FFFFFF",
-            color: "#808080",
+            color: "#596d90",
           },
-          
         },
       },
     },
