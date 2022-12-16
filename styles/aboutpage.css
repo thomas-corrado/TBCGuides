@@ -23,6 +23,7 @@
     justify-content: center;
     display: flex;
     align-content: center;
+    background-color: #8590A4;
 }
 
 .come-join-us-outer-stack {
@@ -32,7 +33,6 @@
 }
 
 .ready-typography {
-    color: black;
     text-align: center;
 }
 

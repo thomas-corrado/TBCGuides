@@ -11,6 +11,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta
+            name="google-site-verification"
+            content="EM19wPbtiFI0glqYg6zFRnKZLLSWg5hPKLGg4HmegVI"
+          />
           <style>
             {`body{
 display: block;

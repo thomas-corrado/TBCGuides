@@ -1,29 +1,45 @@
 import { Box, Stack, Typography, Button } from "@mui/material";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ComeJoinUs = () => {
     const router = useRouter(); 
 
+    useEffect(() => {
+      AOS.init();
+    }, []);
+
     return (
       <ThemeProvider theme={joinTheme}>
-        <Box className="come-join-us-outer-box" mb={8}>
-          <Stack
-            direction="column"
-            className="come-join-us-outer-stack"
-            spacing={4}
-          >
-            <Typography className="ready-typography" variant="h2">
-              Ready to start your fishing journey?
-            </Typography>
-            <Button
-              color="secondary"
-              variant="outlined"
-              onClick={() => router.push(`/reservations`)}
+        <Box>
+          <Box className="come-join-us-outer-box">
+            <Stack
+              direction="column"
+              className="come-join-us-outer-stack"
+              spacing={4}
+              mb={12}
+              data-aos="fade-up"
             >
-              <Typography variant="h4">Book a Reservation</Typography>
-            </Button>
-          </Stack>
+              <Typography
+                mt={12}
+                color="primary"
+                className="ready-typography"
+                variant="h3"
+              >
+                Ready to start your fishing journey?
+              </Typography>
+              <Button
+                color="primary"
+                variant="outlined"
+                onClick={() => router.push(`/reservations`)}
+              >
+                <Typography variant="h4">Make a Reservation</Typography>
+              </Button>
+            </Stack>
+          </Box>
         </Box>
       </ThemeProvider>
     );
@@ -49,14 +65,14 @@ const joinTheme = createTheme({
         // The props to change the default for.
         disableRipple: true, // No more ripple, on the whole application 💣!
         disableFocusRipple: true,
-        variant: "outlined"
+        variant: "outlined",
       },
       styleOverrides: {
         root: {
-          color: "#808080",
+          color: "#FFFFFF",
           "&:hover": {
-            backgroundColor: "#808080",
-            color: "#FFFFFF",
+            backgroundColor: "#FFFFFF",
+            color: "#8590A4",
           },
         },
       },

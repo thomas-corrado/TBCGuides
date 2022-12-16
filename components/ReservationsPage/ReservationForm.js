@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Box, Stack, TextField, Button, Typography, Grid } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { AdapterMoment } from "@mui/x-date-pickers/AdapterMoment";
@@ -13,7 +13,7 @@ import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+
 import SuccessDialog from "./SuccessDialog";
 
 
@@ -27,7 +27,6 @@ const ReservationForm = () => {
   const [varPhone, setPhone] = useState("");
   const [varGuests, setGuests] = useState("");
   const [varDate, setDate] = useState("");
-  const [calendarType, setCalendarType] = useState("text");
   const [show, setShow] = useState(false)
 
   var submitName;
@@ -36,6 +35,7 @@ const ReservationForm = () => {
   var submitGuests;
   var submitDate;
   var submitEmoji = "❌";
+  var calendarType = 'text'
 
   function consolidateData(inName, inEmail, inPhone, inGuests, inDate) {
     submitName = inName;
