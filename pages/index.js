@@ -6,6 +6,10 @@ export default function Home() {
     <div>
       <div>
         <Head>
+          <meta
+            name="google-site-verification"
+            content="EM19wPbtiFI0glqYg6zFRnKZLLSWg5hPKLGg4HmegVI"
+          />
           <title>TBC Guide Services</title>
           <meta
             name="viewport"
