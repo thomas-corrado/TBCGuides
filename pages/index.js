@@ -11,9 +11,8 @@ export default function Home() {
             name="viewport"
             content="initial-scale=1, viewport-fit=cover"
           ></meta>
-          <meta name="theme-color" content="#FFFFFF"></meta>
+          <meta name="theme-color" content="#596d90"></meta>
           <link rel="icon" href="/phishing.ico" />
-          
         </Head>
 
         <main>

@@ -10,7 +10,7 @@ export default function GalleryPage() {
           name="viewport"
           content="initial-scale=1, viewport-fit=cover"
         ></meta>
-        <meta name="theme-color" content="#000000"></meta>
+        <meta name="theme-color" content="#FFFFFF"></meta>
         <link rel="icon" href="/phishing.ico" />
       </Head>
       <GalleryPageComponent/>
