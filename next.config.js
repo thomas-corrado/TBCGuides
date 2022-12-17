@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: ["d14drtvwlopsgs.cloudfront.net"],
+    domains: ["s3.amazonaws.com"],
   },
   reactStrictMode: true,
   optimizeFonts: false,

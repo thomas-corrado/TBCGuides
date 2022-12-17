@@ -16,7 +16,7 @@ const BottomImage = () => {
         layout="fill"
         objectFit="cover"
         quality={100}
-        src="https://d14drtvwlopsgs.cloudfront.net/cut-paper-bottom.png"
+        // src="https://d14drtvwlopsgs.cloudfront.net/cut-paper-bottom.png"
         alt="Bottom-Cutout-Image"
       />
     </Box>

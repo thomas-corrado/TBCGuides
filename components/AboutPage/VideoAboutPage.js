@@ -20,7 +20,7 @@ const VideoAboutPage = () => {
           preload="metadata"
         >
           <source
-            src="https://d14drtvwlopsgs.cloudfront.net/about-video.mp4#t=0.5"
+            src="https://s3.amazonaws.com/tbcguides.fish/about-video.mp4"
             type="video/mp4"
           />
         </video>

@@ -44,8 +44,8 @@ const MikeInfo = () => {
             >
               <Grid item container lg={6} sm={12} xs={12}>
                 <Image
-                  src="https://d14drtvwlopsgs.cloudfront.net/michael-blatt-ice_2.jpg"
-                  srcSet="https://d14drtvwlopsgs.cloudfront.net/michael-blatt-ice_2.jpg"
+                  src="https://s3.amazonaws.com/tbcguides.fish/michael-blatt-ice_2.jpg"
+                  srcSet="https://s3.amazonaws.com/tbcguides.fish/michael-blatt-ice_2.jpg"
                   alt="mike"
                   className="complicated-image"
                   layout="fill"
@@ -53,8 +53,8 @@ const MikeInfo = () => {
               </Grid>
               <Grid item container lg={6} sm={12} xs={12}>
                 <Image
-                  src="https://d14drtvwlopsgs.cloudfront.net/bio-cropped.jpg"
-                  srcSet="https://d14drtvwlopsgs.cloudfront.net/bio-cropped.jpg"
+                  src="https://s3.amazonaws.com/tbcguides.fish/bio-cropped.jpg"
+                  srcSet="https://s3.amazonaws.com/tbcguides.fish/bio-cropped.jpg"
                   alt="mike"
                   className="complicated-image"
                   layout="fill"
