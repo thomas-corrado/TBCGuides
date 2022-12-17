@@ -3,7 +3,6 @@
     display: flex; 
 }
 
-
   .complicated-image {
     object-fit: cover;
     width: 100% !important;

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import { AppBar, Box, Toolbar, Container } from "@mui/material";
+import { AppBar, Box, Toolbar } from "@mui/material";
 import TBCLogo from "./TBCGuidesHeaderLogo/TBCLogo";
 import CompressedTBCLogo from "./TBCGuidesHeaderLogo/CompressedTBCLogo";
 import DrawerWrapper from "../Drawer/DrawerWrapper";

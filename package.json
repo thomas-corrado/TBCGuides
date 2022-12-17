@@ -15,7 +15,6 @@
     "@mui/material": "^5.10.0",
     "@mui/x-date-pickers": "^5.0.10",
     "@sendgrid/mail": "^7.7.0",
-    "@washingtonpost/wpds-ui-kit": "^0.13.0",
     "aos": "^3.0.0-beta.6",
     "aws-sdk": "^2.1276.0",
     "child_process": "^1.0.2",

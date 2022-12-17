@@ -2,9 +2,8 @@ import { Typography, Box, Stack } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Link from "next/link";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+import "aos/dist/aos.css";
 import { useEffect } from "react";
-// ..
 
 const WelcomeTextHeader = () => {
   useEffect(() => {
@@ -55,23 +54,3 @@ const WelcomeTextHeader = () => {
 };
 
 export default WelcomeTextHeader;
-
-// const welcomeTextTheme = createTheme({
-//   typography: {
-//     fontFamily: ["belda-normal"].join(","),
-//     h2: {
-//       fontSize: "calc(2.2rem + 1.3vw)",
-//       lineHeight: "calc(2.5rem + 1.3vw)",
-//     },
-//     h4: {
-//       fontSize: "calc(1.4rem + .7vw)",
-//       lineHeight: "calc(1.55rem + .7vw)",
-//       textDecoration: 'underline'
-//     },
-//   },
-//   palette: {
-//     primary: {
-//       main: "#FFFFFF",
-//     },
-//   },
-// });

@@ -10,7 +10,6 @@ const Gear = () => {
       }, []);
 
     return (
-     
         <Box
           sx={{
             display: "flex",

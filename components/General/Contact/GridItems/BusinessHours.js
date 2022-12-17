@@ -51,11 +51,3 @@ const BusinessHours = () => {
 };
 
 export default BusinessHours;
-
-const weekHours = ["Mon: 7:00 AM – 7:00 PM", 
-"Tues: 7:00 AM – 7:00 PM", 
-"Wed: 7:00 AM – 7:00 PM", 
-"Thurs: 7:00 AM – 7:00 PM",
-"Fri: 7:00 AM – 7:00 PM", 
-"Sat: 7:00 AM – 7:00 PM", 
-"Sun: 7:00 AM – 7:00 PM"]

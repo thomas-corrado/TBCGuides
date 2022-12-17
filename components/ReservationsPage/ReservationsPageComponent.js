@@ -1,4 +1,4 @@
-import { Box, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 import NavigationBarNonHome from "../General/NavigationBarNonHome";
 import ContactInfo from "../General/Contact/ContactInfo";
 import ReservationForm from "./ReservationForm";

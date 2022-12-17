@@ -4,16 +4,15 @@ import { Box, Stack, TextField, Button, Typography, Grid } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { AdapterMoment } from "@mui/x-date-pickers/AdapterMoment";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import CreateIcon from "@mui/icons-material/Create";
-import EmailIcon from "@mui/icons-material/Email";
-import PhoneIcon from "@mui/icons-material/Phone";
-import PersonIcon from "@mui/icons-material/Person";
-import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
-
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import {
+  CreateIcon,
+  EmailIcon,
+  PhoneIcon,
+  PersonIcon,
+  CalendarTodayIcon,
+} from "@mui/icons-material";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 import SuccessDialog from "./SuccessDialog";
 
 
@@ -255,44 +254,3 @@ const ReservationForm = () => {
 };
 
 export default ReservationForm;
-
-// const submitTheme = createTheme({
-//   typography: {
-//     fontFamily: ["belda-normal"].join(","),
-//   },
-//   palette: {
-//     primary: {
-//       main: "#000000",
-//     },
-//     secondary: {
-//       main: "#808080",
-//     },
-//   },
-//   components: {
-//     MuiButton: {
-//       defaultProps: {
-//         // The props to change the default for.
-//         disableRipple: true, // No more ripple, on the whole application 💣!
-//         disableFocusRipple: true,
-//         variant: "filled",
-//       },
-//       styleOverrides: {
-//         root: {
-//           color: "#FFFFFF",
-//           backgroundColor: "#000000",
-//           "&:hover": {
-//             backgroundColor: "#596d90",
-//             color: "#FFFFFF",
-//           },
-//         },
-//       },
-//     },
-//     MuiTextField: {
-//       styleOverrides: {
-//         root: {
-//           padding: "1rem",
-//         },
-//       },
-//     },
-//   },
-// });

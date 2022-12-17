@@ -1,7 +1,6 @@
 import { Box, Stack, Typography, Button } from "@mui/material";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -45,36 +44,3 @@ const ComeJoinUs = () => {
 }
 
 export default ComeJoinUs
-
-// const joinTheme = createTheme({
-//   typography: {
-//     fontFamily: ["belda-normal"].join(","),
-//   },
-//   palette: {
-//     primary: {
-//       main: "#FFFFFF",
-//     },
-//     secondary: {
-//       main: "#808080",
-//     },
-//   },
-//   components: {
-//     MuiButton: {
-//       defaultProps: {
-//         // The props to change the default for.
-//         disableRipple: true, // No more ripple, on the whole application 💣!
-//         disableFocusRipple: true,
-//         variant: "outlined",
-//       },
-//       styleOverrides: {
-//         root: {
-//           color: "#FFFFFF",
-//           "&:hover": {
-//             backgroundColor: "#FFFFFF",
-//             color: "#8590A4",
-//           },
-//         },
-//       },
-//     },
-//   },
-// });

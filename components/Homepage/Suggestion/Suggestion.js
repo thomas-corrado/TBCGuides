@@ -1,4 +1,4 @@
-import { Stack, Grid, Typography, Button, Box } from "@mui/material";
+import { Stack, Typography, Button, Box } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import AOS from "aos";

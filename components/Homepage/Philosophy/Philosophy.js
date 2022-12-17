@@ -1,5 +1,4 @@
 import { Stack, Grid, Typography, Button, Box } from "@mui/material";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { useRouter } from "next/router";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
@@ -88,42 +87,3 @@ const Philosophy = () => {
 }
 
 export default Philosophy
-
-// const PhilosophyTheme = createTheme({
-//   typography: {
-//     fontFamily: ["belda-normal"].join(","),
-//     h3: {
-//       fontSize: "calc(1.8rem + 1.5vw)",
-//       lineHeight: "calc(3.2rem + 1.3vw)",
-//     },
-//     h6: {
-//       fontSize: "calc((2.2rem + 1.5vw)/2)",
-//     },
-//   },
-//   palette: {
-//     primary: {
-//       main: "#FFFFFF",
-//     },
-//     secondary: {
-//       main: "#5D6D86",
-//     },
-//     offwhite: {
-//       main: "#D9D9D9",
-//     },
-//     offblue: {
-//       main: "#5D6D86",
-//     },
-//   },
-//   components: {
-//     MuiButton: {
-//       styleOverrides: {
-//         root: {
-//           boxShadow: "none",
-//           "&:hover": {
-//             backgroundColor: "#D9D9D9",
-//           },
-//         },
-//       },
-//     },
-//   },
-// });

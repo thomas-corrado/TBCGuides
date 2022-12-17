@@ -1,6 +1,5 @@
 import { Box, Typography, Stack, Rating, Grid } from "@mui/material";
 import StarRateIcon from "@mui/icons-material/StarRate";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const Reviews = ({ name, date, description}) => {
     return (
@@ -56,23 +55,3 @@ const Reviews = ({ name, date, description}) => {
 }
 
 export default Reviews
-
-// const ReviewTheme = createTheme({
-//   typography: {
-//     h3: {
-//       fontFamily: ["belda-normal"].join(","),
-//       fontSize: "calc(1.5rem + 1.2vw)",
-//       lineHeight: "calc(2rem + 1.2vw)",
-//     },
-//     h5: {
-//       fontFamily: ["belda-normal"].join(","),
-//       fontSize: "calc(.7rem + 1vw)",
-//       lineHeight: "calc(.7rem + 1vw)",
-//     },
-//     h6: {
-//       fontFamily: ["belda-normal"].join(","),
-//       fontSize: "calc(.75rem + 1vw)",
-//       lineHeight: "calc(1.1rem + 1.4vw)",
-//     },
-//   },
-// });
