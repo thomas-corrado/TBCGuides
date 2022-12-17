@@ -62,20 +62,20 @@ const generics = [
 //     },
 //   },
 //   components: {
-//     MuiIconButton: {
-//       defaultProps: {
-//         // The props to change the default for.
-//         disableRipple: true, // No more ripple, on the whole application 💣!
-//         disableFocusRipple: true,
-//       },
-//       styleOverrides: {
-//         root: {
-//           "&:hover": {
-//             backgroundColor: "transparent",
-//           },
-//           padding: "0px",
-//         },
-//       },
-//     },
-//   },
+  //   MuiIconButton: {
+  //     defaultProps: {
+  //       // The props to change the default for.
+  //       disableRipple: true, // No more ripple, on the whole application 💣!
+  //       disableFocusRipple: true,
+  //     },
+  //     styleOverrides: {
+  //       root: {
+  //         "&:hover": {
+  //           backgroundColor: "transparent",
+  //         },
+  //         padding: "0px",
+  //       },
+  //     },
+  //   },
+  // },
 // });
