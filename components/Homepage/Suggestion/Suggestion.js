@@ -27,8 +27,8 @@ const Suggestion = () => {
         >
           <Box sx={{ width: "100vw", height: "689px" }}>
             <Image
-              src="https://d14drtvwlopsgs.cloudfront.net/ReadyBackground-copy.jpeg"
-              srcSet="https://d14drtvwlopsgs.cloudfront.net/ReadyBackground-copy.jpeg"
+              src="https://s3.amazonaws.com/tbcguides.fish/ReadyBackground-copy.jpeg"
+              srcSet="https://s3.amazonaws.com/tbcguides.fish/ReadyBackground-copy.jpeg"
               alt="New Hampshire Sky"
               className="complicated-ready-image"
               layout="fill"
@@ -68,7 +68,7 @@ const Suggestion = () => {
                 onClick={() => router.push("reservations")}
               >
                 <Typography
-                  variant='h4'
+                  variant="h4"
                   color="black"
                   mt={2}
                   mb={2}

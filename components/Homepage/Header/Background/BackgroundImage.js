@@ -22,7 +22,7 @@ const BackgroundImage = () => {
         layout="fill"
         objectFit="cover"
         quality={100}
-        src="https://d14drtvwlopsgs.cloudfront.net/Homepage_2.jpeg"
+        src="https://s3.amazonaws.com/tbcguides.fish/Homepage_2.jpeg"
         alt="frozen-over-lake"
         loading="eager"
       />

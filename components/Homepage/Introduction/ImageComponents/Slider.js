@@ -51,7 +51,7 @@ const SliderWrapper = () => {
                   layout="fill"
                   objectFit="cover"
                   quality={100}
-                  src={`https://d14drtvwlopsgs.cloudfront.net/fish-holding-${item.number}.jpg`}
+                  // src={`https://d14drtvwlopsgs.cloudfront.net/fish-holding-${item.number}.jpg`}
                   alt={`item-${item.number}`}
                 />
               </SwiperSlide>

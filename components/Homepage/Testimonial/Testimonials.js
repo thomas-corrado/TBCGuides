@@ -13,7 +13,7 @@ const Testimonials = () => {
             layout="fill"
             objectFit="cover"
             quality={100}
-            src="https://d14drtvwlopsgs.cloudfront.net/weave.jpeg"
+            // src="https://d14drtvwlopsgs.cloudfront.net/weave.jpeg"
             alt="Harpoon"
             sx={{
               zIndex: 0,
