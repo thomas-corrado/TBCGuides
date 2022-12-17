@@ -6,7 +6,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const ContactInfo = () => {
     return (
-      <ThemeProvider theme={iconTheme}>
+     
         <Box
           sx={{
             width: "100vw",
@@ -33,7 +33,7 @@ const ContactInfo = () => {
             <BusinessHours />
           </Grid>
         </Box>
-      </ThemeProvider>
+      
     );
 }
 
@@ -52,30 +52,30 @@ const generics = [
   ],
 ];
 
-const iconTheme = createTheme({
-  typography: {
-    fontFamily: ["belda-normal"].join(","),
-  },
-  palette: {
-    primary: {
-      main: "#FFFFFF",
-    },
-  },
-  components: {
-    MuiIconButton: {
-      defaultProps: {
-        // The props to change the default for.
-        disableRipple: true, // No more ripple, on the whole application 💣!
-        disableFocusRipple: true,
-      },
-      styleOverrides: {
-        root: {
-          "&:hover": {
-            backgroundColor: "transparent",
-          },
-          padding: "0px",
-        },
-      },
-    },
-  },
-});
+// const iconTheme = createTheme({
+//   typography: {
+//     fontFamily: ["belda-normal"].join(","),
+//   },
+//   palette: {
+//     primary: {
+//       main: "#FFFFFF",
+//     },
+//   },
+//   components: {
+//     MuiIconButton: {
+//       defaultProps: {
+//         // The props to change the default for.
+//         disableRipple: true, // No more ripple, on the whole application 💣!
+//         disableFocusRipple: true,
+//       },
+//       styleOverrides: {
+//         root: {
+//           "&:hover": {
+//             backgroundColor: "transparent",
+//           },
+//           padding: "0px",
+//         },
+//       },
+//     },
+//   },
+// });

@@ -157,89 +157,94 @@ const ReservationForm = () => {
   ];
 
   return (
-    
-      <Box className="reservation-outside-box" mt={6} mb={6}>
-        <Stack
-          direction="column"
-          className="reservation-stack"
-          mt={5}
-          data-aos="fade-up"
-        >
-          <Typography variant="h3" className="reservation-title" mt={5} mb={1}>
-            Make a Reservation
-          </Typography>
-          <SuccessDialog show={show} setShow={setShow} />
-          <form>
-            <Grid container columnSpacing={3} mb={3}>
-              {fields.map((item) => {
-                return (
-                  <Grid
-                    key={item.label}
-                    container
-                    item
-                    lg={6}
-                    md={12}
-                    mt={2}
-                    sx={{
-                      justifyContent: {
-                        lg: item.position,
-                        md: "center",
-                        sm: "center",
-                        xs: "center",
-                      },
-                    }}
-                  >
-                    <Box>
-                      <LocalizationProvider dateAdapter={AdapterMoment}>
-                        <item.header
-                          placeholder={item.label}
-                          variant="standard"
-                          hiddenLabel
-                          type={item.type}
-                          required={item.required}
-                          value={item.value}
-                          onChange={(e) =>
-                            item.functionName(
-                              item.label !== "Preferred Date"
-                                ? e.target.value
-                                : e._d
-                            )
-                          }
-                          className="reservation-text-field"
-                          renderInput={(params) => (
-                            <TextField
-                              {...params}
-                              helperText={item.label}
-                              variant="standard"
-                              error={false}
-                            />
-                          )}
-                        />
-                      </LocalizationProvider>
-                    </Box>
-                  </Grid>
-                );
-              })}
-            </Grid>
-            <Box mb={3}>
-              <Button
-                onClick={() =>
-                  consolidateData(
-                    varName,
-                    varEmail,
-                    varPhone,
-                    varGuests,
-                    varDate
-                  )
-                }
-              >
-                <Typography variant="h6">Submit</Typography>
-              </Button>
-            </Box>
-          </form>
-        </Stack>
-      </Box>
-    
+    <Box className="reservation-outside-box" mt={6} mb={6}>
+      <Stack
+        direction="column"
+        className="reservation-stack"
+        mt={5}
+        data-aos="fade-up"
+      >
+        <Typography variant="h4" className="reservation-title" mt={5} mb={1}>
+          Make a Reservation
+        </Typography>
+        <SuccessDialog show={show} setShow={setShow} />
+        <form>
+          <Grid
+            container
+            columnSpacing={3}
+            mb={3}
+           
+          >
+            {fields.map((item) => {
+              return (
+                <Grid
+                  key={item.label}
+                  container
+                  item
+                  lg={6}
+                  md={12}
+                  mt={2}
+                  sx={{
+                    justifyContent: {
+                      lg: item.position,
+                      md: "center",
+                      sm: "center",
+                      xs: "center",
+                    },
+                  }}
+                >
+                  <Box>
+                    <LocalizationProvider dateAdapter={AdapterMoment}>
+                      <item.header
+                        placeholder={item.label}
+                        variant="standard"
+                        hiddenLabel
+                        type={item.type}
+                        required={item.required}
+                        value={item.value}
+                        onChange={(e) =>
+                          item.functionName(
+                            item.label !== "Preferred Date"
+                              ? e.target.value
+                              : e._d
+                          )
+                        }
+                        sx={{ padding: "1rem" }}
+                        className="reservation-text-field"
+                        renderInput={(params) => (
+                          <TextField
+                            {...params}
+                            helperText={item.label}
+                            variant="standard"
+                            error={false}
+                            style={{
+                              "& .MuiCalendarPicker": {
+                                fontFamily: "belda-normal",
+                                color: "red",
+                              },
+                              padding: "1rem",
+                            }}
+                          />
+                        )}
+                      />
+                    </LocalizationProvider>
+                  </Box>
+                </Grid>
+              );
+            })}
+          </Grid>
+          <Box mb={3}>
+            <Button
+              onClick={() =>
+                consolidateData(varName, varEmail, varPhone, varGuests, varDate)
+              }
+            >
+              <Typography variant="h6">Submit</Typography>
+            </Button>
+          </Box>
+        </form>
+      </Stack>
+    </Box>
   );
 };
 

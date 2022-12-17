@@ -22,10 +22,10 @@ const AppBarWrapper = ( {pages, colorOne, colorTwo}) => {
       >
         <Toolbar disableGutters>
           {/* Desktop View Logo */}
-          <TBCLogo />
+          <TBCLogo pages={pages} />
 
           {/* Drawer View Logo */}
-          <CompressedTBCLogo />
+          <CompressedTBCLogo pages={pages} />
 
           <Box sx={{ display: { xs: "flex", md: "none" } }} mr={2}>
             {/* Drawer View Hamburger Icon */}

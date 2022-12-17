@@ -1,16 +1,17 @@
 import { Box, Typography } from "@mui/material";
 
-const TBCLogo = () => {
+const TBCLogo = ({ pages }) => {
     return (
-      <Box sx={{ width: "1rem" }} >
+      <Box sx={{ width: "1rem" }}>
         <Typography
-          variant="h1"
           className="tbc-logo"
           sx={{
-            fontSize: '5rem', 
+            fontSize: "5rem",
             display: { xs: "none", md: "flex" },
+            lineHeight: "5rem",
+            fontFamily: "Antonio",
           }}
-          color="primary"
+          color={pages.includes("home") ? "secondary" : "primary"}
         >
           TBC Guides
         </Typography>

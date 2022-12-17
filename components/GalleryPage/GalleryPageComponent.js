@@ -1,6 +1,6 @@
 import { Stack } from "@mui/material";
 import NavigationBarNonHome from "../General/NavigationBarNonHome";
-import ContactInfo from "../General/Contact/ContactInfo";
+import ContactInfo from "../Homepage/Contact/ContactInfo";
 import ImageListGallery from "./ImageListGallery";
 
 const GalleryPageComponent = () => {

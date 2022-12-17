@@ -18,10 +18,14 @@ const GenericGridItemWrapper = ({ items }) => {
       <Stack direction="column">
         {items.map((itemDescription) => (
           <Typography
-            variant="h6"
-            className={(itemDescription === "About" ||
-                itemDescription === "Reservations" ||
-                itemDescription === "Gallery") ? "contact-item-underlined" : "contact-item"} 
+            variant="h7"
+            className={
+              itemDescription === "About" ||
+              itemDescription === "Reservations" ||
+              itemDescription === "Gallery"
+                ? "contact-item-underlined"
+                : "contact-item"
+            }
             key={itemDescription}
           >
             {itemDescription === "About" ||

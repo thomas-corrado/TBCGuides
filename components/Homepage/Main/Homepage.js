@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import HomepageHeader from "../Header/HomepagerHeader";
-import ContactInfo from "../../General/Contact/ContactInfo";
+import ContactInfo from "../Contact/ContactInfo";
 import MikeInfo from "../MikeInfo/MikeInfo";
 import Philosophy from "../Philosophy/Philosophy";
 import Suggestion from "../Suggestion/Suggestion";

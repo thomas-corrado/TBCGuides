@@ -57,38 +57,38 @@ const RatingWrapper = () => {
 
 export default RatingWrapper;
 
-const RatingTheme = createTheme({
-  typography: {
-    h1: {
-      fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(3.5rem + 5vw)",
-      lineHeight: "3rem",
-    },
-    h2: {
-      fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(1.5rem + 2.5vw)",
-      lineHeight: "calc(1.5rem + 2.5vw)",
-    },
-  },
-  palette: {
-    primary: {
-      main: "#000000",
-    },
-    secondary: {
-      main: "#808080",
-    },
-  },
-  components: {
-    MuiIcon: {
-      styleOverrides: {
-        root: {
-          "	.MuiRating-icon": {
-            padding: "-2px",
-          },
-        },
-      },
-    },
-  },
-});
+// const RatingTheme = createTheme({
+//   typography: {
+//     h1: {
+//       fontFamily: ["belda-normal"].join(","),
+//       fontSize: "calc(3.5rem + 5vw)",
+//       lineHeight: "3rem",
+//     },
+//     h2: {
+//       fontFamily: ["belda-normal"].join(","),
+//       fontSize: "calc(1.5rem + 2.5vw)",
+//       lineHeight: "calc(1.5rem + 2.5vw)",
+//     },
+//   },
+//   palette: {
+//     primary: {
+//       main: "#000000",
+//     },
+//     secondary: {
+//       main: "#808080",
+//     },
+//   },
+//   components: {
+//     MuiIcon: {
+//       styleOverrides: {
+//         root: {
+//           "	.MuiRating-icon": {
+//             padding: "-2px",
+//           },
+//         },
+//       },
+//     },
+//   },
+// });
 
 

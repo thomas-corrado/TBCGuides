@@ -53,22 +53,30 @@ const Suggestion = () => {
               }}
             >
               <Typography
-                variant="h2"
-                color="secondary"
-                sx={{ textAlign: "center" }}
+                color="primary"
+                sx={{
+                  textAlign: "center",
+                  fontSize: "4rem",
+                  fontFamily: "belda-normal",
+                }}
               >
                 Ready to get started?
               </Typography>
               <Button
                 disableTouchRipple
                 variant="contained"
-                color="secondary"
+                color="primary"
                 sx={{ borderRadius: 0, maxWidth: "70vw" }}
                 onClick={() => router.push("reservations")}
               >
                 <Typography
-                  variant="h4"
+                  
                   color="black"
+                  sx={{
+                    textAlign: "center",
+                    fontSize: "2rem",
+                    fontFamily: "belda-normal",
+                  }}
                   mt={2}
                   mb={2}
                   ml={2}

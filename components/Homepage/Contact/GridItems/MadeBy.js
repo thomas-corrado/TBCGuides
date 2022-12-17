@@ -15,14 +15,14 @@ const MadeBy = ({
       lg={3}
       sm={12}
       xs={6}
-      mr={-5}
+      mr={-7}
       sx={{
         justifyContent: { lg: "center" },
         paddingLeft: { xs: "5vw" },
       }}
     >
       <Stack direction="column" spacing={1}>
-        <Typography variant="h5" className="contact-item">
+        <Typography variant="h7" className="contact-item">
           {descriptionOne}
         </Typography>
         <Stack direction="row" spacing={2}>

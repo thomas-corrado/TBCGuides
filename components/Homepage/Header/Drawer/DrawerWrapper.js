@@ -21,13 +21,16 @@ const DrawerWrapper = ({ isOpen, pages }) => {
         <Box className="drawer-wrapper-box">
           <Stack direction="column" spacing={3}>
             {pages.map((page) => (
-              <Button key={page} onClick={() => router.push(routerPushFunc(page))}>
+              <Button
+                key={page}
+                onClick={() => router.push(routerPushFunc(page))}
+              >
                 <Typography
                   textTransform="uppercase"
                   textAlign="center"
                   variant="h4"
                   className="drawer-wrapper-buttons"
-                  color="secondary"
+                  color={pages.includes("home") ? "secondary" : "tbcblue"}
                 >
                   {page}
                 </Typography>

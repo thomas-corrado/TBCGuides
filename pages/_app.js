@@ -8,6 +8,7 @@ import "../styles/MikeInfo.css";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { styled } from "@washingtonpost/wpds-ui-kit";
+import { CssBaseline } from "@mui/material";
 import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
 import {
@@ -17,7 +18,6 @@ import {
 
 const theme = createTheme({
   typography: {
-    fontFamily: ["belda-normal"].join(","),
     h1: {
       fontSize: "calc(2.2rem + 1.3vw)",
       lineHeight: "calc(2.5rem + 1.3vw)",
@@ -29,14 +29,41 @@ const theme = createTheme({
       textDecoration: "underline",
       fontFamily: ["belda-normal"].join(","),
     },
+    h3: {
+      fontSize: "calc(1.4rem + 1vw)",
+      lineHeight: "calc(1.4rem + 1vw + 1rem)",
+      fontFamily: ["belda-normal"].join(","),
+    },
+    h4: {
+      fontSize: "calc(1.8rem + 1.5vw)",
+      lineHeight: "calc(3.2rem + 1.3vw)",
+      fontFamily: ["belda-normal"].join(","),
+    },
+    h6: {
+      fontSize: "calc((2.2rem + 1.5vw)/2)",
+      fontFamily: ["belda-normal"].join(","),
+    },
+    h7: {
+      fontSize: "22px",
+      fontFamily: ["belda-normal"].join(","),
+    },
+    h8: {
+      fontSize: "18px",
+      fontFamily: ["belda-normal"].join(","),
+    },
   },
   palette: {
     primary: {
-      main: "#596d90",
-    },
-    secondary: {
       main: "#FFFFFF",
     },
+    secondary: {
+      main: "#000000",
+    },
+    mikesgrey: {
+      main: "#a8a6a1",
+    },
+    tbcblue: "#596d90",
+    jackson: "#f4bc41",
     offgrey: {
       main: "#808184",
     },
@@ -59,6 +86,59 @@ const theme = createTheme({
         root: {
           background: "none",
           backgroundColor: "transparent",
+        },
+      },
+    },
+    MuiInput: {
+      styleOverrides: {
+        root: {
+          fontFamily: "belda-normal",
+        },
+      },
+    },
+    MuiFormHelperText: {
+      styleOverrides: {
+        root: {
+          fontFamily: "belda-normal",
+        },
+      },
+    },
+    MuiCalendarPicker: {
+      styleOverrides: {
+        root: {
+          fontFamily: "belda-normal",
+          "& .MuiDayPicker-weekDayLabel": {
+            fontFamily: "belda-normal",
+          },
+          "& .PrivatePickersYear-yearButton": {
+            fontFamily: "belda-normal",
+          },
+        },
+      },
+    },
+    MuiPickersDay: {
+      styleOverrides: {
+        root: {
+          fontFamily: "belda-normal",
+        },
+      },
+    },
+    MuiPickersCalendarHeader: {
+      styleOverrides: {
+        root: {
+          "& .MuiPickersCalendarHeader-label": {
+            fontFamily: "belda-normal",
+          },
+        },
+      },
+    },
+    MuiDayPicker: {
+      styleOverrides: {
+        root: {
+          "& .MuiDayPicker-header": {
+            fontFamily: "belda-normal",
+            backgroundColor: "red",
+          },
         },
       },
     },
@@ -121,6 +201,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <ThemeProvider theme={theme}>
+        <CssBaseline/>
         <Component {...pageProps} />
       </ThemeProvider>
     </>
