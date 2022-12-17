@@ -7,7 +7,7 @@ const RatingWrapper = () => {
 
 
   return (
-    <ThemeProvider theme={RatingTheme}>
+    
       <Box
         sx={{ width: "100vw", display: "flex", justifyContent: "left" }}
         
@@ -51,7 +51,7 @@ const RatingWrapper = () => {
           </Stack>
         </Box>
       </Box>
-    </ThemeProvider>
+    
   );
 };
 

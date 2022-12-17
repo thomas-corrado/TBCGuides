@@ -11,7 +11,7 @@ const Gear = () => {
       }, []);
 
     return (
-      <ThemeProvider theme={GearTheme}>
+     
         <Box
           sx={{
             display: "flex",
@@ -40,7 +40,7 @@ const Gear = () => {
             </Stack>
           </Box>
         </Box>
-      </ThemeProvider>
+      
     );
 }
 

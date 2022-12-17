@@ -12,7 +12,7 @@ const Philosophy = () => {
     }, []);
 
     return (
-      <ThemeProvider theme={PhilosophyTheme}>
+      
         <Box>
           <Grid
             data-aos="fade-up"
@@ -78,7 +78,7 @@ const Philosophy = () => {
             </Grid>
           </Grid>
         </Box>
-      </ThemeProvider>
+      
     );
 }
 

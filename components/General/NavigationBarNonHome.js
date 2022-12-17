@@ -4,9 +4,9 @@ import AppBarWrapper from "../Homepage/Header/HeaderBar/AppBarWrapper";
 const NavigationBarNonHome = ({ pages }) => {
 
   return (
-    <ThemeProvider theme={navigationBarNonHomeTheme}>
+    
       <AppBarWrapper colorOne="black" colorTwo="black" pages={pages} />
-    </ThemeProvider>
+   
   );
 };
 

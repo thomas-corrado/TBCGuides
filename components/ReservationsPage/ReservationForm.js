@@ -157,7 +157,7 @@ const ReservationForm = () => {
   ];
 
   return (
-    <ThemeProvider theme={submitTheme}>
+    
       <Box className="reservation-outside-box" mt={6} mb={6}>
         <Stack
           direction="column"
@@ -239,49 +239,49 @@ const ReservationForm = () => {
           </form>
         </Stack>
       </Box>
-    </ThemeProvider>
+    
   );
 };
 
 export default ReservationForm;
 
-const submitTheme = createTheme({
-  typography: {
-    fontFamily: ["belda-normal"].join(","),
-  },
-  palette: {
-    primary: {
-      main: "#000000",
-    },
-    secondary: {
-      main: "#808080",
-    },
-  },
-  components: {
-    MuiButton: {
-      defaultProps: {
-        // The props to change the default for.
-        disableRipple: true, // No more ripple, on the whole application 💣!
-        disableFocusRipple: true,
-        variant: "filled",
-      },
-      styleOverrides: {
-        root: {
-          color: "#FFFFFF",
-          backgroundColor: "#000000",
-          "&:hover": {
-            backgroundColor: "#596d90",
-            color: "#FFFFFF",
-          },
-        },
-      },
-    },
-    MuiTextField: {
-      styleOverrides: {
-        root: {
-          padding: "1rem",
-        },
-      },
-    },
-  },
-});
+// const submitTheme = createTheme({
+//   typography: {
+//     fontFamily: ["belda-normal"].join(","),
+//   },
+//   palette: {
+//     primary: {
+//       main: "#000000",
+//     },
+//     secondary: {
+//       main: "#808080",
+//     },
+//   },
+//   components: {
+//     MuiButton: {
+//       defaultProps: {
+//         // The props to change the default for.
+//         disableRipple: true, // No more ripple, on the whole application 💣!
+//         disableFocusRipple: true,
+//         variant: "filled",
+//       },
+//       styleOverrides: {
+//         root: {
+//           color: "#FFFFFF",
+//           backgroundColor: "#000000",
+//           "&:hover": {
+//             backgroundColor: "#596d90",
+//             color: "#FFFFFF",
+//           },
+//         },
+//       },
+//     },
+//     MuiTextField: {
+//       styleOverrides: {
+//         root: {
+//           padding: "1rem",
+//         },
+//       },
+//     },
+//   },
+// });

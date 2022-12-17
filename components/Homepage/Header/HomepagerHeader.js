@@ -7,7 +7,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const HomepageHeader = () => {
   return (
-    <ThemeProvider theme={menuAndDrawer}>
+    
       <Box
         sx={{
           width: "100vw",
@@ -22,7 +22,7 @@ const HomepageHeader = () => {
           <WelcomeTextHeader />
         </Stack>
       </Box>
-    </ThemeProvider>
+    
   );
 };
 

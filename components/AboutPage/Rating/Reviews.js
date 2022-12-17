@@ -4,7 +4,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const Reviews = ({ name, date, description}) => {
     return (
-      <ThemeProvider theme={ReviewTheme}>
+      
         <Stack
           direction="row"
           ml={{ xs: 1, sm: 1, md: 0 }}
@@ -51,7 +51,7 @@ const Reviews = ({ name, date, description}) => {
             </Grid>
           </Grid>
         </Stack>
-      </ThemeProvider>
+     
     );
 }
 

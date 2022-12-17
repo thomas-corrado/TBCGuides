@@ -18,6 +18,17 @@ import {
 const theme = createTheme({
   typography: {
     fontFamily: ["belda-normal"].join(","),
+    h1: {
+      fontSize: "calc(2.2rem + 1.3vw)",
+      lineHeight: "calc(2.5rem + 1.3vw)",
+      fontFamily: ["belda-normal"].join(","),
+    },
+    h2: {
+      fontSize: "calc(1.4rem + .7vw)",
+      lineHeight: "calc(1.55rem + .7vw)",
+      textDecoration: "underline",
+      fontFamily: ["belda-normal"].join(","),
+    },
   },
   palette: {
     primary: {
@@ -34,13 +45,20 @@ const theme = createTheme({
     },
   },
   components: {
-    MuiButton: {
+    MuiDrawer: {
       styleOverrides: {
-        boxShadow: "none",
+        paper: {
+          background: "white",
+          width: "100vw",
+          height: "100%",
+        },
+      },
+    },
+    MuiBackdrop: {
+      styleOverrides: {
         root: {
-          "&:hover": {
-            backgroundColor: "#FFFFFF",
-          },
+          background: "none",
+          backgroundColor: "transparent",
         },
       },
     },

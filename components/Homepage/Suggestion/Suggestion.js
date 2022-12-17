@@ -1,6 +1,5 @@
 import { Stack, Grid, Typography, Button, Box } from "@mui/material";
 import Image from "next/image";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { useRouter } from "next/router";
 import AOS from "aos";
 import "aos/dist/aos.css";

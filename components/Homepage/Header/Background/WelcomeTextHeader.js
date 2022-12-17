@@ -12,7 +12,7 @@ const WelcomeTextHeader = () => {
   }, []);
 
   return (
-    <ThemeProvider theme={welcomeTextTheme}>
+    
       <Stack
         direction="column"
         spacing={2}
@@ -50,7 +50,7 @@ const WelcomeTextHeader = () => {
           </Link>
         </Box>
       </Stack>
-    </ThemeProvider>
+   
   );
 };
 

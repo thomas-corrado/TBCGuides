@@ -16,7 +16,7 @@ const MikeInfo = () => {
     }, []);
 
     return (
-      <ThemeProvider theme={MikeTheme}>
+     
         <Stack
           direction="column"
           sx={{ width: "100vw", backgroundColor: "#808184" }}
@@ -99,7 +99,7 @@ const MikeInfo = () => {
             </Button>
           </Box>
         </Stack>
-      </ThemeProvider>
+      
     );
 }
 

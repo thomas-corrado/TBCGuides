@@ -13,7 +13,7 @@ const ComeJoinUs = () => {
     }, []);
 
     return (
-      <ThemeProvider theme={joinTheme}>
+      
         <Box>
           <Box className="come-join-us-outer-box">
             <Stack
@@ -41,7 +41,7 @@ const ComeJoinUs = () => {
             </Stack>
           </Box>
         </Box>
-      </ThemeProvider>
+     
     );
 }
 
