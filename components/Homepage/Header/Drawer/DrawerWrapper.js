@@ -28,7 +28,7 @@ const DrawerWrapper = ({ isOpen, pages }) => {
                 <Typography
                   textTransform="uppercase"
                   textAlign="center"
-                  variant="h4"
+                  variant="h4_antonio"
                   className="drawer-wrapper-buttons"
                   color={pages.includes("home") ? "secondary" : "tbcblue"}
                 >

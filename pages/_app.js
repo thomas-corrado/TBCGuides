@@ -104,6 +104,11 @@ const theme = createTheme({
       lineHeight: "calc(3.2rem + 1.3vw)",
       fontFamily: ["belda-normal"].join(","),
     },
+    h4_antonio: {
+      fontSize: "calc(1.8rem + 1.5vw)",
+      lineHeight: "calc(3.2rem + 1.3vw)",
+      fontFamily: ["Antonio"].join(","),
+    },
     h5: {
       fontSize: "calc(1.4rem + .7vw)",
       lineHeight: "calc(1.55rem + .7vw)",
@@ -129,8 +134,9 @@ const theme = createTheme({
     },
     h2_about: {
       fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(1.5rem + 2.5vw)",
-      lineHeight: "calc(1.5rem + 2.5vw)",
+      fontSize: "calc(2.5rem + 1.5vw)",
+      lineHeight: "calc(2.5rem + 1.5vw)",
+     
     },
     h3_about: {
       fontFamily: ["belda-normal"].join(","),
@@ -196,7 +202,8 @@ const theme = createTheme({
         },
       },
     },
-        MuiIconButton: {
+
+    MuiIconButton: {
       defaultProps: {
         // The props to change the default for.
         disableRipple: true, // No more ripple, on the whole application 💣!
@@ -268,6 +275,9 @@ const theme = createTheme({
           "& .MuiPickersCalendarHeader-label": {
             fontFamily: "belda-normal",
           },
+          "& .MuiButtonBase": {
+            backgroundColor: "green",
+          },
         },
       },
     },
@@ -278,6 +288,27 @@ const theme = createTheme({
             fontFamily: "belda-normal",
             backgroundColor: "red",
           },
+        },
+      },
+      MuiButtonBase: {
+        defaultProps: {
+          fontFamily: ["belda-normal"].join(","),
+        },
+        styleOverrides: {
+          root: {
+            backgroundColor: "red",
+            fontFamily: ["belda-normal"].join(","),
+          },
+        },
+      },
+    },
+    MuiDialogActions: {
+      styleOverrides: {
+        root: {
+          "& .MuiButton-text": {
+            backgroundColor: 'black', 
+            fontFamily: ["belda-normal"].join(","),
+          }
         },
       },
     },

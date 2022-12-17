@@ -62,10 +62,11 @@ const Suggestion = () => {
                 disableTouchRipple
                 variant="contained"
                 color="primary"
-                sx={{ borderRadius: 0, maxWidth: "70vw" }}
+                sx={{ maxWidth: "70vw" }}
                 onClick={() => router.push("reservations")}
               >
                 <Typography
+                  
                   color="secondary"
                   variant="h3_about"
                   mt={2}

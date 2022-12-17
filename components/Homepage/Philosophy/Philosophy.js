@@ -18,7 +18,7 @@ const Philosophy = () => {
           container
           direction="row"
           rowSpacing={4}
-          mt={{ xs: 4, sm: 4, lg: 16 }}
+          mt={{ xs: 2, sm: 2, lg: 16 }}
           mb={{ xs: 8, sm: 8, lg: 20 }}
         >
           <Grid item container lg={7} md={12} sm={12} xs={12}>

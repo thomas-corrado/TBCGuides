@@ -27,6 +27,7 @@ const MikeInfo = () => {
           mt={{ xs: 4, sm: 4, lg: 6 }}
           mb={{ xs: 4, sm: 4, lg: 6 }}
           ml={{ xs: 4, md: 8 }}
+          sx={{ width: "80vw"}}
         >
           Touring Led by Mike Blatt
         </Typography>
@@ -62,7 +63,7 @@ const MikeInfo = () => {
         <Box
           ml={{ xs: 4, md: 8 }}
           mt={{ xs: 4, sm: 4, lg: 6 }}
-          mb={8}
+          mb={6}
           sx={{ width: { xs: "80vw", sm: "90vw", md: "55vw" } }}
         >
           <Typography mb={4} variant="h3" color="primary" data-aos="fade-up">

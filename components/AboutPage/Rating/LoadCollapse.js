@@ -2,7 +2,7 @@ import { Button, Typography, Box } from "@mui/material";
 
 const LoadCollapse = ({ title, show, setShow }) => {
   return (
-    <Box mt={5} mb={6} >
+    <Box mt={5} mb={6} ml={{ xs: 1, sm: 0}}>
       <Button
         onClick={() => setShow(!show)}
         variant="contained"

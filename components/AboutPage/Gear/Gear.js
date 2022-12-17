@@ -1,5 +1,4 @@
 import { Stack, Box, Typography } from "@mui/material";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -45,17 +44,3 @@ const Gear = () => {
 }
 
 export default Gear 
-
-const GearTheme = createTheme({
-  typography: {
-    h3: {
-      fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(2.0rem + 2vw)",
-    },
-    h5: {
-      fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(1rem + 1vw)",
-      lineHeight: "calc(2.4rem + 1.6vw)",
-    },
-  },
-});
