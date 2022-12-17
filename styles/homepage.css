@@ -1,30 +1,9 @@
-.introduction-header {
-  font-family: belda-normal, sans-serif;
-  color: white; 
-}
-
-.introduction-description-text {
-  font-family: belda-normal, sans-serif;
-  color: white; 
-  font-style: italic;
-}
-
 .homepage-header-stack {
   width: 100vw;
   height: 50rem;
   position: relative; 
   overflow: hidden;
   justify-content: space-between;
-}
-
-.homepage-header-box {
-  position: relative;
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
 }
 
 .homepage-text-box {
@@ -35,14 +14,6 @@
   margin: 0;  
 }
 
-.compressed-tbc-logo {
-  flex-grow: 1;
-  font-family: 'Antonio', sans-serif;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 4.5rem;
-}
-
 .tbc-logo {
   font-family: 'Antonio', sans-serif;
   font-weight: 700;
@@ -50,83 +21,9 @@
   font-size: 5rem;
 }
 
-.page-links {
-  font-family: 'Antonio', sans-serif;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 4rem;
-}
-
-.michael-image-box-one {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100vw;
-    height: calc(50rem - (30rem - 20vw));
-    overflow: hidden;
-}
-
-.michael-image-box-two {
-    width: 80vw; 
-  height: calc(50rem - (30rem - 20vw)); 
-  position: relative; 
-}
-
-.testimonial-outer-box {
-  display: flex; 
-  position: relative; 
-  background-color: white; 
-}
-
-.testimonial-inner-box {
-  opacity: .2;
-}
-
-.testimonial-stack {
-  width: 100vw; 
-  font-family: belda-normal, sans-serif; 
-  z-index: 1;
-}
-
-.testimonial-title-text {
-    width: 100vw; 
-    text-align: center;
-    font-family: belda-normal, sans-serif;
-}
-
-.testimonial-description-text {
-    display:flex; 
-    align-items: center;
-    font-family: belda-normal, sans-serif;
-    text-align: center;
-}
-
 .activity-title-text {
     font-family: belda-normal, sans-serif;
   color: black; 
-}
-
-.activity-description-text {
-    font-family: belda-normal, sans-serif;
-    color: black;
-    display: inline;
-    flex-wrap: wrap;
-    width: calc(60vw + 4rem);
-}
-
-.activity-description-box {
-    background-color: #d8d8d8; 
-            display: flex; 
-            justify-content: center; 
-            width: 100vw; 
-            padding-left: 1.5vw; 
-}
-
-.activity-box {
-   background-color: #d8d8d8; 
-        width: 100vw; 
-        display: flex; 
-        justify-content: center
 }
 
 .contact-item {
@@ -174,34 +71,6 @@
 
 .hamburger-icon {
   z-index: 4;
-}
-
-.stepper-button{
-  font-family: belda-normal, sans-serif;
-  color: black
-}
-
-.image-and-divider-stack {
-  position: relative; 
-            left: 10vw; 
-            width: 90vw; 
-}
-
-.image-and-divider-outer-box {
-  display: flex;
-  width: 100vw;
-  height: auto;
-  position: relative;
-  justify-content: center;
-}
-
-.divider-wrapper-box {
-  height: 2.5rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0; 
 }
 
 @font-face {

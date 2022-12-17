@@ -1,20 +1,19 @@
 import { Box, Typography, Stack, Rating, Grid } from "@mui/material";
 import StarRateIcon from "@mui/icons-material/StarRate";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const Reviews = ({ name, date, description}) => {
     return (
-      <ThemeProvider theme={ReviewTheme}>
+      
         <Stack
           direction="row"
           ml={{ xs: 1, sm: 1, md: 0 }}
         >
           <Grid container direction="row">
             <Grid item container direction="column" lg={4} md={4} sm={3} xs={4}>
-              <Typography variant="h3" mb={1}>
+              <Typography variant="h3_about" mb={1}>
                 {name}
               </Typography>
-              <Typography variant="h5">{date}</Typography>
+              <Typography variant="h5_about">{date}</Typography>
             </Grid>
             <Grid item container direction="column" lg={8} md={8} sm={9} xs={8}>
               <Box ml={{ xs: 1, sm: 0 }}>
@@ -28,7 +27,7 @@ const Reviews = ({ name, date, description}) => {
                     },
                   }}
                   icon={
-                    <StarRateIcon fontSize="5.5rem" sx={{ color: "black" }} />
+                    <StarRateIcon fontSize="5.5rem" color="secondary" />
                   }
                 />
               </Box>
@@ -40,7 +39,7 @@ const Reviews = ({ name, date, description}) => {
                 }}
               >
                 <Typography
-                  variant="h6"
+                  variant="h6_about"
                   sx={{ width: "95%"}}
                   mt={1}
                   ml={{ xs: 0, sm: 0, md: 1}}
@@ -51,28 +50,8 @@ const Reviews = ({ name, date, description}) => {
             </Grid>
           </Grid>
         </Stack>
-      </ThemeProvider>
+     
     );
 }
 
 export default Reviews
-
-const ReviewTheme = createTheme({
-  typography: {
-    h3: {
-      fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(1.5rem + 1.2vw)",
-      lineHeight: "calc(2rem + 1.2vw)",
-    },
-    h5: {
-      fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(.7rem + 1vw)",
-      lineHeight: "calc(.7rem + 1vw)",
-    },
-    h6: {
-      fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(.75rem + 1vw)",
-      lineHeight: "calc(1.1rem + 1.4vw)",
-    },
-  },
-});

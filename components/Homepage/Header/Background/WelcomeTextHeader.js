@@ -2,9 +2,8 @@ import { Typography, Box, Stack } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Link from "next/link";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+import "aos/dist/aos.css";
 import { useEffect } from "react";
-// ..
 
 const WelcomeTextHeader = () => {
   useEffect(() => {
@@ -12,7 +11,7 @@ const WelcomeTextHeader = () => {
   }, []);
 
   return (
-    <ThemeProvider theme={welcomeTextTheme}>
+    
       <Stack
         direction="column"
         spacing={2}
@@ -27,7 +26,7 @@ const WelcomeTextHeader = () => {
             justifyContent: "left",
           }}
         >
-          <Typography variant="h2" color="primary">
+          <Typography variant="h1" color="primary">
             Welcome to the Upper Valley&rsquo;s Premiere Kayak, Ice, and Fly
             Fishing Guide Service
           </Typography>
@@ -41,7 +40,7 @@ const WelcomeTextHeader = () => {
         >
           <Link href="/reservations">
             <Typography
-              variant="h4"
+              variant="h5"
             
               color="primary"
             >
@@ -50,28 +49,8 @@ const WelcomeTextHeader = () => {
           </Link>
         </Box>
       </Stack>
-    </ThemeProvider>
+   
   );
 };
 
 export default WelcomeTextHeader;
-
-const welcomeTextTheme = createTheme({
-  typography: {
-    fontFamily: ["belda-normal"].join(","),
-    h2: {
-      fontSize: "calc(2.2rem + 1.3vw)",
-      lineHeight: "calc(2.5rem + 1.3vw)",
-    },
-    h4: {
-      fontSize: "calc(1.4rem + .7vw)",
-      lineHeight: "calc(1.55rem + .7vw)",
-      textDecoration: 'underline'
-    },
-  },
-  palette: {
-    primary: {
-      main: "#FFFFFF",
-    },
-  },
-});

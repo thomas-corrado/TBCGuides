@@ -1,13 +1,9 @@
 import { Box, Stack, Rating, Typography } from "@mui/material";
 import StarRateIcon from "@mui/icons-material/StarRate";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-
 
 const RatingWrapper = () => {
 
-
   return (
-    <ThemeProvider theme={RatingTheme}>
       <Box
         sx={{ width: "100vw", display: "flex", justifyContent: "left" }}
         
@@ -34,14 +30,14 @@ const RatingWrapper = () => {
                   },
                 }}
                 icon={
-                  <StarRateIcon fontSize="5.5rem" sx={{ color: "black" }} />
+                  <StarRateIcon color="secondary" fontSize="5.5rem"  />
                 }
               />
-              <Typography variant="h1">5</Typography>
+              <Typography variant="h1_about">5</Typography>
             </Stack>
 
             <Typography
-              variant="h2"
+              variant="h2_about"
               ml={{ xs: 1, sm: 1, md: 2, lg: 4 }}
               mt={4}
               mb={{ xs: 5, sm: 5, md: 0 }}
@@ -51,44 +47,10 @@ const RatingWrapper = () => {
           </Stack>
         </Box>
       </Box>
-    </ThemeProvider>
+    
   );
 };
 
 export default RatingWrapper;
-
-const RatingTheme = createTheme({
-  typography: {
-    h1: {
-      fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(3.5rem + 5vw)",
-      lineHeight: "3rem",
-    },
-    h2: {
-      fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(1.5rem + 2.5vw)",
-      lineHeight: "calc(1.5rem + 2.5vw)",
-    },
-  },
-  palette: {
-    primary: {
-      main: "#000000",
-    },
-    secondary: {
-      main: "#808080",
-    },
-  },
-  components: {
-    MuiIcon: {
-      styleOverrides: {
-        root: {
-          "	.MuiRating-icon": {
-            padding: "-2px",
-          },
-        },
-      },
-    },
-  },
-});
 
 

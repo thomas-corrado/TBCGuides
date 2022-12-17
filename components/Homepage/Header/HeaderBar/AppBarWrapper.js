@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import { AppBar, Box, Toolbar, Container } from "@mui/material";
+import { AppBar, Box, Toolbar } from "@mui/material";
 import TBCLogo from "./TBCGuidesHeaderLogo/TBCLogo";
 import CompressedTBCLogo from "./TBCGuidesHeaderLogo/CompressedTBCLogo";
 import DrawerWrapper from "../Drawer/DrawerWrapper";
@@ -22,10 +22,10 @@ const AppBarWrapper = ( {pages, colorOne, colorTwo}) => {
       >
         <Toolbar disableGutters>
           {/* Desktop View Logo */}
-          <TBCLogo />
+          <TBCLogo pages={pages} />
 
           {/* Drawer View Logo */}
-          <CompressedTBCLogo />
+          <CompressedTBCLogo pages={pages} />
 
           <Box sx={{ display: { xs: "flex", md: "none" } }} mr={2}>
             {/* Drawer View Hamburger Icon */}

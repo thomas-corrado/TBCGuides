@@ -14,32 +14,8 @@
      width: 90vw;
 }
 
-.reservation-title {
-    text-align: center;
-}
-
-
-.reservtion-grid-item {
-    background-color: white;
-    padding: 3rem
-}
-
 .reservation-text-field {
     width: 15rem; 
     background-color: white;
-    
-}
-
-.reservation-form-button {
-    background-color: black;
-    color: white; 
-    width: 7rem
-    
-}
-
-.reservation-form-button:hover {
-    background-color: #596d90;
-    color: white; 
-    width: 7rem
     
 }

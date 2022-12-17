@@ -1,5 +1,5 @@
 
-import { Stack, Grid, Box, Button, Typography } from "@mui/material";
+import { Grid, Box } from "@mui/material";
 import RatingWrapper from "./RatingWrapper";
 import Reviews from "./Reviews";
 import LoadCollapse from "./LoadCollapse";

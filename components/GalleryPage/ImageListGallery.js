@@ -1,8 +1,14 @@
-// import Masonry from "@mui/lab/Masonry";
-import { Box, Stack, ImageList, ImageListItem } from "@mui/material";
+import { Box,  ImageList, ImageListItem } from "@mui/material";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const ImageListGallery = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <Box
       mt={4}
@@ -22,7 +28,6 @@ const ImageListGallery = () => {
       >
         <ImageList
           cols={2}
-          
           sx={{
             overflow: "hidden",
             width: "90vw",
@@ -34,7 +39,7 @@ const ImageListGallery = () => {
               sx={{
                 width: { xs: "90vw", sm: "100%", md: "100%", lg: "100%" },
               }}
-             
+              data-aos="fade-up"
             >
               <ImageListItem>
                 <Image

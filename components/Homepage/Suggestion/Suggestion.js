@@ -1,6 +1,5 @@
-import { Stack, Grid, Typography, Button, Box } from "@mui/material";
+import { Stack, Typography, Button, Box } from "@mui/material";
 import Image from "next/image";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { useRouter } from "next/router";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -54,22 +53,22 @@ const Suggestion = () => {
               }}
             >
               <Typography
-                variant="h2"
-                color="secondary"
-                sx={{ textAlign: "center" }}
+                color="primary"
+                variant='h2'
               >
                 Ready to get started?
               </Typography>
               <Button
                 disableTouchRipple
                 variant="contained"
-                color="secondary"
-                sx={{ borderRadius: 0, maxWidth: "70vw" }}
+                color="primary"
+                sx={{ maxWidth: "70vw" }}
                 onClick={() => router.push("reservations")}
               >
                 <Typography
-                  variant="h4"
-                  color="black"
+                  
+                  color="secondary"
+                  variant="h3_about"
                   mt={2}
                   mb={2}
                   ml={2}

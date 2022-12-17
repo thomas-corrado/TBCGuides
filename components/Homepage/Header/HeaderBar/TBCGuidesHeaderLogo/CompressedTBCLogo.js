@@ -1,16 +1,17 @@
 import { Typography } from "@mui/material";
 
-const CompressedTBCLogo = () => {
+const CompressedTBCLogo = ({ pages}) => {
     return (
       <Typography
-        variant="h1"
-        component="a"
+       
         className="compressed-tbc-logo"
         sx={{
           display: { xs: "flex", md: "none" },
           fontSize: "4.5rem",
+          lineHeight: "4.5rem",
+          fontFamily: "Antonio",
         }}
-        color="primary"
+        color={pages.includes("home") ? "secondary" : "primary"}
       >
         TBC Guides
       </Typography>

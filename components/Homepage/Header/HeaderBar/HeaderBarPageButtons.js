@@ -22,13 +22,21 @@ const HeaderBarPageButtons = ({ pages, position }) => {
         <Stack direction="row" spacing={2}>
           {pages.map((page) => (
             <Button
+              disableRipple
               key={page}
               onClick={() => router.push(routerPushFunc(page))}
+              sx={{
+                "&:hover": {
+                  backgroundColor: "transparent",
+                },
+              }}
             >
               <Typography
+                color={pages.includes('home') ? 'secondary' : 'primary'}
                 sx={{
                   display: { xs: "none", md: "flex" },
-                  fontSize: '3rem'
+                  fontSize: "3rem",
+                  fontFamily: "Antonio",
                 }}
               >
                 {page}
@@ -37,7 +45,6 @@ const HeaderBarPageButtons = ({ pages, position }) => {
           ))}
         </Stack>
       </Box>
-      // </ThemeProvider>
     );
 };
 

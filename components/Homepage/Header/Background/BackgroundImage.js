@@ -1,9 +1,8 @@
 import Image from "next/image";
 import { Box } from "@mui/system";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+import "aos/dist/aos.css"; 
 import { useEffect } from "react";
-// ..
 
 
 const BackgroundImage = () => {
