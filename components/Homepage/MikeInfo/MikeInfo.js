@@ -81,9 +81,7 @@ const MikeInfo = () => {
             disableRipple
             variant="contained"
             color="mikesgrey"
-            sx={{
-              borderRadius: "0",
-            }}
+
             onClick={() =>
               router.push(
                 "https://hub.jacksonkayak.com/team-jk/kayak-fishing-regional-team/michael-blatt/"

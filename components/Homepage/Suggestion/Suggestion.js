@@ -54,11 +54,7 @@ const Suggestion = () => {
             >
               <Typography
                 color="primary"
-                sx={{
-                  textAlign: "center",
-                  fontSize: "4rem",
-                  fontFamily: "belda-normal",
-                }}
+                variant='h2'
               >
                 Ready to get started?
               </Typography>
@@ -70,13 +66,8 @@ const Suggestion = () => {
                 onClick={() => router.push("reservations")}
               >
                 <Typography
-                  
-                  color="black"
-                  sx={{
-                    textAlign: "center",
-                    fontSize: "2rem",
-                    fontFamily: "belda-normal",
-                  }}
+                  color="secondary"
+                  variant="h3_about"
                   mt={2}
                   mb={2}
                   ml={2}

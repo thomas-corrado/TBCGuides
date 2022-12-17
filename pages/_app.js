@@ -16,6 +16,71 @@ import {
   createTheme,
 } from "@mui/material/styles";
 
+const StyledLoadingScreen = styled("div", {
+  width: "100vw",
+  height: "100vh",
+  backgroundColor: "#fff",
+  position: "absolute",
+  zIndex: "8",
+  position: "fixed",
+});
+
+function Loading() {
+  const router = useRouter();
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const handleStart = (url) => url !== router.asPath && setLoading(true);
+    const handleComplete = (url) =>
+      (url === router.asPath || router.asPath === "/") &&
+      setTimeout(() => {
+        setLoading(false);
+      }, 950);
+
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleComplete);
+    router.events.on("routeChangeError", handleComplete);
+
+    return () => {
+      router.events.off("routeChangeStart", handleStart);
+      router.events.off("routeChangeComplete", handleComplete);
+      router.events.off("routeChangeError", handleComplete);
+    };
+  });
+
+  return (
+    loading && (
+      <div>
+        <StyledLoadingScreen />
+        <Box sx={{ width: "100%", top: "50vh", position: "absolute" }}>
+          <CircularProgress sx={{ color: "black" }} />
+        </Box>
+      </div>
+    )
+  );
+}
+
+function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const loader = document.getElementById("globalLoader");
+      if (loader) loader.style.display = "none";
+    }
+  }, []);
+
+  return (
+    <>
+      <ThemeProvider theme={theme}>
+        <CssBaseline/>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
+  );
+}
+
+export default MyApp;
+
 const theme = createTheme({
   typography: {
     h1: {
@@ -24,10 +89,10 @@ const theme = createTheme({
       fontFamily: ["belda-normal"].join(","),
     },
     h2: {
-      fontSize: "calc(1.4rem + .7vw)",
-      lineHeight: "calc(1.55rem + .7vw)",
-      textDecoration: "underline",
+      fontSize: "calc(3.5rem + 1.3vw)",
+      lineHeight: "calc(3.5rem + 1.3vw)",
       fontFamily: ["belda-normal"].join(","),
+      textAlign: "center",
     },
     h3: {
       fontSize: "calc(1.4rem + 1vw)",
@@ -37,6 +102,12 @@ const theme = createTheme({
     h4: {
       fontSize: "calc(1.8rem + 1.5vw)",
       lineHeight: "calc(3.2rem + 1.3vw)",
+      fontFamily: ["belda-normal"].join(","),
+    },
+    h5: {
+      fontSize: "calc(1.4rem + .7vw)",
+      lineHeight: "calc(1.55rem + .7vw)",
+      textDecoration: "underline",
       fontFamily: ["belda-normal"].join(","),
     },
     h6: {
@@ -50,6 +121,46 @@ const theme = createTheme({
     h8: {
       fontSize: "18px",
       fontFamily: ["belda-normal"].join(","),
+    },
+    h1_about: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "calc(3.5rem + 5vw)",
+      lineHeight: "3rem",
+    },
+    h2_about: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "calc(1.5rem + 2.5vw)",
+      lineHeight: "calc(1.5rem + 2.5vw)",
+    },
+    h3_about: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "calc(1.5rem + 1.2vw)",
+      lineHeight: "calc(2rem + 1.2vw)",
+    },
+    h4_about: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "calc(1rem + 1vw)",
+      lineHeight: "calc(2.4rem + 1.6vw)",
+    },
+    h5_about: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "calc(.7rem + 1vw)",
+      lineHeight: "calc(.7rem + 1vw)",
+    },
+    h6_about: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "calc(.75rem + 1vw)",
+      lineHeight: "calc(1.1rem + 1.4vw)",
+    },
+    h2_reservations: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "3.5rem",
+      lineHeight: "3.5rem",
+    },
+    h6_reservations: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "1.5rem",
+      lineHeight: "2.5rem",
     },
   },
   palette: {
@@ -72,6 +183,19 @@ const theme = createTheme({
     },
   },
   components: {
+    MuiButton: {
+      defaultProps: {
+        disableRipple: true,
+        disableTouchRipple: true,
+        disableElevation: true,
+        disableFocusRipple: true,
+      },
+      styleOverrides: {
+        root: {
+          borderRadius: "0px",
+        },
+      },
+    },
     MuiDrawer: {
       styleOverrides: {
         paper: {
@@ -144,68 +268,3 @@ const theme = createTheme({
     },
   },
 });
-
-const StyledLoadingScreen = styled("div", {
-  width: "100vw",
-  height: "100vh",
-  backgroundColor: "#fff",
-  position: "absolute",
-  zIndex: "8",
-  position: "fixed",
-});
-
-function Loading() {
-  const router = useRouter();
-
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    const handleStart = (url) => url !== router.asPath && setLoading(true);
-    const handleComplete = (url) =>
-      (url === router.asPath || router.asPath === "/") &&
-      setTimeout(() => {
-        setLoading(false);
-      }, 950);
-
-    router.events.on("routeChangeStart", handleStart);
-    router.events.on("routeChangeComplete", handleComplete);
-    router.events.on("routeChangeError", handleComplete);
-
-    return () => {
-      router.events.off("routeChangeStart", handleStart);
-      router.events.off("routeChangeComplete", handleComplete);
-      router.events.off("routeChangeError", handleComplete);
-    };
-  });
-
-  return (
-    loading && (
-      <div>
-        <StyledLoadingScreen />
-        <Box sx={{ width: "100%", top: "50vh", position: "absolute" }}>
-          <CircularProgress sx={{ color: "black" }} />
-        </Box>
-      </div>
-    )
-  );
-}
-
-function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const loader = document.getElementById("globalLoader");
-      if (loader) loader.style.display = "none";
-    }
-  }, []);
-
-  return (
-    <>
-      <ThemeProvider theme={theme}>
-        <CssBaseline/>
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </>
-  );
-}
-
-export default MyApp;

@@ -1,6 +1,6 @@
 import { Box, Stack } from "@mui/material";
 import NavigationBarNonHome from "../General/NavigationBarNonHome";
-import ContactInfo from "../Homepage/Contact/ContactInfo";
+import ContactInfo from "../General/Contact/ContactInfo";
 import ReservationForm from "./ReservationForm";
 
 const ReservationsPageComponent = () => {

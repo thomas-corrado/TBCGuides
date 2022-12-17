@@ -11,10 +11,10 @@ const Reviews = ({ name, date, description}) => {
         >
           <Grid container direction="row">
             <Grid item container direction="column" lg={4} md={4} sm={3} xs={4}>
-              <Typography variant="h3" mb={1}>
+              <Typography variant="h3_about" mb={1}>
                 {name}
               </Typography>
-              <Typography variant="h5">{date}</Typography>
+              <Typography variant="h5_about">{date}</Typography>
             </Grid>
             <Grid item container direction="column" lg={8} md={8} sm={9} xs={8}>
               <Box ml={{ xs: 1, sm: 0 }}>
@@ -28,7 +28,7 @@ const Reviews = ({ name, date, description}) => {
                     },
                   }}
                   icon={
-                    <StarRateIcon fontSize="5.5rem" sx={{ color: "black" }} />
+                    <StarRateIcon fontSize="5.5rem" color="secondary" />
                   }
                 />
               </Box>
@@ -40,7 +40,7 @@ const Reviews = ({ name, date, description}) => {
                 }}
               >
                 <Typography
-                  variant="h6"
+                  variant="h6_about"
                   sx={{ width: "95%"}}
                   mt={1}
                   ml={{ xs: 0, sm: 0, md: 1}}

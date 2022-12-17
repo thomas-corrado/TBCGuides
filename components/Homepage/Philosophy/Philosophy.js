@@ -57,7 +57,6 @@ const Philosophy = () => {
                 <Typography
                   variant="h6"
                   color="primary"
-                  
                 >
                   Learn more about what a <br /> day with TBC Guides is like.
                 </Typography>
@@ -69,9 +68,7 @@ const Philosophy = () => {
                 sx={{
                   borderRadius: "0",
                   padding: "1rem",
-                  "&:hover" : {
-                    backgroundColor: "white"
-                  }
+                 
                 }}
                 onClick={() => router.push("/about")}
               >

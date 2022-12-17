@@ -34,14 +34,14 @@ const RatingWrapper = () => {
                   },
                 }}
                 icon={
-                  <StarRateIcon fontSize="5.5rem" sx={{ color: "black" }} />
+                  <StarRateIcon color="secondary" fontSize="5.5rem"  />
                 }
               />
-              <Typography variant="h1">5</Typography>
+              <Typography variant="h1_about">5</Typography>
             </Stack>
 
             <Typography
-              variant="h2"
+              variant="h2_about"
               ml={{ xs: 1, sm: 1, md: 2, lg: 4 }}
               mt={4}
               mb={{ xs: 5, sm: 5, md: 0 }}

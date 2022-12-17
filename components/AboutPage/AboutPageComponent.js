@@ -1,7 +1,7 @@
 import { Box, Stack } from "@mui/material";
 import NavigationBarNonHome from "../General/NavigationBarNonHome";
 import VideoAboutPage from "./VideoAboutPage";
-import ContactInfo from "../Homepage/Contact/ContactInfo";
+import ContactInfo from "../General/Contact/ContactInfo";
 import ComeJoinUs from "./ComeJoinUs";
 import RatingMain from "./Rating/RatingMain";
 import Gear from "./Gear/Gear";

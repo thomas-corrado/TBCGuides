@@ -15,8 +15,8 @@ const LoadCollapse = ({ title, show, setShow }) => {
           },
         }}
       >
-        <Typography color="black">
-          {title}{" "}
+        <Typography variant="h8" color="secondary">
+          {title}
         </Typography>
       </Button>
     </Box>

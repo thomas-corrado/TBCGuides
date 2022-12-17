@@ -41,7 +41,7 @@ const WelcomeTextHeader = () => {
         >
           <Link href="/reservations">
             <Typography
-              variant="h2"
+              variant="h5"
             
               color="primary"
             >

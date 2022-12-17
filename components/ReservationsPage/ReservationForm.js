@@ -164,17 +164,17 @@ const ReservationForm = () => {
         mt={5}
         data-aos="fade-up"
       >
-        <Typography variant="h4" className="reservation-title" mt={5} mb={1}>
+        <Typography
+          variant="h2_reservations"
+          color="secondary"
+          mt={5}
+          mb={1}
+        >
           Make a Reservation
         </Typography>
         <SuccessDialog show={show} setShow={setShow} />
         <form>
-          <Grid
-            container
-            columnSpacing={3}
-            mb={3}
-           
-          >
+          <Grid container columnSpacing={3} mb={3}>
             {fields.map((item) => {
               return (
                 <Grid
@@ -206,7 +206,9 @@ const ReservationForm = () => {
                           item.functionName(
                             item.label !== "Preferred Date"
                               ? e.target.value
-                              : e._d
+                              : e !== null
+                              ? e._d
+                              : ""
                           )
                         }
                         sx={{ padding: "1rem" }}
@@ -235,11 +237,15 @@ const ReservationForm = () => {
           </Grid>
           <Box mb={3}>
             <Button
+              variant="contained"
+              color="secondary"
               onClick={() =>
                 consolidateData(varName, varEmail, varPhone, varGuests, varDate)
               }
             >
-              <Typography variant="h6">Submit</Typography>
+              <Typography variant="h6_reservations" color="primary">
+                Submit
+              </Typography>
             </Button>
           </Box>
         </form>
