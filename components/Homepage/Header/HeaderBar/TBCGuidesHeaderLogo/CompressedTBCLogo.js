@@ -3,7 +3,6 @@ import { Typography } from "@mui/material";
 const CompressedTBCLogo = ({ pages}) => {
     return (
       <Typography
-       
         className="compressed-tbc-logo"
         sx={{
           display: { xs: "flex", md: "none" },

@@ -16,7 +16,6 @@ const RatingMain = () => {
           AOS.init();
         }, []);
 
-
     return (
       <Box
         sx={{ width: "100vw", display: "flex", justifyContent: "center" }}

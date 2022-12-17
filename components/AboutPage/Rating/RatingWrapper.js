@@ -4,10 +4,7 @@ import StarRateIcon from "@mui/icons-material/StarRate";
 const RatingWrapper = () => {
 
   return (
-      <Box
-        sx={{ width: "100vw", display: "flex", justifyContent: "left" }}
-        
-      >
+      <Box sx={{ width: "100vw", display: "flex", justifyContent: "left" }} >
         <Box>
           <Stack direction="column">
             <Stack

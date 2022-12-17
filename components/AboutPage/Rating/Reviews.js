@@ -3,7 +3,6 @@ import StarRateIcon from "@mui/icons-material/StarRate";
 
 const Reviews = ({ name, date, description}) => {
     return (
-      
         <Stack
           direction="row"
           ml={{ xs: 1, sm: 1, md: 0 }}
@@ -50,7 +49,6 @@ const Reviews = ({ name, date, description}) => {
             </Grid>
           </Grid>
         </Stack>
-     
     );
 }
 

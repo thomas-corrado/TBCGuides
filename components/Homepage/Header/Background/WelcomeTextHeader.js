@@ -1,5 +1,4 @@
 import { Typography, Box, Stack } from "@mui/material";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -11,7 +10,6 @@ const WelcomeTextHeader = () => {
   }, []);
 
   return (
-    
       <Stack
         direction="column"
         spacing={2}
@@ -41,7 +39,6 @@ const WelcomeTextHeader = () => {
           <Link href="/reservations">
             <Typography
               variant="h5"
-            
               color="primary"
             >
               Make a Reservation
@@ -49,7 +46,6 @@ const WelcomeTextHeader = () => {
           </Link>
         </Box>
       </Stack>
-   
   );
 };
 
