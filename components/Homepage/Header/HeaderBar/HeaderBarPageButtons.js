@@ -1,9 +1,4 @@
-import {
-  Box,
-  Button,
-  Typography,
-  Stack
-} from "@mui/material";
+import { Box, Button, Typography, Stack } from "@mui/material";
 import { useRouter } from "next/router";
 import routerPushFunc from "../../../General/routerPushFunction";
 

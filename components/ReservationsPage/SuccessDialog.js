@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Stack, Button, Dialog, DialogActions, DialogContent, DialogContentText } from "@mui/material";
+import { Stack, Button, Dialog, DialogActions, DialogContent, DialogContentText, Typography } from "@mui/material";
 import DoneIcon from "@mui/icons-material/Done";
 
 const SuccessDialog = ({ show, setShow }) => {
@@ -39,7 +39,9 @@ const SuccessDialog = ({ show, setShow }) => {
       </DialogContent>
 
       <DialogActions>
-        <Button onClick={handleClose}>Close</Button>
+        <Button variant="contained" color="secondary" onClick={handleClose}>
+          <Typography variant="h8" color='primary'>Close</Typography>
+        </Button>
       </DialogActions>
     </Dialog>
   );

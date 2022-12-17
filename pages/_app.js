@@ -85,7 +85,6 @@ const theme = createTheme({
       fontFamily: ["belda-normal"].join(","),
       fontSize: "calc(2.5rem + 1.5vw)",
       lineHeight: "calc(2.5rem + 1.5vw)",
-     
     },
     h3_about: {
       fontFamily: ["belda-normal"].join(","),
@@ -154,8 +153,7 @@ const theme = createTheme({
 
     MuiIconButton: {
       defaultProps: {
-        // The props to change the default for.
-        disableRipple: true, // No more ripple, on the whole application 💣!
+        disableRipple: true,
         disableFocusRipple: true,
       },
       styleOverrides: {
@@ -255,9 +253,16 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           "& .MuiButton-text": {
-            backgroundColor: 'black', 
+            backgroundColor: "black",
             fontFamily: ["belda-normal"].join(","),
-          }
+          },
+        },
+      },
+    },
+    MuiDialogContentText: {
+      styleOverrides: {
+        root: {
+          fontFamily: ["belda-normal"].join(","),
         },
       },
     },

@@ -1,4 +1,3 @@
-// aws-ses.js
 import * as AWS from "aws-sdk";
 import * as nodemailer from "nodemailer";
 AWS.config.update({
@@ -13,10 +12,9 @@ AWS.config.getCredentials(function (error) {
 });
 const ses = new AWS.SES({ apiVersion: "2010-12-01" });
 
-// change this to the "to" email that you want
 const adminMail = "admin@tbcguides.fish";
 const inboxMail = "tbcguides@gmail.com"
-// Create a transporter of nodemailer
+
 const transporter = nodemailer.createTransport({
   SES: ses,
 });
