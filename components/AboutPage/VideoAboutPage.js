@@ -18,6 +18,8 @@ const VideoAboutPage = () => {
             objectFit: "contain",
           }}
           preload="metadata"
+          playsinline
+          poster="https://s3.amazonaws.com/tbcguides.fish/poster.jpg"
         >
           <source
             src="https://s3.amazonaws.com/tbcguides.fish/about-video.mp4"
