@@ -27,13 +27,15 @@ const MadeBy = ({
         </Typography>
         <Stack direction="row" spacing={2}>
           <IconButton
+            aria-label="GitHub Icon"
+            color="primary"
             className="contact-icon-button"
             onClick={() => router.push(`https://github.com/thomas-corrado`)}
-            color="primary"
           >
             <GitHubIcon />
           </IconButton>
           <IconButton
+            aria-label="LinkedIn Icon"
             color="primary"
             className="contact-icon-button"
             onClick={() =>

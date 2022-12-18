@@ -9,7 +9,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="English">
         <Head>
           <meta
             name="google-site-verification"

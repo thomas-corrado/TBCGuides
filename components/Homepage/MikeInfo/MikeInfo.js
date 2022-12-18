@@ -42,7 +42,7 @@ const MikeInfo = () => {
             <Image
               src="https://s3.amazonaws.com/tbcguides.fish/michael-blatt-ice_2.jpg"
               srcSet="https://s3.amazonaws.com/tbcguides.fish/michael-blatt-ice_2.jpg"
-              alt="mike"
+              alt="Mike Blatt holding fish on frozen lake"
               className="complicated-image"
               layout="fill"
             />
@@ -51,7 +51,7 @@ const MikeInfo = () => {
             <Image
               src="https://s3.amazonaws.com/tbcguides.fish/bio-cropped.jpg"
               srcSet="https://s3.amazonaws.com/tbcguides.fish/bio-cropped.jpg"
-              alt="mike"
+              alt="Mike Blatt holding fish in kayak on water"
               className="complicated-image"
               layout="fill"
             />
