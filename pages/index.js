@@ -10,7 +10,16 @@ export default function Home() {
             name="google-site-verification"
             content="EM19wPbtiFI0glqYg6zFRnKZLLSWg5hPKLGg4HmegVI"
           />
-          <title>TBC Guide Services</title>
+          <title>TBC Guides</title>
+          <meta
+            property="og:image"
+            content="https://s3.amazonaws.com/tbcguides.fish/Homepage_2.jpeg"
+          />
+          <meta property="og:title" content="TBC Guides" />
+          <meta
+            property="og:description"
+            content="The Upper Valley&#39;s Premiere Kayak, Ice, and Fly Fishing Guide Service"
+          />
           <meta
             name="viewport"
             content="initial-scale=1, viewport-fit=cover"

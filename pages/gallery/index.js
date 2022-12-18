@@ -10,10 +10,15 @@ export default function GalleryPage() {
           name="viewport"
           content="initial-scale=1, viewport-fit=cover"
         ></meta>
+        <title>Gallery</title>
+        <meta
+          property="og:image"
+          content="https://s3.amazonaws.com/tbcguides.fish/Homepage_2.jpeg"
+        />
         <meta name="theme-color" content="#FFFFFF"></meta>
         <link rel="icon" href="/phishing.ico" />
       </Head>
-      <GalleryPageComponent/>
+      <GalleryPageComponent />
     </div>
   );
 }
