@@ -10,7 +10,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="English">
-        <html lang="English">
+      
           <Head>
             <meta
               name="google-site-verification"
@@ -50,7 +50,7 @@ class MyDocument extends Document {
             <Main />
             <NextScript />
           </body>
-        </html>
+       
       </Html>
     );
   }
