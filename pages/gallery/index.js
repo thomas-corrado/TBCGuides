@@ -13,7 +13,7 @@ export default function GalleryPage() {
         <title>Gallery</title>
         <meta
           property="og:image"
-          content="https://s3.amazonaws.com/tbcguides.fish/Homepage_2.jpeg"
+          content="https://s3.amazonaws.com/tbcguides.fish/fishing-logo.jpg"
         />
         <meta name="theme-color" content="#FFFFFF"></meta>
         <link rel="icon" href="/phishing.ico" />

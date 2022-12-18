@@ -13,7 +13,7 @@ export default function Home() {
           <title>TBC Guides</title>
           <meta
             property="og:image"
-            content="https://s3.amazonaws.com/tbcguides.fish/Homepage_2.jpeg"
+            content="https://s3.amazonaws.com/tbcguides.fish/fishing-logo.jpg"
           />
           <meta property="og:title" content="TBC Guides" />
           <meta
