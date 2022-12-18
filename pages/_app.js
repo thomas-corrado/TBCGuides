@@ -22,6 +22,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline/>
+        
         <Component {...pageProps} />
       </ThemeProvider>
     </>
