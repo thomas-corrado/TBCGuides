@@ -28,6 +28,7 @@ const BusinessHours = () => {
 
         <Stack direction="row" spacing={2} mb={8}>
           <IconButton
+            aria-label="Instagram Icon"
             onClick={() => router.push(`https://www.instagram.com/tbcguides/`)}
             className="contact-icon-button"
             color="primary"
@@ -35,6 +36,7 @@ const BusinessHours = () => {
             <InstagramIcon />
           </IconButton>
           <IconButton
+            aria-label="Facebook Icon"
             color="primary"
             onClick={() =>
               router.push(`https://www.facebook.com/TheBlattCave/`)

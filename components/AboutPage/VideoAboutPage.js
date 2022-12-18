@@ -22,6 +22,7 @@ const VideoAboutPage = () => {
           <source
             src="https://s3.amazonaws.com/tbcguides.fish/about-video.mp4"
             type="video/mp4"
+            alt="Video about TBC Guides"
           />
         </video>
       </Box>
