@@ -22,7 +22,6 @@ function MyApp({ Component, pageProps }) {
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline/>
-        
         <Component {...pageProps} />
       </ThemeProvider>
     </>
@@ -85,7 +84,7 @@ const theme = createTheme({
     h2_about: {
       fontFamily: ["belda-normal"].join(","),
       fontSize: "calc(2.5rem + 1.5vw)",
-      lineHeight: "calc(2.5rem + 1.5vw)",
+      lineHeight: "calc(3rem + 1.5vw)",
     },
     h3_about: {
       fontFamily: ["belda-normal"].join(","),
@@ -130,6 +129,9 @@ const theme = createTheme({
     },
     tbcblue: "#596d90",
     jackson: "#f4bc41",
+    onegreen: {
+      main: "#187f4a",
+    },
     offgrey: {
       main: "#808184",
     },

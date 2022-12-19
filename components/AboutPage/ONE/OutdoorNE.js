@@ -22,7 +22,7 @@ const OutdoorNE = () => {
                 mt={8}
                 mb={{ md: 0, lg: 8 }}
               >
-                <Typography variant="h2_about" mb={3} data-aos="fade-up">
+                <Typography variant="h2_about" mb={2} data-aos="fade-up">
                   Looking for your own kayak?
                 </Typography>
                 <Typography variant="h3_about" data-aos="fade-up">
@@ -40,9 +40,13 @@ const OutdoorNE = () => {
               >
                 <Button
                   data-aos="fade-up"
-                  className="one-button"
-                  variant="outlined"
-                  color="secondary"
+                  variant="contained"
+                  color="onegreen"
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "#146b3e",
+                    },
+                  }}
                 >
                   <Typography
                     variant="h1_about"
