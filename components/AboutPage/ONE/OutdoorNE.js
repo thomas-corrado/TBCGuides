@@ -1,4 +1,5 @@
 import { Typography, Grid, Button, Box } from "@mui/material"
+import { useRouter } from "next/router";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -7,6 +8,8 @@ const OutdoorNE = () => {
      useEffect(() => {
        AOS.init();
      }, []);
+
+     const router = useRouter()
 
     return (
       <>
@@ -47,6 +50,7 @@ const OutdoorNE = () => {
                       backgroundColor: "#146b3e",
                     },
                   }}
+                  onClick={() => router.push("https://outdoornewengland.com/")}
                 >
                   <Typography
                     variant="h1_about"
