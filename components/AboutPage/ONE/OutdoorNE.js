@@ -45,6 +45,7 @@ const OutdoorNE = () => {
                   data-aos="fade-up"
                   variant="contained"
                   color="onegreen"
+                  disableElevation={false}
                   sx={{
                     "&:hover": {
                       backgroundColor: "#146b3e",
