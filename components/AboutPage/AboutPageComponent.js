@@ -5,6 +5,7 @@ import ContactInfo from "../General/Contact/ContactInfo";
 import ComeJoinUs from "./ComeJoinUs";
 import RatingMain from "./Rating/RatingMain";
 import Gear from "./Gear/Gear";
+import OutdoorNE from "./ONE/OutdoorNE";
 
 const AboutPageComponent = () => {
   return (
@@ -17,6 +18,7 @@ const AboutPageComponent = () => {
       </Stack>
       <RatingMain />
       <Gear />
+      <OutdoorNE/>
       <ComeJoinUs />
       <ContactInfo />
     </>

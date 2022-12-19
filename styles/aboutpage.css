@@ -33,5 +33,22 @@
     text-decoration: underline;
 }
 
+.outdoor-box {
+    width: 100vw; 
+    background-color: #b0b5be;
+    justify-content: center;
+    display: flex;
+}
+
+.one-button {
+   
+  
+}
+
+.one-button:hover{
+   
+   background-color: #146b3e;
+}
+
 
 
