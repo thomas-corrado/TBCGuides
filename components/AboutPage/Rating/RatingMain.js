@@ -62,6 +62,13 @@ export default RatingMain
 
 const reviewData = [
   {
+    name: "Lisa R.",
+    date: "December 2022",
+    description:
+      "What an amazing experience with Mike out on the lake ice fishing.  An experienced guide with an uncanny ability to corral our crazy family so we not only survived but caught some fish!  One more check on our bucket list ❤️",
+    grey: true,
+  },
+  {
     name: "Mitch R.",
     date: "November 2021",
     description:
