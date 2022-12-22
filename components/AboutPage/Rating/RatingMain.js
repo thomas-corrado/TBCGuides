@@ -11,10 +11,29 @@ import { useEffect } from "react";
 
 const RatingMain = () => {
     const [show, setShow]=useState(false); 
+    const [showOne, setShowOne] = useState(false); 
+    const [showTwo, setShowTwo] = useState(false);
+
+
+    function counterChange() {
+
+      if ( !showOne && !showTwo) {
+        setShowOne(true)
+      }
+      else if ( showOne && !showTwo) {
+        setShowTwo(true)
+      }
+      else {
+        setShowOne(false)
+        setShowTwo(false);
+      }
+    }
 
         useEffect(() => {
           AOS.init();
         }, []);
+
+        
 
     return (
       <Box
@@ -32,13 +51,10 @@ const RatingMain = () => {
               date="November 2022"
               description="I've been fishing with Mike multiple times and he simply knows the Upper Valley and our fish to a 'T.' He spends enough time on the water to know where a fish will be and what it will bite based on the week, temperature, wind direction, etc. - all kinds of factors. He is a great guide no matter the experience of the angler, as I've seen him teach kids brand new to fishing all the way up to experienced anglers like myself. If you're in the area, hire him to get out on a kayak or on the ice to have a great day, catch fish, and learn some new techniques."
             />
-            {!show && (
-              <LoadCollapse title="Load More" show={show} setShow={setShow} />
-            )}
-            {show && (
+            {showOne && (
               <>
                 <GreyDivider />
-                {reviewData.map((person) => (
+                {reviewDataOne.map((person) => (
                   <>
                     <Reviews
                       key={person.name}
@@ -49,9 +65,31 @@ const RatingMain = () => {
                     {person.grey && <GreyDivider />}
                   </>
                 ))}
-                <LoadCollapse title="Collapse" show={show} setShow={setShow} />
               </>
             )}
+            {showTwo && (
+              <>
+                {reviewDataTwo.map((person) => (
+                  <>
+                    {person.topgrey && <GreyDivider />}
+                    <Reviews
+                      key={person.name}
+                      name={person.name}
+                      date={person.date}
+                      description={person.description}
+                    />
+                    {person.grey && <GreyDivider />}
+                  </>
+                ))}
+              </>
+            )}
+
+            <LoadCollapse
+              title={!showOne || !showTwo ? "Load More" : "Collapse"}
+              show={show}
+              setShow={setShow}
+              counterChange={counterChange}
+            />
           </Grid>
         </Grid>
       </Box>
@@ -60,19 +98,30 @@ const RatingMain = () => {
 
 export default RatingMain
 
-const reviewData = [
+const reviewDataOne = [
+  {
+    name: "Lisa R.",
+    date: "December 2022",
+    description:
+      "What an amazing experience with Mike out on the lake ice fishing.  An experienced guide with an uncanny ability to corral our crazy family so we not only survived but caught some fish!  One more check on our bucket list ❤️",
+    grey: true,
+  },
   {
     name: "Mitch R.",
     date: "November 2021",
     description:
       "Simply put, Mike exceeded all expectations. My girlfriend and I went for a date night and had a blast! (and obviously caught fish!) All equipment was in exceptional condition, everything was communicated effectively and in a way that makes you feel as if you'd been fishing buddies for years. Can't recommend enough and will definitely be bringing a few friend's on another trip at some point!",
-    grey: true,
+    grey: false,
   },
+];
+
+const reviewDataTwo = [
   {
     name: "Kelley D.",
     date: "October 2022",
     description:
       "Mike worked really hard to find the best fishing spots for us. The equipment was awesome, kayaks were very nice and he’s great. Definitely recommend and look forward to going out again.",
+    topgrey: true,
     grey: true,
   },
   {
@@ -80,6 +129,7 @@ const reviewData = [
     date: "July 2021",
     description:
       "My wife and I had a great time fishing with Mike. He was extremely knowledgeable and helpful throughout the entire trip. We caught smallmouth bass, perch, and bluegill and had a great time fishing the entire lake. Definitely would recommend a trip with Mike.",
+    topgrey: false,
     grey: true,
   },
   {
@@ -87,6 +137,7 @@ const reviewData = [
     date: "March 2021",
     description:
       "Mike is a terrific fishing guide. I have gone out on my own a bit, but without much luck. Then when Mike and I went out in the Fall, it seemed the fish were simply attracted to us we were getting so many bites. It was an extremely successful trip near the end of the season. Plus, Mike made it a fun time – he clearly knew the perfect type of lures for the area (and could explain why he was recommending that specific lure), had a deep understanding of how different river and weather conditions affect the fish, and made great non-fishing conversation. He came well supplied with all the equipment that we needed and even gave me tips on where to go in the future! Highly recommend a trip with Mike.",
+    topgrey: false,
     grey: false,
   },
 ];
