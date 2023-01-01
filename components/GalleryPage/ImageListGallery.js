@@ -188,12 +188,6 @@ const itemData = [
       "Young man wearing a white shirt and a red life-jacket holding a fish while smiling on a kayak",
   },
   {
-    number: 27,
-    description:
-      "Girl with a balaclava holding a fish on a frozen lake surrounded by other children",
-  },
-
-  {
     number: 29,
     description:
       "Middle-aged man in a beige jacket holding a fish on a frozen lake while smiling",
@@ -217,11 +211,6 @@ const itemData = [
     number: 33,
     description:
       "Middle-aged man in a red jacket and grey hat holding a fish on a frozen lake while smiling",
-  },
-  {
-    number: 34,
-    description:
-      "Middle-aged person in a blue jacket and grey hat holding a fish on a frozen lake while smiling",
   },
   {
     number: 36,
@@ -260,24 +249,31 @@ const itemData = [
       "One woman on the left in a kayak while smiling and holding a fishing rod; one woman on the right in a kayakk while smiling and holding a fish",
   },
   {
-    number: 41,
-    description:
-      "Young woman in Washington Capitals hat and cheetah-print jacket holding one fish while smiling in kayak",
-  },
-  {
     number: 42,
     description:
       "Older woman in a flannel jacket holding one fish while smiling",
   },
   {
+    number: 59,
+    description:
+      "Woman in a purple solomon jacket, white scarf, grey beanie, and sunglasses holding one fish while smirking",
+  },
+
+  {
     number: 43,
     description:
       "Woman in a black tank top and black and white hat holding one fish while smirking",
   },
+
   {
     number: 44,
     description:
       "Young woman in a black jacket and purple life-kacjet holding one fish in a kayak while smirking",
+  },
+  {
+    number: 41,
+    description:
+      "Young woman in Washington Nationals hat and cheetah-print jacket holding one fish while smiling in kayak",
   },
   {
     number: 45,
@@ -309,11 +305,7 @@ const itemData = [
     description:
       "Man in a black jacket, San Diego hat, and light blue jeans holding one fish while smiling in a kayak",
   },
-  {
-    number: 51,
-    description:
-      "Fish being held out of water with Jackson Kayak text on kayak",
-  },
+
   {
     number: 52,
     description:
@@ -345,5 +337,10 @@ const itemData = [
   {
     number: 26,
     description: "Two young girls in large coats holding a fish while smiling",
+  },
+  {
+    number: 51,
+    description:
+      "Fish being held out of water with Jackson Kayak text on kayak",
   },
 ];
