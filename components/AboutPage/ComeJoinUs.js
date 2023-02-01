@@ -19,7 +19,7 @@ const ComeJoinUs = () => {
             className="come-join-us-outer-stack"
             spacing={{ xs: 4, sm: 4, md: 6 }}
             mb={12}
-            data-aos="fade-up"
+            // data-aos="fade-up"
           >
             <Typography
               mt={12}

@@ -39,7 +39,7 @@ const RatingMain = () => {
       <Box
         sx={{ width: "100vw", display: "flex", justifyContent: "center" }}
         mt={{ xs: 0, sm: 2, md: 6, lg: 8 }}
-        data-aos="fade-up"
+        // data-aos="fade-up"
       >
         <Grid container sx={{ width: "90vw" }}>
           <Grid item container xs={12} sm={12} md={6} lg={6}>
@@ -111,6 +111,13 @@ const reviewDataOne = [
     date: "November 2021",
     description:
       "Simply put, Mike exceeded all expectations. My girlfriend and I went for a date night and had a blast! (and obviously caught fish!) All equipment was in exceptional condition, everything was communicated effectively and in a way that makes you feel as if you'd been fishing buddies for years. Can't recommend enough and will definitely be bringing a few friend's on another trip at some point!",
+    grey: true,
+  },
+  {
+    name: "Shannon A.",
+    date: "January 2023",
+    description:
+      "Mike was wonderful with our family. He made the experience magical for our kids.",
     grey: false,
   },
 ];

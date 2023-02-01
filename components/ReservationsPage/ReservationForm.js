@@ -161,7 +161,7 @@ const ReservationForm = () => {
         direction="column"
         className="reservation-stack"
         mt={5}
-        data-aos="fade-up"
+        // data-aos="fade-up"
       >
         <Typography
           variant="h2_reservations"

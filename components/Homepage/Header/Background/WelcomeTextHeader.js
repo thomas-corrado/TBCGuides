@@ -15,7 +15,7 @@ const WelcomeTextHeader = () => {
         spacing={2}
         ml={{ xs: 4, md: 8 }}
         mb={6}
-        data-aos="fade-up"
+        // data-aos="fade-up"
       >
         <Box
           sx={{

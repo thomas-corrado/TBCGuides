@@ -39,7 +39,7 @@ const ImageListGallery = () => {
               sx={{
                 width: { xs: "90vw", sm: "100%", md: "100%", lg: "100%" },
               }}
-              data-aos="fade-up"
+              // data-aos="fade-up"
             >
               <ImageListItem>
                 <Image

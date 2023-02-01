@@ -45,7 +45,7 @@ const Suggestion = () => {
             }}
           >
             <Stack
-              data-aos="fade-up"
+              // data-aos="fade-up"
               direction="column"
               spacing={6}
               sx={{

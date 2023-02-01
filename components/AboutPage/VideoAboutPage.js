@@ -8,7 +8,7 @@ const VideoAboutPage = () => {
     AOS.init();
   }, []);
   return (
-    <Stack className="video-outside-box" mt={6} mb={8} data-aos="fade-up">
+    <Stack className="video-outside-box" mt={6} mb={8} >
       <Box className="video-inside-box">
         <video
           controls

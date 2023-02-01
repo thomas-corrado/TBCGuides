@@ -25,10 +25,10 @@ const OutdoorNE = () => {
                 mt={8}
                 mb={{ md: 0, lg: 8 }}
               >
-                <Typography variant="h2_about" mb={2} data-aos="fade-up">
+                <Typography variant="h2_about" mb={2} >
                   Looking for your own kayak?
                 </Typography>
-                <Typography variant="h3_about" data-aos="fade-up">
+                <Typography variant="h3_about" >
                   Check out Outdoor New England
                 </Typography>
               </Grid>
@@ -42,7 +42,7 @@ const OutdoorNE = () => {
                 sx={{ justifyContent: { md: "left", lg: "center" } }}
               >
                 <Button
-                  data-aos="fade-up"
+      
                   variant="contained"
                   color="onegreen"
                   disableElevation={false}
