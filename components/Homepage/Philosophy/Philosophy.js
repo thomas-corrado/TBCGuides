@@ -13,7 +13,7 @@ const Philosophy = () => {
     return (
       <Box>
         <Grid
-          data-aos="fade-up"
+          // data-aos="fade-up"
           container
           direction="row"
           rowSpacing={4}

@@ -16,7 +16,7 @@ const BackgroundImage = () => {
       }}
     >
       <Image
-        data-aos="fade-in"
+        // data-aos="fade-in"
         priority
         layout="fill"
         objectFit="cover"

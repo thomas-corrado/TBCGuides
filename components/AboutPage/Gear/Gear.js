@@ -21,10 +21,10 @@ const Gear = () => {
         >
           <Box sx={{ width: { xs: "80vw", sm: "85vw" } }} mt={7} mb={7}>
             <Stack direction="column">
-              <Typography variant="h2_about" data-aos="fade-up">
+              <Typography variant="h2_about" >
                 Gear
               </Typography>
-              <Typography data-aos="fade-up" variant="h4_about" mt={2}>
+              <Typography variant="h4_about" mt={2}>
                 TBC guides will provide everything you need for your experience;
                 however, if you are looking to add anything to your tackle box,{" "}
                 <Link

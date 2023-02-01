@@ -39,7 +39,7 @@ const RatingMain = () => {
       <Box
         sx={{ width: "100vw", display: "flex", justifyContent: "center" }}
         mt={{ xs: 0, sm: 2, md: 6, lg: 8 }}
-        data-aos="fade-up"
+        // data-aos="fade-up"
       >
         <Grid container sx={{ width: "90vw" }}>
           <Grid item container xs={12} sm={12} md={6} lg={6}>
