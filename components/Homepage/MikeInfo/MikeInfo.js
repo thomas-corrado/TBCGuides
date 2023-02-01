@@ -19,7 +19,7 @@ const MikeInfo = () => {
       sx={{ width: "100vw", backgroundColor: "#808184" }}
     >
       <Typography
-        data-aos="fade-up"
+        // data-aos="fade-up"
         variant="h1"
         color="primary"
         mt={{ xs: 4, sm: 4, lg: 6 }}
@@ -32,7 +32,7 @@ const MikeInfo = () => {
 
       <Box sx={{ width: "100vw", display: "flex", justifyContent: "center" }}>
         <Grid
-          data-aos="fade-up"
+          // data-aos="fade-up"
           container
           direction="row"
           spacing={4}
@@ -64,7 +64,7 @@ const MikeInfo = () => {
         mb={6}
         sx={{ width: { xs: "80vw", sm: "90vw", md: "55vw" } }}
       >
-        <Typography mb={4} variant="h3" color="primary" data-aos="fade-up">
+        <Typography mb={4} variant="h3" color="primary" >
           Mike is an extremely experienced fisherman and proud member of the{" "}
           <Link
             color="jackson"
@@ -76,7 +76,7 @@ const MikeInfo = () => {
         </Typography>
 
         <Button
-          data-aos="fade-up"
+          // data-aos="fade-up"
           disableRipple
           variant="contained"
           color="mikesgrey"
