@@ -25,7 +25,7 @@ const WelcomeTextHeader = () => {
           }}
         >
           <Typography variant="h1" color="primary">
-            Welcome to the Upper Valley&rsquo;s Premiere Kayak, Ice, and Fly
+            Welcome to the Upper Valley&rsquo;s Premier Kayak, Ice, and Fly
             Fishing Guide Service
           </Typography>
         </Box>
