@@ -77,7 +77,7 @@ const MikeInfo = () => {
 
         <Button
           // data-aos="fade-up"
-          
+
           disableRipple
           variant="contained"
           color="mikesgrey"
@@ -86,6 +86,12 @@ const MikeInfo = () => {
               "https://hub.jacksonkayak.com/team-jk/kayak-fishing-regional-team/michael-blatt/"
             )
           }
+          sx={{
+            "&:hover": {
+              
+              filter: "brightness(.95)",
+            },
+          }}
         >
           <Typography color="primary" variant="h7">
             Mike&#39;s Blog
