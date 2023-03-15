@@ -42,7 +42,6 @@ const OutdoorNE = () => {
                 sx={{ justifyContent: { md: "left", lg: "center" } }}
               >
                 <Button
-      
                   variant="contained"
                   color="onegreen"
                   disableElevation={false}
