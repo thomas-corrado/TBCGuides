@@ -61,11 +61,11 @@ const MikeInfo = () => {
       <Box
         ml={{ xs: 4, md: 8 }}
         mt={{ xs: 4, sm: 4, lg: 6 }}
-        mb={6}
+        mb={8}
         sx={{ width: { xs: "80vw", sm: "90vw", md: "55vw" } }}
       >
-        <Typography mb={4} variant="h3" color="primary" >
-          Mike is an extremely experienced fisherman and proud member of the{" "}
+        <Typography mb={4} variant="h3" color="primary">
+          Mike is a licensed guide and proud member of the{" "}
           <Link
             color="jackson"
             href="https://hub.jacksonkayak.com/team-jk/kayak-fishing-regional-team/michael-blatt/"
@@ -77,6 +77,7 @@ const MikeInfo = () => {
 
         <Button
           // data-aos="fade-up"
+
           disableRipple
           variant="contained"
           color="mikesgrey"
@@ -85,6 +86,12 @@ const MikeInfo = () => {
               "https://hub.jacksonkayak.com/team-jk/kayak-fishing-regional-team/michael-blatt/"
             )
           }
+          sx={{
+            "&:hover": {
+              
+              filter: "brightness(.95)",
+            },
+          }}
         >
           <Typography color="primary" variant="h7">
             Mike&#39;s Blog
