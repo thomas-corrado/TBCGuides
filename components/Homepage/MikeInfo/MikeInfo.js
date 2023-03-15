@@ -64,8 +64,8 @@ const MikeInfo = () => {
         mb={6}
         sx={{ width: { xs: "80vw", sm: "90vw", md: "55vw" } }}
       >
-        <Typography mb={4} variant="h3" color="primary" >
-          Mike is an extremely experienced fisherman and proud member of the{" "}
+        <Typography mb={4} variant="h3" color="primary">
+          Mike is a licensed guide and proud member of the{" "}
           <Link
             color="jackson"
             href="https://hub.jacksonkayak.com/team-jk/kayak-fishing-regional-team/michael-blatt/"
