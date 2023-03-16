@@ -33,7 +33,7 @@ const CompressedTBCLogo = ({ pages}) => {
                   objectFit: "cover",
                 }}
                 quality={100}
-                src="https://s3.amazonaws.com/tbcguides.fish/fishing-logo-black-v1.png"
+                src="https://s3.amazonaws.com/tbcguides.fish/Black-Small-Logo.png"
                 alt="black angler hook"
                 loading="eager"
               ></Image>
@@ -45,7 +45,7 @@ const CompressedTBCLogo = ({ pages}) => {
                   objectFit: "cover",
                 }}
                 quality={100}
-                src="https://s3.amazonaws.com/tbcguides.fish/fishing-logo-white-v1.png"
+                src="https://s3.amazonaws.com/tbcguides.fish/White-Small-Logo.png"
                 alt="white angler hook"
                 loading="eager"
               ></Image>
