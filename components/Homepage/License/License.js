@@ -64,7 +64,7 @@ const License = () => {
                   style={{ objectFit: "contain" }}
                   quality={100}
                   src="https://s3.amazonaws.com/tbcguides.fish/LICENSED-GUIDE.png"
-                  alt="frozen-over-lake"
+                  alt="new hampshire fishing license logo"
                   loading="eager"
                   sx={{
                     "&:hover": {},

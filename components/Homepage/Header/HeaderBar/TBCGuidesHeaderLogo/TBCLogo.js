@@ -1,54 +1,62 @@
 import { Box, Button, Typography } from "@mui/material";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const TBCLogo = ({ pages }) => {
   const router = useRouter(); 
     return (
-      <>
-        {pages.includes("home") ? (
+      <Box sx={{ flexGrow: { xs: 0, sm: 1 } }}>
+        <Box
+          sx={{
+            display: { xs: "none", sm: "flex" },
+            width: "15.8rem",
+            height: "9rem",
+            float: "left",
+          }}
+        >
           <Button
+            aria-label="tbc-guides-logo-button"
             onClick={() => router.push("/")}
-            
             sx={{
-              display: { xs: "none", md: "flex" },
-              
+              width: "100%",
+              justifyContent: "left",
+              "&:hover": {
+                backgroundColor: "transparent",
+              },
             }}
           >
-            <Box sx={{ width: "5rem" }}>
-              <Typography
-                className="tbc-logo"
-                sx={{
-                  fontSize: "5rem",
-                  display: { xs: "none", md: "flex" },
-                  lineHeight: "5rem",
-                  fontFamily: "Antonio",
-                  textAlign: "left",
-                  textTransform: 'none'
+            {pages.includes("home") ? (
+              <Image
+                priority
+                fill
+                style={{
+                  objectFit: "cover",
+                  justifyContent: "left",
                 }}
-                color={pages.includes("home") ? "secondary" : "primary"}
-              >
-                TBC Guides
-              </Typography>
-            </Box>
+                quality={100}
+                src="https://s3.amazonaws.com/tbcguides.fish/Black-Main-Logo.png"
+                alt="black tbc guides logo"
+                loading="eager"
+                sx={{
+                  "&:hover": {},
+                }}
+              ></Image>
+            ) : (
+              <Image
+                priority
+                fill
+                style={{
+                  objectFit: "cover",
+                }}
+                quality={100}
+                src="https://s3.amazonaws.com/tbcguides.fish/White-Main-Logo.png"
+                alt="white tbc guides logo"
+                loading="eager"
+              ></Image>
+            )}
           </Button>
-        ) : (
-          <Box sx={{ width: "1rem" }}>
-            <Typography
-              className="tbc-logo"
-              sx={{
-                fontSize: "5rem",
-                display: { xs: "none", md: "flex" },
-                lineHeight: "5rem",
-                fontFamily: "Antonio",
-                textAlign: "left",
-              }}
-              color={pages.includes("home") ? "secondary" : "primary"}
-            >
-              TBC Guides
-            </Typography>
-          </Box>
-        )}
-      </>
+        </Box>
+      </Box>
     );
 };
 
