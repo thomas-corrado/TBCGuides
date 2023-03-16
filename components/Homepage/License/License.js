@@ -27,7 +27,7 @@ const License = () => {
           md={6}
           sm={12}
           xs={12}
-          mt={{ xs: 10, sm: 10, md: 0, lg: 0 }}
+          mt={{ xs: 9, sm: 9, md: 0, lg: 0 }}
           sx={{
             justifyContent: "right",
           }}
@@ -84,7 +84,7 @@ const License = () => {
           sm={12}
           xs={12}
           mt={{ xs: 2, sm: 2, md: 8, lg: 16 }}
-          mb={{ xs: 6, sm: 6, md: 12, lg: 20 }}
+          mb={{ xs: 7, sm: 7, md: 12, lg: 20 }}
           sx={{ justifyContent: { xs: "center", sm: "center", md: "left" } }}
         >
           <Typography
