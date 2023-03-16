@@ -12,7 +12,7 @@ const AppBarWrapper = ( {pages, colorOne, colorTwo}) => {
   const [isOpen, setOpen] = useState(false);
   
   return (
-    <Box mt={3} ml={{ xs: 2, md: 8 }}>
+    <Box mt={5} ml={{ xs: 4, md: 8 }}>
       <AppBar
         position="static"
         sx={{
@@ -27,7 +27,7 @@ const AppBarWrapper = ( {pages, colorOne, colorTwo}) => {
           {/* Drawer View Logo */}
           <CompressedTBCLogo pages={pages} />
 
-          <Box sx={{ display: { xs: "flex", md: "none" } }} mr={2}>
+          <Box sx={{ display: { xs: "flex", lg: "none" } }} mr={2}>
             {/* Drawer View Hamburger Icon */}
             <HamburgerWrapper
               isOpen={isOpen}

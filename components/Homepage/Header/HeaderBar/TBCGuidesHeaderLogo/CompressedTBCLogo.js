@@ -1,53 +1,58 @@
-import { Typography, Button } from "@mui/material";
+import { Typography, Button, Box } from "@mui/material";
+import Image from "next/image";
 import { useRouter } from "next/router";
 
 const CompressedTBCLogo = ({ pages}) => {
   const router = useRouter(); 
     return (
-      <>
-        {pages.includes("home") ? (
+      <Box sx={{ flexGrow: 1 }}>
+        <Box
+          sx={{
+            display: { xs: "flex", sm: "none" },
+            width: "6.6rem",
+            height: "9rem",
+            float: "left",
+          }}
+        >
           <Button
+            aria-label="angler-hook-button"
             onClick={() => router.push("/")}
-            className="compressed-tbc-logo"
             sx={{
-              display: { xs: "flex", md: "none" },
-              fontSize: "4.5rem",
-              lineHeight: "4.5rem",
-              fontFamily: "Antonio",
-              textAlign: "left",
+              width: "100%",
+              justifyContent: "left",
+              "&:hover": {
+                backgroundColor: "transparent",
+              },
             }}
           >
-            <Typography
-              className="compressed-tbc-logo"
-              sx={{
-                display: { xs: "flex", md: "none" },
-                fontSize: "4.5rem",
-                lineHeight: "4.5rem",
-                fontFamily: "Antonio",
-                textAlign: "left",
-                textTransform: "none",
-              }}
-              color={pages.includes("home") ? "secondary" : "primary"}
-            >
-              TBC Guides
-            </Typography>
+            {pages.includes("home") ? (
+              <Image
+                priority
+                fill
+                style={{
+                  objectFit: "cover",
+                }}
+                quality={100}
+                src="https://s3.amazonaws.com/tbcguides.fish/Black-Small-Logo.png"
+                alt="black angler hook"
+                loading="eager"
+              ></Image>
+            ) : (
+              <Image
+                priority
+                fill
+                style={{
+                  objectFit: "cover",
+                }}
+                quality={100}
+                src="https://s3.amazonaws.com/tbcguides.fish/White-Small-Logo.png"
+                alt="white angler hook"
+                loading="eager"
+              ></Image>
+            )}
           </Button>
-        ) : (
-          <Typography
-            className="compressed-tbc-logo"
-            sx={{
-              display: { xs: "flex", md: "none" },
-              fontSize: "4.5rem",
-              lineHeight: "4.5rem",
-              fontFamily: "Antonio",
-              textAlign: "left",
-            }}
-            color={pages.includes("home") ? "secondary" : "primary"}
-          >
-            TBC Guides
-          </Typography>
-        )}
-      </>
+        </Box>
+      </Box>
     );
 };
 

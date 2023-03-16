@@ -9,7 +9,7 @@ const HeaderBarPageButtons = ({ pages, position }) => {
       <Box
         sx={{
           flexGrow: 1,
-          display: { xs: "none", md: "flex" },
+          display: { xs: "none", lg: "flex" },
           justifyContent: position,
         }}
         mr={5}
@@ -29,9 +29,9 @@ const HeaderBarPageButtons = ({ pages, position }) => {
               <Typography
                 color={pages.includes('home') ? 'secondary' : 'primary'}
                 sx={{
-                  display: { xs: "none", md: "flex" },
-                  fontSize: "3rem",
-                  fontFamily: "Antonio",
+                  display: { xs: "none", lg: "flex" },
+                  fontSize: "2.5rem",
+                  fontFamily: "belda-normal",
                 }}
               >
                 {page}
