@@ -9,8 +9,8 @@ const CompressedTBCLogo = ({ pages}) => {
         <Box
           sx={{
             display: { xs: "flex", sm: "none" },
-            width: "6.6rem",
-            height: "9rem",
+            width: "10.6rem",
+            height: "6rem",
             float: "left",
           }}
         >
@@ -33,7 +33,7 @@ const CompressedTBCLogo = ({ pages}) => {
                   objectFit: "cover",
                 }}
                 quality={100}
-                src="https://s3.amazonaws.com/tbcguides.fish/Black-Small-Logo.png"
+                src="https://s3.amazonaws.com/tbcguides.fish/Black-Main-Logo.png"
                 alt="black angler hook"
                 loading="eager"
               ></Image>
@@ -45,7 +45,7 @@ const CompressedTBCLogo = ({ pages}) => {
                   objectFit: "cover",
                 }}
                 quality={100}
-                src="https://s3.amazonaws.com/tbcguides.fish/White-Small-Logo.png"
+                src="https://s3.amazonaws.com/tbcguides.fish/White-Main-Logo.png"
                 alt="white angler hook"
                 loading="eager"
               ></Image>
