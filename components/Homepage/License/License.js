@@ -17,7 +17,7 @@ const License = () => {
         // data-aos="fade-up"
         container
         direction="row"
-        rowSpacing={4}
+        rowSpacing={1}
         columnSpacing={8}
       >
         <Grid
@@ -27,7 +27,7 @@ const License = () => {
           md={6}
           sm={12}
           xs={12}
-          mt={{ xs: 4, sm: 4, md: 0, lg: 0 }}
+          mt={{ xs: 6, sm: 6, md: 0, lg: 0 }}
           sx={{
             justifyContent: "right",
           }}
