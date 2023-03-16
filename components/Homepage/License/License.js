@@ -27,7 +27,7 @@ const License = () => {
           md={6}
           sm={12}
           xs={12}
-          mt={{ xs: 6, sm: 6, md: 0, lg: 0 }}
+          mt={{ xs: 8, sm: 8, md: 0, lg: 0 }}
           sx={{
             justifyContent: "right",
           }}
