@@ -18,7 +18,7 @@ export default function Home() {
           <meta property="og:title" content="TBC Guides" />
           <meta
             property="og:description"
-            content="The Upper Valley&#39;s Premiere Kayak, Ice, and Fly Fishing Guide Service"
+            content="The Upper Valley&#39;s Premier Kayak, Ice, and Fly Fishing Guide Service"
           />
           <meta
             name="viewport"
