@@ -26,8 +26,8 @@ const Suggestion = () => {
         >
           <Box sx={{ width: "100vw", height: "689px" }}>
             <Image
-              src="https://s3.amazonaws.com/tbcguides.fish/ReadyBackground-copy.jpeg"
-              srcSet="https://s3.amazonaws.com/tbcguides.fish/ReadyBackground-copy.jpeg"
+              src="https://s3.amazonaws.com/tbcguides.fish/Reservations-Background-Spring.jpg"
+              srcSet="https://s3.amazonaws.com/tbcguides.fish/Reservations-Background-Spring.jpg"
               alt="New Hampshire Sky"
               className="complicated-ready-image"
               layout="fill"
@@ -52,10 +52,7 @@ const Suggestion = () => {
                 alignItems: "center",
               }}
             >
-              <Typography
-                color="primary"
-                variant='h2'
-              >
+              <Typography color="primary" variant="h2">
                 Ready to get started?
               </Typography>
               <Button
@@ -66,7 +63,6 @@ const Suggestion = () => {
                 onClick={() => router.push("reservations")}
               >
                 <Typography
-                  
                   color="secondary"
                   variant="h3_about"
                   mt={2}
