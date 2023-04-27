@@ -17,7 +17,7 @@ const AboutPageComponent = () => {
         </Box>
       </Stack>
       <RatingMain />
-      <Gear />
+      {/* <Gear /> */}
       <OutdoorNE/>
       <ComeJoinUs />
       <ContactInfo />
