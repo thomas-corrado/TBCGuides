@@ -25,7 +25,7 @@ const ExploreLanding = () => {
           position: "relative",
           display: "flex",
         }}
-        mt={7}
+        mt={{ xs: 3, md: 7 }}
         mb={{ lg: 2}}
       >
         <Stack
