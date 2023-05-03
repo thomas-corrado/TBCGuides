@@ -29,8 +29,13 @@ const DrawerWrapper = ({ isOpen, pages }) => {
                   textTransform="uppercase"
                   textAlign="center"
                   variant="h4"
-                 
                   color={pages.includes("home") ? "secondary" : "tbcblue"}
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "transparent",
+                      textDecoration: "underline",
+                    },
+                  }}
                 >
                   {page}
                 </Typography>

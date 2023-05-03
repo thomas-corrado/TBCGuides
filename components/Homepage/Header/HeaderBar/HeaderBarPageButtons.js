@@ -23,15 +23,20 @@ const HeaderBarPageButtons = ({ pages, position }) => {
               sx={{
                 "&:hover": {
                   backgroundColor: "transparent",
+                  textDecoration: "underline",
                 },
               }}
             >
               <Typography
-                color={pages.includes('home') ? 'secondary' : 'primary'}
+                color={pages.includes("home") ? "secondary" : "primary"}
                 sx={{
                   display: { xs: "none", lg: "flex" },
-                  fontSize: "2.5rem",
+                  fontSize: "2rem",
                   fontFamily: "belda-normal",
+                  "&:hover": {
+                    backgroundColor: "transparent",
+                    textDecoration: "underline",
+                  },
                 }}
               >
                 {page}
