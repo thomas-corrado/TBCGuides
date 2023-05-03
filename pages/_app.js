@@ -106,6 +106,36 @@ const theme = createTheme({
       fontSize: "calc(.75rem + 1vw)",
       lineHeight: "calc(1.1rem + 1.4vw)",
     },
+    h1_explore: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "calc(2.5rem + 5vw)",
+      lineHeight: "3rem",
+    },
+    h2_explore: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "calc(2.5rem + 1.5vw)",
+      lineHeight: "calc(3rem + 1.5vw)",
+    },
+    h3_explore: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "calc(1.5rem + .7vw)",
+      lineHeight: "calc(1.5rem + .7vw)",
+    },
+    h4_explore: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "calc(1rem + 1vw)",
+      
+    },
+    h5_explore: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "calc(1.3rem + .1vw)",
+      lineHeight: "calc(1.5rem + 1vw)",
+    },
+    h6_explore: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "calc(.75rem + .75vw)",
+      lineHeight: "calc(1.4rem + 1.4vw)",
+    },
     h2_reservations: {
       fontFamily: ["belda-normal"].join(","),
       fontSize: "3.5rem",

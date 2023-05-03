@@ -33,6 +33,11 @@
     text-decoration: underline;
 }
 
+.explore-links {
+    color: black;
+    text-decoration: underline;
+}
+
 .outdoor-box {
     width: 100vw; 
     background-color: #b0b5be;
