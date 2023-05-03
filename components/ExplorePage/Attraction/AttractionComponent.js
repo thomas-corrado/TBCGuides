@@ -46,7 +46,7 @@ const AttractionComponent = ({ AttractionName, AttractionDescription }) => {
                 sx={{
                   textAlign: "center",
                   justifyContent: "center",
-                  paddingLeft: { xs: 0, md: section.header == "Where to Drink:" ? "1.5rem" : "0rem"}, 
+                  paddingLeft: { xs: 0, md: section.header == "Where to Drink:" ? "1.3rem" : "0rem"}, 
                   paddingRight: { xs: section.header == "Where to Drink:" ? "0rem" : ".5rem", md: 0}, 
                   margin: 0,
                 }}
