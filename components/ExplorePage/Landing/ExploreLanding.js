@@ -51,7 +51,7 @@ const ExploreLanding = () => {
                 
                 textAlign: "center",
               }}
-              mt={{ xs: 2, sm: 2, md: 1 }}
+              mt={{ xs: 2, md: 1 }}
               mr={{ md: 0, lg: 0 }}
             >
               Some of our favorite spots when we&#39;re not fishing.
