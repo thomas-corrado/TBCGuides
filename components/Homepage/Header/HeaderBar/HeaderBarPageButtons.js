@@ -31,7 +31,7 @@ const HeaderBarPageButtons = ({ pages, position }) => {
                 color={pages.includes("home") ? "secondary" : "primary"}
                 sx={{
                   display: { xs: "none", lg: "flex" },
-                  fontSize: "2rem",
+                  fontSize: "1.75rem",
                   fontFamily: "belda-normal",
                   "&:hover": {
                     backgroundColor: "transparent",

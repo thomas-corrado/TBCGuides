@@ -10,15 +10,18 @@ const DrawerWrapper = ({ isOpen, pages }) => {
         id="menu-appbar"
         className="menu-drawer"
         {...{
-          anchor: "top",
+          anchor: "right",
           open: isOpen,
-          transitionDuration: 700,
+          transitionDuration: 300,
         }}
         sx={{
           zIndex: 3,
         }}
       >
-        <Box className="drawer-wrapper-box">
+        <Box
+          className="drawer-wrapper-box"
+          sx={{ paddingRight: '2rem'}}
+        >
           <Stack direction="column" spacing={3}>
             {pages.map((page) => (
               <Button
@@ -27,14 +30,18 @@ const DrawerWrapper = ({ isOpen, pages }) => {
               >
                 <Typography
                   textTransform="uppercase"
-                  textAlign="center"
-                  variant="h4"
+                  
+                  // variant="h4"
                   color={pages.includes("home") ? "secondary" : "tbcblue"}
                   sx={{
                     "&:hover": {
                       backgroundColor: "transparent",
                       textDecoration: "underline",
                     },
+                    fontSize: "calc(1rem + 2vw)", 
+                    fontFamily: "belda-normal",
+                    textAlign: 'left', 
+                    justifyContent: 'left'
                   }}
                 >
                   {page}

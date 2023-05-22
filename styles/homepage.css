@@ -79,9 +79,12 @@
 
 .drawer-wrapper-box {
   height: 100%; 
-  justify-content: center; 
-  align-items: center; 
+  padding-left: 1.5rem;
+  padding-top: 9rem;
   display: flex; 
+  justify-content: left;
+  text-align: left;
+  background-color: white;
 }
 
 .menu-drawer {

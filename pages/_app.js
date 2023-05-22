@@ -124,7 +124,6 @@ const theme = createTheme({
     h4_explore: {
       fontFamily: ["belda-normal"].join(","),
       fontSize: "calc(1rem + 1vw)",
-      
     },
     h5_explore: {
       fontFamily: ["belda-normal"].join(","),
@@ -145,6 +144,16 @@ const theme = createTheme({
       fontFamily: ["belda-normal"].join(","),
       fontSize: "1.5rem",
       lineHeight: "2.5rem",
+    },
+    h2_pontoon: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "3.5rem",
+      lineHeight: "3.5rem",
+    },
+    h4_pontoon: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "calc(1vw + .75rem)",
+      lineHeight: "calc(1.5vw + 1.5rem)",
     },
   },
   palette: {
@@ -201,8 +210,7 @@ const theme = createTheme({
     MuiDrawer: {
       styleOverrides: {
         paper: {
-          background: "white",
-          width: "100vw",
+          backgroundColor: 'transparent', 
           height: "100%",
         },
       },
