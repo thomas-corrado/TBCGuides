@@ -52,7 +52,6 @@ const PontoonPageComponent = () => {
               quality={100}
               src="https://s3.amazonaws.com/tbcguides.fish/MarcOkrantFinal.jpg"
               alt="middle-aged man smiling, wearing tan hat, and wearing sunglasses while standing in water and holding fish horizontally"
-              
               loading="eager"
             ></Image>
           </Box>
@@ -70,8 +69,8 @@ const PontoonPageComponent = () => {
                 <Stack direction="column">
                   <Box
                     sx={{
-                      width: "calc(50px + 7vw)",
-                      height: "calc(50px + 7vw)",
+                      width: "calc(75px + 6vw)",
+                      height: "calc(75px + 6vw)",
                       position: "relative",
                       display: "flex",
                       alignSelf: "center",
@@ -88,7 +87,14 @@ const PontoonPageComponent = () => {
                     ></Image>
                   </Box>
                   <Typography variant="h5_pontoon" mt={3} mb={2}>
-                    Marc Okrant is captain of “The Menagerie” an extremely fun and family-friendly 24-foot pontoon boat that can accommodate up to 8 passengers. The boat is well equipped for enjoying time with family and friends, catching some sun, and doing some excellent fishing in many New Hampshire and Vermont waters. The Menagerie has a quiet four-stroke 115 horsepower Mercury engine, ample cooler space and a grill for cooking steaks, burgers, chicken and more.
+                    Marc Okrant is captain of “The Menagerie” an extremely fun
+                    and family-friendly 24-foot pontoon boat that can
+                    accommodate up to 8 passengers. The boat is well equipped
+                    for enjoying time with family and friends, catching some
+                    sun, and doing some excellent fishing in many New Hampshire
+                    and Vermont waters. The Menagerie has a quiet four-stroke
+                    115 horsepower Mercury engine, ample cooler space and a
+                    grill for cooking steaks, burgers, chicken and more.
                   </Typography>
                 </Stack>
               </Grid>
@@ -108,8 +114,8 @@ const PontoonPageComponent = () => {
                 <Stack direction="column">
                   <Box
                     sx={{
-                      width: "calc(50px + 7vw)",
-                      height: "calc(50px + 7vw)",
+                      width: "calc(75px + 6vw)",
+                      height: "calc(75px + 6vw)",
                       position: "relative",
                       display: "flex",
                       alignSelf: "center",
@@ -126,7 +132,16 @@ const PontoonPageComponent = () => {
                     ></Image>
                   </Box>
                   <Typography variant="h5_pontoon" mt={3}>
-                    Captain Marc has been boating and fishing since his childhood and is now a licensed commercial boat operator. Originally from the state of Connecticut, he has fished for stripers in the River’s estuary where it empties into the Long Island sound. Today he spends most of his time on the Connecticut River bordering Vermont and New Hampshire, where you catch bass, pike and even walleye. When not boating or fishing, Marc enjoys traveling, having been to 4 continents and over 40 states. Ask him about some of his journeys on your next boat trip.
+                    Captain Marc has been boating and fishing since his
+                    childhood and is now a licensed commercial boat operator.
+                    Originally from the state of Connecticut, he has fished for
+                    stripers in the River’s estuary where it empties into the
+                    Long Island sound. Today he spends most of his time on the
+                    Connecticut River bordering Vermont and New Hampshire, where
+                    you catch bass, pike and even walleye. When not boating or
+                    fishing, Marc enjoys traveling, having been to 4 continents
+                    and over 40 states. Ask him about some of his journeys on
+                    your next boat trip.
                   </Typography>
                 </Stack>
               </Grid>

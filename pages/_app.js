@@ -157,8 +157,8 @@ const theme = createTheme({
     },
     h5_pontoon: {
       fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(.75vw + .5rem)",
-      lineHeight: "calc(1.25vw + 1rem)",
+      fontSize: "calc(.25vw + 1.25rem)",
+      lineHeight: "calc(1.25vw + 1.65rem)",
     },
   },
   palette: {
