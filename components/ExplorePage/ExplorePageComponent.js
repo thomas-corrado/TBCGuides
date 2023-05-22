@@ -1,4 +1,4 @@
-import { Box, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 import NavigationBarNonHome from "../General/NavigationBarNonHome";
 import ContactInfo from "../General/Contact/ContactInfo";
 import ExploreLanding from "./Landing/ExploreLanding"
@@ -22,4 +22,4 @@ const AboutPageComponent = () => {
 
 export default AboutPageComponent;
 
-const pages = ["home", "about", "reservations", "gallery"];
+const pages = ["about", "reservations", "pontoon", "gallery"];

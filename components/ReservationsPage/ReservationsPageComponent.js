@@ -17,4 +17,4 @@ const ReservationsPageComponent = () => {
 
 export default ReservationsPageComponent;
 
-const pages = ["home", "about", "explore", "gallery"];
+const pages = ["about", "pontoon", "explore", "gallery"];

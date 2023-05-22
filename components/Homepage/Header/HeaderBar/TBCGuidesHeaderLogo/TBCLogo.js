@@ -25,7 +25,23 @@ const TBCLogo = ({ pages }) => {
               },
             }}
           >
-            {pages.includes("home") ? (
+            {pages.includes("about") &&
+            pages.includes("reservations") &&
+            pages.includes("pontoon") &&
+            pages.includes("explore") &&
+            pages.includes("gallery") ? (
+              <Image
+                priority
+                fill
+                style={{
+                  objectFit: "cover",
+                }}
+                quality={100}
+                src="https://s3.amazonaws.com/tbcguides.fish/White-Main-Logo.png"
+                alt="white tbc guides logo"
+                loading="eager"
+              ></Image>
+            ) : (
               <Image
                 priority
                 fill
@@ -40,18 +56,6 @@ const TBCLogo = ({ pages }) => {
                 sx={{
                   "&:hover": {},
                 }}
-              ></Image>
-            ) : (
-              <Image
-                priority
-                fill
-                style={{
-                  objectFit: "cover",
-                }}
-                quality={100}
-                src="https://s3.amazonaws.com/tbcguides.fish/White-Main-Logo.png"
-                alt="white tbc guides logo"
-                loading="eager"
               ></Image>
             )}
           </Button>

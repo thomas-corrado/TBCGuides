@@ -10,31 +10,48 @@ const DrawerWrapper = ({ isOpen, pages }) => {
         id="menu-appbar"
         className="menu-drawer"
         {...{
-          anchor: "top",
+          anchor: "right",
           open: isOpen,
-          transitionDuration: 700,
+          transitionDuration: 300,
         }}
         sx={{
           zIndex: 3,
         }}
       >
-        <Box className="drawer-wrapper-box">
+        <Box
+          className="drawer-wrapper-box"
+          sx={{
+            paddingRight: "1rem",
+          }}
+        >
           <Stack direction="column" spacing={3}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={() => router.push(routerPushFunc(page))}
+                sx={{ textAlign: "left", justifyContent: "left" }}
               >
                 <Typography
                   textTransform="uppercase"
-                  textAlign="center"
-                  variant="h4"
-                  color={pages.includes("home") ? "secondary" : "tbcblue"}
+                  // variant="h4"
+                  color={
+                    pages.includes("about") &&
+                    pages.includes("reservations") &&
+                    pages.includes("pontoon") &&
+                    pages.includes("explore") &&
+                    pages.includes("gallery")
+                      ? "tbcblue"
+                      : "secondary"
+                  }
                   sx={{
                     "&:hover": {
                       backgroundColor: "transparent",
                       textDecoration: "underline",
                     },
+                    fontSize: "calc(1rem + 2vw)",
+                    fontFamily: "belda-normal",
+                    textAlign: "left",
+                    justifyContent: "left",
                   }}
                 >
                   {page}

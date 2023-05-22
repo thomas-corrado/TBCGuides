@@ -25,7 +25,11 @@ const CompressedTBCLogo = ({ pages}) => {
               },
             }}
           >
-            {pages.includes("home") ? (
+            {pages.includes("about") &&
+            pages.includes("reservations") &&
+            pages.includes("pontoon") &&
+            pages.includes("explore") &&
+            pages.includes("gallery") ? (
               <Image
                 priority
                 fill
@@ -33,8 +37,8 @@ const CompressedTBCLogo = ({ pages}) => {
                   objectFit: "cover",
                 }}
                 quality={100}
-                src="https://s3.amazonaws.com/tbcguides.fish/Black-Main-Logo.png"
-                alt="black angler hook"
+                src="https://s3.amazonaws.com/tbcguides.fish/White-Main-Logo.png"
+                alt="white tbc guides logo"
                 loading="eager"
               ></Image>
             ) : (
@@ -45,8 +49,8 @@ const CompressedTBCLogo = ({ pages}) => {
                   objectFit: "cover",
                 }}
                 quality={100}
-                src="https://s3.amazonaws.com/tbcguides.fish/White-Main-Logo.png"
-                alt="white angler hook"
+                src="https://s3.amazonaws.com/tbcguides.fish/Black-Main-Logo.png"
+                alt="black tbc guides logo"
                 loading="eager"
               ></Image>
             )}

@@ -1,8 +1,9 @@
 import * as React from "react";
 import Head from "next/head";
-import ExplorePageComponent from "../../components/ExplorePage/ExplorePageComponent"
+import PontoonPageComponent from "../../components/PontoonPage/PontoonPageComponent";
 
-export default function ExplorePage() {
+
+export default function PontoonPage() {
   return (
     <div>
       <Head>
@@ -10,7 +11,7 @@ export default function ExplorePage() {
           name="viewport"
           content="initial-scale=1, viewport-fit=cover"
         ></meta>
-        <title>Explore</title>
+        <title>Pontoon</title>
         <meta
           property="og:image"
           content="https://s3.amazonaws.com/tbcguides.fish/fishing-logo.jpg"
@@ -18,7 +19,7 @@ export default function ExplorePage() {
         <meta name="theme-color" content="#FFFFFF"></meta>
         <link rel="icon" href="/phishing.ico" />
       </Head>
-      <ExplorePageComponent />
+      <PontoonPageComponent />
     </div>
   );
 }
