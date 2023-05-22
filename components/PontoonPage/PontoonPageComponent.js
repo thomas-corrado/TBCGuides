@@ -2,8 +2,11 @@ import { Stack, Typography, Box, Button } from "@mui/material";
 import NavigationBarNonHome from "../General/NavigationBarNonHome";
 import ContactInfo from "../General/Contact/ContactInfo";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import PontoonImageGallery from "./PontoonImageGallery/PontoonImageGallery"
 
 const PontoonPageComponent = () => {
+    const router = useRouter(); 
   return (
     <>
       <Stack className="about-stack" direction="column">
@@ -47,7 +50,7 @@ const PontoonPageComponent = () => {
               style={{ objectFit: "cover" }}
               quality={100}
               src="https://s3.amazonaws.com/tbcguides.fish/MarcOkrantFinal.jpg"
-              alt="frozen-over-lake"
+              alt="middle-aged man smiling, wearing tan hat, and wearing sunglasses while standing in water and holding fish horizontally"
               loading="eager"
             ></Image>
           </Box>
@@ -86,8 +89,8 @@ const PontoonPageComponent = () => {
           </Box>
 
           <Box
-            mb={6}
-            mt={{ xs: 0, md: 1}}
+            mb={1}
+            mt={{ xs: 0, md: 1 }}
             sx={{
               width: "100vw",
               display: "flex",
@@ -97,12 +100,14 @@ const PontoonPageComponent = () => {
             <Button
               color="secondary"
               variant="outlined"
-              sx={{ width: {xs: "80%", sm: "45%",  md: "35%"} }}
+              sx={{ width: { xs: "80%", sm: "45%", md: "35%" } }}
               onClick={() => router.push(`/reservations`)}
             >
               <Typography variant="h3_about">Make a Reservation</Typography>
             </Button>
           </Box>
+
+          <PontoonImageGallery/>
         </Stack>
       </Box>
 

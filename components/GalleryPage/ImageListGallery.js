@@ -44,7 +44,7 @@ const ImageListGallery = () => {
               <ImageListItem>
                 <Image
                   src={`https://s3.amazonaws.com/tbcguides.fish/fish-holding-${item.number}.jpg`}
-                  alt={`https://s3.amazonaws.com/tbcguides.fish/fish-holding-${item.number}.jpg`}
+                  alt={`${item.description}`}
                   className="complicated-image"
                   layout="fill"
                 />
