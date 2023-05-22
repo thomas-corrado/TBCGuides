@@ -5,9 +5,11 @@ import routerPushFunc from "../../../General/routerPushFunction";
 const DrawerWrapper = ({ isOpen, pages, setOpen }) => {
     const router = useRouter();
 
-    const toggleDrawer = (isOpen) => {
+    const toggleDrawer = (isOpen) => (event) => {
 
-      setOpen(!isOpen);
+  
+
+      setOpen(false);
     };
 
     return (
