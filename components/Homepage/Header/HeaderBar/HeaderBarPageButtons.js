@@ -28,7 +28,15 @@ const HeaderBarPageButtons = ({ pages, position }) => {
               }}
             >
               <Typography
-                color={pages.includes("home") ? "secondary" : "primary"}
+                color={
+                  pages.includes("about") &&
+                  pages.includes("reservations") &&
+                  pages.includes("pontoon") &&
+                  pages.includes("explore") &&
+                  pages.includes("gallery")
+                    ? "secondary"
+                    : "primary"
+                }
                 sx={{
                   display: { xs: "none", lg: "flex" },
                   fontSize: "1.75rem",

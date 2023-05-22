@@ -87,6 +87,7 @@ const sections = [
       ["Six South St. Hotel", "https://sixsouth.com/"],
       ["Lake Morey Resort", "https://www.lakemoreyresort.com/"],
       ["Hanover Inn", "https://www.hanoverinn.com/"],
+      ["Seyon Lodge", "https://vtstateparks.com/seyon.html"],
     ],
   },
   {
@@ -96,6 +97,7 @@ const sections = [
       ["Duende", "https://www.esduende.com/"],
       ["Simon Pearce", "https://www.simonpearce.com/our-restaurant"],
       ["Broken Hearts Burger", "https://brokenheartsburger.com/"],
+      ["Chapman’s General", "https://chapmansstore.com/"],
       ["Samurai Soul Food", "https://www.facebook.com/samuraisoulfood/"],
       ["Boloco", "https://boloco.com/"],
       ["Big Fatty's", "https://www.bigfattybbq.com/"],
@@ -110,6 +112,7 @@ const sections = [
       ["Crowler Pit", "https://www.bigfattybbq.com/crowler-bar/"],
       ["Lucky's Coffee Garage", "https://www.luckyscoffeegarage.com/"],
       ["King Arthur Baking", "https://www.kingarthurbaking.com/"],
+      ["Chapman’s General", "https://chapmansstore.com/"],
     ],
   },
 ];

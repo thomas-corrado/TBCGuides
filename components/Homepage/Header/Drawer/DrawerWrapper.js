@@ -34,7 +34,15 @@ const DrawerWrapper = ({ isOpen, pages }) => {
                 <Typography
                   textTransform="uppercase"
                   // variant="h4"
-                  color={pages.includes("home") ? "secondary" : "tbcblue"}
+                  color={
+                    pages.includes("about") &&
+                    pages.includes("reservations") &&
+                    pages.includes("pontoon") &&
+                    pages.includes("explore") &&
+                    pages.includes("gallery")
+                      ? "tbcblue"
+                      : "secondary"
+                  }
                   sx={{
                     "&:hover": {
                       backgroundColor: "transparent",

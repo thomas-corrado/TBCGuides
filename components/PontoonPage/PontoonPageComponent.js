@@ -113,4 +113,4 @@ const PontoonPageComponent = () => {
 
 export default PontoonPageComponent;
 
-const pages = ["home", "about", "reservations", "explore", "gallery"];
+const pages = ["about", "reservations", "explore", "gallery"];

@@ -132,7 +132,7 @@ const theme = createTheme({
     },
     h6_explore: {
       fontFamily: ["belda-normal"].join(","),
-      fontSize: "calc(.75rem + .75vw)",
+      fontSize: "calc(.875rem + .75vw)",
       lineHeight: "calc(1.4rem + 1.4vw)",
     },
     h2_reservations: {
