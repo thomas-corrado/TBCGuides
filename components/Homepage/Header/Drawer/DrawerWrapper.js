@@ -2,8 +2,13 @@ import { useRouter } from "next/router";
 import { Box, Stack, Button, Typography, Drawer } from "@mui/material";
 import routerPushFunc from "../../../General/routerPushFunction";
 
-const DrawerWrapper = ({ isOpen, pages }) => {
+const DrawerWrapper = ({ isOpen, pages, setOpen }) => {
     const router = useRouter();
+
+    const toggleDrawer = () => (event) => {
+
+      setOpen(false);
+    };
 
     return (
       <Drawer
@@ -14,6 +19,7 @@ const DrawerWrapper = ({ isOpen, pages }) => {
           open: isOpen,
           transitionDuration: 300,
         }}
+        onClose={toggleDrawer(isOpen)}
         sx={{
           zIndex: 3,
         }}
