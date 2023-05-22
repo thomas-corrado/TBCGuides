@@ -21,9 +21,7 @@ const DrawerWrapper = ({ isOpen, pages }) => {
         <Box
           className="drawer-wrapper-box"
           sx={{
-            paddingRight: "2rem",
-            textAlign: "left",
-            justifyContent: "left",
+            paddingRight: "1rem",
           }}
         >
           <Stack direction="column" spacing={3}>
@@ -31,6 +29,7 @@ const DrawerWrapper = ({ isOpen, pages }) => {
               <Button
                 key={page}
                 onClick={() => router.push(routerPushFunc(page))}
+                sx={{ textAlign: "left", justifyContent: "left" }}
               >
                 <Typography
                   textTransform="uppercase"
