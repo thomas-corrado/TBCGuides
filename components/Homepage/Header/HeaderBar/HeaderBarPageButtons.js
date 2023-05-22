@@ -34,8 +34,8 @@ const HeaderBarPageButtons = ({ pages, position }) => {
                   pages.includes("pontoon") &&
                   pages.includes("explore") &&
                   pages.includes("gallery")
-                    ? "secondary"
-                    : "primary"
+                    ? "primary"
+                    : "secondary"
                 }
                 sx={{
                   display: { xs: "none", lg: "flex" },
