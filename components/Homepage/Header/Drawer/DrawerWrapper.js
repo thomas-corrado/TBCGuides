@@ -20,7 +20,11 @@ const DrawerWrapper = ({ isOpen, pages }) => {
       >
         <Box
           className="drawer-wrapper-box"
-          sx={{ paddingRight: '2rem'}}
+          sx={{
+            paddingRight: "2rem",
+            textAlign: "left",
+            justifyContent: "left",
+          }}
         >
           <Stack direction="column" spacing={3}>
             {pages.map((page) => (
@@ -30,7 +34,6 @@ const DrawerWrapper = ({ isOpen, pages }) => {
               >
                 <Typography
                   textTransform="uppercase"
-                  
                   // variant="h4"
                   color={pages.includes("home") ? "secondary" : "tbcblue"}
                   sx={{
@@ -38,10 +41,10 @@ const DrawerWrapper = ({ isOpen, pages }) => {
                       backgroundColor: "transparent",
                       textDecoration: "underline",
                     },
-                    fontSize: "calc(1rem + 2vw)", 
+                    fontSize: "calc(1rem + 2vw)",
                     fontFamily: "belda-normal",
-                    textAlign: 'left', 
-                    justifyContent: 'left'
+                    textAlign: "left",
+                    justifyContent: "left",
                   }}
                 >
                   {page}
