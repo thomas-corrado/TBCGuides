@@ -16,7 +16,7 @@ class MyDocument extends Document {
               name="google-site-verification"
               content="EM19wPbtiFI0glqYg6zFRnKZLLSWg5hPKLGg4HmegVI"
             />
-            <meta name="description" content="Premier Kayak, Fly, and Ice Fishing in New Hampshire's Upper Valley, Open Everyday from 7AM to 7PM, Helping Others Become Lifelong Anglers"></meta>
+            <meta name="description" content="Premier Kayak, Fly, and Ice Fishing in New Hampshire's Upper Valley, Pontoon Boats Available, Open Everyday from 7AM to 7PM, Helping Others Become Lifelong Anglers"></meta>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link
               rel="preconnect"
