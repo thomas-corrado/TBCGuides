@@ -87,7 +87,7 @@ const PontoonPageComponent = () => {
                     ></Image>
                   </Box>
                   <Typography variant="h5_pontoon" mt={3} mb={2}>
-                    Marc Okrant is captain of “The Menagerie” an extremely fun
+                    Marc Okrant is captain of “The Menagerie”, an extremely fun
                     and family-friendly 24-foot pontoon boat that can
                     accommodate up to 8 passengers. The boat is well equipped
                     for enjoying time with family and friends, catching some
@@ -135,13 +135,13 @@ const PontoonPageComponent = () => {
                     Captain Marc has been boating and fishing since his
                     childhood and is now a licensed commercial boat operator.
                     Originally from the state of Connecticut, he has fished for
-                    stripers in the River’s estuary where it empties into the
-                    Long Island sound. Today he spends most of his time on the
-                    Connecticut River bordering Vermont and New Hampshire, where
-                    you catch bass, pike and even walleye. When not boating or
-                    fishing, Marc enjoys traveling, having been to 4 continents
-                    and over 40 states. Ask him about some of his journeys on
-                    your next boat trip.
+                    stripers in the River&#39;s estuary where it empties into
+                    the Long Island sound. Today, he spends most of his time on
+                    the Connecticut River bordering Vermont and New Hampshire,
+                    where you catch bass, pike and even walleye. When not
+                    boating or fishing, Marc enjoys traveling, having been to 4
+                    continents and over 40 states. Ask him about some of his
+                    journeys on your next boat trip.
                   </Typography>
                 </Stack>
               </Grid>
