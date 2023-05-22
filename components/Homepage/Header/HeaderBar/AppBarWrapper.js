@@ -37,7 +37,7 @@ const AppBarWrapper = ( {pages, colorOne, colorTwo}) => {
             />
 
             {/* Drawer View Buttons */}
-            <DrawerWrapper isOpen={isOpen} pages={pages} />
+            <DrawerWrapper isOpen={isOpen} pages={pages} setOpen={setOpen} />
           </Box>
 
           {/* Desktop View Buttons */}
