@@ -7,6 +7,7 @@ import PontoonImageGallery from "./PontoonImageGallery/PontoonImageGallery"
 
 const PontoonPageComponent = () => {
     const router = useRouter(); 
+   
   return (
     <>
       <Stack className="about-stack" direction="column">
@@ -51,6 +52,7 @@ const PontoonPageComponent = () => {
               quality={100}
               src="https://s3.amazonaws.com/tbcguides.fish/MarcOkrantFinal.jpg"
               alt="middle-aged man smiling, wearing tan hat, and wearing sunglasses while standing in water and holding fish horizontally"
+              
               loading="eager"
             ></Image>
           </Box>
