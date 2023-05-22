@@ -11,6 +11,11 @@ export default function PontoonPage() {
           name="viewport"
           content="initial-scale=1, viewport-fit=cover"
         ></meta>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        
         <title>Pontoon</title>
         <meta
           property="og:image"

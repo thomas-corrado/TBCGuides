@@ -155,6 +155,11 @@ const theme = createTheme({
       fontSize: "calc(1vw + .75rem)",
       lineHeight: "calc(1.5vw + 1.5rem)",
     },
+    h5_pontoon: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "calc(.75vw + .5rem)",
+      lineHeight: "calc(1.25vw + 1rem)",
+    },
   },
   palette: {
     primary: {
@@ -210,7 +215,7 @@ const theme = createTheme({
     MuiDrawer: {
       styleOverrides: {
         paper: {
-          backgroundColor: 'transparent', 
+          backgroundColor: "transparent",
           height: "100%",
         },
       },
