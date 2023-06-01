@@ -39,5 +39,5 @@ export default ContactInfo
 
 const generics = [
   ["About", "Reservations", "Pontoon", "Explore", "Gallery"],
-  ["Hanover, NH, 03755", "(828)-246-5616", "tbcguides@gmail.com"],
+  ["4 Hunter Ln, Hanover, NH 03755", "(603)-266-3222", "tbcguides@gmail.com"],
 ];

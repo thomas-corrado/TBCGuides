@@ -23,7 +23,7 @@ const BusinessHours = () => {
           Business Hours
         </Typography>
         <Typography variant="h8" className="contact-item" mb={1}>
-          Sun-Sat: 7:00 AM - 7:00 PM
+          Sunday-Saturday: 7:00 AM - 7:00 PM
         </Typography>
 
         <Stack direction="row" spacing={2} mb={8}>
