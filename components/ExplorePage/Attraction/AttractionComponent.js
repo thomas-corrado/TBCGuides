@@ -88,6 +88,7 @@ const sections = [
       ["Lake Morey Resort", "https://www.lakemoreyresort.com/"],
       ["Hanover Inn", "https://www.hanoverinn.com/"],
       ["Seyon Lodge", "https://vtstateparks.com/seyon.html"],
+      ["Loch Lyme Lodge", "https://www.lochlymelodge.com/"],
     ],
   },
   {
