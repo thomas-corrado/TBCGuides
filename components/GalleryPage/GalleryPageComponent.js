@@ -17,4 +17,4 @@ const GalleryPageComponent = () => {
 
 export default GalleryPageComponent;
 
-const pages = ["about", "reservations", "pontoon", "explore"];
+const pages = ["about", "reservations", "boats", "explore"];

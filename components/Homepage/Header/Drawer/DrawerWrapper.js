@@ -40,12 +40,7 @@ const DrawerWrapper = ({ isOpen, pages, setOpen }) => {
                 <Typography
                   textTransform="uppercase"
                   // variant="h4"
-                  color={
-                    pages.includes("about") &&
-                    pages.includes("reservations") &&
-                    pages.includes("pontoon") &&
-                    pages.includes("explore") &&
-                    pages.includes("gallery")
+                  color={pages.includes("home")
                       ? "tbcblue"
                       : "secondary"
                   }

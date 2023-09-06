@@ -32,7 +32,7 @@ const PontoonPageComponent = () => {
           }}
         >
           <Typography variant="h2_about" mt={5} mb={3}>
-            Pontoon Boats
+            Pontoon Boat
           </Typography>
           <Box
             sx={{
@@ -178,4 +178,4 @@ const PontoonPageComponent = () => {
 
 export default PontoonPageComponent;
 
-const pages = ["about", "reservations", "explore", "gallery"];
+const pages = ["about", "boats", "explore", "gallery"];

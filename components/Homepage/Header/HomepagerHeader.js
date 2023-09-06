@@ -27,4 +27,4 @@ const HomepageHeader = () => {
 
 export default HomepageHeader;
 
-const pages = ["about", "reservations", "pontoon", "explore", "gallery"];
+const pages = ["home", "about", "reservations", "boats", "explore", "gallery"];
