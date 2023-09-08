@@ -3,7 +3,7 @@ import Image from "next/image";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 
-const PontoonImageGallery = () => {
+const PontoonImageGallery = ({ image_array, image_prelim, image_format }) => {
     const matchDownMd = useMediaQuery('(min-width:600px)');
 
   return (
@@ -31,7 +31,7 @@ const PontoonImageGallery = () => {
           }}
           variant="masonry"
         >
-          {itemData.map((item) => (
+          {image_array.map((item) => (
             <Box
               key={item.number}
               sx={{
@@ -41,7 +41,7 @@ const PontoonImageGallery = () => {
             >
               <ImageListItem>
                 <Image
-                  src={`https://s3.amazonaws.com/tbcguides.fish/Pontoon-${item.number}.jpeg`}
+                  src={`https://s3.amazonaws.com/tbcguides.fish/${image_prelim}${item.number}.${image_format}`}
                   alt={`${item.description}`}
                   className="complicated-image"
                   layout="fill"
@@ -57,45 +57,4 @@ const PontoonImageGallery = () => {
 
 export default PontoonImageGallery
 
-const itemData = [
-  {
-    number: 1,
-    description:
-      "middle-aged man sitting on boat, wearing sunglasses, wearing a baseball hat, smiling, and holding a fish vertically",
-  },
-  {
-    number: 2,
-    description:
-      "middle-aged man on one knee, wearing a grey jacket with red sweatshirt, wearing a baseball UVM hat, smiling, and holding a fish horizontally",
-  },
-  {
-    number: 3,
-    description:
-      "middle-aged man starnding in water, wearing a green jacket, wearing a baseball hat with sunglasses on top, biting a fishing rod handle, and holding a fish horizontally",
-  },
-  {
-    number: 4,
-    description:
-      "middle-aged man standing on a pontoon boat, wearing a blue sweatshirt, wearing a baseball hat, wearing sunglasses, biting a cigar, and holding a fish horizontally",
-  },
-  {
-    number: 5,
-    description:
-      "middle-aged man standing beside a river, wearing a winter green jacket, wearing a winter hat, wearing sunglasses, smiling, and holding a fish horizontally",
-  },
-  {
-    number: 6,
-    description:
-      "middle-aged man standing on a frozen lake, wearing a winter green jacket with hood up, smiling, and holding a fish horizontally",
-  },
-  {
-    number: 7,
-    description:
-      "Man standing on a red and white pontoon boat in the middle of a foggy lake ",
-  },
-  {
-    number: 8,
-    description:
-      "red and white pontoon boat hitched to a white chevrolet truck with a white truck cap",
-  },
-];
+

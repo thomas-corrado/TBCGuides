@@ -55,7 +55,7 @@ const DrawerWrapper = ({ isOpen, pages, setOpen }) => {
                     justifyContent: "left",
                   }}
                 >
-                  {page}
+                  {page != 'home' ? page : ''}
                 </Typography>
               </Button>
             ))}
