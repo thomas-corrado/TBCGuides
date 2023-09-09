@@ -25,11 +25,7 @@ const CompressedTBCLogo = ({ pages}) => {
               },
             }}
           >
-            {pages.includes("about") &&
-            pages.includes("reservations") &&
-            pages.includes("pontoon") &&
-            pages.includes("explore") &&
-            pages.includes("gallery") ? (
+            {pages.includes("home") ? (
               <Image
                 priority
                 fill

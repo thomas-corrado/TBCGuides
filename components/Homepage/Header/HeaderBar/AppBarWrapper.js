@@ -7,9 +7,10 @@ import DrawerWrapper from "../Drawer/DrawerWrapper";
 import HamburgerWrapper from "../Drawer/HamburgerWrapper";
 import HeaderBarPageButtons from "./HeaderBarPageButtons";
 
-const AppBarWrapper = ( {pages, colorOne, colorTwo}) => {
+const AppBarWrapper = ({pages, colorOne, colorTwo}) => {
 
   const [isOpen, setOpen] = useState(false);
+
   
   return (
     <Box mt={5} ml={{ xs: 4, md: 8 }}>
