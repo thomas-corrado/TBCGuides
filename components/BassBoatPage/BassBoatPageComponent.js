@@ -66,7 +66,7 @@ const BassBoatPageComponent = () => {
             }}
           >
             <Typography variant="h5_pontoon" mt={3} mb={2}>
-              Our latest edition to the fleet is{" "}
+              Our latest addition to the fleet is{" "}
               <Link
                 href={
                   "https://www.skeeterboats.com/Skeeter-Boat.php?id=165#:~:text=The%20ZXR21%2C%20is%20the%20top,and%20efficient%2C%20lighter%20yet%20stronger"
