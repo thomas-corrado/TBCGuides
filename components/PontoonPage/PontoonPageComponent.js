@@ -167,7 +167,11 @@ const PontoonPageComponent = () => {
             </Button>
           </Box>
 
-          <PontoonImageGallery image_prelim={"Pontoon-"} image_array={itemData} image_format={"jpeg"}/>
+          <PontoonImageGallery
+            image_prelim={"Pontoon-"}
+            image_array={itemData}
+            image_format={"jpeg"}
+          />
         </Stack>
       </Box>
 

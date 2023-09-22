@@ -145,6 +145,11 @@ const theme = createTheme({
       fontSize: "1.5rem",
       lineHeight: "2.5rem",
     },
+    h7_reservations: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "calc(.25vw + 1rem)",
+      lineHeight: "calc(.35vw + 1.75rem)",
+    },
     h2_pontoon: {
       fontFamily: ["belda-normal"].join(","),
       fontSize: "3.5rem",
