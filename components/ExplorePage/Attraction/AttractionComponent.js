@@ -114,6 +114,7 @@ const sections = [
       ["Lucky's Coffee Garage", "https://www.luckyscoffeegarage.com/"],
       ["King Arthur Baking", "https://www.kingarthurbaking.com/"],
       ["Chapman’s General", "https://chapmansstore.com/"],
+      ["Half-Step Beer & Wine", "https://halfstep.beer/"],
     ],
   },
 ];
