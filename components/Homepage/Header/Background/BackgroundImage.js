@@ -21,7 +21,7 @@ const BackgroundImage = () => {
         layout="fill"
         objectFit="cover"
         quality={100}
-        src="https://s3.amazonaws.com/tbcguides.fish/Spring-Homepage.jpg"
+        src="https://s3.amazonaws.com/tbcguides.fish/Homepage_2.jpeg"
         alt="frozen-over-lake"
         loading="eager"
       />
