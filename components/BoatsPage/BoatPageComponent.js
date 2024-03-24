@@ -33,7 +33,7 @@ const BoatPageComponent = () => {
           }}
         >
           <Typography variant="h2_about" mt={5}>
-            Boats
+            Fishing Services
           </Typography>
 
           <Typography
@@ -45,101 +45,62 @@ const BoatPageComponent = () => {
               fontFamily: "belda-normal",
             }}
           >
-            Click on one of the images below to check out our two boat
-            offerings!
+            Click on one of the images below to check out one our four types of
+            fishing offerings!
           </Typography>
 
-          <Box sx={{ alignItems: "center", width: "80%" }}>
+          <Box sx={{ alignItems: "center", width: "80%" }} mb={4}>
             <Grid spacing={2} container direction="row">
-              <Grid
-                item
-                xs={12}
-                md={6}
-                direction="column"
-                mb={{ md: 0, lg: 8 }}
-              >
-                <Link href={"/bass-boat"}>
-                  <Box
-                    sx={{
-                      width: "100%",
-                      height: "calc(10vw + 15rem)",
-                      position: "relative",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignSelf: "center",
-                    }}
+              {services.map((service) => (
+                <>
+                  <Grid
+                    key={service.header}
+                    item
+                    xs={12}
+                    md={6}
+                    direction="column"
                   >
-                    <Image
-                      priority
-                      fill
-                      style={{ objectFit: "cover", opacity: 0.2 }}
-                      quality={100}
-                      src="https://s3.amazonaws.com/tbcguides.fish/bass-boat-photos-05.jpg"
-                      alt="Man in red shirt and woman in white jacket and blank pants fly fishing on blue boat"
-                      loading="eager"
-                    ></Image>
-                    <Typography
-                      variant="h2_about"
-                      sx={{
-                        position: "absolute",
-                        top: "0",
-                        left: "0",
-                        width: "100%",
-                        height: "100%",
-                        display: "flex",
-                        justifyContent: "center",
-                        flexDirection: "column",
-                        alignItems: "center",
-                      }}
-                    >
-                      Bass Boat
-                    </Typography>
-                  </Box>
-                </Link>
-              </Grid>
-
-              <Grid item xs={12} md={6} direction="column" mb={6}>
-                <Link href={"/pontoon"}>
-                  <Box
-                    sx={{
-                      width: "100%",
-                      height: "calc(10vw + 15rem)",
-                      position: "relative",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignSelf: "center",
-                    }}
-                  >
-                    <Image
-                      priority
-                      fill
-                      style={{ objectFit: "cover", opacity: 0.2 }}
-                      quality={100}
-                      src="https://s3.amazonaws.com/tbcguides.fish/MarcOkrantFinal.jpg"
-                      alt="middle-aged man smiling, wearing tan hat, and wearing sunglasses while standing in water and holding fish horizontally"
-                      loading="eager"
-                    ></Image>
-                    <Typography
-                    
-                      variant="h2_about"
-                      sx={{
-                        position: "absolute",
-                        top: "0",
-                        left: "0",
-                        width: "100%",
-                        height: "100%",
-                        display: "flex",
-                        justifyContent: "center",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        padding: "2rem"
-                      }}
-                    >
-                      Pontoon Boat
-                    </Typography>
-                  </Box>
-                </Link>
-              </Grid>
+                    <Link href={service.hrefLink}>
+                      <Box
+                        sx={{
+                          width: "100%",
+                          height: "calc(10vw + 15rem)",
+                          position: "relative",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignSelf: "center",
+                        }}
+                      >
+                        <Image
+                          priority
+                          fill
+                          style={{ objectFit: "cover", opacity: 0.2 }}
+                          quality={100}
+                          src={service.imageLink}
+                          alt={service.altSource}
+                          loading="eager"
+                        ></Image>
+                        <Typography
+                          variant="h2_about"
+                          sx={{
+                            position: "absolute",
+                            top: "0",
+                            left: "0",
+                            width: "100%",
+                            height: "100%",
+                            display: "flex",
+                            justifyContent: "center",
+                            flexDirection: "column",
+                            alignItems: "center",
+                          }}
+                        >
+                          {service.header}
+                        </Typography>
+                      </Box>
+                    </Link>
+                  </Grid>
+                </>
+              ))}
             </Grid>
           </Box>
         </Stack>
@@ -152,4 +113,34 @@ const BoatPageComponent = () => {
 
 export default BoatPageComponent;
 
-const pages = ["about", "reservations", "boats", "explore", "gallery"];
+const pages = ["about", "reservations", "explore", "gallery"];
+
+const services = [
+  {
+    header: "Bass Boat",
+    hrefLink: "/bass-boat",
+    imageLink:
+      "https://s3.amazonaws.com/tbcguides.fish/bass-boat-photos-05.jpg",
+    altSource:
+      "Man in red shirt and woman in white jacket and blank pants fly fishing on blue boat",
+  },
+  {
+    header: "Pontoon Boat",
+    hrefLink: "/pontoon",
+    imageLink: "https://s3.amazonaws.com/tbcguides.fish/MarcOkrantFinal.jpg",
+    altSource:
+      "middle-aged man smiling, wearing tan hat, and wearing sunglasses while standing in water and holding fish horizontally",
+  },
+  {
+    header: "Kayak Fishing",
+    hrefLink: "/kayak",
+    imageLink: "https://s3.amazonaws.com/tbcguides.fish/winter-7.jpg",
+    altSource: "blank",
+  },
+  {
+    header: "Ice Fishing",
+    hrefLink: "/ice-fishing",
+    imageLink: "https://s3.amazonaws.com/tbcguides.fish/Homepage_2.jpeg",
+    altSource: "blank",
+  },
+];

@@ -1,5 +1,13 @@
 import * as React from "react";
-import { Box, Button, Typography, Stack, Menu, MenuItem, Popper } from "@mui/material";
+import {
+  Box,
+  Button,
+  Typography,
+  Stack,
+  Menu,
+  MenuItem,
+  Popper,
+} from "@mui/material";
 import { useRouter } from "next/router";
 import routerPushFunc from "../../../General/routerPushFunction";
 
@@ -29,7 +37,7 @@ const HeaderBarPageButtons = ({ pages, position }) => {
     >
       <Stack direction="row" spacing={2}>
         {pages.map((page) =>
-          page === "boats" ? (
+          page === "services" ? (
             <Box onMouseLeave={handleClose}>
               <Button
                 id="basic-button"
@@ -100,6 +108,34 @@ const HeaderBarPageButtons = ({ pages, position }) => {
                   }}
                 >
                   Pontoon
+                </MenuItem>
+                <MenuItem
+                  onClick={() => router.push(`/kayak`)}
+                  disableRipple
+                  sx={{
+                    fontSize: "1.5rem",
+                    fontFamily: "belda-normal",
+                    "&:hover": {
+                      backgroundColor: "transparent",
+                      textDecoration: "underline",
+                    },
+                  }}
+                >
+                  Kayak
+                </MenuItem>
+                <MenuItem
+                  onClick={() => router.push(`/ice-fishing`)}
+                  disableRipple
+                  sx={{
+                    fontSize: "1.5rem",
+                    fontFamily: "belda-normal",
+                    "&:hover": {
+                      backgroundColor: "transparent",
+                      textDecoration: "underline",
+                    },
+                  }}
+                >
+                  Ice Fishing
                 </MenuItem>
               </Popper>
             </Box>

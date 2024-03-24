@@ -6,25 +6,30 @@ import WelcomeTextHeader from "./Background/WelcomeTextHeader";
 
 const HomepageHeader = () => {
   return (
-    
-      <Box
-        sx={{
-          width: "100vw",
-          position: "relative",
-        }}
-      >
-        <BackgroundImage />
+    <Box
+      sx={{
+        width: "100vw",
+        position: "relative",
+      }}
+    >
+      <BackgroundImage />
 
-        <Stack className="homepage-header-stack" direction="column">
-          <AppBarWrapper colorOne="white" colorTwo="#596d90" pages={pages} />
-          <Box sx={{ bottom: 0, position: "absolute" }}></Box>
-          <WelcomeTextHeader />
-        </Stack>
-      </Box>
-    
+      <Stack className="homepage-header-stack" direction="column">
+        <AppBarWrapper colorOne="white" colorTwo="#596d90" pages={pages} />
+        <Box sx={{ bottom: 0, position: "absolute" }}></Box>
+        <WelcomeTextHeader />
+      </Stack>
+    </Box>
   );
 };
 
 export default HomepageHeader;
 
-const pages = ["home", "about", "reservations", "boats", "explore", "gallery"];
+const pages = [
+  "home",
+  "about",
+  "reservations",
+  "services",
+  "explore",
+  "gallery",
+];

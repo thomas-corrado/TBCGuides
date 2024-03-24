@@ -38,6 +38,11 @@ const ContactInfo = () => {
 export default ContactInfo
 
 const generics = [
-  ["About", "Reservations", "Boats", "Explore", "Gallery"],
-  ["4 Hunter Ln,", "Hanover, NH 03755", "(603)-266-8883", "tbcguides@gmail.com"],
+  ["About", "Reservations", "Services", "Explore", "Gallery"],
+  [
+    "4 Hunter Ln,",
+    "Hanover, NH 03755",
+    "(603)-266-8883",
+    "tbcguides@gmail.com",
+  ],
 ];

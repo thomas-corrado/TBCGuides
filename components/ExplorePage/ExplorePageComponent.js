@@ -22,4 +22,4 @@ const AboutPageComponent = () => {
 
 export default AboutPageComponent;
 
-const pages = ["about", "reservations", "boats", "gallery"];
+const pages = ["about", "reservations", "services", "gallery"];

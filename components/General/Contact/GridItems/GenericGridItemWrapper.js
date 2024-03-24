@@ -22,7 +22,7 @@ const GenericGridItemWrapper = ({ items }) => {
             className={
               itemDescription === "About" ||
               itemDescription === "Reservations" ||
-              itemDescription === "Boats" ||
+              itemDescription === "Services" ||
               itemDescription === "Explore" ||
               itemDescription === "Gallery"
                 ? "contact-item-underlined"
@@ -32,7 +32,7 @@ const GenericGridItemWrapper = ({ items }) => {
           >
             {itemDescription === "About" ||
             itemDescription === "Reservations" ||
-            itemDescription === "Boats" ||
+            itemDescription === "Services" ||
             itemDescription === "Explore" ||
             itemDescription === "Gallery" ? (
               <Link href={itemDescription.toLowerCase()}>

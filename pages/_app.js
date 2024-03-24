@@ -1,14 +1,11 @@
 import "../styles/globals.css";
 import "../styles/homepage.css";
-import "../styles/aboutpage.css"; 
-import "../styles/reservationpage.css"; 
-import "../styles/GalleryPage.css"
+import "../styles/aboutpage.css";
+import "../styles/reservationpage.css";
+import "../styles/GalleryPage.css";
 import { useEffect } from "react";
 import { CssBaseline } from "@mui/material";
-import {
-  ThemeProvider,
-  createTheme,
-} from "@mui/material/styles";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -21,7 +18,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <CssBaseline/>
+        <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>
     </>
@@ -45,12 +42,12 @@ const theme = createTheme({
     },
     h3: {
       fontSize: "calc(1.4rem + 1vw)",
-      lineHeight: "calc(1.4rem + 1vw + 1rem)",
+      lineHeight: "calc(1.8rem + 1vw)",
       fontFamily: ["belda-normal"].join(","),
     },
     h4: {
       fontSize: "calc(1.8rem + 1.5vw)",
-      lineHeight: "calc(3.2rem + 1.3vw)",
+      lineHeight: "calc(2.4rem + 1.3vw)",
       fontFamily: ["belda-normal"].join(","),
     },
     h4_antonio: {

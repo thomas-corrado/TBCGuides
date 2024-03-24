@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import PontoonImageGallery from "../PontoonPage/PontoonImageGallery/PontoonImageGallery";
 
-const BassBoatPageComponent = () => {
+const KayakPageComponent = () => {
   const router = useRouter();
 
   return (
@@ -33,7 +33,7 @@ const BassBoatPageComponent = () => {
           }}
         >
           <Typography variant="h2_about" mt={5} mb={4}>
-            Bass Boat
+            Kayak Fishing
           </Typography>
           <Box
             sx={{
@@ -51,8 +51,8 @@ const BassBoatPageComponent = () => {
               fill
               style={{ objectFit: "cover" }}
               quality={100}
-              src="https://s3.amazonaws.com/tbcguides.fish/bass-boat-photos-05.jpg"
-              alt="Man in red shirt and woman in white jacket and blank pants fly fishing on blue boat"
+              src="https://s3.amazonaws.com/tbcguides.fish/winter-7.jpg"
+              alt="man in kneeling in fishing kayak while holding fish horizontally"
               loading="eager"
             ></Image>
           </Box>
@@ -66,26 +66,34 @@ const BassBoatPageComponent = () => {
             }}
           >
             <Typography variant="h5_pontoon" mt={3} mb={2}>
-              Our latest addition to the fleet is{" "}
+              I initiated TBC guides using kayaks. I did not have the bass boat
+              I have now, and I was not working with Marc and his pontoon boat.
+              Fishing on a kayak is unique, allowing each paddler to create
+              their own experience. My background in kayak fishing led me to the{" "}
               <Link
                 href={
                   "https://www.skeeterboats.com/Skeeter-Boat.php?id=165#:~:text=The%20ZXR21%2C%20is%20the%20top,and%20efficient%2C%20lighter%20yet%20stronger"
                 }
                 style={{ textDecoration: "underline", color: "#0000EE" }}
               >
-                The Skeeter ZXR 21
+                Jackson Kayak Fishing Team
               </Link>
-              . This fishing platform is armed with a bow mounted trolling
-              motor, two fish finders, and a modest 250 horses to get us fishing
-              faster. We can fit up to four anglers on this boat. This craft is
-              ideal for the day trip solo angler, couples up for the weekend,
-              and small families for those lake side pickups. On the warmer days
-              we can even take a swim, the ladder folds up and down in a snap.
+              , where I belong as a proud member. If you are interested in
+              learning more about my background in kayak fishing, check out my
+              blog{" "}
+              <Link
+                href={
+                  "https://hub.jacksonkayak.com/team-jk/kayak-fishing-regional-team/michael-blatt/"
+                }
+                style={{ textDecoration: "underline", color: "#0000EE" }}
+              >
+                here
+              </Link>
             </Typography>
           </Box>
 
           <Box
-            mb={{ xs: 2, md: 4 }}
+            mb={{ xs: 6, md: 8 }}
             mt={{ xs: 0, md: 1 }}
             sx={{
               width: "100vw",
@@ -102,12 +110,6 @@ const BassBoatPageComponent = () => {
               <Typography variant="h3_about">Make a Reservation</Typography>
             </Button>
           </Box>
-
-          <PontoonImageGallery
-            image_prelim={"bass-boat-photos-"}
-            image_array={itemData}
-            image_format={"jpg"}
-          />
         </Stack>
       </Box>
 
@@ -116,7 +118,7 @@ const BassBoatPageComponent = () => {
   );
 };
 
-export default BassBoatPageComponent;
+export default KayakPageComponent;
 
 const pages = ["about", "reservations", "services", "explore", "gallery"];
 

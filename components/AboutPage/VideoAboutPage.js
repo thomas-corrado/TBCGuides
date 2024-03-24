@@ -8,28 +8,88 @@ const VideoAboutPage = () => {
     AOS.init();
   }, []);
   return (
-    <Stack className="video-outside-box" mt={6} mb={8} >
-      <Box className="video-inside-box">
-        <video
-          controls
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "contain",
-          }}
-          preload="metadata"
-          playsinline
-          poster="https://s3.amazonaws.com/tbcguides.fish/poster.jpg"
+    <div>
+      <div
+        className="carousel-outer"
+        style={{
+          width: "100vw",
+          display: "flex",
+          height: "70vh",
+          marginTop: "1rem",
+          overflow: "scroll",
+          marginBottom: "2rem",
+        }}
+      >
+        <div
+          className="carousel-inner"
+          style={{ display: "flex", flexDirection: "row", paddingLeft: "1vw" }}
         >
-          <source
-            src="https://s3.amazonaws.com/tbcguides.fish/about-video.mp4"
-            type="video/mp4"
-            alt="Video about TBC Guides"
-          />
-        </video>
-      </Box>
-    </Stack>
+          {videos.map((video) => (
+            <>
+              <video
+                key={video.name}
+                controls
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                  padding: "1rem",
+                }}
+                preload="metadata"
+                playsinline
+                poster={video.videoPoster}
+              >
+                <source
+                  src={video.videoLink}
+                  type="video/mp4"
+                  alt="Video about TBC Guides"
+                />
+              </video>
+            </>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 
 export default VideoAboutPage;
+
+const videos = [
+  {
+    name: "video one",
+    videoLink: "https://s3.amazonaws.com/tbcguides.fish/tbc-video-1.MP4",
+    videoPoster:
+      "https://s3.amazonaws.com/tbcguides.fish/tbc-video-1-poster.jpeg",
+  },
+  {
+    name: "video two",
+    videoLink: "https://s3.amazonaws.com/tbcguides.fish/tbc-video-2.MP4",
+    videoPoster:
+      "https://s3.amazonaws.com/tbcguides.fish/tbc-video-2-poster.jpeg",
+  },
+  {
+    name: "video three",
+    videoLink: "https://s3.amazonaws.com/tbcguides.fish/tbc-video-3.MP4",
+    videoPoster:
+      "https://s3.amazonaws.com/tbcguides.fish/tbc-video-3-poster.jpeg",
+  },
+  {
+    name: "video four",
+    videoLink: "https://s3.amazonaws.com/tbcguides.fish/tbc-video-4.MP4",
+    videoPoster:
+      "https://s3.amazonaws.com/tbcguides.fish/tbc-video-4-poster.jpeg",
+  },
+  {
+    name: "video five",
+    videoLink: "https://s3.amazonaws.com/tbcguides.fish/tbc-video-5.MP4",
+    videoPoster:
+      "https://s3.amazonaws.com/tbcguides.fish/tbc-video-5-poster.jpeg",
+  },
+  {
+    name: "video six",
+    videoLink: "https://s3.amazonaws.com/tbcguides.fish/tbc-video-6.MP4",
+    videoPoster:
+      "https://s3.amazonaws.com/tbcguides.fish/tbc-video-6-poster.jpeg",
+  },
+];
