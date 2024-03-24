@@ -23,7 +23,7 @@ const MikeInfo = () => {
         variant="h1"
         color="primary"
         mt={{ xs: 4, sm: 4, lg: 6 }}
-        mb={{ xs: 4, sm: 4, lg: 6 }}
+        mb={{ xs: 3, sm: 3, lg: 4 }}
         ml={{ xs: 4, md: 8 }}
         sx={{ width: "80vw" }}
       >
@@ -35,23 +35,23 @@ const MikeInfo = () => {
           // data-aos="fade-up"
           container
           direction="row"
-          spacing={4}
+          spacing={2}
           sx={{ width: "87.5vw" }}
         >
           <Grid item container lg={6} sm={12} xs={12}>
             <Image
-              src="https://s3.amazonaws.com/tbcguides.fish/michael-blatt-ice_2.jpg"
-              srcSet="https://s3.amazonaws.com/tbcguides.fish/michael-blatt-ice_2.jpg"
-              alt="Mike Blatt holding fish on frozen lake"
+              src="https://s3.amazonaws.com/tbcguides.fish/self-1.jpeg"
+              srcSet="https://s3.amazonaws.com/tbcguides.fish/self-1.jpeg"
+              alt="man standing in water beside kayak fishing boat holding black water bottle"
               className="complicated-image"
               layout="fill"
             />
           </Grid>
           <Grid item container lg={6} sm={12} xs={12}>
             <Image
-              src="https://s3.amazonaws.com/tbcguides.fish/bio-cropped.jpg"
-              srcSet="https://s3.amazonaws.com/tbcguides.fish/bio-cropped.jpg"
-              alt="Mike Blatt holding fish in kayak on water"
+              src="https://s3.amazonaws.com/tbcguides.fish/self-2.jpeg"
+              srcSet="https://s3.amazonaws.com/tbcguides.fish/self-2.jpeg"
+              alt="man wearing hat and sunglasses tying bait onto fishing line"
               className="complicated-image"
               layout="fill"
             />
@@ -60,7 +60,7 @@ const MikeInfo = () => {
       </Box>
       <Box
         ml={{ xs: 4, md: 8 }}
-        mt={{ xs: 4, sm: 4, lg: 6 }}
+        mt={{ xs: 3, sm: 4, lg: 4 }}
         mb={8}
         sx={{ width: { xs: "80vw", sm: "90vw", md: "55vw" } }}
       >
@@ -88,7 +88,6 @@ const MikeInfo = () => {
           }
           sx={{
             "&:hover": {
-              
               filter: "brightness(.95)",
             },
           }}
