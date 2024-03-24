@@ -16,21 +16,29 @@ const MikeInfo = () => {
   return (
     <Stack
       direction="column"
-      sx={{ width: "100vw", backgroundColor: "#808184" }}
+      sx={{
+        width: "100vw",
+        backgroundColor: "#808184",
+
+        display: "flex",
+        alignItems: "center",
+      }}
     >
       <Typography
         // data-aos="fade-up"
         variant="h1"
         color="primary"
-        mt={{ xs: 4, sm: 4, lg: 6 }}
+        mt={{ xs: 4, sm: 4, lg: 5 }}
         mb={{ xs: 3, sm: 3, lg: 4 }}
-        ml={{ xs: 4, md: 8 }}
-        sx={{ width: "80vw" }}
+        sx={{ width: "80vw", textAlign: "center" }}
       >
         Touring Led by Mike Blatt
       </Typography>
 
-      <Box sx={{ width: "100vw", display: "flex", justifyContent: "center" }}>
+      <Box
+        sx={{ width: "100vw", display: "flex", justifyContent: "center" }}
+        mb={8}
+      >
         <Grid
           // data-aos="fade-up"
           container
@@ -57,45 +65,6 @@ const MikeInfo = () => {
             />
           </Grid>
         </Grid>
-      </Box>
-      <Box
-        ml={{ xs: 4, md: 8 }}
-        mt={{ xs: 3, sm: 4, lg: 4 }}
-        mb={8}
-        sx={{ width: { xs: "80vw", sm: "90vw", md: "55vw" } }}
-      >
-        <Typography mb={4} variant="h3" color="primary">
-          Mike is a licensed guide and proud member of the{" "}
-          <Link
-            color="jackson"
-            href="https://hub.jacksonkayak.com/team-jk/kayak-fishing-regional-team/michael-blatt/"
-            style={{ textDecoration: "underline", color: "#f4bc41" }}
-          >
-            Jackson Kayak Fishing Team.
-          </Link>
-        </Typography>
-
-        <Button
-          // data-aos="fade-up"
-
-          disableRipple
-          variant="contained"
-          color="mikesgrey"
-          onClick={() =>
-            router.push(
-              "https://hub.jacksonkayak.com/team-jk/kayak-fishing-regional-team/michael-blatt/"
-            )
-          }
-          sx={{
-            "&:hover": {
-              filter: "brightness(.95)",
-            },
-          }}
-        >
-          <Typography color="primary" variant="h7">
-            Mike&#39;s Blog
-          </Typography>
-        </Button>
       </Box>
     </Stack>
   );
