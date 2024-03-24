@@ -52,7 +52,7 @@ const KayakPageComponent = () => {
               style={{ objectFit: "cover" }}
               quality={100}
               src="https://s3.amazonaws.com/tbcguides.fish/winter-7.jpg"
-              alt="Man in red shirt and woman in white jacket and blank pants fly fishing on blue boat"
+              alt="man in kneeling in fishing kayak while holding fish horizontally"
               loading="eager"
             ></Image>
           </Box>

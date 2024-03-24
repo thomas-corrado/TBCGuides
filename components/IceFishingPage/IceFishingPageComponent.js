@@ -52,7 +52,7 @@ const IceFishingPageComponent = () => {
               style={{ objectFit: "cover" }}
               quality={100}
               src="https://s3.amazonaws.com/tbcguides.fish/Homepage_2.jpeg"
-              alt="Man in red shirt and woman in white jacket and blank pants fly fishing on blue boat"
+              alt="snow mobile on snow-covered lake with sun setting behind tree line"
               loading="eager"
             ></Image>
           </Box>
@@ -66,26 +66,15 @@ const IceFishingPageComponent = () => {
             }}
           >
             <Typography variant="h5_pontoon" mt={3} mb={2}>
-              Our latest addition to the fleet is{" "}
-              <Link
-                href={
-                  "https://www.skeeterboats.com/Skeeter-Boat.php?id=165#:~:text=The%20ZXR21%2C%20is%20the%20top,and%20efficient%2C%20lighter%20yet%20stronger"
-                }
-                style={{ textDecoration: "underline", color: "#0000EE" }}
-              >
-                The Skeeter ZXR 21
-              </Link>
-              . This fishing platform is armed with a bow mounted trolling
-              motor, two fish finders, and a modest 250 horses to get us fishing
-              faster. We can fit up to four anglers on this boat. This craft is
-              ideal for the day trip solo angler, couples up for the weekend,
-              and small families for those lake side pickups. On the warmer days
-              we can even take a swim, the ladder folds up and down in a snap.
+              Ice fishing is a great way to get outside during the colder months and catch 
+              fish. On an ice fishing trip, I take guests out on a lake for half or full days
+              and dig into the ice. We will place our lines in the water and wait for the 
+              fish to bite. 
             </Typography>
           </Box>
 
           <Box
-            mb={{ xs: 2, md: 4 }}
+            mb={{ xs: 6, md: 8 }}
             mt={{ xs: 0, md: 1 }}
             sx={{
               width: "100vw",
