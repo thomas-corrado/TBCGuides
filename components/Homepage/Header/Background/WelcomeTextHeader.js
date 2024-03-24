@@ -26,7 +26,7 @@ const WelcomeTextHeader = () => {
       >
         <Typography variant="h1" color="primary">
           The Upper Valley of Vermont and New Hampshire&rsquo;s Premier Licensed
-          Fishing Guide Service: Bass Boat, Kayak, Ice, Fly, and Kayak
+          Fishing Guide Service: Bass Boat, Kayak, Ice, and Fly
         </Typography>
       </Box>
       <Box

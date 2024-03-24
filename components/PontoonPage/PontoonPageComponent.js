@@ -3,11 +3,11 @@ import NavigationBarNonHome from "../General/NavigationBarNonHome";
 import ContactInfo from "../General/Contact/ContactInfo";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import PontoonImageGallery from "./PontoonImageGallery/PontoonImageGallery"
+import PontoonImageGallery from "./PontoonImageGallery/PontoonImageGallery";
 
 const PontoonPageComponent = () => {
-    const router = useRouter(); 
-   
+  const router = useRouter();
+
   return (
     <>
       <Stack className="about-stack" direction="column">
@@ -56,7 +56,27 @@ const PontoonPageComponent = () => {
             ></Image>
           </Box>
           <Box
-            mt={4}
+            mt={2}
+            mb={1}
+            sx={{
+              width: { xs: "85vw", md: "75vw" },
+              display: "flex",
+              alignSelf: "center",
+            }}
+          >
+            <Typography variant="h5_pontoon" mt={3} mb={2}>
+              Take a ride with a licensed boat captain on a beautifully equipped
+              24’ pontoon boat on the Connecticut River, Lake Morey, Lake
+              Sunapee or your favorite body of water in Vermont or New
+              Hampshire. This boat accommodates up to 8 passengers. Services
+              include: cruising for fun with family and friends; fishing for
+              bass pike, walleye or trout; celebrating life - spreading a loved
+              one’s ashes with an on-water memorial service; easily boarding on
+              and off at a dock.
+            </Typography>
+          </Box>
+          <Box
+            mt={2}
             mb={4}
             sx={{
               width: { xs: "85vw", md: "75vw" },
