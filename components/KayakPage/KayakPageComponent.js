@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import PontoonImageGallery from "../PontoonPage/PontoonImageGallery/PontoonImageGallery";
 
-const BassBoatPageComponent = () => {
+const KayakPageComponent = () => {
   const router = useRouter();
 
   return (
@@ -33,7 +33,7 @@ const BassBoatPageComponent = () => {
           }}
         >
           <Typography variant="h2_about" mt={5} mb={4}>
-            Bass Boat
+            Kayak Fishing
           </Typography>
           <Box
             sx={{
@@ -51,7 +51,7 @@ const BassBoatPageComponent = () => {
               fill
               style={{ objectFit: "cover" }}
               quality={100}
-              src="https://s3.amazonaws.com/tbcguides.fish/bass-boat-photos-05.jpg"
+              src="https://s3.amazonaws.com/tbcguides.fish/winter-7.jpg"
               alt="Man in red shirt and woman in white jacket and blank pants fly fishing on blue boat"
               loading="eager"
             ></Image>
@@ -102,12 +102,6 @@ const BassBoatPageComponent = () => {
               <Typography variant="h3_about">Make a Reservation</Typography>
             </Button>
           </Box>
-
-          <PontoonImageGallery
-            image_prelim={"bass-boat-photos-"}
-            image_array={itemData}
-            image_format={"jpg"}
-          />
         </Stack>
       </Box>
 
@@ -116,7 +110,7 @@ const BassBoatPageComponent = () => {
   );
 };
 
-export default BassBoatPageComponent;
+export default KayakPageComponent;
 
 const pages = ["about", "reservations", "services", "explore", "gallery"];
 

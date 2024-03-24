@@ -182,7 +182,7 @@ const PontoonPageComponent = () => {
 
 export default PontoonPageComponent;
 
-const pages = ["about", "reservations", "boats", "explore", "gallery"];
+const pages = ["about", "reservations", "services", "explore", "gallery"];
 
 const itemData = [
   {

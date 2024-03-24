@@ -9,7 +9,16 @@ const ReservationsPageComponent = () => {
       <Stack>
         <NavigationBarNonHome pages={pages} />
         <ReservationForm />
-        <Typography variant="h7_reservations" sx={{ width: "90vw", textAlign: 'center', display: 'flex', alignSelf: 'center'}} mb={5}>
+        <Typography
+          variant="h7_reservations"
+          sx={{
+            width: "90vw",
+            textAlign: "center",
+            display: "flex",
+            alignSelf: "center",
+          }}
+          mb={5}
+        >
           All reservations require a 50% security deposit of the cost of the
           trip. This security deposit becomes non-refundable 14 days preceding
           the scheduled fishing date. Inclement weather days will be
@@ -27,4 +36,4 @@ const ReservationsPageComponent = () => {
 
 export default ReservationsPageComponent;
 
-const pages = ["about", "boats", "explore", "gallery"];
+const pages = ["about", "services", "explore", "gallery"];
