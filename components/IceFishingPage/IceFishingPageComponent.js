@@ -66,10 +66,12 @@ const IceFishingPageComponent = () => {
             }}
           >
             <Typography variant="h5_pontoon" mt={3} mb={2}>
-              Ice fishing is a great way to get outside during the colder months and catch 
-              fish. On an ice fishing trip, I take guests out on a lake for half or full days
-              and dig into the ice. We will place our lines in the water and wait for the 
-              fish to bite. 
+              Ice fishing is one of the best ways to catch the big fish you
+              missed during the open water months. We are drilling 6-8 holes per
+              person through the ice, setting up traps with live bait, and
+              running to those flags when they go up. While we are waiting for
+              those fish to bite, we are learning how to jig and how to use
+              sonar to find more fish.
             </Typography>
           </Box>
 
