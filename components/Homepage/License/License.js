@@ -44,7 +44,7 @@ const License = () => {
               aria-label="new-hampshire-license-button"
               onClick={() =>
                 router.push(
-                  "https://www.wildlife.state.nh.us/law-enforcement/guides.html"
+                  "https://www.wildlife.nh.gov/hunting-nh/becoming-licensed-nh-guide#:~:text=In%20addition%20to%20passing%20the,the%20course%20to%20be%20certified"
                 )
               }
               sx={{
@@ -73,8 +73,6 @@ const License = () => {
               }
             ></Button>
           </Box>
-
-         
         </Grid>
         <Grid
           item
