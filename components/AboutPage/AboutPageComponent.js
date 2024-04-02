@@ -4,7 +4,7 @@ import VideoAboutPage from "./VideoAboutPage";
 import ContactInfo from "../General/Contact/ContactInfo";
 import ComeJoinUs from "./ComeJoinUs";
 import RatingMain from "./Rating/RatingMain";
-import Gear from "./Gear/Gear";
+import DigitalPub from "./DigitalPub/DigitalPub";
 import OutdoorNE from "./ONE/OutdoorNE";
 
 const AboutPageComponent = () => {
@@ -17,8 +17,8 @@ const AboutPageComponent = () => {
         </Box>
       </Stack>
       <RatingMain />
-      {/* <Gear /> */}
-      <OutdoorNE/>
+      <DigitalPub />
+      <OutdoorNE />
       <ComeJoinUs />
       <ContactInfo />
     </>
@@ -27,4 +27,4 @@ const AboutPageComponent = () => {
 
 export default AboutPageComponent;
 
-const pages = ["reservations", "services",  "explore", "gallery"];
+const pages = ["reservations", "services", "explore", "gallery"];
