@@ -21,7 +21,7 @@ const WatersWeFish = () => {
                 Waters we Fish
               </Typography>
               <Grid container item direction="column" ml={1}>
-                <Typography variant="h3_about" fontWeight="bold" mb={2}>
+                <Typography variant="h3_about" fontWeight="bold" mb={1}>
                   Bodies of Water
                 </Typography>
                 <Typography variant="h4_about">
@@ -31,7 +31,7 @@ const WatersWeFish = () => {
                   <br></br>
                   Lake Sunapee
                 </Typography>
-                <Typography variant="h3_about" fontWeight="bold" mb={2} mt={2}>
+                <Typography variant="h3_about" fontWeight="bold" mb={1} mt={2}>
                   We also fish other smaller water bodies in towns throughout
                   Vermont and New Hampshire
                 </Typography>
