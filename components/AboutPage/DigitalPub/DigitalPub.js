@@ -1,11 +1,13 @@
 import { Stack, Box, Typography, Grid, Button } from "@mui/material";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Image from "next/image";
 
 const DigitalPub = () => {
+  const router = useRouter();
   useEffect(() => {
     AOS.init();
   }, []);
@@ -42,7 +44,7 @@ const DigitalPub = () => {
               }}
             >
               <Typography variant="h4_about" mt={2}>
-                TBC guides featured in the summer 2023 issue of the{" "}
+                TBC Guides was featured in the summer 2023 issue of the{" "}
                 <q>Here in Hanover</q> magazine. Click the image to learn more
                 about fishing with Mike.
               </Typography>

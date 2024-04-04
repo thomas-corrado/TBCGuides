@@ -91,7 +91,7 @@ const theme = createTheme({
     h4_about: {
       fontFamily: ["belda-normal"].join(","),
       fontSize: "calc(1rem + 1vw)",
-      lineHeight: "calc(2.4rem + 1.6vw)",
+      lineHeight: "calc(2rem + 1.6vw)",
     },
     h5_about: {
       fontFamily: ["belda-normal"].join(","),

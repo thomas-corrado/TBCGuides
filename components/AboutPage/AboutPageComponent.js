@@ -6,6 +6,7 @@ import ComeJoinUs from "./ComeJoinUs";
 import RatingMain from "./Rating/RatingMain";
 import DigitalPub from "./DigitalPub/DigitalPub";
 import OutdoorNE from "./ONE/OutdoorNE";
+import WatersWeFish from "./WatersWeFish/WatersWeFish";
 
 const AboutPageComponent = () => {
   return (
@@ -18,6 +19,7 @@ const AboutPageComponent = () => {
       </Stack>
       <RatingMain />
       <DigitalPub />
+      <WatersWeFish/>
       <OutdoorNE />
       <ComeJoinUs />
       <ContactInfo />
