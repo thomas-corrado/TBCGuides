@@ -20,6 +20,7 @@ const GenericGridItemWrapper = ({ items }) => {
           <Typography
             variant="h7"
             className={
+              itemDescription === "Home" ||
               itemDescription === "About" ||
               itemDescription === "Reservations" ||
               itemDescription === "Services" ||
@@ -39,7 +40,9 @@ const GenericGridItemWrapper = ({ items }) => {
                 {itemDescription}
               </Link>
             ) : (
-              itemDescription
+              <Link href={"/"}>
+                {itemDescription}
+              </Link>
             )}
           </Typography>
         ))}

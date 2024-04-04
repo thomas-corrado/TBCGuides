@@ -51,8 +51,8 @@ const BassBoatPageComponent = () => {
               fill
               style={{ objectFit: "cover" }}
               quality={100}
-              src="https://s3.amazonaws.com/tbcguides.fish/bass-boat-photos-05.jpg"
-              alt="Man in red shirt and woman in white jacket and blank pants fly fishing on blue boat"
+              src="https://s3.amazonaws.com/tbcguides.fish/main-bass-boat.jpeg"
+              alt="bass boat attached to truck on grass"
               loading="eager"
             ></Image>
           </Box>

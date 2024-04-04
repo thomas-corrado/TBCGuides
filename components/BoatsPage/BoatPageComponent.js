@@ -119,10 +119,8 @@ const services = [
   {
     header: "Bass Boat",
     hrefLink: "/bass-boat",
-    imageLink:
-      "https://s3.amazonaws.com/tbcguides.fish/bass-boat-photos-05.jpg",
-    altSource:
-      "Man in red shirt and woman in white jacket and blank pants fly fishing on blue boat",
+    imageLink: "https://s3.amazonaws.com/tbcguides.fish/main-bass-boat.jpeg"
+              , altSource: "bass boat attached to truck on grass"
   },
   {
     header: "Pontoon Boat",

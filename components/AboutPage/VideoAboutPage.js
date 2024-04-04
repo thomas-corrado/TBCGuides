@@ -92,4 +92,16 @@ const videos = [
     videoPoster:
       "https://s3.amazonaws.com/tbcguides.fish/tbc-video-6-poster.jpeg",
   },
+  {
+    name: "video seven",
+    videoLink: "https://s3.amazonaws.com/tbcguides.fish/tbc-video-7.MP4",
+    videoPoster:
+      "https://s3.amazonaws.com/tbcguides.fish/tbc-video-7-poster.jpeg",
+  },
+  {
+    name: "video eight",
+    videoLink: "https://s3.amazonaws.com/tbcguides.fish/tbc-video-8.MP4",
+    videoPoster:
+      "https://s3.amazonaws.com/tbcguides.fish/tbc-video-8-poster.jpeg",
+  },
 ];
