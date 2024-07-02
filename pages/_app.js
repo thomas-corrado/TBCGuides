@@ -137,6 +137,11 @@ const theme = createTheme({
       fontSize: "3.5rem",
       lineHeight: "3.5rem",
     },
+    h4_reservations: {
+      fontFamily: ["belda-normal"].join(","),
+      fontSize: "2rem",
+      lineHeight: "2.5rem",
+    },
     h6_reservations: {
       fontFamily: ["belda-normal"].join(","),
       fontSize: "1.5rem",

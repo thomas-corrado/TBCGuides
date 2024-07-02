@@ -1,4 +1,5 @@
 import { Stack, Typography } from "@mui/material";
+import Script from "next/script";
 import NavigationBarNonHome from "../General/NavigationBarNonHome";
 import ContactInfo from "../General/Contact/ContactInfo";
 import ReservationForm from "./ReservationForm";
@@ -8,7 +9,24 @@ const ReservationsPageComponent = () => {
     <>
       <Stack>
         <NavigationBarNonHome pages={pages} />
-        <ReservationForm />
+        <Typography
+          variant="h4_explore"
+          sx={{
+            width: "90vw",
+            textAlign: "center",
+            display: "flex",
+            alignSelf: "center",
+          }}
+          mt={6}
+          mb={-2}
+        >
+          To instantly book, please use the widget below and follow a few simple
+          steps. If you prefer an old school over the phone experience, and a
+          friends and family discount, please give us a call at your
+          convenience.
+        </Typography>
+        <div className="mb_widget" data-id="dAAhRqPu8QTQ"></div>
+        <Script src="https://widget.mallardbay.com/index.js"></Script>
         <Typography
           variant="h7_reservations"
           sx={{
@@ -17,6 +35,7 @@ const ReservationsPageComponent = () => {
             display: "flex",
             alignSelf: "center",
           }}
+          mt={-2}
           mb={5}
         >
           All reservations require a 50% security deposit of the cost of the
