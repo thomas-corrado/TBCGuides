@@ -1,12 +1,11 @@
 import { Stack, Typography } from "@mui/material";
+import { useState, useEffect } from "react";
 import Script from "next/script";
 import NavigationBarNonHome from "../General/NavigationBarNonHome";
 import ContactInfo from "../General/Contact/ContactInfo";
 import ReservationForm from "./ReservationForm";
 
 const ReservationsPageComponent = () => {
-
-  setTimeout(2000);
 
   return (
     <>
@@ -21,7 +20,7 @@ const ReservationsPageComponent = () => {
             alignSelf: "center",
           }}
           mt={6}
-          mb={-2}
+          mb={-3}
         >
           To instantly book, please use the widget below and follow a few simple
           steps. If you prefer an old school over the phone experience, and a
@@ -39,7 +38,7 @@ const ReservationsPageComponent = () => {
             display: "flex",
             alignSelf: "center",
           }}
-          mt={-2}
+          mt={-3}
           mb={5}
         >
           All reservations require a 50% security deposit of the cost of the
