@@ -21,7 +21,7 @@ const ReservationsPageComponent = () => {
         if (!widgetLoaded) {
           window.location.reload();
         }
-      }, 10000); // 10 seconds timeout
+      }, 5000); // 10 seconds timeout
     }
 
     return () => clearTimeout(reloadTimeout); // Cleanup timeout on unmount
