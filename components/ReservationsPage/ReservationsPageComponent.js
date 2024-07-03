@@ -5,6 +5,9 @@ import ContactInfo from "../General/Contact/ContactInfo";
 import ReservationForm from "./ReservationForm";
 
 const ReservationsPageComponent = () => {
+
+  setTimeout(2000);
+
   return (
     <>
       <Stack>
@@ -26,7 +29,8 @@ const ReservationsPageComponent = () => {
           convenience.
         </Typography>
         <div className="mb_widget" data-id="dAAhRqPu8QTQ"></div>
-        <Script src="https://widget.mallardbay.com/index.js"></Script>
+        <Script src="https://widget.mallardbay.com/index.js" ></Script>
+        
         <Typography
           variant="h7_reservations"
           sx={{
