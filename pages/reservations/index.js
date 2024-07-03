@@ -1,6 +1,7 @@
 import * as React from "react";
 import Head from "next/head";
 import ReservationsPageComponent from "../../components/ReservationsPage/ReservationsPageComponent";
+import Script from "next/script";
 
 
 export default function ReservationsPage() {
@@ -21,6 +22,7 @@ export default function ReservationsPage() {
         <meta name="theme-color" content="#FFFFFF"></meta>
         <link rel="icon" href="/phishing.ico" />
       </Head>
+      <Script src="https://widget.mallardbay.com/index.js" />
       <ReservationsPageComponent />
     </div>
   );
