@@ -10,12 +10,21 @@ const ReservationsPageComponent = () => {
   const [timerFinished, setTimerFinished] = useState(false);
 
   useEffect(() => {
+    let reloadTimeout;
     if (widgetLoaded) {
       const timer = setTimeout(() => {
         setTimerFinished(true);
-      }, 1500); // 1.5 seconds delay
+      }, 3000); // 3 seconds delay
       return () => clearTimeout(timer); // Cleanup timer on unmount
+    } else {
+      reloadTimeout = setTimeout(() => {
+        if (!widgetLoaded) {
+          window.location.reload();
+        }
+      }, 10000); // 10 seconds timeout
     }
+
+    return () => clearTimeout(reloadTimeout); // Cleanup timeout on unmount
   }, [widgetLoaded]);
 
   return (
