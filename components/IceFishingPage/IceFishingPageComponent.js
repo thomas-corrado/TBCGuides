@@ -103,7 +103,7 @@ const IceFishingPageComponent = () => {
 
 export default IceFishingPageComponent;
 
-const pages = ["about", "reservations", "services", "explore", "gallery"];
+const pages = ["about", "reservations", "services", "explore"];
 
 const itemData = [
   {

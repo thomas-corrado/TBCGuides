@@ -110,6 +110,11 @@ const KayakPageComponent = () => {
               <Typography variant="h3_about">Make a Reservation</Typography>
             </Button>
           </Box>
+          <PontoonImageGallery
+            image_prelim={"fish-holding-"}
+            image_array={itemData}
+            image_format={"jpg"}
+          />
         </Stack>
       </Box>
 
@@ -120,125 +125,201 @@ const KayakPageComponent = () => {
 
 export default KayakPageComponent;
 
-const pages = ["about", "reservations", "services", "explore", "gallery"];
+const pages = ["about", "reservations", "services", "explore"];
 
 const itemData = [
   {
-    number: "01",
+    number: 1,
+    description: "Man in red shirt holding two fish while smiling",
+  },
+  {
+    number: 2,
+    description: "Man in white shirt holding one fish while smiling in kayak",
+  },
+  {
+    number: 3,
     description:
-      "Woman in white shirt next to man holding largemouth bass on blue boat",
+      "Man in hat and patterned shirt holding one fish while smiling in kayak",
   },
   {
-    number: "02",
-    description: "boy in blue shirt and pink shorts holding largemouth bass",
-  },
-  {
-    number: "03",
-    description: "Woman in white hat and black pants holding largemouth bass",
-  },
-  {
-    number: "04",
+    number: 4,
     description:
-      "Zoomed out photo of man in red shirt and woman in white jacket and blank pants fly fishing on blue boat",
+      "Woman in purple jacket holding one fish while smiling in kayak",
   },
   {
-    number: "06",
+    number: 5,
     description:
-      "Man with no shoes, grey shorts, and white shirt holds largemouth bass on blue boat",
+      "Two young girls holding one fish together while smiling in kayak",
   },
   {
-    number: "07",
+    number: 6,
     description:
-      "Man in straw hat and black shirt kneels down holding largemouth bass on boat",
+      "Woman in black jacket holding one fish while smiling in kayak",
   },
   {
-    number: "08",
-    description: "Two girls in swimsuits hold largemouth bass on blue boat",
-  },
-  {
-    number: "09",
+    number: 7,
     description:
-      "younger man holds largemouth bass on boat while wearing sunglasses, grey shirt, and black shorts",
+      "Man in green shirt and american hat holding one fish while smiling in kayak",
+  },
+  {
+    number: 8,
+    description:
+      "Man in patterned shirt and fish hat holding one fish while smiling in kayak",
+  },
+  {
+    number: 9,
+    description:
+      "Man in grey jacket and flip flops holding one fish while smiling in kayak",
   },
   {
     number: 10,
-    description: "Older woman in green shirt holds laremouth bass on blue boat",
+    description:
+      "Woman in blue Adidas hat holding one fish while smiling in kayak",
   },
   {
     number: 11,
     description:
-      "boy in purple life jacket holds smallmouth bass with two hands",
+      "Young man in grey sweatshirt holding one fish while smirking in kayak",
   },
   {
     number: 12,
     description:
-      "Tall man wearing black bucket hat, blue shirt, and grey shorts holds smallmouth bass on blue boat",
+      "Young man in white sweatshirt holding one fish while smiling in kayak",
   },
   {
     number: 13,
     description:
-      "man wearing black jacket, glasses, and beige baseball cap holding up fish with gills out",
+      "Man in white shirt and glasses holding one fish while smirking in kayak",
   },
   {
     number: 14,
-    description: "boy in grey jacket holds largemouth bass on blue boat",
+    description: "Two red kayaks on lake",
   },
   {
     number: 15,
     description:
-      "Man in green sunglasses, grey shirt, and camo shorts holds largemouth bass on blue boat",
+      "Man in white sweatshirt and grey Under Armour hat holding one fish while smiling in kayak",
+  },
+  {
+    number: 16,
+    description:
+      "Man in blue T-shirt and fedora holding one fish while smiling in kayak",
   },
   {
     number: 17,
     description:
-      "Man in brown baseball cap, camo jacket, and grey pants holds largemouth bass on boat",
+      "Young man in red T-shirt and beige hat holding one fish while smiling in kayak",
   },
   {
     number: 18,
-    description: "close-up of australian shepherd sitting on boat",
+    description:
+      "Young woman in white tank top holding one fish while smiling on lake shore",
   },
   {
     number: 19,
     description:
-      "older man in blue shirt, beige crocks, bucket hat, and blue sunglasses holds up largemouth bass on boat",
+      "Young man in grey T-shirt and large sun hat holding one fish while smiling in kayak",
   },
   {
-    number: 20,
+    number: 58,
     description:
-      "Girl in sweatshirt, black sweatpants, and white shoes holds largemouth bass on blue boat",
+      "Young man wearing a white shirt and a red life-jacket holding a fish while smiling on a kayak",
   },
   {
-    number: 21,
+    number: 36,
     description:
-      "Man in white shirt, grey shorts, and tevas holds largemouth bass on blue boat",
+      "Middle-aged man in a red-and-black flannel and black hat holding a fish on a kayak while smiling",
   },
+
   {
-    number: 22,
+    number: 37,
     description:
-      "Father in white shirt, grey shorts, and tevas holds northern pike with two twin boys each wearing navy t-shirts and black baseball caps on boat",
+      "Two men on a kayak; one man on the right is holding a fish and one man on the left is sitting beside him",
   },
   {
-    number: 23,
+    number: 39,
     description:
-      "Man in blue shirt standing on green cooler fly fishing on boat",
+      "Woman in white grey shirt holding one fish while smiling in kayak",
   },
   {
-    number: 24,
+    number: 40,
     description:
-      "Boy in blue baseball hat and white crocs holding smallmouth bass next to grandfather wearing grey shirt and khaki cargo shorts on blue boat",
+      "One woman on the left in a kayak while smiling and holding a fishing rod; one woman on the right in a kayakk while smiling and holding a fish",
   },
   {
-    number: 25,
+    number: 42,
     description:
-      "grandfather wearing a blue jacket and his two grandchildren fishing at front of blue boat",
+      "Older woman in a flannel jacket holding one fish while smiling",
   },
+
   {
-    number: 26,
-    description: "Girl sitting on end of blue boat while parked on land",
-  },
-  {
-    number: 27,
+    number: 43,
     description:
-      "blue boat sitting in city parking space while hitched to white truck",
+      "Woman in a black tank top and black and white hat holding one fish while smirking",
+  },
+
+  {
+    number: 44,
+    description:
+      "Young woman in a black jacket and purple life-kacjet holding one fish in a kayak while smirking",
+  },
+  {
+    number: 41,
+    description:
+      "Young woman in Washington Nationals hat and cheetah-print jacket holding one fish while smiling in kayak",
+  },
+  {
+    number: 45,
+    description:
+      "Middle-aged man in a black jacket and jeans holding one fish in a kayak while smirking",
+  },
+  {
+    number: 46,
+    description:
+      "Middle-aged man in a grey fleece and black sunglasses holding one fish in a kayak",
+  },
+  {
+    number: 47,
+    description:
+      "Boy wearing grey pants holding one fish while smiling in a kayak",
+  },
+  {
+    number: 48,
+    description:
+      "Middle-aged woman in a grey jacket and green hat holding one fish while smiling in a kayak",
+  },
+  {
+    number: 49,
+    description:
+      "Man in a black jacket and navy hat holding one fish while smiling in a kayak",
+  },
+  {
+    number: 50,
+    description:
+      "Man in a black jacket, San Diego hat, and light blue jeans holding one fish while smiling in a kayak",
+  },
+
+  {
+    number: 52,
+    description:
+      "Michael Blatt holding fish out of water in a kayak while looking away",
+  },
+  {
+    number: 53,
+    description:
+      "Michael Blatt holding fish out of water in a kayak while looking forward",
+  },
+  {
+    number: 55,
+    description: "Fish in the water with its mouth open",
+  },
+  {
+    number: 54,
+    description: "Fish in the water with its mouth open",
+  },
+  {
+    number: 51,
+    description:
+      "Fish being held out of water with Jackson Kayak text on kayak",
   },
 ];
