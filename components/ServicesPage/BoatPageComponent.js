@@ -45,7 +45,7 @@ const BoatPageComponent = () => {
               fontFamily: "belda-normal",
             }}
           >
-            Click on one of the images below to check out one our four types of
+            Click on one of the images below to check out one our five types of
             fishing offerings!
           </Typography>
 
@@ -138,6 +138,12 @@ const services = [
   {
     header: "Ice Fishing",
     hrefLink: "/ice-fishing",
+    imageLink: "https://s3.amazonaws.com/tbcguides.fish/Homepage_2.jpeg",
+    altSource: "blank",
+  },
+  {
+    header: "Fly Fishing",
+    hrefLink: "/fly-fishing",
     imageLink: "https://s3.amazonaws.com/tbcguides.fish/Homepage_2.jpeg",
     altSource: "blank",
   },

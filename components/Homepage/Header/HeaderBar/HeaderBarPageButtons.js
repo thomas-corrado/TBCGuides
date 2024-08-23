@@ -81,62 +81,24 @@ const HeaderBarPageButtons = ({ pages, position }) => {
                   boxShadow: "1px 1px 1px 2px rgba(0, 0, 0, 0.2);",
                 }}
               >
-                <MenuItem
-                  onClick={() => router.push(`/bass-boat`)}
-                  disableRipple
-                  sx={{
-                    fontSize: "1.5rem",
-                    fontFamily: "belda-normal",
-                    "&:hover": {
-                      backgroundColor: "transparent",
-                      textDecoration: "underline",
-                    },
-                  }}
-                >
-                  Bass Boat
-                </MenuItem>
-                <MenuItem
-                  onClick={() => router.push(`/pontoon`)}
-                  disableRipple
-                  sx={{
-                    fontSize: "1.5rem",
-                    fontFamily: "belda-normal",
-                    "&:hover": {
-                      backgroundColor: "transparent",
-                      textDecoration: "underline",
-                    },
-                  }}
-                >
-                  Pontoon
-                </MenuItem>
-                <MenuItem
-                  onClick={() => router.push(`/kayak`)}
-                  disableRipple
-                  sx={{
-                    fontSize: "1.5rem",
-                    fontFamily: "belda-normal",
-                    "&:hover": {
-                      backgroundColor: "transparent",
-                      textDecoration: "underline",
-                    },
-                  }}
-                >
-                  Kayak
-                </MenuItem>
-                <MenuItem
-                  onClick={() => router.push(`/ice-fishing`)}
-                  disableRipple
-                  sx={{
-                    fontSize: "1.5rem",
-                    fontFamily: "belda-normal",
-                    "&:hover": {
-                      backgroundColor: "transparent",
-                      textDecoration: "underline",
-                    },
-                  }}
-                >
-                  Ice Fishing
-                </MenuItem>
+                {menuItems.map((item) => (
+                  <>
+                    <MenuItem
+                      onClick={() => router.push(item[1])}
+                      disableRipple
+                      sx={{
+                        fontSize: "1.5rem",
+                        fontFamily: "belda-normal",
+                        "&:hover": {
+                          backgroundColor: "transparent",
+                          textDecoration: "underline",
+                        },
+                      }}
+                    >
+                      {item[0]}
+                    </MenuItem>
+                  </>
+                ))}
               </Popper>
             </Box>
           ) : (
@@ -174,3 +136,5 @@ const HeaderBarPageButtons = ({ pages, position }) => {
 };
 
 export default HeaderBarPageButtons;
+
+const menuItems = [["Bass Boat", "bass-boat"], ["Ponton", "pontoon"], ["Kayak", "kayak"], ["Ice Fishing", "ice-fishing"], ["Fly Fishing", "fly-fishing"]];

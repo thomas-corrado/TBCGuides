@@ -15,7 +15,7 @@ export default function BassBoatPage() {
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
 
-        <title>Ice Fishing</title>
+        <title>Fly Fishing</title>
         <meta
           property="og:image"
           content="https://s3.amazonaws.com/tbcguides.fish/fishing-logo.jpg"
@@ -24,7 +24,7 @@ export default function BassBoatPage() {
         <link rel="icon" href="/phishing.ico" />
       </Head>
       <GeneralServiceComponent
-        Title="Ice Fishing"
+        Title="Fly Fishing"
         MainImageURL="https://s3.amazonaws.com/tbcguides.fish/Homepage_2.jpeg"
         MainImageDescription="snow mobile on snow-covered lake with sun setting behind tree line"
         Description=" Ice fishing is one of the best ways to catch the big fish you
