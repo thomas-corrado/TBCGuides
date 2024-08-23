@@ -53,6 +53,7 @@ const MikeInfo = () => {
               alt="man standing in water beside kayak fishing boat holding black water bottle"
               className="complicated-image"
               layout="fill"
+              style={{ border: "4px solid #fff" }}
             />
           </Grid>
           <Grid item container lg={6} sm={12} xs={12}>
@@ -62,6 +63,7 @@ const MikeInfo = () => {
               alt="man wearing hat and sunglasses tying bait onto fishing line"
               className="complicated-image"
               layout="fill"
+              style={{ border: "4px solid #fff" }}
             />
           </Grid>
         </Grid>
