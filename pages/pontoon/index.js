@@ -1,6 +1,6 @@
 import * as React from "react";
 import Head from "next/head";
-import PontoonPageComponent from "../../components/PontoonPage/PontoonPageComponent";
+import PontoonPageComponent from "../../components/ServicesPage/PontoonPageComponent";
 
 
 export default function PontoonPage() {

@@ -1,6 +1,6 @@
 import * as React from "react";
 import Head from "next/head";
-import BoatPageComponent from "../../components/BoatsPage/BoatPageComponent";
+import BoatPageComponent from "../../components/ServicesPage/BoatPageComponent";
 
 export default function BassBoatPage() {
   return (

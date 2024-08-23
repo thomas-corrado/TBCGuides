@@ -4,9 +4,9 @@ import ContactInfo from "../General/Contact/ContactInfo";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import PontoonImageGallery from "../PontoonPage/PontoonImageGallery/PontoonImageGallery";
+import ServicesImageGallery from "./ServicesImageGallery";
 
-const KayakPageComponent = () => {
+const GeneralServiceComponent = ({ Title, MainImageURL, MainImageDescription, Description, itemData, itemPrelim, itemFormat }) => {
   const router = useRouter();
 
   return (
@@ -33,7 +33,7 @@ const KayakPageComponent = () => {
           }}
         >
           <Typography variant="h2_about" mt={5} mb={4}>
-            Kayak Fishing
+            {Title}
           </Typography>
           <Box
             sx={{
@@ -51,8 +51,8 @@ const KayakPageComponent = () => {
               fill
               style={{ objectFit: "cover" }}
               quality={100}
-              src="https://s3.amazonaws.com/tbcguides.fish/winter-7.jpg"
-              alt="man in kneeling in fishing kayak while holding fish horizontally"
+              src={MainImageURL}
+              alt={MainImageDescription}
               loading="eager"
             ></Image>
           </Box>
@@ -65,36 +65,17 @@ const KayakPageComponent = () => {
               alignSelf: "center",
             }}
           >
-            <Typography variant="h5_pontoon" mt={3} mb={2}>
-              I initiated TBC guides using kayaks. I did not have the bass boat
-              I have now, and I was not working with Marc and his pontoon boat.
-              Fishing on a kayak is unique, allowing each paddler to create
-              their own experience. My background in kayak fishing led me to the{" "}
-              <Link
-                href={
-                  "https://www.skeeterboats.com/Skeeter-Boat.php?id=165#:~:text=The%20ZXR21%2C%20is%20the%20top,and%20efficient%2C%20lighter%20yet%20stronger"
-                }
-                style={{ textDecoration: "underline", color: "#0000EE" }}
-              >
-                Jackson Kayak Fishing Team
-              </Link>
-              , where I belong as a proud member. If you are interested in
-              learning more about my background in kayak fishing, check out my
-              blog{" "}
-              <Link
-                href={
-                  "https://hub.jacksonkayak.com/team-jk/kayak-fishing-regional-team/michael-blatt/"
-                }
-                style={{ textDecoration: "underline", color: "#0000EE" }}
-              >
-                here
-              </Link>
-            </Typography>
+            <Typography
+              variant="h5_pontoon"
+              mt={3}
+              mb={2}
+              dangerouslySetInnerHTML={{ __html: Description }}
+            ></Typography>
           </Box>
 
           <Box
-            mb={{ xs: 6, md: 8 }}
-            mt={{ xs: 0, md: 1 }}
+            mb={{ xs: 6, md: itemData !== "" ? 5 : 0 }}
+            mt={{ xs: 0, md: itemData !== "" ? 1 : 0 }}
             sx={{
               width: "100vw",
               display: "flex",
@@ -110,10 +91,10 @@ const KayakPageComponent = () => {
               <Typography variant="h3_about">Make a Reservation</Typography>
             </Button>
           </Box>
-          <PontoonImageGallery
-            image_prelim={"fish-holding-"}
+          <ServicesImageGallery
+            image_prelim={itemPrelim}
             image_array={itemData}
-            image_format={"jpg"}
+            image_format={itemFormat}
           />
         </Stack>
       </Box>
@@ -123,7 +104,7 @@ const KayakPageComponent = () => {
   );
 };
 
-export default KayakPageComponent;
+export default GeneralServiceComponent;
 
 const pages = ["about", "reservations", "services", "explore"];
 

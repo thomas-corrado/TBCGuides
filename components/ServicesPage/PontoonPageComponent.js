@@ -3,7 +3,7 @@ import NavigationBarNonHome from "../General/NavigationBarNonHome";
 import ContactInfo from "../General/Contact/ContactInfo";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import PontoonImageGallery from "./PontoonImageGallery/PontoonImageGallery";
+import ServicesImageGallery from "./ServicesImageGallery";
 
 const PontoonPageComponent = () => {
   const router = useRouter();
@@ -187,7 +187,7 @@ const PontoonPageComponent = () => {
             </Button>
           </Box>
 
-          <PontoonImageGallery
+          <ServicesImageGallery
             image_prelim={"Pontoon-"}
             image_array={itemData}
             image_format={"jpeg"}
