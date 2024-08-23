@@ -33,7 +33,7 @@ const CompressedTBCLogo = ({ pages}) => {
                   objectFit: "cover",
                 }}
                 quality={100}
-                src="https://s3.amazonaws.com/tbcguides.fish/White-Main-Logo.png"
+                src="https://s3.amazonaws.com/tbcguides.fish/TBC_New_Logo_2024_White.PNG"
                 alt="white tbc guides logo"
                 loading="eager"
               ></Image>
@@ -45,7 +45,7 @@ const CompressedTBCLogo = ({ pages}) => {
                   objectFit: "cover",
                 }}
                 quality={100}
-                src="https://s3.amazonaws.com/tbcguides.fish/Black-Main-Logo.png"
+                src="https://s3.amazonaws.com/tbcguides.fish/TBC_New_Logo_2024.PNG"
                 alt="black tbc guides logo"
                 loading="eager"
               ></Image>
