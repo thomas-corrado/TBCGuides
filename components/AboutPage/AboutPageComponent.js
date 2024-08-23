@@ -7,6 +7,8 @@ import RatingMain from "./Rating/RatingMain";
 import DigitalPub from "./DigitalPub/DigitalPub";
 import OutdoorNE from "./ONE/OutdoorNE";
 import WatersWeFish from "./WatersWeFish/WatersWeFish";
+import InstagramWidget from "./InstagramWidget"
+
 
 const AboutPageComponent = () => {
   return (
@@ -18,8 +20,10 @@ const AboutPageComponent = () => {
         </Box>
       </Stack>
       <RatingMain />
+      <InstagramWidget />
       <DigitalPub />
-      <WatersWeFish/>
+      <WatersWeFish />
+
       <OutdoorNE />
       <ComeJoinUs />
       <ContactInfo />

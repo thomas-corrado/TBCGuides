@@ -45,6 +45,13 @@
     display: flex;
 }
 
+.instagram-box {
+    width: 100vw; 
+    background-color: #ececec;
+    justify-content: center;
+    display: flex;
+}
+
 .waters-box {
     width: 100vw; 
     background-color: #BDC0C5;

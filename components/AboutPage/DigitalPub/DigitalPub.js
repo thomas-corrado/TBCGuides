@@ -20,7 +20,7 @@ const DigitalPub = () => {
         width: "100vw",
         backgroundColor: "#D9D9D9",
       }}
-      mt={3}
+      
     >
       <Box sx={{ width: { xs: "80vw", sm: "85vw" } }} mt={7} mb={7}>
         <Stack direction="column">

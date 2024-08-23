@@ -96,6 +96,10 @@ const sections = [
       ["Hanover Inn", "https://www.hanoverinn.com/"],
       ["Seyon Lodge", "https://vtstateparks.com/seyon.html"],
       ["Loch Lyme Lodge", "https://www.lochlymelodge.com/"],
+      [
+        "Inn at Pleasant Lake",
+        "https://www.innatpleasantlake.com",
+      ],
     ],
   },
   {
