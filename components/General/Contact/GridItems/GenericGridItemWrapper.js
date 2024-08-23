@@ -24,8 +24,7 @@ const GenericGridItemWrapper = ({ items }) => {
               itemDescription === "About" ||
               itemDescription === "Reservations" ||
               itemDescription === "Services" ||
-              itemDescription === "Explore" ||
-              itemDescription === "Gallery"
+              itemDescription === "Explore" 
                 ? "contact-item-underlined"
                 : "contact-item"
             }
@@ -34,8 +33,7 @@ const GenericGridItemWrapper = ({ items }) => {
             {itemDescription === "About" ||
             itemDescription === "Reservations" ||
             itemDescription === "Services" ||
-            itemDescription === "Explore" ||
-            itemDescription === "Gallery" ? (
+            itemDescription === "Explore" ? (
               <Link href={itemDescription.toLowerCase()}>
                 {itemDescription}
               </Link>

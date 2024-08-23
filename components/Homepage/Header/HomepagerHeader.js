@@ -31,5 +31,4 @@ const pages = [
   "reservations",
   "services",
   "explore",
-  "gallery",
 ];

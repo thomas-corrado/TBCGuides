@@ -113,7 +113,7 @@ const BoatPageComponent = () => {
 
 export default BoatPageComponent;
 
-const pages = ["about", "reservations", "explore", "gallery"];
+const pages = ["about", "reservations", "explore"];
 
 const services = [
   {

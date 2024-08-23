@@ -118,7 +118,7 @@ const BassBoatPageComponent = () => {
 
 export default BassBoatPageComponent;
 
-const pages = ["about", "reservations", "services", "explore", "gallery"];
+const pages = ["about", "reservations", "services", "explore"];
 
 const itemData = [
   {
