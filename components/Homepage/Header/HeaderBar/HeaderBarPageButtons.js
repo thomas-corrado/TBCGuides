@@ -105,7 +105,7 @@ const HeaderBarPageButtons = ({ pages, position }) => {
             <Button
               disableRipple
               key={page}
-              onClick={() => router.push(routerPushFunc(page))}
+              onClick={() => router.push(routerPushFunc(page === "travel partners" ? 'travel-partners' : page))}
               sx={{
                 "&:hover": {
                   backgroundColor: "transparent",
@@ -137,4 +137,4 @@ const HeaderBarPageButtons = ({ pages, position }) => {
 
 export default HeaderBarPageButtons;
 
-const menuItems = [["Bass Boat", "bass-boat"], ["Ponton", "pontoon"], ["Kayak", "kayak"], ["Ice Fishing", "ice-fishing"], ["Fly Fishing", "fly-fishing"]];
+const menuItems = [["Bass Boat", "bass-boat"], ["Ponton", "pontoon"], ["Kayak", "kayak"], ["Ice Fishing", "ice-fishing"], ];
