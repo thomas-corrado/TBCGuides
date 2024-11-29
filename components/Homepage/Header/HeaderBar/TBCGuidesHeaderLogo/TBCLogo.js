@@ -9,7 +9,7 @@ const TBCLogo = ({ pages }) => {
         <Box
           sx={{
             display: { xs: "none", sm: "flex" },
-            width: "15.8rem",
+            width: "16.3rem",
             height: "9rem",
             float: "left",
           }}
