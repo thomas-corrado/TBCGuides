@@ -137,4 +137,4 @@ const HeaderBarPageButtons = ({ pages, position }) => {
 
 export default HeaderBarPageButtons;
 
-const menuItems = [["Bass Boat", "bass-boat"], ["Ponton", "pontoon"], ["Kayak", "kayak"], ["Ice Fishing", "ice-fishing"], ];
+const menuItems = [["Bass Boat", "bass-boat"], ["Pontoon", "pontoon"], ["Kayak", "kayak"], ["Ice Fishing", "ice-fishing"], ];
