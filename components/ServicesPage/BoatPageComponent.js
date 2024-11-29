@@ -119,8 +119,8 @@ const services = [
   {
     header: "Bass Boat",
     hrefLink: "/bass-boat",
-    imageLink: "https://s3.amazonaws.com/tbcguides.fish/main-bass-boat.jpeg"
-              , altSource: "bass boat attached to truck on grass"
+    imageLink: "https://s3.amazonaws.com/tbcguides.fish/main-bass-boat.jpeg",
+    altSource: "bass boat attached to truck on grass",
   },
   {
     header: "Pontoon Boat",
@@ -141,4 +141,10 @@ const services = [
     imageLink: "https://s3.amazonaws.com/tbcguides.fish/Homepage_2.jpeg",
     altSource: "blank",
   },
+  // {
+  //   header: "Fly Fishing",
+  //   hrefLink: "/fly-fishing",
+  //   imageLink: "https://s3.amazonaws.com/tbcguides.fish/Homepage_2.jpeg",
+  //   altSource: "blank",
+  // },
 ];

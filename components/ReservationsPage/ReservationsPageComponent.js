@@ -1,4 +1,4 @@
-import { Stack, Typography, CircularProgress } from "@mui/material";
+import { Stack, Typography, CircularProgress, Box } from "@mui/material";
 import { useState, useEffect } from "react";
 import Script from "next/script";
 import NavigationBarNonHome from "../General/NavigationBarNonHome";
@@ -47,9 +47,17 @@ const ReservationsPageComponent = () => {
           friends and family discount, please give us a call at your
           convenience.
         </Typography>
-        {(!widgetLoaded || !timerFinished) ? (
+        {!widgetLoaded || !timerFinished ? (
           <>
-            <div style={{ width: "100%", height: "25rem", display: 'flex', alignContent: 'center', justifyContent: 'center' }}>
+            <div
+              style={{
+                width: "100%",
+                height: "25rem",
+                display: "flex",
+                alignContent: "center",
+                justifyContent: "center",
+              }}
+            >
               <CircularProgress
                 sx={{
                   alignSelf: "center",
@@ -59,7 +67,9 @@ const ReservationsPageComponent = () => {
               />
             </div>
           </>
-        ): '' }
+        ) : (
+          ""
+        )}
         <div
           className="mb_widget"
           data-id="dAAhRqPu8QTQ"
@@ -90,6 +100,20 @@ const ReservationsPageComponent = () => {
           be refunded or credited to another reservation date if desired. All
           deposits are forfeited after one year.
         </Typography>
+        <Typography
+          variant="h4_reservations"
+          sx={{
+            textAlign: "center",
+            display: "flex",
+            alignSelf: "center",
+            alignItems: "center",
+          }}
+          mt={0}
+          mb={5}
+        >
+          Gift certificates available for any occasion, call to order!
+        </Typography>
+        
       </Stack>
       <ContactInfo />
     </>

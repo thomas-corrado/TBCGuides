@@ -9,7 +9,7 @@ const CompressedTBCLogo = ({ pages}) => {
         <Box
           sx={{
             display: { xs: "flex", sm: "none" },
-            width: "10.6rem",
+            width: "10.9rem",
             height: "6rem",
             float: "left",
           }}

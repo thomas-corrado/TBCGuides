@@ -4,7 +4,7 @@ import ContactInfo from "../General/Contact/ContactInfo";
 import ExploreLanding from "./Landing/ExploreLanding"
 import AttractionComponent from "./Attraction/AttractionComponent";
 
-const AboutPageComponent = () => {
+const ExplorePageComponent = () => {
   return (
     <>
       <Stack className="about-stack" direction="column">
@@ -20,6 +20,6 @@ const AboutPageComponent = () => {
   );
 };
 
-export default AboutPageComponent;
+export default ExplorePageComponent;
 
 const pages = ["about", "reservations", "services"];

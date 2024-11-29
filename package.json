@@ -20,6 +20,7 @@
     "child_process": "^1.0.2",
     "googleapis": "^105.0.0",
     "hamburger-react": "^2.5.0",
+    "html-react-parser": "^5.1.12",
     "moment": "^2.29.4",
     "mui-tel-input": "^1.4.1",
     "next": "^13.0.6",

@@ -3,7 +3,7 @@ import Image from "next/image";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 
-const PontoonImageGallery = ({ image_array, image_prelim, image_format }) => {
+const ServicesImageGallery = ({ image_array, image_prelim, image_format }) => {
     const matchDownMd = useMediaQuery('(min-width:600px)');
 
   return (
@@ -31,7 +31,7 @@ const PontoonImageGallery = ({ image_array, image_prelim, image_format }) => {
           }}
           variant="masonry"
         >
-          {image_array.map((item) => (
+          {image_array !== "" ? (image_array.map((item) => (
             <Box
               key={item.number}
               sx={{
@@ -48,13 +48,14 @@ const PontoonImageGallery = ({ image_array, image_prelim, image_format }) => {
                 />
               </ImageListItem>
             </Box>
-          ))}
+          ))) : ""}
+          
         </ImageList>
       </Box>
     </Box>
   );
 };
 
-export default PontoonImageGallery
+export default ServicesImageGallery;
 
 
