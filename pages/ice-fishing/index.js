@@ -34,7 +34,7 @@ export default function BassBoatPage() {
               those fish to bite, we are learning how to jig and how to use
               sonar to find more fish."
         itemData={itemData}
-        itemPrelim="fish-holding-"
+        itemPrelim="ice-fishing-"
         itemFormat="jpg"
       />
     </div>
@@ -42,79 +42,168 @@ export default function BassBoatPage() {
 }
 
 const itemData = [
-
   {
-    number: 22,
+    number: 1,
     description:
       "Boy #1 with a scarf holding a fish on a frozen lake surrounded by other boys while smiling",
   },
   {
-    number: 23,
+    number: 2,
     description:
       "Boy #2 with a scarf and an LL Bean hat holding a fish on a frozen lake surrounded by other boys  while smiling",
   },
   {
-    number: 24,
+    number: 3,
     description:
       "Boy #3 with a scarf and an LL Bean hat holding a fish on a frozen lake surrounded by other boys  while smiling",
   },
   {
-    number: 25,
+    number: 4,
     description:
       "Man with orange hat holding a fish on a frozen lake while smiling",
   },
 
   {
-    number: 29,
+    number: 5,
     description:
       "Middle-aged man in a beige jacket holding a fish on a frozen lake while smiling",
   },
   {
-    number: 30,
+    number: 6,
     description:
       "Middle-aged woman in an orange jacket holding a fish on a frozen lake while smiling",
   },
   {
-    number: 31,
+    number: 7,
     description:
       "Older woman in a purple jacket holding a fish on a frozen lake while smiling",
   },
   {
-    number: 32,
+    number: 8,
     description:
       "Older man in a green jacket and blue balaclava holding a fish on a frozen lake while smiling",
   },
   {
-    number: 33,
+    number: 9,
     description:
       "Middle-aged man in a red jacket and grey hat holding a fish on a frozen lake while smiling",
   },
- 
+
   {
-    number: 28,
+    number: 10,
     description:
       "Middle-aged woman in a purple jacket holding a fish on a frozen lake while smiling",
   },
   {
-    number: 35,
+    number: 11,
     description:
       "Young girl in a warm jacket and pink sweatshirt holding a fish on a frozen lake while smiling",
   },
 
   {
-    number: 59,
+    number: 12,
     description:
       "Woman in a purple solomon jacket, white scarf, grey beanie, and sunglasses holding one fish while smirking",
   },
 
   {
-    number: 56,
+    number: 13,
     description:
       "Woman wearing black jacket, white vest, white hat, and black gloves holding a fish on a frozen lake",
   },
   {
-    number: 26,
+    number: 14,
     description: "Two young girls in large coats holding a fish while smiling",
   },
-
+  {
+    number: 15,
+    description:
+      "Boy kneeling on frozen lake while holding fish vertically with two other boys to his right",
+  },
+  {
+    number: 16,
+    description: "Man kneeling on frozen lake while holding fish horizontally",
+  },
+  {
+    number: 17,
+    description:
+      "Boy in visor sunglasses holding fish vertically while standing on frozen lake",
+  },
+  {
+    number: 18,
+    description:
+      "Girl in green sunglasses, red jacket, and grey hat holding fish horizontally while standing on frozen lake",
+  },
+  {
+    number: 19,
+    description:
+      "Woman in maroon puffer jacket and black bib holding fishing rod and fish while standing on lake",
+  },
+  {
+    number: 20,
+    description:
+      "Woman in green jacket and black north face hat smiling while holding fish vertically on frozen lake",
+  },
+  {
+    number: 21,
+    description:
+      "Teenage girl in blue ski jacket and light blue snow pants holding fishing rod and fish while standing on lake",
+  },
+  {
+    number: 22,
+    description:
+      "Man in camo pants, black sweatshirt, and black hat holding a fish verticallly while standing on lake",
+  },
+  {
+    number: 23,
+    description: "Man in red snow pants, grey flannel, and black hat holding fish horizontally while kneeling on lake",
+  },
+  {
+    number: 24,
+    description: "Girl in snowsuit holding fish vertically while standing on frozen lake",
+  },
+  {
+    number: 25,
+    description: "Boy in red jacket and grey snow pants smiling while holding fish vertically on frozen lake",
+  },
+  {
+    number: 26,
+    description: "Girl in pink jacket, blue hat, and yellow snow pants holding fish vertically while standing on frozen lake",
+  },
+  {
+    number: 27,
+    description: "Older man in green jacket and black pants smiling while holding fish vertically on frozen lake",
+  },
+  {
+    number: 28,
+    description: "Boy in black puffer jacket and blue snow pants holding fish vertically on frozen lake",
+  },
+  {
+    number: 29,
+    description: "Boy in blue jacket and navy snow pants kneeling on frozen lake while holding fish vertically",
+  },
+  {
+    number: 30,
+    description: "Boy in black jacket and snow pants holding fish vertically on frozen lake",
+  },
+  {
+    number: 31,
+    description: "Woman holding small black dog in arms and fish vertically in other hand on frozen lake",
+  },
+  {
+    number: 32,
+    description: "Boy in grey sweatshirt and black snow pants kneeling while holding fish vertically on frozen lake",
+  },
+  {
+    number: 33,
+    description: "Boy in visor sunglasses, navy ski jacket, and grey snow pants holding fish horizontally on frozen lake",
+  },
+  {
+    number: 35,
+    description: "Man in green hat, black snow pants, and black ski jacket smiling and kneeling while holding fish horiztonally on frozen lake",
+  },
+  {
+    number: 36,
+    description: "Man in fur hat kneeling on frozen lake while pointing and holding a fish vertically",
+  },
 ];
