@@ -96,10 +96,8 @@ const sections = [
       ["Hanover Inn", "https://www.hanoverinn.com/"],
       ["Seyon Lodge", "https://vtstateparks.com/seyon.html"],
       ["Loch Lyme Lodge", "https://www.lochlymelodge.com/"],
-      [
-        "Inn at Pleasant Lake",
-        "https://www.innatpleasantlake.com",
-      ],
+      ["Inn at Pleasant Lake", "https://www.innatpleasantlake.com"],
+      ["The Quechee Inn at Marshland Farm", "https://www.quecheeinn.com/"],
     ],
   },
   {
@@ -116,6 +114,7 @@ const sections = [
       ["Big Fatty's", "https://www.bigfattybbq.com/"],
       ["Three Tomatoes", "https://www.threetomatoestrattoria.com/"],
       ["Phnom Penh", "https://www.phnompenhsandwiches.com/"],
+      ["The Quechee Inn at Marshland Farm", "https://www.quecheeinn.com/"],
     ],
   },
   {
