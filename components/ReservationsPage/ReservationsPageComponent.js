@@ -76,10 +76,9 @@ const ReservationsPageComponent = () => {
           style={{ display: widgetLoaded && timerFinished ? "block" : "none" }}
         ></div>
         <Script
-          src="https://widget.mallardbay.com/index.js"
+          src="https://mallardbay.com/widget/index.js"
           onLoad={() => setWidgetLoaded(true)}
-        />
-
+        ></Script>
         <Typography
           variant="h7_reservations"
           sx={{
@@ -113,7 +112,6 @@ const ReservationsPageComponent = () => {
         >
           Gift certificates available for any occasion, call to order!
         </Typography>
-        
       </Stack>
       <ContactInfo />
     </>
